@@ -1,0 +1,130 @@
+//main: main.scss
+
+#navigation{
+  position: fixed;
+  background: rgba(0,0,0,0);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 1000;
+  padding: $gridSize*4+px;
+  @include transition(all 0.3s ease);
+  .logo{
+    display: block;
+    height: 74px;
+    width: 256px;
+    background-image: url(../img/parsek-wht@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include transition(all 0.4s ease);
+  }
+}
+
+#navigation.affix, .mobile-device #navigation{
+  padding: 11px $gridSize*2+px $gridSize*2+px $gridSize*2+px;
+  background: $color__ci_white;
+  height: 56px;
+  &:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #9396de; /* Old browsers */
+    background: -moz-linear-gradient(left, #9396de 0%, #e36479 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #9396de 0%,#e36479 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #9396de 0%,#e36479 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9396de', endColorstr='#e36479',GradientType=1 ); /* IE6-9 */
+  }
+  .logo{
+    background-image: url(../img/parsek-blk@2x.png);
+    height: 36px;
+  }
+}
+
+.navbar-collapse{
+  position: absolute;
+  right: 32px;
+  top: 0;
+  @include transition(all 0.4s ease);
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      display: inline-block;
+      a{
+        color: #fff;
+        padding: $gridSize*6+px $gridSize+px;
+        display: block;
+        font-size: 1.2rem;
+        @include transition(all 0.4s ease);
+      }
+    }
+  }
+}
+
+.mobile-device{
+  .navbar-collapse{
+    top: 56px;
+    left: 0;
+    height: calc(100vh - 56px);
+    width: 100%;
+    background: #fff;
+    ul{
+      height: 100%;
+    }
+    ul li{
+      display: table;
+      width: 100%;
+      height: 25%;
+      text-align: center;
+      a{
+        color: $color__ci_dark;
+        height: 100%;
+        font-size: 1.8em;
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        &:after{
+          content: '';
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: #9396de; /* Old browsers */
+          background: -moz-linear-gradient(left, #9396de 0%, #e36479 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, #9396de 0%,#e36479 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, #9396de 0%,#e36479 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9396de', endColorstr='#e36479',GradientType=1 ); /* IE6-9 */
+        }
+      }
+    }
+  }
+}
+
+:not(.mobile-device) .affix{
+  .navbar-collapse a{
+    padding: 17px $gridSize+px $gridSize*2+px $gridSize+px;
+    color: $color__ci_dark;
+  }
+}
+
+.navbar-toggler{
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #000;
+  padding: $gridSize*2+px;
+  display: none;
+  outline: none;
+}
+
+.mobile-device .navbar-toggler{
+  display: block;
+}

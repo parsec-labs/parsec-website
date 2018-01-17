@@ -1,0 +1,66 @@
+//main: main.scss
+
+.section-team-title{
+  margin-bottom: $gridSize*8+px;
+}
+
+.team-member{
+  text-align: center;
+  span{
+    display: block;
+  }
+  .team-title{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.4rem;
+    margin-top: $gridSize*3+px;
+  }
+  .team-subtitle{
+    margin-top: -5px;
+  }
+}
+
+.team-image{
+  img{
+    border-radius: 200px;
+    width: 128px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+:not(.mobile-device){
+
+
+  .team-member{
+    opacity: 0.0;
+    @include transition(all 0.5s ease);
+    @include transform(translate3d(0,10%,0));
+  }
+
+}
+
+.in-view{
+  .team-member{
+    opacity: 1.0;
+    @include transform(translate3d(0,0%,0));
+    &:nth-child(1){
+      @include transition-delay(0.3s);
+    }
+    &:nth-child(2){
+      @include transition-delay(0.6s);
+    }
+    &:nth-child(3){
+      @include transition-delay(0.9s);
+    }
+    &:nth-child(4){
+      @include transition-delay(1.2s);
+    }
+  }
+}
+
+
+@media(max-width:767px){
+  .team-subtitle{
+    margin-bottom: $gridSize*7+px;
+  }
+}
