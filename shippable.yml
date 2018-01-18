@@ -1,0 +1,28 @@
+language: ruby
+
+rvm:
+  - 2.3.3
+
+branches:
+  only:
+    - master
+
+build:
+  ci:
+    - bundle install
+    # build website and copy to s3 bucket
+    - if [ "$BRANCH" == "master" ]; then S3_BUCKET=$PRODUCTION_BUCKET ./scripts/build.sh; fi
+
+integrations:
+
+  notifications:
+    - integrationName: slack_chainfish
+      type: slack
+      recipients:
+        - "#10_communications"
+      branches:
+        only:
+          - master
+      on_success: change
+      on_failure: always
+      on_start: never
