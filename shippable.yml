@@ -18,6 +18,7 @@ build:
   ci:
     - bundle install
     # build website and copy to s3 bucket
+    - aws configure set preview.cloudfront true
     - if [ "$BRANCH" == "master" ]; then S3_BUCKET=$PRODUCTION_BUCKET ./scripts/build.sh; fi
 
 integrations:
