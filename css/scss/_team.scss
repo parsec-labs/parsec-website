@@ -1,5 +1,11 @@
 //main: main.scss
 
+.section-team{
+  [class*='col-']{
+    margin-bottom: 48px;
+  }
+}
+
 .section-team-title{
   margin-bottom: $gridSize*8+px;
 }
@@ -13,6 +19,7 @@
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.4rem;
     margin-top: $gridSize*3+px;
+    margin-bottom: $gridSize+px;
   }
   .team-subtitle{
     margin-top: -5px;
@@ -22,7 +29,7 @@
 .team-image{
   img{
     border-radius: 200px;
-    width: 128px;
+    width: 96px;
     margin: 0 auto;
     display: block;
   }

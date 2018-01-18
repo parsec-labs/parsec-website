@@ -190,17 +190,51 @@ Helper
 }
 
 .text-centered{
-  text-align: center;
+  text-align: center !important;
 }
 
 .text-left{
   text-align: left !important;
 }
 
+@mixin z-depth-2dp() {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+              0 1px 5px 0 rgba(0, 0, 0, .12),
+              0 3px 1px -2px rgba(0, 0, 0, .2);
+}
+
 
 /* ==========================================================================
 Sections
 ========================================================================== */
+
+.button{
+  padding: $gridSize*2+px $gridSize*4+px;
+  background-color: $color__ci_pink;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  margin-top: $gridSize*6+px;
+  border: none !important;
+  text-transform: uppercase;
+  @include transition(all 0.3s ease);
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+    @include z-depth-2dp();
+    @include transform(scale(1.02))
+    background-color: darken($color__ci_pink, 15%);
+  }
+}
+
+input{
+  width: 100%;
+  display: block;
+  padding: $gridSize*4+px;
+  &.email{
+    color: #000;
+  }
+}
 
 @import "sections";
 @import "team";
