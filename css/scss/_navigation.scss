@@ -9,7 +9,7 @@
   height: 120px;
   z-index: 1000;
   padding: $gridSize*4+px;
-  @include transition(all 0.3s ease);
+  // @include transition(all 0.3s ease);
   .logo{
     display: block;
     height: 74px;
@@ -88,6 +88,7 @@
         display: table-cell;
         vertical-align: middle;
         position: relative;
+        padding: 0;
         &:after{
           content: '';
           width: 100%;
