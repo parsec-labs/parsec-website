@@ -1,0 +1,36 @@
+language: ruby
+
+rvm:
+  - 2.3.3
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    # AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
+    - secure: NaHNYxf7DLMFdFDzOJRLTLH2wiD9KpyYq/hIbPK6O14ebXR4rrYYFudakPd1SsYyxd5/wagfgJh0oWd49XQQPCNp/FJEiDHGviZ1+9o69rhc8aQJYMO7BwWreGnTVW93j7RuxbpdiAXln/ozuzgBfc6AcNdeGAMUpaEDG3iRvmiF8wKhjHDDbeoDahhAco+baT5HOtZtX/L2geRs1Xg3lrGcmYBMFqmMAHEWe437de6muPbLXm2fL8khDlZi3S41P6TiRXQpwwx4WHdwyYtmhHkMoxLh6BtGCgAdj/Z4TU1PVoOeyctWSseDwJDk2iL994wFVOSPj1bEBZ3va4VGow==
+    - PRODUCTION_BUCKET: "s3://parseclabs.org/"
+    - DISTRIBUTION_ID: "E2FVSFF782BUV"
+
+build:
+  ci:
+    - bundle install
+    # build website and copy to s3 bucket
+    - aws configure set preview.cloudfront true
+    - if [ "$BRANCH" == "master" ]; then S3_BUCKET=$PRODUCTION_BUCKET ./scripts/build.sh; fi
+
+integrations:
+
+  notifications:
+    - integrationName: slack_chainfish
+      type: slack
+      recipients:
+        - "#10_communications"
+      branches:
+        only:
+          - master
+      on_success: change
+      on_failure: always
+      on_start: never
