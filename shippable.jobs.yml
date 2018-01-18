@@ -1,0 +1,5 @@
+jobs:
+  - name: parsec-landingpages_runCI
+    type: runCI
+    steps:
+      - IN: website_s3_params
