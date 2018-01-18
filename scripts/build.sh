@@ -15,10 +15,10 @@ echo "Removing .html extension"
 find _site/ -type f ! -iname 'index.html' -iname '*.html' -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
 
 echo "Copying files to server..."
-aws s3 sync _site/ $PRODUCTION_BUCKET --size-only --exclude "*" --include "*.*" --delete --acl public-read
+aws s3 sync _site/ $S3_BUCKET --size-only --exclude "*" --include "*.*" --delete --acl public-read
 
 echo "Copying files with content type..."
-aws s3 sync _site/ $PRODUCTION_BUCKET --size-only --content-type text/html --exclude "*.*" --delete --acl public-read
+aws s3 sync _site/ $S3_BUCKET --size-only --content-type text/html --exclude "*.*" --delete --acl public-read
 
 if [ "$DISTRIBUTION_ID" ]; then
   echo "Invalidating CloudFront distribution..."

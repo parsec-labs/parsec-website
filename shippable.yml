@@ -11,7 +11,7 @@ build:
   ci:
     - bundle install
     # build website and copy to s3 bucket
-    - if [ "$BRANCH" == "master" ]; then S3_BUCKET=$PRODUCTION_BUCKET ./scripts/build.sh; fi
+    - if [ "$BRANCH" == "master" ]; then S3_BUCKET="s3://parseclabs.org/" ./scripts/build.sh; fi
 
 integrations:
 
