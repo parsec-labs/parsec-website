@@ -1,6 +1,6 @@
 //main: main.scss
 h2{
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Share Tech', sans-serif;
   font-size: 2.4rem;
   margin-bottom: 0;
   span{
@@ -10,7 +10,7 @@ h2{
 }
 
 .subtitle{
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Share Tech', sans-serif;
   font-size: 2.4rem;
 }
 
@@ -166,7 +166,7 @@ h2{
   }
 
   .wall{
-    background: url(../img/backgrounds/gaming-04.jpg);
+    background: url(../img/backgrounds/gaming-06.jpg);
     background-size: cover;
   }
 
@@ -283,11 +283,10 @@ h2{
     // bottom: 30px;
     max-width: 960px;
     width: 75%;
-    margin-top: 80px;
   }
 
   .hero-headline{
-    font-family: 'Fjalla One';
+    font-family: 'Share Tech';
     text-transform: uppercase;
     font-size: 7.4rem;
     font-weight: 100;
@@ -300,7 +299,7 @@ h2{
     text-align: center;
     margin-bottom: $gridSize*10+px;
     margin-top: -$gridSize*2+px;
-    line-height: 1.7;
+    line-height: 1.9;
   }
 
   .section__body-text{
@@ -309,7 +308,7 @@ h2{
     margin: 0 auto;
     p{
       margin-top: $gridSize*4+px;
-      line-height: 1.6;
+      line-height: 1.9;
     }
   }
 
@@ -340,13 +339,26 @@ h2{
      span{
        display: block;
        margin-bottom: $gridSize+px;
-       font-weight: bold;
+       text-transform: uppercase;
        font-size: 1.2rem;
      }
      @media(max-width: 767px){
        width: 100%;
        display: block;
      }
+   }
+   li:before {
+     margin-right: 10px;
+     content: counter(item);
+     color: $color__ci_pink;
+     width: 1.2em;
+     font-size: 3.4rem;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     vertical-align: middle;
+     font-family: 'Share Tech', sans-serif;
+     font-weight: 100;
    }
 }
 
@@ -390,7 +402,7 @@ h2{
      left: 0;
      position: absolute;
      vertical-align: middle;
-     font-family: 'Fjalla One', sans-serif;
+     font-family: 'Share Tech', sans-serif;
      font-weight: 100;
    }
 }
@@ -455,7 +467,7 @@ h2{
 
 .cd-timeline-block {
   position: relative;
-  margin: 2em 0;
+  margin: 0em 0;
 }
 .cd-timeline-block:after {
   content: "";
@@ -470,7 +482,7 @@ h2{
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-block {
-    margin: 2em 0;
+    margin: -1em 0;
   }
   .cd-timeline-block:first-child {
     margin-top: 0;
@@ -498,7 +510,7 @@ h2{
     left: 50%;
     top: 50%;
     margin-left: -15px;
-    margin-top: 15px;
+    margin-top: -15px;
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
@@ -509,7 +521,7 @@ h2{
   position: relative;
   margin-left: 60px;
   margin-right: 30px;
-  background: rgba(0,0,0,0.05);
+  background: rgba(0,0,0,0.09);
   border-radius: 2px;
   padding: 1em;
   span{
@@ -576,7 +588,7 @@ h2{
 }
 .cd-timeline-content p {
   margin: 1em 0;
-  line-height: 1.6;
+  line-height: 1.9;
 }
 
 .cd-timeline-content::before {
