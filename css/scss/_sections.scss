@@ -325,6 +325,7 @@ h2{
    margin: 0;
    padding: 0;
    width: 100%;
+   margin-left: -24px;
    // margin-top: $gridSize*12+px;
    }
    li {
@@ -336,6 +337,8 @@ h2{
      width: 33.3333333333333%;
      text-align: center;
      font-size: 0.9rem;
+     padding-left: 48px;
+     margin-left: 48px;
      span{
        display: block;
        margin-bottom: $gridSize+px;
@@ -355,6 +358,7 @@ h2{
      font-size: 3.4rem;
      height: 100%;
      left: 0;
+     margin-top: -10px;
      position: absolute;
      vertical-align: middle;
      font-family: 'Share Tech', sans-serif;
@@ -405,6 +409,13 @@ h2{
      font-family: 'Share Tech', sans-serif;
      font-weight: 100;
    }
+}
+
+.advantages-list{
+  margin-left: -$gridSize*2+px;
+  li{
+    padding: $gridSize+px $gridSize*2+px;
+  }
 }
 
 .section-centered{
