@@ -16,10 +16,9 @@ env:
 
 build:
   ci:
-    - bundle install
-    # build website and copy to s3 bucket
     - aws configure set preview.cloudfront true
-    - S3_BUCKET=$PRODUCTION_BUCKET ./scripts/build.sh
+    - aws s3 sync . $PRODUCTION_BUCKET --size-only --exclude "shippable.yml" --delete --acl public-read
+    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'
 
 integrations:
 
