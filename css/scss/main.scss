@@ -214,9 +214,10 @@ Sections
   padding: $gridSize*2+px $gridSize*4+px;
   // background-color: $color__ci_pink;
   color: #fff;
+  background-color: #000;
   text-align: center;
   display: inline-block;
-  margin-top: $gridSize*6+px;
+  margin-top: $gridSize*2+px;
   border: none !important;
   text-transform: uppercase;
   @include transition(all 0.3s ease);
@@ -232,7 +233,7 @@ Sections
 input{
   width: 100%;
   display: block;
-  padding: $gridSize*4+px;
+  padding: $gridSize*2+px;
   &.email{
     color: #000;
   }
