@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>parsec labs. Blockchanging the gaming world.</title>
-        <meta name="description" content="">
+        <title>ParsecLabs. Blockchanging the gaming world.</title>
+        <meta name="description" content="Blockchanging the Gaming World">
+		<meta name="keywords" content="parsec, blockchain, gaming, esports, PSC, games, entertainment">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:image" content="http://www.calvinhoenes.com/parsec/img/parsec-preview.jpg" />
 
@@ -553,8 +554,6 @@
 
         <script src="js/main.js"></script>
 
-        <script src="js/vendor/stats.min.js"></script>
-
         <script>
 
           var productScene = document.getElementById('scene');
@@ -566,24 +565,7 @@
           var rocketParallax = new Parallax(rocketScene, {
             selector: '.layer'
           });
-
-          var stats = new Stats();
-          stats.showPanel( 0 ); // 0: fps, 1: ms, 2: mb, 3+: custom
-          document.body.appendChild( stats.dom );
-
-          function renderStats() {
-
-          	stats.begin();
-
-          	// monitored code goes here
-
-          	stats.end();
-
-          	requestAnimationFrame( renderStats );
-
-          }
-          requestAnimationFrame( renderStats );
-
+          
         </script>
 
         <script type="text/javascript">
