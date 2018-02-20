@@ -555,7 +555,6 @@
         <script src="js/main.js"></script>
 
         <script>
-
           var productScene = document.getElementById('scene');
           var parallax = new Parallax(productScene, {
             selector: '.layer'
@@ -565,20 +564,23 @@
           var rocketParallax = new Parallax(rocketScene, {
             selector: '.layer'
           });
-          
+
         </script>
 
         <script type="text/javascript">
-    			SS.main.main();
-    		</script>
-
-
-
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+          SS.main.main();
         </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113020429-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-113020429-1');
+        </script>
     </body>
 </html>
