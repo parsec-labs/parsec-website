@@ -1,35 +1,12 @@
 //main : main.scss
 
 body,html{
-  font-family: 'Lora', serif;
+  font-family: 'Rogan', serif;
   font-size: 92%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
   line-height: 1.7;
-}
-
-h1,h2,h3,h4{
-  font-family: 'Istok Web', sans-serif;
-}
-
-.header{
-  h1{
-    font-family: 'Zilla Slab Highlight', cursive;
-    font-size: 6.4rem;
-  }
-
-  .benefit{
-    display: block;
-    font-family: 'Istok Web', sans-serif;
-    font-size: 1.0rem;
-    text-transform: uppercase;
-    margin: 8px 0px;
-  }
-}
-
-span{
-  font-family: 'Istok Web', sans-serif;
 }
 
 #benefits{
@@ -38,7 +15,6 @@ span{
     border: none;
   }
   .nav-item a{
-    font-family: 'Istok Web', sans-serif;
     font-size: 1.8rem;
     color: #fff;
     &.active, &.nav-link:hover{
@@ -49,7 +25,6 @@ span{
   }
   .tab-content{
     h3{
-      font-family: 'Istok Web', sans-serif;
       font-size: 1.4rem;
       color: #fff;
     }

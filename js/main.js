@@ -30,128 +30,6 @@
 
 // Place any jQuery/helper plugins in here.
 
-"use strict";
-/* globals THREE, console */
-
-// 1. Create an array to store stars
-// 2. Create stars in random locations within a cube
-// 3. Store stars in array so we can move them within render
-
-var camera,
-    scene,
-    planetScene,
-    renderer,
-    plnaetRenderer,
-    parent;
-var theta;
-var planeMesh;
-var stars = [];
-// var colors = ["#0952BD", "#ffc677", "#118CD6", "#f2f2a6", "#ffffff"];
-var colors = ["#f5f5cc", "#f5efcc", "#fdfcee",  "#ffffff"];
-
-function init() {
-
-  theta = 0.0;
-
-	scene = new THREE.Scene();
-	scene.fog = new THREE.Fog(0x000000, 0.015, 72);
-
-	camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-	renderer = new THREE.WebGLRenderer({ preserveDrawingBuffer: true, alpha: true });
-	renderer.sortObjects = false;
-	renderer.autoClearColor = true;
-
-  parent= document.getElementById('warp-scene');
-
-	// Scene initialization
-	camera.position.z = 55;
-  camera.rotation.x = -0.13;
-
-	renderer.setClearColor( 0x000000, 0.0);
-  renderer.setSize($(parent).width(), $(parent).height());
-	renderer.setPixelRatio(window.devicePixelRatio);
-
-
-	parent.appendChild(renderer.domElement);
-
-	for (var i = 0; i < 3000; i++) {
-		var geometry = new THREE.SphereBufferGeometry(0.12 * Math.random(), 10, 10);
-		var material = new THREE.MeshBasicMaterial({
-			color: colors[Math.floor(Math.random() * colors.length)],
-			shading: THREE.FlatShading
-		});
-
-		var star = new THREE.Mesh(geometry, material);
-
-		star.position.x = Math.random() * 100 - 50;
-		star.position.y = Math.random() * 100 - 50;
-		star.position.z = Math.random() * 50 - 25;
-
-		scene.add(star);
-		stars.push(star);
-	}
-
-	var planeGeometry = new THREE.PlaneGeometry(1000, 500, 1, 1);
-	var planeMaterial = new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0 });
-
-	planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
-
-	scene.add(planeMesh);
-}
-
-function render() {
-
-	requestAnimationFrame(render);
-	renderer.render(scene, camera);
-
-	for (var i = 0; i < stars.length; i++) {
-		stars[i].position.z += (0.17 + 0.01*Math.sin(theta));
-
-		if (stars[i].position.z >= 60) {
-			stars[i].position.x = Math.random() * 100 - 50;
-			stars[i].position.y = Math.random() * 100 - 50;
-			stars[i].position.z = 5;
-		}
-	}
-
-  theta += 0.02;
-
-
-	// if (activated == true) {
-	// 	planeMesh.material.opacity = 0.01;
-	// } else {
-	// 	if (planeMesh.material.opacity < 1) {
-	// 		planeMesh.material.opacity += 0.01;
-	// 	}
-	// }
-}
-
-init();
-render();
-
-var activated = false;
-
-window.addEventListener("mousedown", function (event) {
-	activated = true;
-});
-
-window.addEventListener("mouseup", function (event) {
-	activated = false;
-});
-
-window.addEventListener("resize", function () {
-	camera.aspect = window.innerWidth / window.innerHeight;
-	camera.updateProjectionMatrix();
-  renderer.setSize($(parent).width(), $(parent).height());
-});
-
-window.addEventListener("touchstart", function () {
-	activated = true;
-});
-
-window.addEventListener("touchend", function () {
-	activated = false;
-});
 
 "use strict";
 
@@ -443,18 +321,18 @@ SS.spheremap = SS.spheremap || {};
 
 SS.spheremap.Sphere = function(radius, materialArray) {
 	THREE.Object3D.call(this);
-	
+
 	radius = radius || 1;
-	
+
 	var geometry = new THREE.BoxGeometry(1, 1, 1, 64, 64, 64);
-	
+
 	for (var i in geometry.vertices) {
 		var vertex = geometry.vertices[i];
 		vertex.normalize().multiplyScalar(radius);
 	}
-	
+
 	SS.util.computeGeometry(geometry);
-	
+
 	var computeVertexNormals = function(geometry) {
 		for (var f = 0; f < geometry.faces.length; f++) {
 			var face = geometry.faces[f];
@@ -463,12 +341,12 @@ SS.spheremap.Sphere = function(radius, materialArray) {
 			face.vertexNormals[2] = geometry.vertices[face.c].clone().normalize();
 		}
 	}
-	
+
 	computeVertexNormals(geometry); // TODO: Why is this neccessary? (Why does geometry.computeVertexNormals not work correctly?)
-	
+
 	var sphereMaterial = new THREE.MeshFaceMaterial(materialArray);
 	var sphere = new THREE.Mesh(geometry, sphereMaterial);
-	
+
 	this.add(sphere);
 }
 SS.spheremap.Sphere.prototype = Object.create(THREE.Object3D.prototype);
@@ -497,20 +375,20 @@ SS.planet.Planet.prototype = Object.create(THREE.Object3D.prototype);
 
 window.SS = window.SS || {};
 SS.starbox = SS.starbox || {};
-	
+
 var maxDetail = SS.lowgraphics ? 16 : 512; //256 = 11 seconds (before), 512 = 5 seconds (now)
 
 SS.starbox.StarBox = function(radius) {
 	THREE.Object3D.call(this);
-	
+
 	var sphere = new SS.spheremap.Sphere(
-		SS.starbox.starboxcalarField, 
-		radius, 
+		SS.starbox.starboxcalarField,
+		radius,
 		function() {return new THREE.MeshBasicMaterial({side: THREE.BackSide, depthWrite: false});},
 		maxDetail,
 		false
 	);
-	
+
 	this.add(sphere);
 }
 SS.starbox.StarBox.prototype = Object.create(THREE.Object3D.prototype);
@@ -518,29 +396,29 @@ SS.starbox.StarBox.prototype = Object.create(THREE.Object3D.prototype);
 SS.starbox.starboxcalarField = function(x, y, z) {
 	var starResolution = maxDetail;
 	var starDensity = 1/1000;
-	
+
 	var coordFloat = new THREE.Vector3();
-	
+
 	var starScalarField = function(x, y, z) {
 		var rand = SS.util.random4(Math.abs(x), Math.abs(y), Math.abs(z));
 		return rand < starDensity ? rand/starDensity*(1-0.25) : 0;
 	}
-	
+
 	var helper = function(x, y, z, scalarField, resolution, interpolationMethod) {
 		// Because the sphere sample function gives normalized coordinates:
 		x = (x+1)/2*resolution;
 		y = (y+1)/2*resolution;
 		z = (z+1)/2*resolution;
-		
+
 		coordFloat.set(x, y, z);
-		
+
 		return interpolationMethod(coordFloat, scalarField);
 	}
-	
+
 	var c = helper(x, y, z, starScalarField, starResolution, SS.util.nearestNeighbour);
-	
+
 	c = SS.util.clamp(c, 0, 1);
-	
+
 	return new THREE.Color().setRGB(c, c, c);
 }
 "use strict";

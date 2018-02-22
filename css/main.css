@@ -81,36 +81,18 @@ h1, h2 {
 CI
 ========================================================================== */
 body, html {
-  font-family: 'Lora', serif;
+  font-family: 'Rogan', serif;
   font-size: 92%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
   line-height: 1.7; }
 
-h1, h2, h3, h4 {
-  font-family: 'Istok Web', sans-serif; }
-
-.header h1 {
-  font-family: 'Zilla Slab Highlight', cursive;
-  font-size: 6.4rem; }
-
-.header .benefit {
-  display: block;
-  font-family: 'Istok Web', sans-serif;
-  font-size: 1.0rem;
-  text-transform: uppercase;
-  margin: 8px 0px; }
-
-span {
-  font-family: 'Istok Web', sans-serif; }
-
 #benefits .nav-link.active, #benefits .nav-link {
   background-color: transparent;
   border: none; }
 
 #benefits .nav-item a {
-  font-family: 'Istok Web', sans-serif;
   font-size: 1.8rem;
   color: #fff; }
   #benefits .nav-item a.active, #benefits .nav-item a.nav-link:hover {
@@ -119,7 +101,6 @@ span {
     cursor: pointer; }
 
 #benefits .tab-content h3 {
-  font-family: 'Istok Web', sans-serif;
   font-size: 1.4rem;
   color: #fff; }
 
@@ -754,6 +735,32 @@ p {
 
 #rocket {
   padding: 100px 0 0 0; }
+
+.top-header {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px; }
+
+.top-header-menu {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase; }
+  .top-header-menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center; }
+  .top-header-menu a {
+    padding: 5px 15px;
+    display: inline-block;
+    cursor: pointer; }
+    .top-header-menu a[href] {
+      padding: 5px 5px; }
 
 /* ==========================================================================
    Helper classes

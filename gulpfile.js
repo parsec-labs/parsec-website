@@ -10,7 +10,6 @@ const files = {
   js: [
     'src/js/vendor/bootstrap.min.js',
     'src/js/plugins.js',
-    'src/js/warp.js',
     'src/js/vendor/procedural/util.js',
     'src/js/vendor/procedural/spheremap.js',
     'src/js/vendor/procedural/planet.js',
@@ -22,6 +21,7 @@ const files = {
     'src/js/main.js',
   ],
   css: 'src/scss/*.scss',
+  html: 'index.html',
 };
 
 gulp.task('js', () => (
@@ -40,6 +40,12 @@ gulp.task('css', () => (
       .pipe(livereload())
 ));
 
+gulp.task('html', () => (
+  gulp.src(files.html)
+      .pipe(plumber())
+      .pipe(livereload())
+));
+
 gulp.task('dev', () => {
   livereload.listen();
 
@@ -50,6 +56,10 @@ gulp.task('dev', () => {
   watch(
     files.js,
     batch((events, done) => gulp.start('js', done))
+  );
+  watch(
+    files.html,
+    batch((events, done) => gulp.start('html', done))
   );
 });
 
