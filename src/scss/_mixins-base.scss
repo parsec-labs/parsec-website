@@ -35,20 +35,20 @@
 }
 // rotate
 @mixin rotate ($deg) {
-  @include transform(rotate(#{$deg}deg));
+  transform: rotate(#{$deg}deg);
 }
 
 // scale
 @mixin scale($scale) {
-	 @include transform(scale($scale));
+  transform: scale($scale);
 }
 // translate
 @mixin translate ($x, $y) {
-   @include transform(translate($x, $y));
+   transform: translate($x, $y);
 }
 // skew
 @mixin skew ($x, $y) {
-   @include transform(skew(#{$x}deg, #{$y}deg));
+   transform: skew(#{$x}deg, #{$y}deg);
 }
 //transform origin
 @mixin transform-origin ($origin) {
@@ -94,7 +94,7 @@
 @mixin transition-each($transition...) {
   @for $i from 1 through 4 {
     &:nth-child(#{$i}) {
-      @include transition($transition...);
+      transition: $transition;
     }
   }
 }

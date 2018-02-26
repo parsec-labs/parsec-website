@@ -9,28 +9,6 @@ body,html{
   line-height: 1.7;
 }
 
-#benefits{
-  .nav-link.active, .nav-link{
-    background-color: transparent;
-    border: none;
-  }
-  .nav-item a{
-    font-size: 1.8rem;
-    color: #fff;
-    &.active, &.nav-link:hover{
-      color: $cc_blue;
-      background-color: transparent;
-      cursor: pointer;
-    }
-  }
-  .tab-content{
-    h3{
-      font-size: 1.4rem;
-      color: #fff;
-    }
-  }
-}
-
 .text-center{
   text-align: center;
 }

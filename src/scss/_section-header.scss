@@ -1,0 +1,25 @@
+.section-header {
+  text-align: center;
+
+  h2 {
+    font-size: 60px;
+    font-weight: 900;
+
+    line-height: 1;
+
+    em {
+      font-weight: normal;
+      font-style: normal;
+      display: block;
+    }
+  }
+
+  p {
+    font-size: 24px;
+
+    max-width: 65%;
+    margin: 0 auto;
+
+    line-height: 32px;
+  }
+}

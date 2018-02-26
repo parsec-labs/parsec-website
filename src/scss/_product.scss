@@ -1,0 +1,28 @@
+.product {
+}
+
+.product-features {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 50px;
+}
+
+.product-feature {
+  width: 40%;
+
+  h3 {
+    font-size: 28px;
+    font-weight: 900;
+
+    margin: 10px 0;
+
+    line-height: 32px;
+  }
+
+  p {
+    font-size: 18px;
+
+    line-height: 26px;
+  }
+}

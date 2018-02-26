@@ -1,0 +1,11 @@
+.showcase {
+  position: relative;
+  z-index: 0;
+}
+
+#planet-scene{
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  height: 150%;
+}
