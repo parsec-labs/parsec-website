@@ -645,11 +645,23 @@ p {
       background-position: center; }
 
 .footer {
+  min-height: 100vh;
+  padding-top: 200px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex; }
   .footer .content {
     width: 50%;
+    height: 100%;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center; }
+  .footer .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
   .footer .subscribe .input {
     margin-bottom: 15px;
     text-align: center; }
