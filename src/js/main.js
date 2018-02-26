@@ -53,5 +53,12 @@
 
   })
 
-  window.initCosmos(document.querySelector('.header-bg'));
+  const header = document.querySelector('.header');
+  window.initCosmos(header.querySelector('.header-bg'), () => {
+    const rect = header.getBoundingClientRect();
+    return {
+      width: rect.width,
+      height: rect.height,
+    };
+  });
 })(jQuery)

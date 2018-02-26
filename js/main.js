@@ -32,11 +32,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 (function () {
   function maxOrbit(x, y) {
     var max = Math.max(x, y);
-    return Math.round(Math.sqrt(max * max + max * max)) / 2;
+    return Math.round(Math.hypot(max, max)) / 2;
   }
 
   function random(min, max) {
-    if (arguments.length < 2) {
+    var seed = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : Math.random();
+
+    if (arguments[1] === undefined) {
       max = min;
       min = 0;
     }
@@ -47,28 +49,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       min = hold;
     }
 
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(seed * (max - min + 1)) + min;
   }
 
   var Star = function () {
     function Star(_ref) {
-      var w = _ref.w,
-          h = _ref.h,
+      var size = _ref.size,
           maxStars = _ref.maxStars,
           gradientCanvas = _ref.gradientCanvas,
           ctx = _ref.ctx;
 
       _classCallCheck(this, Star);
 
-      this.orbitRadius = random(maxOrbit(w, h));
-      this.radius = random(60, this.orbitRadius) / 12;
-      this.orbitX = w / 2;
-      this.orbitY = h / 2;
+      this.ctx = ctx;
+      this.size = size;
+      this.gradientCanvas = gradientCanvas;
+
+      this.radiusSeed = Math.random();
       this.timePassed = random(0, maxStars);
       this.speed = random(this.orbitRadius) / 50000;
       this.alpha = random(2, 10) / 10;
-      this.gradientCanvas = gradientCanvas;
-      this.ctx = ctx;
     }
 
     _createClass(Star, [{
@@ -87,6 +87,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.ctx.globalAlpha = this.alpha;
         this.ctx.drawImage(this.gradientCanvas, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
         this.timePassed += this.speed;
+      }
+    }, {
+      key: 'orbitRadius',
+      get: function get() {
+        return random(maxOrbit(this.size.width, this.size.height), undefined, this.radiusSeed);
+      }
+    }, {
+      key: 'radius',
+      get: function get() {
+        return random(60, this.orbitRadius, this.radiusSeed) / 12;
+      }
+    }, {
+      key: 'orbitX',
+      get: function get() {
+        return this.size.width / 2;
+      }
+    }, {
+      key: 'orbitY',
+      get: function get() {
+        return this.size.height / 2;
       }
     }]);
 
@@ -118,10 +138,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     return canvas;
   }
 
-  function initCosmos(canvas) {
+  function initCosmos(canvas, getSize) {
+    var size = {};
+    var onResize = function onResize() {
+      var newSize = getSize();
+      size.width = newSize.width;
+      size.height = newSize.height;
+    };
+    window.addEventListener('resize', onResize);
+    onResize();
+
     var ctx = canvas.getContext('2d');
-    var w = canvas.width = window.innerWidth;
-    var h = canvas.height = window.innerHeight;
 
     var hue = 217;
     var stars = [];
@@ -130,18 +157,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var gradientCanvas = initGradient(hue);
 
     for (var i = 0; i < maxStars; i++) {
-      stars.push(new Star({ w: w, h: h, maxStars: maxStars, gradientCanvas: gradientCanvas, ctx: ctx }));
+      stars.push(new Star({ size: size, maxStars: maxStars, gradientCanvas: gradientCanvas, ctx: ctx }));
     }
 
     function animation() {
       ctx.globalCompositeOperation = 'source-over';
+      canvas.width = size.width;
+      canvas.height = size.height;
       ctx.globalAlpha = 0.8;
       ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
-      ctx.fillRect(0, 0, w, h);
+      ctx.fillRect(0, 0, size.width, size.height);
 
       ctx.globalCompositeOperation = 'lighter';
-      for (var i = 1, l = stars.length; i < l; i++) {
-        stars[i].draw();
+      for (var _i = 1, l = stars.length; _i < l; _i++) {
+        stars[_i].draw();
       };
 
       setTimeout(function () {
@@ -212,5 +241,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     });
   });
 
-  window.initCosmos(document.querySelector('.header-bg'));
+  var header = document.querySelector('.header');
+  window.initCosmos(header.querySelector('.header-bg'), function () {
+    var rect = header.getBoundingClientRect();
+    return {
+      width: rect.width,
+      height: rect.height
+    };
+  });
 })(jQuery);

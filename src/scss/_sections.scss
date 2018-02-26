@@ -97,6 +97,7 @@ section{
 
   &.header{
     text-align: center;
+    min-height: 820px;
     height: 100vh;
 
     .section-content-wrapper{
@@ -107,7 +108,7 @@ section{
     }
     .upper-header{
       position: relative;
-      height: 60vh;
+      height: 60%;
 
       &::before {
         position: absolute;
@@ -135,7 +136,7 @@ section{
       }
     }
     .lower-header{
-      height: 30vh;
+      height: 30%;
     }
 
     .icon{
