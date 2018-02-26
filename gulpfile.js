@@ -4,20 +4,13 @@ const concat = require('gulp-concat');
 const watch = require('gulp-watch');
 const batch = require('gulp-batch');
 const plumber = require('gulp-plumber');
+const babel = require('gulp-babel');
 const livereload = require('gulp-livereload');
 
 const files = {
   js: [
-    'src/js/vendor/bootstrap.min.js',
     'src/js/plugins.js',
-    'src/js/vendor/procedural/util.js',
-    'src/js/vendor/procedural/spheremap.js',
-    'src/js/vendor/procedural/planet.js',
-    'src/js/vendor/procedural/starbox.js',
-    'src/js/vendor/procedural/material.js',
-    'src/js/vendor/procedural/procedural.js',
-    'src/js/vendor/parallax.min.js',
-    'src/js/vendor/in-view.min.js',
+    'src/js/cosmos.js',
     'src/js/main.js',
   ],
   css: 'src/scss/*.scss',
@@ -27,6 +20,13 @@ const files = {
 gulp.task('js', () => (
   gulp.src(files.js)
       .pipe(plumber())
+      .pipe(babel({
+        presets: [['env', {
+          targets: {
+            browsers: ['last 2 versions'],
+          },
+        }]],
+      }))
       .pipe(concat('main.js'))
       .pipe(gulp.dest('js'))
       .pipe(livereload())
@@ -46,7 +46,7 @@ gulp.task('html', () => (
       .pipe(livereload())
 ));
 
-gulp.task('dev', () => {
+gulp.task('dev', ['css', 'js'], () => {
   livereload.listen();
 
   watch(

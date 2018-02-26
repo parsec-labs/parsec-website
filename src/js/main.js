@@ -1,48 +1,37 @@
 (function($){
 
   $(document).ready(function(e){
-    console.log("Test");
-
-    inview = inView('section')
-      .on('enter', el => {
-        $(el).addClass('in-view');
-      })
-      .on('exit', el => {
-          $(el).removeClass('in-view');
-          if($('section.in-view').hasClass('section-white') || $('section.in-view').hasClass('section-grey')){
-            $("body").addClass('light-bg');
-          }else{
-            $("body").removeClass('light-bg');
-          }
-      });
-    inView.offset(250);
+    const inview = window.inView('section')
+      .on('enter', el => $(el).addClass('in-view'))
+      .on('exit', el => $(el).removeClass('in-view'));
+    window.inView.offset(250);
 
     function register($form) {
       $.ajax({
         type: "GET",
         url: $form.attr('action'),
         data: $form.serialize(),
-        cache       : false,
-        dataType    : 'jsonp',
-        contentType : "application/json; charset=utf-8",
-        beforeSend  : function() {
-    			$form.find('.alert').html('Subscribing...').show();
-    			$form.find('.email').hide();
-    			$form.find('.submit').hide();
-    			$form.find('.discount').hide();
-    		},
-        error       : function(err) {
-    			$form.find('.alert').html('Ops, there was an error.').show();
-    			$form.find('.email').show();
-    			$form.find('.submit').show();
-    			$form.find('.discont').show();
+        cache: false,
+        dataType: 'jsonp',
+        contentType: "application/json; charset=utf-8",
+        beforeSend: function() {
+          $form.find('.alert').html('Subscribing...').show();
+          $form.find('.email').hide();
+          $form.find('.submit').hide();
+          $form.find('.discount').hide();
         },
-        success     : function(data) {
+        error: function(err) {
+          $form.find('.alert').html('Ops, there was an error.').show();
+          $form.find('.email').show();
+          $form.find('.submit').show();
+          $form.find('.discont').show();
+        },
+        success: function(data) {
           if (data.result != "success") {
             $form.find('.alert').html(data.msg).show();
-      			$form.find('.email').show();
-      			$form.find('.submit').show();
-      			$form.find('.discont').show();
+            $form.find('.email').show();
+            $form.find('.submit').show();
+            $form.find('.discont').show();
           } else {
             $form.find('.alert').html('Thank you!').show();
           }
@@ -62,9 +51,7 @@
         } catch(error){}
       });
 
-
   })
 
-
-
+  window.initCosmos(document.querySelector('.header-bg'));
 })(jQuery)
