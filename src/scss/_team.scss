@@ -1,8 +1,17 @@
 .team {
   padding: 100px 0 100px 0;
 
-  h3{
-    font-size: 1.4rem;
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 900;
+  }
+
+  .team-row p {
+    font-size: 18px;
   }
 
   .team-image{
@@ -14,9 +23,9 @@
   .team-row{
     [class*='col-']{
       padding: 36px;
-      margin-bottom: 36px;
+
       h3{
-        margin: $gridSize*4+px 0 4px 0;
+        margin: 20px 0 0;
       }
     }
   }
