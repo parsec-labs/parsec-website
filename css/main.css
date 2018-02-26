@@ -584,6 +584,7 @@ p {
     width: 8px;
     height: 8px;
     margin: 2px;
+    display: none;
     content: '';
     border-radius: 50%;
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); }
@@ -627,6 +628,9 @@ p {
       content: '';
       border-radius: 50%;
       background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); }
+
+.roadmap .cd-timeline-block--done .cd-timeline-img::before {
+  display: block; }
 
 .roadmap .cd-timeline-block--done h2 {
   color: #00ceff; }

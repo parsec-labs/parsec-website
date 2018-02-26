@@ -76,6 +76,7 @@
       height: 8px;
 
       margin: 2px;
+      display: none;
 
       content: '';
 
@@ -147,25 +148,31 @@
     }
   }
 
-  .cd-timeline-block--done h2 {
-    color: #00ceff;
+  .cd-timeline-block--done {
+    .cd-timeline-img::before {
+      display: block;
+    }
 
-    span {
-      background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    h2 {
+      color: #00ceff;
 
-      &::after {
-        display: inline-block;
-        width: 25px;
-        height: 26px;
-        margin-left: 10px;
+      span {
+        background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
-        content: '';
+        &::after {
+          display: inline-block;
+          width: 25px;
+          height: 26px;
+          margin-left: 10px;
 
-        background-image: url(../img/icons/checkmark2.svg);
-        background-repeat: no-repeat;
-        background-position: center;
+          content: '';
+
+          background-image: url(../img/icons/checkmark2.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
       }
     }
   }
