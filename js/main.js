@@ -230,14 +230,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     // waits for form to appear rather than appending straight to the form. Also helps if you have more than one type of form that you want to use this action on.
     $(document).on('submit', '#mc-embedded-subscribe-form', function (event) {
-      try {
-        //define argument as the current form especially if you have more than one
-        var $form = $(this);
-        // stop open of new tab
-        event.preventDefault();
-        // submit form via ajax
-        register($form);
-      } catch (error) {}
+      //define argument as the current form especially if you have more than one
+      var $form = $(event.currentTarget);
+      // stop open of new tab
+      event.preventDefault();
+      // submit form via ajax
+      register($form);
     });
   });
 

@@ -1,14 +1,7 @@
-
 .bg-milky-way {
-  background-position: 0 100px;
+  background-position: 0 100%;
   background-size: cover;
   background-image: url(../img/backgrounds/milky-way.jpg);
-  background-repeat: no-repeat;
-}
-
-.bg-stars-nebula {
-  background-size: 100% auto;
-  background-image: url(../img/backgrounds/cloud-stars.jpg);
   background-repeat: no-repeat;
 }
 
@@ -51,4 +44,69 @@
 
     background-image: url(../img/backgrounds/rocket.png);
   }
+}
+
+@keyframes move-twink-back {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, -100%, 0);
+  }
+}
+
+.bg-stars-nebula {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+
+    width: 1074px;
+    height: 839px;
+    margin-left: -537px;
+
+    content: '';
+
+    background-image: url(../img/backgrounds/cloud-nebula.png);
+  }
+
+  .showcase,
+  .product {
+    position: relative;
+    z-index: 3;
+  }
+
+  .twinkle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    transform: translate3d(0, 0, 0);
+
+    .stars,
+    .twinkling {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .stars {
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      background: #000 url(../img/backgrounds/stars2.png) repeat top center;
+    }
+
+    .twinkling {
+      width: 10000px;
+      height: 5000px;
+      background: transparent url(../img/elements/twinkling.png) repeat top center;
+      z-index: 1;
+      animation: move-twink-back 300s linear infinite;
+    }
+}
 }
