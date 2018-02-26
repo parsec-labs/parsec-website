@@ -273,7 +273,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 40px; }
+  padding: 30px 40px;
+  background-color: rgba(0, 0, 0, 0.6); }
 
 .top-header-menu {
   font-size: 22px;
@@ -508,6 +509,7 @@ p {
   position: relative;
   z-index: 0;
   min-height: 100vh;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -539,7 +541,7 @@ p {
     line-height: 32px; }
 
 .team {
-  padding: 100px 0 100px 0; }
+  padding: 150px 0 100px 0; }
   .team .section-header {
     margin-bottom: 30px; }
   .team h3 {
@@ -666,7 +668,7 @@ p {
 
 .footer {
   min-height: 100vh;
-  padding-top: 200px;
+  padding-top: 140px;
   position: relative;
   overflow: hidden;
   display: flex; }
@@ -697,6 +699,49 @@ p {
 .footer-copyright {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.35); }
+
+.bg-milky-way {
+  background-position: 0 100px;
+  background-size: cover;
+  background-image: url(../img/backgrounds/milky-way.jpg);
+  background-repeat: no-repeat; }
+
+.bg-stars-nebula {
+  background-size: 100% auto;
+  background-image: url(../img/backgrounds/cloud-stars.jpg);
+  background-repeat: no-repeat; }
+
+.intro {
+  background-image: url(../img/backgrounds/eye-nebula.jpg);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.team {
+  background-size: 100% auto;
+  background-position: 0 0;
+  background-image: url(../img/backgrounds/earth.jpg);
+  background-repeat: no-repeat; }
+
+.showcase {
+  background-position: 50% 150px;
+  background-image: url(../img/backgrounds/planet.png);
+  background-repeat: no-repeat; }
+
+.footer {
+  background-size: 100% auto;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/backgrounds/ground.jpg); }
+  .footer .container::before {
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    width: 278px;
+    height: 712px;
+    margin-right: -140px;
+    content: '';
+    background-image: url(../img/backgrounds/rocket.png); }
 
 /* ==========================================================================
    Helper classes

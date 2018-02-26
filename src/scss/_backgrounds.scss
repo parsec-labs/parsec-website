@@ -1,0 +1,54 @@
+
+.bg-milky-way {
+  background-position: 0 100px;
+  background-size: cover;
+  background-image: url(../img/backgrounds/milky-way.jpg);
+  background-repeat: no-repeat;
+}
+
+.bg-stars-nebula {
+  background-size: 100% auto;
+  background-image: url(../img/backgrounds/cloud-stars.jpg);
+  background-repeat: no-repeat;
+}
+
+.intro {
+  background-image: url(../img/backgrounds/eye-nebula.jpg);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.team {
+  background-size: 100% auto;
+  background-position: 0 0;
+  background-image: url(../img/backgrounds/earth.jpg);
+  background-repeat: no-repeat;
+}
+
+.showcase {
+  background-position: 50% 150px;
+  background-image: url(../img/backgrounds/planet.png);
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-size: 100% auto;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/backgrounds/ground.jpg);
+
+  .container::before {
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+
+    width: 278px;
+    height: 712px;
+    margin-right: -140px;
+
+    content: '';
+
+    background-image: url(../img/backgrounds/rocket.png);
+  }
+}
