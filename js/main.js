@@ -247,4 +247,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       height: rect.height
     };
   });
+
+  var topHeader = document.querySelector('.top-header');
+  window.addEventListener('scroll', function () {
+    var topOffset = 0 - Math.min(20, window.scrollY);
+    topHeader.style.top = topOffset + 'px';
+
+    var scrolled = topHeader.classList.contains('st-scrolled');
+    if (window.scrollY >= 20) {
+      if (!scrolled) {
+        topHeader.classList.add('st-scrolled');
+      }
+    } else if (scrolled) {
+      topHeader.classList.remove('st-scrolled');
+    }
+  });
 })(jQuery);

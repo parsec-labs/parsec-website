@@ -80,6 +80,18 @@ h1, h2 {
 /* ==========================================================================
 CI
 ========================================================================== */
+@font-face {
+  font-family: 'Rogan';
+  src: url("../fonts/rogan-extrabold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Rogan';
+  src: url("../fonts/rogan-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
 body, html {
   font-family: 'Rogan', serif;
   font-size: 92%;
@@ -282,7 +294,10 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 40px; }
+  padding: 30px 40px 10px;
+  transition: background-color 0.2s; }
+  .top-header.st-scrolled {
+    background-color: rgba(0, 0, 0, 0.8); }
 
 .top-header-menu {
   font-size: 22px;

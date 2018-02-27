@@ -8,9 +8,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 40px;
+  padding: 30px 40px 10px;
+  transition: background-color 0.2s;
 
-  // background-color: rgba(#000, 0.6);
+  &.st-scrolled {
+    background-color: rgba(#000, 0.8);
+  }
 }
 
 .top-header-menu {
