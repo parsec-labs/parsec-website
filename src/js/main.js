@@ -73,4 +73,20 @@
       topHeader.classList.remove('st-scrolled');
     }
   });
+
+  document.addEventListener('click', (e) => {
+    if (e.target.dataset && e.target.dataset.target && e.target.tagName === 'A') {
+      e.preventDefault();
+      const section = document.querySelector(`[data-section="${e.target.dataset.target}"]`);
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        const top = window.scrollY + rect.top;
+
+        // ToDo: replace jQuery here
+        $('html, body').animate({
+          scrollTop: top,
+        })
+      }
+    }
+  })
 })(jQuery)

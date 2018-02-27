@@ -39,12 +39,12 @@
 
             <div class="top-header-menu">
               <ul>
-                <li><a>Home</a></li>
-                <li><a>Vision</a></li>
-                <li><a>Product</a></li>
-                <li><a>Showcase</a></li>
-                <li><a>Team</a></li>
-                <li><a>Roadmap</a></li>
+                <li><a data-target="home">Home</a></li>
+                <li><a data-target="vision">Vision</a></li>
+                <li><a data-target="product">Product</a></li>
+                <li><a data-target="showcase">Showcase</a></li>
+                <li><a data-target="team">Team</a></li>
+                <li><a data-target="roadmap">Roadmap</a></li>
                 <li><a href="#">
                   <img src="img/icons/social-telegram.svg" width="29" height="25" />
                 </a></li>
@@ -58,7 +58,7 @@
             </div>
           </header>
 
-          <section class="header section-centered">
+          <section class="header section-centered" data-section="home">
             <canvas class="header-bg"></canvas>
             <div class="section-content-wrapper">
               <div class="upper-header">
@@ -108,7 +108,7 @@
 
           </section>
 
-          <section class="intro">
+          <section class="intro" data-section="vision">
             <div class="container">
               <header class="section-header">
                 <h2>
@@ -219,7 +219,7 @@
               <div class="twinkling"></div>
             </div>
 
-            <section class="product">
+            <section class="product" data-section="product">
               <div class="container">
                 <header class="section-header">
                   <h2>WE HOOK YOU ONTO<br />BLOCKCHAIN LIGHTSPEED</h2>
@@ -247,11 +247,7 @@
               </div>
             </section>
 
-            <section class="showcase">
-  <!--
-              <div class="scene" id="planet-scene">
-
-              </div> -->
+            <section class="showcase"  data-section="showcase">
               <div class="container">
                 <header class="section-header">
                   <img class="icon-ab" src="img/icons/acebusters.svg" width="96" height="113" />
@@ -267,7 +263,7 @@
             </section>
           </div>
 
-          <section class="team">
+          <section class="team" data-section="team">
             <header class="section-header">
               <h2>Meet the team</h2>
               <p>
@@ -346,7 +342,7 @@
           </section>
 
           <div class="bg-milky-way">
-            <section class="roadmap">
+            <section class="roadmap" data-section="roadmap">
               <div class="container">
                 <header class="section-header">
                   <h2>Our Roadmap</h2>

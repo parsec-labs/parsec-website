@@ -262,4 +262,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       topHeader.classList.remove('st-scrolled');
     }
   });
+
+  document.addEventListener('click', function (e) {
+    if (e.target.dataset && e.target.dataset.target && e.target.tagName === 'A') {
+      e.preventDefault();
+      var section = document.querySelector('[data-section="' + e.target.dataset.target + '"]');
+      if (section) {
+        var rect = section.getBoundingClientRect();
+        var top = window.scrollY + rect.top;
+
+        // ToDo: replace jQuery here
+        $('html, body').animate({
+          scrollTop: top
+        });
+      }
+    }
+  });
 })(jQuery);
