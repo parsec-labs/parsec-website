@@ -14,6 +14,16 @@
   .section-header {
     margin-bottom: 40px;
   }
+
+  @media screen and (max-width: 768px) {
+    .section-header {
+      margin-bottom: 20px;
+    }
+
+    min-height: auto;
+
+    padding: 60px 0;
+  }
 }
 
 #planet-scene{

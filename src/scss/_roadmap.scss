@@ -25,6 +25,14 @@
         rgba(#fff, 0)
       );
     }
+
+    @media screen and (max-width: 768px) {
+      padding-left: 25px;
+
+      &::before {
+        left: 24px;
+      }
+    }
   }
 
   .cd-timeline-block {
@@ -43,18 +51,6 @@
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-
-  @media only screen and (min-width: 1170px) {
-    .cd-timeline-block {
-      &:first-child {
-        margin-top: 0;
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
   }
 
@@ -112,12 +108,20 @@
       font-weight: 900;
 
       color: #FFF;
+
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
     }
 
     p {
       font-size: 18px;
 
       line-height: 26px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
 
     &-year,
@@ -146,6 +150,19 @@
         border-radius: 50%;
         background-image: linear-gradient(to right, rgb(79,172,254) 0%, rgb(0,242,254) 100%);
       }
+
+      @media screen and (max-width: 768px) {
+        left: 75px;
+
+        &::before {
+          left: -85px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-left: 20px;
+      padding-right: 10px;
     }
   }
 
@@ -173,6 +190,20 @@
           background-image: url(../img/icons/checkmark2.svg);
           background-repeat: no-repeat;
           background-position: center;
+          background-size: cover;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        span {
+          -webkit-background-clip: content-box;
+          -webkit-text-fill-color: currentcolor;
+          background: none;
+
+          &::after {
+            width: 15px;
+            height: 15px;
+          }
         }
       }
     }

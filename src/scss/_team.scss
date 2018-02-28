@@ -14,19 +14,53 @@
     font-size: 18px;
   }
 
-  .team-image{
+  .team-image {
     width: 128px;
     display: block;
     margin: 0 auto;
   }
 
-  .team-row{
+  .team-row {
     [class*='col-']{
       padding: 36px;
 
       h3{
         margin: 20px 0 0;
       }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 0 0;
+    margin-bottom: -20px;
+
+    .team-row {
+      [class*='col-'] {
+        padding: 15px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    [class*='col-'] {
+      position: relative;
+      text-align: left;
+
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .team-image {
+      margin: 0;
+      width: 100px;
     }
   }
 }

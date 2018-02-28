@@ -10,6 +10,10 @@
   background-position: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 768px) {
+    background-position: 50% 20%;
+  }
 }
 
 .team {
@@ -43,6 +47,10 @@
     content: '';
 
     background-image: url(../img/backgrounds/rocket.png);
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -57,6 +65,7 @@
 
 .bg-stars-nebula {
   position: relative;
+  overflow: hidden;
 
   &::before {
     position: absolute;

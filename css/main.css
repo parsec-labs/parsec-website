@@ -210,12 +210,6 @@ input {
   display: block;
   margin: 20px auto; }
 
-.header-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1; }
-
 section {
   width: 100%;
   position: relative; }
@@ -238,40 +232,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center; }
-  section.header {
-    text-align: center;
-    min-height: 820px;
-    height: 100vh; }
-    section.header .section-content-wrapper {
-      z-index: 2;
-      height: 100%;
-      position: absolute;
-      background-image: linear-gradient(transparent 80%, black 100%); }
-    section.header .upper-header {
-      position: relative;
-      height: 60%; }
-      section.header .upper-header::before {
-        position: absolute;
-        top: 100%;
-        left: 15%;
-        width: 70%;
-        height: 3px;
-        content: '';
-        background-image: linear-gradient(to left, rgba(0, 206, 255, 0), rgba(0, 206, 255, 0.24) 30%, rgba(0, 206, 255, 0.24) 50%, rgba(0, 206, 255, 0.24) 70%, rgba(0, 206, 255, 0)); }
-    section.header .upper-header-buttons .button {
-      margin: 0 40px; }
-    section.header .lower-header {
-      height: 30%; }
-    section.header .icon {
-      width: 64px;
-      height: 64px;
-      margin: 0 auto; }
-    section.header h1 {
-      margin-top: 15%;
-      font-size: 100px;
-      line-height: 1;
-      text-transform: uppercase;
-      font-weight: 900; }
 
 section .scene {
   position: absolute;
@@ -284,35 +244,6 @@ p {
   display: block;
   margin: 0 auto;
   display: block; }
-
-.top-header {
-  position: fixed;
-  z-index: 10;
-  left: 0;
-  right: 0;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 40px 10px;
-  transition: background-color 0.2s; }
-  .top-header.st-scrolled {
-    background-color: rgba(0, 0, 0, 0.8); }
-
-.top-header-menu {
-  font-size: 22px;
-  font-weight: 900;
-  text-transform: uppercase; }
-  .top-header-menu ul {
-    list-style: none;
-    display: flex;
-    align-items: center; }
-  .top-header-menu a {
-    padding: 5px 15px;
-    display: inline-block;
-    cursor: pointer; }
-    .top-header-menu a[href] {
-      padding: 5px 5px; }
 
 .button {
   font-size: 28px;
@@ -354,6 +285,21 @@ p {
   .button em {
     font-style: normal;
     font-weight: normal; }
+  @media screen and (max-width: 1200px) {
+    .button {
+      font-size: 26px; } }
+  @media screen and (max-width: 1000px) {
+    .button {
+      font-size: 22px; } }
+  @media screen and (max-width: 768px) {
+    .button {
+      font-size: 18px;
+      height: 46px;
+      line-height: 46px;
+      margin: 0 23px; }
+      .button::before, .button::after {
+        width: 23px;
+        height: 46px; } }
   .button--rect {
     font-size: 24px;
     width: calc(100% - 30px);
@@ -363,6 +309,15 @@ p {
     .button--rect::before, .button--rect::after {
       width: 15px;
       height: 60px; }
+    @media screen and (max-width: 768px) {
+      .button--rect {
+        font-size: 16px;
+        height: 50px;
+        margin: 0 10px;
+        line-height: 50px; }
+        .button--rect::before, .button--rect::after {
+          width: 12px;
+          height: 50px; } }
 
 .button-icon {
   margin: 0 5px 0 -15px; }
@@ -376,6 +331,249 @@ p {
   border-radius: 15px;
   background: none; }
 
+.section-header {
+  text-align: center; }
+  .section-header h2 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1; }
+    .section-header h2 em {
+      font-weight: normal;
+      font-style: normal;
+      display: block; }
+  .section-header p {
+    font-size: 24px;
+    max-width: 65%;
+    margin: 0 auto;
+    line-height: 32px; }
+  @media screen and (max-width: 1000px) {
+    .section-header h2 {
+      font-size: 40px; }
+    .section-header p {
+      font-size: 18px;
+      line-height: 24px;
+      max-width: 90%; } }
+  @media screen and (max-width: 768px) {
+    .section-header h2 {
+      font-size: 30px; }
+    .section-header p {
+      font-size: 15px;
+      line-height: 22px;
+      max-width: 100%; } }
+
+.bg-milky-way {
+  background-position: 0 100%;
+  background-size: cover;
+  background-image: url(../img/backgrounds/milky-way.jpg);
+  background-repeat: no-repeat; }
+
+.intro {
+  background-image: url(../img/backgrounds/eye-nebula.jpg);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 768px) {
+    .intro {
+      background-position: 50% 20%; } }
+
+.team {
+  background-size: 100% auto;
+  background-position: 0 0;
+  background-image: url(../img/backgrounds/earth.jpg);
+  background-repeat: no-repeat; }
+
+.showcase {
+  background-position: 50% 150px;
+  background-image: url(../img/backgrounds/planet.png);
+  background-repeat: no-repeat; }
+
+.footer {
+  background-size: 100% auto;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/backgrounds/ground.jpg); }
+  .footer .container::before {
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    width: 278px;
+    height: 712px;
+    margin-right: -140px;
+    content: '';
+    background-image: url(../img/backgrounds/rocket.png); }
+    @media screen and (max-width: 768px) {
+      .footer .container::before {
+        display: none; } }
+
+@keyframes move-twink-back {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    transform: translate3d(-100%, -100%, 0); } }
+
+.bg-stars-nebula {
+  position: relative;
+  overflow: hidden; }
+  .bg-stars-nebula::before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    width: 1074px;
+    height: 839px;
+    margin-left: -537px;
+    content: '';
+    background-image: url(../img/backgrounds/cloud-nebula.png); }
+  .bg-stars-nebula .showcase,
+  .bg-stars-nebula .product {
+    position: relative;
+    z-index: 3; }
+  .bg-stars-nebula .twinkle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0); }
+    .bg-stars-nebula .twinkle .stars,
+    .bg-stars-nebula .twinkle .twinkling {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .bg-stars-nebula .twinkle .stars {
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      background: #000 url(../img/backgrounds/stars2.png) repeat top center; }
+    .bg-stars-nebula .twinkle .twinkling {
+      width: 10000px;
+      height: 5000px;
+      background: transparent url(../img/elements/twinkling.png) repeat top center;
+      z-index: 1;
+      animation: move-twink-back 300s linear infinite; }
+
+.top-header {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px 10px;
+  transition: background-color 0.2s; }
+  .top-header.st-scrolled {
+    background-color: rgba(0, 0, 0, 0.8); }
+  @media screen and (max-width: 1200px) {
+    .top-header .top-header-logo {
+      width: 200px;
+      height: 51px; } }
+  @media screen and (max-width: 400px) {
+    .top-header {
+      padding-left: 15px;
+      padding-right: 15px; }
+      .top-header .top-header-logo {
+        width: 130px;
+        height: 33px; } }
+
+.top-header-menu {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase; }
+  .top-header-menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center; }
+  .top-header-menu a {
+    padding: 5px 15px;
+    display: inline-block;
+    cursor: pointer; }
+  @media screen and (max-width: 1200px) {
+    .top-header-menu {
+      font-size: 18px; }
+      .top-header-menu a {
+        padding: 5px 10px; } }
+  @media screen and (max-width: 1000px) {
+    .top-header-menu {
+      font-size: 16px; } }
+  @media screen and (max-width: 850px) {
+    .top-header-menu ul {
+      display: none; } }
+
+.top-header-socials {
+  white-space: nowrap; }
+  .top-header-socials a {
+    padding: 5px 5px; }
+
+.header-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1; }
+
+.header {
+  text-align: center;
+  min-height: 820px;
+  height: 100vh; }
+  .header .section-content-wrapper {
+    z-index: 2;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(transparent 80%, black 100%); }
+    @media screen and (max-width: 768px) {
+      .header .section-content-wrapper {
+        position: relative; } }
+  @media screen and (max-width: 768px) {
+    .header {
+      height: auto; } }
+  .header .upper-header {
+    position: relative;
+    height: 60%; }
+    .header .upper-header::before {
+      position: absolute;
+      top: 100%;
+      left: 15%;
+      width: 70%;
+      height: 3px;
+      content: '';
+      background-image: linear-gradient(to left, rgba(0, 206, 255, 0), rgba(0, 206, 255, 0.24) 30%, rgba(0, 206, 255, 0.24) 50%, rgba(0, 206, 255, 0.24) 70%, rgba(0, 206, 255, 0)); }
+  .header .upper-header-buttons .button {
+    margin: 0 40px; }
+  .header .lower-header {
+    height: 30%; }
+  .header .icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto; }
+  .header h1 {
+    margin-top: 15%;
+    font-size: 100px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 900; }
+  @media screen and (max-width: 1000px) {
+    .header h1 {
+      font-size: 80px; } }
+  @media screen and (max-width: 768px) {
+    .header h1 {
+      font-size: 50px;
+      padding: 0 10px; }
+      .header h1 br {
+        display: none; }
+    .header .upper-header-buttons .button {
+      display: block;
+      margin: 10px 40px; }
+    .header .upper-header,
+    .header .lower-header {
+      height: auto; }
+    .header .upper-header {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      margin-bottom: 20px; } }
+  @media screen and (max-width: 400px) {
+    .header h1 {
+      font-size: 40px; } }
+
 .main-benefits {
   display: flex;
   justify-content: space-around; }
@@ -388,12 +586,20 @@ p {
     font-size: 18px;
     line-height: 26px;
     margin: 0 40px; }
+  @media screen and (max-width: 768px) {
+    .main-benefits {
+      display: block; }
+      .main-benefits .main-benefits-item + .main-benefits-item {
+        margin-top: 30px; } }
 
 .intro {
   padding: 300px 0 200px;
   text-align: center; }
   .intro .section-header {
     margin-bottom: 70px; }
+  @media screen and (max-width: 768px) {
+    .intro {
+      padding: 150px 0 0; } }
 
 @keyframes flicker {
   0% {
@@ -448,6 +654,16 @@ p {
       background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+  @media screen and (max-width: 1200px) {
+    .benefits .nav-item {
+      padding: 8px 15px 0; }
+    .benefits .nav-link {
+      font-size: 24px; } }
+  @media screen and (max-width: 768px) {
+    .benefits .nav-item {
+      padding: 8px 5px 0; }
+    .benefits .nav-link {
+      font-size: 18px; } }
   .benefits .nav-link:not(.active):hover {
     position: relative; }
     .benefits .nav-link:not(.active):hover:after {
@@ -465,6 +681,9 @@ p {
       display: none; }
     .benefits .tab-content > .tab-pane.active {
       display: flex; }
+      @media screen and (max-width: 768px) {
+        .benefits .tab-content > .tab-pane.active {
+          display: block; } }
   .benefits .tab-pane {
     align-items: baseline;
     padding: 40px 0; }
@@ -506,6 +725,36 @@ p {
       margin-left: -11px;
       content: '';
       background-image: url(../img/icons/checkmark.svg); }
+    @media screen and (max-width: 1200px) {
+      .benefits .benefit h3 {
+        font-size: 22px;
+        height: 56px;
+        margin-bottom: 50px;
+        line-height: 28px; }
+      .benefits .benefit p {
+        font-size: 16px;
+        line-height: 22px; } }
+    @media screen and (max-width: 1000px) {
+      .benefits .benefit {
+        padding: 0 15px; }
+        .benefits .benefit:first-child::before {
+          left: 15px; }
+        .benefits .benefit:last-child::before {
+          right: 15px; } }
+    @media screen and (max-width: 768px) {
+      .benefits .benefit {
+        text-align: left !important; }
+        .benefits .benefit h3 {
+          text-align: left !important;
+          margin-bottom: 0;
+          height: auto;
+          display: block; }
+        .benefits .benefit::before, .benefits .benefit::after {
+          display: none; }
+        .benefits .benefit + .benefit {
+          margin-top: 20px; }
+        .benefits .benefit br {
+          display: none; } }
 
 .product {
   padding: 200px 0 0; }
@@ -515,6 +764,9 @@ p {
   justify-content: space-around;
   align-items: baseline;
   margin-top: 50px; }
+  @media screen and (max-width: 768px) {
+    .product-features {
+      display: block; } }
 
 .product-feature {
   width: 40%;
@@ -527,6 +779,17 @@ p {
   .product-feature p {
     font-size: 18px;
     line-height: 26px; }
+  @media screen and (max-width: 768px) {
+    .product-feature {
+      width: 100%; }
+      .product-feature + .product-feature {
+        margin-top: 30px; }
+      .product-feature h3 {
+        font-size: 24px;
+        line-height: 28px; }
+      .product-feature p {
+        font-size: 16px;
+        line-height: 22px; } }
 
 .showcase {
   position: relative;
@@ -540,28 +803,18 @@ p {
   text-align: center; }
   .showcase .section-header {
     margin-bottom: 40px; }
+  @media screen and (max-width: 768px) {
+    .showcase {
+      min-height: auto;
+      padding: 60px 0; }
+      .showcase .section-header {
+        margin-bottom: 20px; } }
 
 #planet-scene {
   position: absolute;
   z-index: -1;
   top: -25%;
   height: 150%; }
-
-.section-header {
-  text-align: center; }
-  .section-header h2 {
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 1; }
-    .section-header h2 em {
-      font-weight: normal;
-      font-style: normal;
-      display: block; }
-  .section-header p {
-    font-size: 24px;
-    max-width: 65%;
-    margin: 0 auto;
-    line-height: 32px; }
 
 .team {
   padding: 150px 0 100px 0; }
@@ -580,6 +833,25 @@ p {
     padding: 36px; }
     .team .team-row [class*='col-'] h3 {
       margin: 20px 0 0; }
+  @media screen and (max-width: 768px) {
+    .team {
+      padding: 50px 0 0;
+      margin-bottom: -20px; }
+      .team .team-row [class*='col-'] {
+        padding: 15px; } }
+  @media screen and (max-width: 576px) {
+    .team h3 {
+      font-size: 20px; }
+    .team p {
+      font-size: 16px; }
+    .team [class*='col-'] {
+      position: relative;
+      text-align: left;
+      display: flex;
+      align-items: flex-start; }
+    .team .team-image {
+      margin: 0;
+      width: 100px; } }
 
 .roadmap {
   padding-top: 100px; }
@@ -596,6 +868,11 @@ p {
       height: 100%;
       content: '';
       background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35) 5%, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35) 95%, rgba(255, 255, 255, 0)); }
+    @media screen and (max-width: 768px) {
+      .roadmap .cd-container {
+        padding-left: 25px; }
+        .roadmap .cd-container::before {
+          left: 24px; } }
   .roadmap .cd-timeline-block {
     position: relative;
     margin-bottom: 25px; }
@@ -607,11 +884,6 @@ p {
       margin-top: 0; }
     .roadmap .cd-timeline-block:last-child {
       margin-bottom: 0; }
-  @media only screen and (min-width: 1170px) {
-    .roadmap .cd-timeline-block:first-child {
-      margin-top: 0; }
-    .roadmap .cd-timeline-block:last-child {
-      margin-bottom: 0; } }
   .roadmap .cd-timeline-img {
     position: absolute;
     top: 70px;
@@ -652,9 +924,15 @@ p {
       font-size: 28px;
       font-weight: 900;
       color: #FFF; }
+      @media screen and (max-width: 768px) {
+        .roadmap .cd-timeline-content h2 {
+          font-size: 20px; } }
     .roadmap .cd-timeline-content p {
       font-size: 18px;
       line-height: 26px; }
+      @media screen and (max-width: 768px) {
+        .roadmap .cd-timeline-content p {
+          font-size: 16px; } }
     .roadmap .cd-timeline-content-year, .roadmap .cd-timeline-content-q {
       font-size: 38px; }
     .roadmap .cd-timeline-content-q {
@@ -671,6 +949,15 @@ p {
         content: '';
         border-radius: 50%;
         background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); }
+      @media screen and (max-width: 768px) {
+        .roadmap .cd-timeline-content-year {
+          left: 75px; }
+          .roadmap .cd-timeline-content-year::before {
+            left: -85px; } }
+    @media screen and (max-width: 768px) {
+      .roadmap .cd-timeline-content {
+        padding-left: 20px;
+        padding-right: 10px; } }
   .roadmap .cd-timeline-block--done .cd-timeline-img::before {
     display: block; }
   .roadmap .cd-timeline-block--done h2 {
@@ -687,7 +974,16 @@ p {
         content: '';
         background-image: url(../img/icons/checkmark2.svg);
         background-repeat: no-repeat;
-        background-position: center; }
+        background-position: center;
+        background-size: cover; }
+    @media screen and (max-width: 768px) {
+      .roadmap .cd-timeline-block--done h2 span {
+        -webkit-background-clip: content-box;
+        -webkit-text-fill-color: currentcolor;
+        background: none; }
+        .roadmap .cd-timeline-block--done h2 span::after {
+          width: 15px;
+          height: 15px; } }
 
 .footer {
   min-height: 100vh;
@@ -703,6 +999,10 @@ p {
     flex-direction: column;
     justify-content: space-between;
     text-align: center; }
+    @media screen and (max-width: 768px) {
+      .footer .content {
+        width: 100%;
+        height: auto; } }
   .footer .container {
     flex: 1;
     display: flex;
@@ -710,6 +1010,11 @@ p {
   .footer .subscribe .input {
     margin-bottom: 15px;
     text-align: center; }
+  @media screen and (max-width: 768px) {
+    .footer {
+      overflow: visible;
+      min-height: auto;
+      padding-top: 40px; } }
 
 .footer-links {
   margin: 80px 0 30px; }
@@ -722,89 +1027,6 @@ p {
 .footer-copyright {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.35); }
-
-.bg-milky-way {
-  background-position: 0 100%;
-  background-size: cover;
-  background-image: url(../img/backgrounds/milky-way.jpg);
-  background-repeat: no-repeat; }
-
-.intro {
-  background-image: url(../img/backgrounds/eye-nebula.jpg);
-  background-position: center;
-  background-size: 100% auto;
-  background-repeat: no-repeat; }
-
-.team {
-  background-size: 100% auto;
-  background-position: 0 0;
-  background-image: url(../img/backgrounds/earth.jpg);
-  background-repeat: no-repeat; }
-
-.showcase {
-  background-position: 50% 150px;
-  background-image: url(../img/backgrounds/planet.png);
-  background-repeat: no-repeat; }
-
-.footer {
-  background-size: 100% auto;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-image: url(../img/backgrounds/ground.jpg); }
-  .footer .container::before {
-    position: absolute;
-    bottom: 0;
-    right: 25%;
-    width: 278px;
-    height: 712px;
-    margin-right: -140px;
-    content: '';
-    background-image: url(../img/backgrounds/rocket.png); }
-
-@keyframes move-twink-back {
-  from {
-    transform: translate3d(0, 0, 0); }
-  to {
-    transform: translate3d(-100%, -100%, 0); } }
-
-.bg-stars-nebula {
-  position: relative; }
-  .bg-stars-nebula::before {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 50%;
-    width: 1074px;
-    height: 839px;
-    margin-left: -537px;
-    content: '';
-    background-image: url(../img/backgrounds/cloud-nebula.png); }
-  .bg-stars-nebula .showcase,
-  .bg-stars-nebula .product {
-    position: relative;
-    z-index: 3; }
-  .bg-stars-nebula .twinkle {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    transform: translate3d(0, 0, 0); }
-    .bg-stars-nebula .twinkle .stars,
-    .bg-stars-nebula .twinkle .twinkling {
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .bg-stars-nebula .twinkle .stars {
-      right: 0;
-      bottom: 0;
-      z-index: 0;
-      background: #000 url(../img/backgrounds/stars2.png) repeat top center; }
-    .bg-stars-nebula .twinkle .twinkling {
-      width: 10000px;
-      height: 5000px;
-      background: transparent url(../img/elements/twinkling.png) repeat top center;
-      z-index: 1;
-      animation: move-twink-back 300s linear infinite; }
 
 /* ==========================================================================
    Helper classes

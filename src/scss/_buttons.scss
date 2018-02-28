@@ -57,6 +57,28 @@
     font-weight: normal;
   }
 
+  @media screen and (max-width: 1200px) {
+    font-size: 26px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    height: 46px;
+    line-height: 46px;
+
+    margin: 0 23px;
+
+    &::before,
+    &::after {
+      width: 23px;
+      height: 46px;
+    }
+  }
+
   &--rect {
     font-size: 24px;
 
@@ -70,6 +92,21 @@
     &::after {
       width: 15px;
       height: 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+
+      height: 50px;
+      margin: 0 10px;
+
+      line-height: 50px;
+
+      &::before,
+      &::after {
+        width: 12px;
+        height: 50px;
+      }
     }
   }
 }
