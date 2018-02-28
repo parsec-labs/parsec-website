@@ -409,7 +409,7 @@ p {
   from {
     transform: translate3d(0, 0, 0); }
   to {
-    transform: translate3d(-100%, -100%, 0); } }
+    transform: translate3d(calc(-10000px + 100vw), calc(-5000px + 100vh), 0); } }
 
 .bg-stars-nebula {
   position: relative;
@@ -417,7 +417,7 @@ p {
   .bg-stars-nebula::before {
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 200px;
     left: 50%;
     width: 1074px;
     height: 839px;
@@ -593,7 +593,7 @@ p {
         margin-top: 30px; } }
 
 .intro {
-  padding: 300px 0 200px;
+  padding: 300px 0 0;
   text-align: center; }
   .intro .section-header {
     margin-bottom: 70px; }
@@ -757,7 +757,7 @@ p {
           display: none; } }
 
 .product {
-  padding: 200px 0 0; }
+  padding: 400px 0 0; }
 
 .product-features {
   display: flex;
