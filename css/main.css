@@ -369,7 +369,7 @@ p {
 
 .intro {
   background-image: url(../img/backgrounds/eye-nebula.jpg);
-  background-position: center;
+  background-position: 50% 0;
   background-size: 100% auto;
   background-repeat: no-repeat; }
   @media screen and (max-width: 768px) {
@@ -483,7 +483,8 @@ p {
   .top-header-menu ul {
     list-style: none;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 0; }
   .top-header-menu a {
     padding: 5px 15px;
     display: inline-block;
