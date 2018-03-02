@@ -300,7 +300,7 @@ p {
     background-image: linear-gradient(to right, #00adff, #00f2fe);
     transition: opacity 0.2s; }
   .button:hover {
-    color: #000;
+    color: #0d1d3f;
     text-decoration: none;
     transition: none; }
     .button:hover::before {
@@ -309,6 +309,8 @@ p {
     .button:hover span::before,
     .button:hover span::after {
       display: none; }
+    .button:hover .button-icon {
+      fill: #0d1d3f; }
   .button em {
     font-style: normal;
     font-weight: normal; }
@@ -518,6 +520,10 @@ p {
       .top-header .top-header-logo {
         width: 130px;
         height: 33px; } }
+  .top-header a {
+    transition: color 0.2s; }
+    .top-header a:hover {
+      transition: none; }
 
 .top-header-menu {
   font-size: 22px;
@@ -536,7 +542,11 @@ p {
     .top-header-menu {
       font-size: 18px; }
       .top-header-menu a {
-        padding: 5px 10px; } }
+        padding: 5px 10px; }
+        .top-header-menu a:hover {
+          background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; } }
   @media screen and (max-width: 1000px) {
     .top-header-menu {
       font-size: 16px; } }
@@ -548,6 +558,8 @@ p {
   white-space: nowrap; }
   .top-header-socials a {
     padding: 5px 5px; }
+    .top-header-socials a:hover svg {
+      fill: #FFF; }
 
 .header-bg {
   position: absolute;
@@ -1067,6 +1079,10 @@ p {
     color: #FFF; }
   .footer-links a + a {
     margin-left: 15px; }
+  .footer-links svg {
+    fill: #FFF; }
+  .footer-links a:hover svg {
+    fill: url(#icons-gradient-small); }
 
 .footer-copyright {
   font-size: 16px;
@@ -1201,3 +1217,9 @@ p {
   h2,
   h3 {
     page-break-after: avoid; } }
+
+.gradient-icon {
+  fill: url(#icons-gradient-small); }
+
+.gradient-icon-big {
+  fill: url(#icons-gradient-big); }

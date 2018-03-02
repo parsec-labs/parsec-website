@@ -53,6 +53,14 @@
   a + a {
     margin-left: 15px;
   }
+
+  svg {
+    fill: #FFF;
+  }
+
+  a:hover svg {
+    fill: url(#icons-gradient-small);
+  }
 }
 
 .footer-copyright {

@@ -75,7 +75,7 @@
   }
 
   &:hover {
-    color: #000;
+    color: #0d1d3f;
     text-decoration: none;
     transition: none;
 
@@ -87,6 +87,10 @@
     span::before,
     span::after {
       display: none;
+    }
+
+    .button-icon {
+      fill: #0d1d3f;
     }
   }
 

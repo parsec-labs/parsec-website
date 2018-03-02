@@ -20,6 +20,19 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+        <div id="svg-sprite" style="width: 0; height: 0;position:absolute;"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 0; height: 0;position:absolute;">
+          <defs>
+            <linearGradient id="icons-gradient-small" gradientUnits="userSpaceOnUse" x1="8.175" y1="15" x2="21.825" y2="15" gradientTransform="matrix(1 0 0 -1 0 30)">
+                <stop offset="0" stop-color="#4facfe"/>
+                <stop offset="1" stop-color="#00f2fe"/>
+            </linearGradient>
+            <linearGradient id="icons-gradient-big" gradientUnits="userSpaceOnUse" x1=".49" y1="41.925" x2="83.5" y2="41.925" gradientTransform="matrix(1 0 0 -1 0 84)">
+                <stop offset="0" stop-color="#4facfe"/>
+                <stop offset="1" stop-color="#00f2fe"/>
+            </linearGradient>
+          </defs>
+        </svg>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -29,7 +42,9 @@
         <div id="app">
           <header class="top-header">
             <a data-target="home">
-              <img src="img/icons/parseclabs.svg" alt="Parsec Labs" width="267" height="68" class="top-header-logo" />
+              <svg role="img" width="267" height="68" class="top-header-logo">
+                <use xlink:href="#parseclabs"></use>
+              </svg>
             </a>
 
             <div class="top-header-menu">
@@ -42,15 +57,21 @@
                 <li><a data-target="roadmap">Roadmap</a></li>
                 <li class="top-header-socials">
                   <a href="https://t.me/parseclabs" target="_blank">
-                    <img src="img/icons/social-telegram.svg" width="29" height="25" />
+                    <svg role="img" width="29" height="25" class="gradient-icon">
+                      <use xlink:href="#social-telegram"></use>
+                    </svg>
                   </a>
 
                   <a href="https://twitter.com/Parsec_Labs" target="_blank">
-                    <img src="img/icons/social-twitter.svg" width="27" height="22" />
+                    <svg role="img" width="27" height="22" class="gradient-icon">
+                      <use xlink:href="#social-twitter"></use>
+                    </svg>
                   </a>
 
                   <a href="https://www.facebook.com/parsecIabs/" target="_blank">
-                    <img src="img/icons/social-facebook.svg" width="24" height="26" />
+                    <svg role="img" width="24" height="26" class="gradient-icon">
+                      <use xlink:href="#social-facebook"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -73,13 +94,17 @@
                         </a>
                         <a href="https://t.me/parseclabs" class="button" target="blank">
                           <span>
-                            <img src="img/icons/social-telegram.svg" width="29" height="25" class="button-icon" />
+                            <svg role="img" width="29" height="25" class="gradient-icon button-icon">
+                              <use xlink:href="#social-telegram"></use>
+                            </svg>
                             Telegram
                           </span>
                         </a>
                         <a href="https://twitter.com/Parsec_Labs" class="button" target="blank">
                           <span>
-                            <img src="img/icons/social-twitter.svg" width="27" height="22" class="button-icon" />
+                            <svg role="img" width="27" height="22" class="gradient-icon button-icon">
+                              <use xlink:href="#social-twitter"></use>
+                            </svg>
                             Twitter
                           </span>
                         </a>
@@ -92,17 +117,23 @@
                     <div class="section-content-inner container">
                       <div class="main-benefits">
                         <div class="main-benefits-item">
-                          <span class="icon icon-ecosystem"></span>
+                          <svg role="img" width="64" height="64" class="gradient-icon-big">
+                            <use xlink:href="#unified-ecosystem"></use>
+                          </svg>
                           <h3>Unified Ecosystem</h3>
                           <p>Become a&nbsp;part of&nbsp;the&nbsp;biggest gaming&nbsp;world</p>
                         </div>
                         <div class="main-benefits-item">
-                          <span class="icon icon-decentralized"></span>
+                          <svg role="img" width="64" height="64" class="gradient-icon-big">
+                            <use xlink:href="#decentralized-development"></use>
+                          </svg>
                           <h3>Decentralized Development</h3>
                           <p>Games development will be&nbsp;promoted by&nbsp;gamers</p>
                         </div>
                         <div class="main-benefits-item">
-                          <span class="icon icon-assets"></span>
+                          <svg role="img" width="64" height="64" class="gradient-icon-big">
+                            <use xlink:href="#valuable-assets"></use>
+                          </svg>
                           <h3>Valuable Assets</h3>
                           <p>Simple and&nbsp;trusted markets for&nbsp;assets trading</p>
                         </div>
@@ -236,14 +267,18 @@
 
                   <div class="product-features">
                     <div class="product-feature">
-                      <img src="img/icons/parsec-coin.svg" width="90" height="90" />
+                      <svg role="img" width="90" height="90" class="gradient-icon-big">
+                        <use xlink:href="#parsec-coin"></use>
+                      </svg>
                       <h3>Parsec Coin (PSC)</h3>
                       <p>
                         An easy to integrate API that enables players to securely interact with the chain and developers to create autonomous worlds encoded in smart contracts and 100% available without downtime.
                       </p>
                     </div>
                     <div class="product-feature">
-                      <img src="img/icons/parsec-api.svg" width="93" height="76" />
+                      <svg role="img" width="93" height="76" class="gradient-icon-big">
+                        <use xlink:href="#parsec-api"></use>
+                      </svg>
                       <h3>Parsec API</h3>
                       <p>
                         An easy to integrate API that enables players to securely interact with the chain and developers to create autonomous worlds encoded in smart contracts and 100% available without downtime.
@@ -256,7 +291,9 @@
               <section class="showcase"  data-section="showcase">
                 <div class="container">
                   <header class="section-header">
-                    <img class="icon-ab" src="img/icons/acebusters.svg" width="96" height="113" />
+                    <svg role="img" width="96" height="113" class="gradient-icon-big icon-ab">
+                      <use xlink:href="#acebusters"></use>
+                    </svg>
                     <h2>Poker on the blockchain</h2>
                     <p>
                       We have experience and know how to get job done. By developing scaling technology like multi-party state channels, we have proven that we can solve fundamental problems of on-chain applications. Acebusters — our decentralized poker platform on the Ethereum blockchain is a standing prove for this.
@@ -498,15 +535,21 @@
                     <div>
                       <div class="footer-links">
                         <a href="https://t.me/parseclabs" target="_blank">
-                          <img src="img/icons/social-telegram-white.svg" width="29" height="25" />
+                          <svg role="img" width="29" height="25">
+                            <use xlink:href="#social-telegram"></use>
+                          </svg>
                         </a>
 
                         <a href="https://twitter.com/Parsec_Labs" target="_blank">
-                          <img src="img/icons/social-twitter-white.svg" width="27" height="22" />
+                          <svg role="img" width="27" height="22">
+                            <use xlink:href="#social-twitter"></use>
+                          </svg>
                         </a>
 
                         <a href="https://www.facebook.com/parsecIabs/" target="_blank">
-                          <img src="img/icons/social-facebook-white.svg" width="24" height="26" />
+                          <svg role="img" width="24" height="26">
+                            <use xlink:href="#social-facebook"></use>
+                          </svg>
                         </a>
                       </div>
 
@@ -530,6 +573,7 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/in-view.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/sprite.svg.js" async></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113020429-1"></script>
