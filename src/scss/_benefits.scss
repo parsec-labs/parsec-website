@@ -9,6 +9,7 @@
 
 .benefits {
   margin-bottom: 0;
+  padding-bottom: 200px;
   position: relative;
   z-index: 2;
 
@@ -71,8 +72,6 @@
       -webkit-text-fill-color: transparent;
     }
   }
-
-
 
   @media screen and (max-width: 1200px) {
     .nav-item {

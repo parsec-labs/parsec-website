@@ -7,7 +7,7 @@
 
 .intro {
   background-image: url(../img/backgrounds/eye-nebula.jpg);
-  background-position: 50% 0;
+  background-position: 50% 10vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
 
@@ -30,6 +30,7 @@
 }
 
 .footer {
+  height: 712px;
   background-size: 100% auto;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -51,6 +52,10 @@
     @media screen and (max-width: 768px) {
       display: none;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    height: auto;
   }
 }
 

@@ -414,7 +414,7 @@ p {
 
 .intro {
   background-image: url(../img/backgrounds/eye-nebula.jpg);
-  background-position: 50% 0;
+  background-position: 50% 10vh;
   background-size: 100% auto;
   background-repeat: no-repeat; }
   @media screen and (max-width: 768px) {
@@ -433,6 +433,7 @@ p {
   background-repeat: no-repeat; }
 
 .footer {
+  height: 712px;
   background-size: 100% auto;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -449,6 +450,9 @@ p {
     @media screen and (max-width: 768px) {
       .footer .container::before {
         display: none; } }
+  @media screen and (max-width: 768px) {
+    .footer {
+      height: auto; } }
 
 @keyframes move-twink-back {
   from {
@@ -649,7 +653,7 @@ p {
         margin-top: 30px; } }
 
 .intro {
-  padding: 300px 0 0;
+  padding: 100px 0 0;
   text-align: center; }
   .intro .section-header {
     margin-bottom: 70px; }
@@ -673,6 +677,7 @@ p {
 
 .benefits {
   margin-bottom: 0;
+  padding-bottom: 200px;
   position: relative;
   z-index: 2; }
   .benefits .nav-link.active, .benefits .nav-link {
@@ -818,7 +823,7 @@ p {
           display: none; } }
 
 .product {
-  padding: 400px 0 0; }
+  padding: 200px 0 0; }
 
 .product-features {
   display: flex;
