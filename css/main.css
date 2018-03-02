@@ -246,13 +246,14 @@ p {
   display: block; }
 
 .button {
+  font-family: inherit;
   font-size: 28px;
   font-weight: 900;
   position: relative;
   display: inline-block;
   height: 65px;
-  padding: 0 10px;
   margin: 0 30px;
+  padding: 0;
   cursor: pointer;
   text-transform: uppercase;
   line-height: 65px;
@@ -260,11 +261,16 @@ p {
   border-style: solid;
   border-width: 2px;
   border-image: linear-gradient(to right, #00adff, #00f2fe) 100% 1;
-  background: none; }
-  .button:hover {
-    color: #FFF;
-    text-decoration: none; }
-  .button::before, .button::after {
+  background: none;
+  transition: color 0.2s; }
+  .button span {
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 63px;
+    padding: 0 10px; }
+  .button span::before,
+  .button span::after {
     position: absolute;
     top: -2px;
     width: 32px;
@@ -272,16 +278,37 @@ p {
     content: '';
     border-style: solid;
     border-width: 2px; }
-  .button::before {
+  .button span::before {
     right: 100%;
     border-right-width: 0;
     border-color: #00adff;
     border-radius: 32px 0 0 32px; }
-  .button::after {
+  .button span::after {
     left: 100%;
     border-left-width: 0;
     border-color: #00f2fe;
     border-radius: 0 32px 32px 0; }
+  .button::before {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -32px;
+    right: -32px;
+    content: '';
+    opacity: 0;
+    border-radius: 32px;
+    background-image: linear-gradient(to right, #00adff, #00f2fe);
+    transition: opacity 0.2s; }
+  .button:hover {
+    color: #000;
+    text-decoration: none;
+    transition: none; }
+    .button:hover::before {
+      opacity: 1;
+      transition: none; }
+    .button:hover span::before,
+    .button:hover span::after {
+      display: none; }
   .button em {
     font-style: normal;
     font-weight: normal; }
@@ -297,27 +324,43 @@ p {
       height: 46px;
       line-height: 46px;
       margin: 0 23px; }
-      .button::before, .button::after {
+      .button span::before,
+      .button span::after {
         width: 23px;
-        height: 46px; } }
+        height: 46px; }
+      .button::before {
+        left: -23px;
+        right: -23px; } }
   .button--rect {
     font-size: 24px;
     width: calc(100% - 30px);
     height: 60px;
     margin: 0 15px;
     line-height: 60px; }
-    .button--rect::before, .button--rect::after {
+    .button--rect span {
+      height: 100%; }
+    .button--rect span::before,
+    .button--rect span::after {
       width: 15px;
       height: 60px; }
+    .button--rect::before {
+      left: -15px;
+      right: -15px;
+      border-radius: 15px; }
     @media screen and (max-width: 768px) {
       .button--rect {
         font-size: 16px;
         height: 50px;
         margin: 0 10px;
         line-height: 50px; }
-        .button--rect::before, .button--rect::after {
+        .button--rect span::before,
+        .button--rect span::after {
           width: 12px;
-          height: 50px; } }
+          height: 50px; }
+        .button--rect::before {
+          left: -12px;
+          right: -12px;
+          border-radius: 12px; } }
 
 .button-icon {
   margin: 0 5px 0 -15px; }
