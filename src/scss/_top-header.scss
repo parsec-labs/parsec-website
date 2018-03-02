@@ -64,6 +64,12 @@
     display: inline-block;
 
     cursor: pointer;
+
+    &:hover {
+      background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   @media screen and (max-width: 1200px) {
@@ -71,12 +77,6 @@
 
     a {
       padding: 5px 10px;
-
-      &:hover {
-        background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
     }
   }
 

@@ -414,12 +414,26 @@ p {
 
 .intro {
   background-image: url(../img/backgrounds/eye-nebula.jpg);
-  background-position: 50% 10vh;
+  background-position: 50% 8vh;
   background-size: 100% auto;
   background-repeat: no-repeat; }
   @media screen and (max-width: 768px) {
     .intro {
       background-position: 50% 20%; } }
+  @media screen and (min-width: 1300px) {
+    .intro {
+      background-size: 1300px auto; } }
+  .intro .container {
+    position: relative;
+    z-index: 3; }
+  .intro::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: linear-gradient(black, transparent 10%, transparent 90%, black); }
 
 .team {
   background-size: 100% auto;
@@ -542,15 +556,15 @@ p {
     padding: 5px 15px;
     display: inline-block;
     cursor: pointer; }
+    .top-header-menu a:hover {
+      background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   @media screen and (max-width: 1200px) {
     .top-header-menu {
       font-size: 18px; }
       .top-header-menu a {
-        padding: 5px 10px; }
-        .top-header-menu a:hover {
-          background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; } }
+        padding: 5px 10px; } }
   @media screen and (max-width: 1000px) {
     .top-header-menu {
       font-size: 16px; } }
@@ -724,12 +738,14 @@ p {
     .benefits .nav-link {
       font-size: 24px; } }
   @media screen and (max-width: 768px) {
-    .benefits .nav-item {
-      padding: 8px 5px 0; }
-    .benefits .nav-link {
-      font-size: 18px; }
-      .benefits .nav-link svg {
-        display: none; } }
+    .benefits {
+      padding-bottom: 0; }
+      .benefits .nav-item {
+        padding: 8px 5px 0; }
+      .benefits .nav-link {
+        font-size: 18px; }
+        .benefits .nav-link svg {
+          display: none; } }
   .benefits .nav-link:not(.active):hover {
     position: relative; }
     .benefits .nav-link:not(.active):hover:after {
@@ -824,6 +840,9 @@ p {
 
 .product {
   padding: 200px 0 0; }
+  @media screen and (max-width: 768px) {
+    .product {
+      padding-top: 100px; } }
 
 .product-features {
   display: flex;
@@ -888,7 +907,10 @@ p {
     margin-bottom: 30px; }
   .team h3 {
     font-size: 28px;
-    font-weight: 900; }
+    font-weight: 900;
+    background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   .team .team-row p {
     font-size: 18px; }
   .team .team-image {
@@ -896,7 +918,7 @@ p {
     display: block;
     margin: 0 auto; }
   .team .team-row [class*='col-'] {
-    padding: 36px; }
+    padding: 36px 15px; }
     .team .team-row [class*='col-'] h3 {
       margin: 20px 0 0; }
   @media screen and (max-width: 768px) {
@@ -1063,7 +1085,6 @@ p {
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: center; }
     @media screen and (max-width: 768px) {
       .footer .content {
@@ -1083,7 +1104,7 @@ p {
       padding-top: 40px; } }
 
 .footer-links {
-  margin: 80px 0 30px; }
+  margin: 40px 0 15px; }
   .footer-links a {
     display: inline-block;
     color: #FFF; }

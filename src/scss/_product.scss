@@ -1,5 +1,9 @@
 .product {
   padding: 200px 0 0;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 100px;
+  }
 }
 
 .product-features {
