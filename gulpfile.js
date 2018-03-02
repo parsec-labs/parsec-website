@@ -9,7 +9,13 @@ const livereload = require('gulp-livereload');
 const svgSprite = require('gulp-svg-sprite');
 const rename = require('gulp-rename');
 const wrap = require('gulp-wrap');
+const noop = require('gulp-noop');
+const postcss = require('gulp-postcss');
 const globalDefs = require('./gulp-global-svg-defs-plugin');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+
+let watching = false;
 
 const files = {
   js: [
@@ -41,6 +47,10 @@ gulp.task('css', () => (
   gulp.src(files.css)
       .pipe(plumber())
       .pipe(sass())
+      .pipe(watching ? noop() : postcss([
+        autoprefixer({browsers: ['last 2 version']}),
+        cssnano()
+      ]))
       .pipe(gulp.dest('css'))
       .pipe(livereload())
 ));
@@ -73,6 +83,7 @@ gulp.task('html', () => (
 ));
 
 gulp.task('dev', ['css', 'js', 'svg'], () => {
+  watching = true;
   livereload.listen();
 
   watch(
