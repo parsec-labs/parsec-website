@@ -684,13 +684,16 @@ p {
   .benefits .nav-tabs {
     border: none; }
   .benefits .nav-item {
-    padding: 8px 32px 0; }
+    padding: 0 32px; }
   .benefits .nav-link {
     font-size: 38px;
     font-weight: 900;
-    padding: 0;
+    padding: 0 0 10px;
     text-transform: uppercase;
     color: #fff; }
+    .benefits .nav-link svg {
+      margin-top: -10px;
+      margin-right: 5px; }
     .benefits .nav-link::after {
       content: '';
       width: 100%;
@@ -719,7 +722,9 @@ p {
     .benefits .nav-item {
       padding: 8px 5px 0; }
     .benefits .nav-link {
-      font-size: 18px; } }
+      font-size: 18px; }
+      .benefits .nav-link svg {
+        display: none; } }
   .benefits .nav-link:not(.active):hover {
     position: relative; }
     .benefits .nav-link:not(.active):hover:after {
