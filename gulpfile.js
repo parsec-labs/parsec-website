@@ -11,6 +11,7 @@ const rename = require('gulp-rename');
 const wrap = require('gulp-wrap');
 const noop = require('gulp-noop');
 const postcss = require('gulp-postcss');
+const uglify = require('gulp-uglify');
 const globalDefs = require('./gulp-global-svg-defs-plugin');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
@@ -39,6 +40,7 @@ gulp.task('js', () => (
         }]],
       }))
       .pipe(concat('main.js'))
+      .pipe(watching ? noop() : uglify())
       .pipe(gulp.dest('js'))
       .pipe(livereload())
 ));
