@@ -9,23 +9,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:image" content="http://www.calvinhoenes.com/parsec/img/parsec-preview.jpg" />
 
-        <link href="https://fonts.googleapis.com/css?family=Istok+Web:700|Lora|Zilla+Slab+Highlight:700" rel="stylesheet">
-
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-
-        <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-        <script>
-          FontAwesomeConfig = { searchPseudoElements: true };
-        </script>
-
-        <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+        <div id="svg-sprite" style="width: 0; height: 0;position:absolute;"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 0; height: 0;position:absolute;">
+          <defs>
+            <linearGradient id="icons-gradient-small" gradientUnits="userSpaceOnUse" x1="8.175" y1="15" x2="21.825" y2="15" gradientTransform="matrix(1 0 0 -1 0 30)">
+                <stop offset="0" stop-color="#4facfe"/>
+                <stop offset="1" stop-color="#00f2fe"/>
+            </linearGradient>
+            <linearGradient id="icons-gradient-big" gradientUnits="userSpaceOnUse" x1=".49" y1="41.925" x2="83.5" y2="41.925" gradientTransform="matrix(1 0 0 -1 0 84)">
+                <stop offset="0" stop-color="#4facfe"/>
+                <stop offset="1" stop-color="#00f2fe"/>
+            </linearGradient>
+          </defs>
+        </svg>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -33,545 +40,555 @@
         <!-- BEGIN PARSEC -->
 
         <div id="app">
+          <header class="top-header">
+            <a data-target="home">
+              <svg role="img" width="267" height="68" class="top-header-logo">
+                <use xlink:href="#parseclabs"></use>
+              </svg>
+            </a>
 
-          <section id="warp" class="header section-centered">
-            <div class="scene" id="warp-scene">
-              <div class="warp-gradient">
+            <div class="top-header-menu">
+              <ul>
+                <li><a data-target="home">Home</a></li>
+                <li><a data-target="vision">Mission</a></li>
+                <li><a data-target="product">Product</a></li>
+                <li><a data-target="showcase">Showcase</a></li>
+                <li><a data-target="team">Team</a></li>
+                <li><a data-target="roadmap">Roadmap</a></li>
+                <li class="top-header-socials">
+                  <a href="https://t.me/parseclabs" target="_blank">
+                    <svg role="img" width="29" height="25" class="gradient-icon">
+                      <use xlink:href="#social-telegram"></use>
+                    </svg>
+                  </a>
 
-              </div>
-            </div>
+                  <a href="https://twitter.com/Parsec_Labs" target="_blank">
+                    <svg role="img" width="27" height="22" class="gradient-icon">
+                      <use xlink:href="#social-twitter"></use>
+                    </svg>
+                  </a>
 
-            <div class="section-content-wrapper">
-              <div class="upper-header">
-                <div class="section-content">
-                  <div class="section-content-inner">
-                    <h1>Blockchanging<br />the gaming world</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="lower-header">
-                <div class="section-content">
-                  <div class="section-content-inner container">
-                    <div class="main-benefit-list row">
-                      <div class="col-sm-4">
-                        <span class="icon icon-ecosystem"></span>
-                        <span class="benefit">Unified<br />Ecosystem</span>
-                        <p>
-                          Become a part of the <br />
-                          biggest gaming world
-                        </p>
-                      </div>
-                      <div class="col-sm-4">
-                        <span class="icon icon-decentralized"></span>
-                        <span class="benefit">Decentralized<br />Development</span>
-                        <p>
-                          Games development will be <br />
-                          promoted by gamers
-                        </p>
-                      </div>
-                      <div class="col-sm-4">
-                        <span class="icon icon-assets"></span>
-                        <span class="benefit">Valuable<br />Assets</span>
-                        <p>
-                          Simple and trusted markets <br />
-                          for assets trading
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </section>
-
-
-          <section id="intro" class=" section-centered">
-            <div class="section-content-wrapper">
-              <div class="section-content">
-                <div class="section-content-inner container">
-                  <div class="row text-center">
-                    <div class="col-sm-6 offset-sm-3">
-                      <div class="intro-balls">
-                        <h2>SCALABLE BLOCKCHAIN<br /> GAMING. FAIR AND<br /> TRANSPARENT.</h2>
-                        <p>
-                          Our mission is to bring fairness and transparency to to the gaming and entertainment industry. We enable on-chain scalability for game execution to open up and unite virtual worlds.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </section>
-
-
-          <section id="benefits">
-            <div class="container">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="benefits-dev-tab" data-toggle="tab" href="#benefits-dev" role="tab" aria-controls="benefits-dev" aria-selected="true">For Developers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="benefits-gamers-tab" data-toggle="tab" href="#benefits-gamers" role="tab" aria-controls="benefits-gamers" aria-selected="false">For Gamers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="benefits-esports-tab" data-toggle="tab" href="#benefits-esports" role="tab" aria-controls="benefits-esports" aria-selected="false">For esports</a>
+                  <a href="https://www.facebook.com/parsecIabs/" target="_blank">
+                    <svg role="img" width="24" height="26" class="gradient-icon">
+                      <use xlink:href="#social-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-              <!--  -->
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="benefits-dev" role="tabpanel" aria-labelledby="benefits-dev-tab">
+            </div>
+          </header>
 
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <h3 class="benefit">
-                        EASY BLOCKCHAIN INTEGRATION
-                      </h3>
-                      <p>
-                        Easy integration to blockchain by using Parsec API will save your time and resources
-                      </p>
-                    </div>
-                    <div class="col-sm-4">
-                      <h3 class="benefit">
-                        COLLECT  FUNDS VIA TOKEN SALES
-                      </h3>
-                      <p>
-                        Finance game development with token sale - first real step to build and grow your community
-                      </p>
-                    </div>
-                    <div class="col-sm-4">
-                      <h3 class="benefit">
-                        STRONG IN-GAME ECONOMY
-                      </h3>
-                      <p>
-                        Real ownership of virtual items and currencies creates strong ingame economy.
-                      </p>
+          <div class="sections">
+            <section class="header section-centered" data-section="home">
+              <canvas class="header-bg"></canvas>
+              <div class="section-content-wrapper">
+                <div class="upper-header">
+                  <div class="section-content">
+                    <div class="section-content-inner">
+                      <h1>Blockchanging<br /> the&nbsp;gaming world</h1>
+                      <div class="upper-header-buttons">
+                        <a href="#" class="button">
+                          <span>
+                            Whitepaper
+                          </span>
+                        </a>
+                        <a href="https://t.me/parseclabs" class="button" target="blank">
+                          <span>
+                            <svg role="img" width="29" height="25" class="gradient-icon button-icon">
+                              <use xlink:href="#social-telegram"></use>
+                            </svg>
+                            Telegram
+                          </span>
+                        </a>
+                        <a href="https://twitter.com/Parsec_Labs" class="button" target="blank">
+                          <span>
+                            <svg role="img" width="27" height="22" class="gradient-icon button-icon">
+                              <use xlink:href="#social-twitter"></use>
+                            </svg>
+                            Twitter
+                          </span>
+                        </a>
+                      </div>
                     </div>
                   </div>
-
-
                 </div>
-
-                <div class="tab-pane fade" id="benefits-gamers" role="tabpanel" aria-labelledby="benefits-gamers-tab">
-
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <h3 class="benefit">
-                        REAL OWNERSHIP
-                      </h3>
-                      <p>
-                        Guaranteed ownership of virtual items and currencies gives you respect from the other players and wealth.
-                      </p>
-                    </div>
-                    <div class="col-sm-4">
-                      <h3 class="benefit">
-                        EASILY BUY, SELL AND TRANSFER
-                      </h3>
-                      <p>
-                        More value for your virtual assets, easy to buy & sell.
-                      </p>
-                    </div>
-                    <div class="col-sm-4">
-                      <h3 class="benefit">
-                        TRANSPARENCY FOR ALL
-                      </h3>
-                      <p>
-                        Safe, fair and transparent game experience due to immutable blockchain technology
-                      </p>
+                <div class="lower-header">
+                  <div class="section-content">
+                    <div class="section-content-inner container">
+                      <div class="main-benefits">
+                        <div class="main-benefits-item">
+                          <svg role="img" width="64" height="64" class="gradient-icon-big">
+                            <use xlink:href="#unified-ecosystem"></use>
+                          </svg>
+                          <h3>Unified Ecosystem</h3>
+                          <p>Become a&nbsp;part of&nbsp;the&nbsp;biggest gaming&nbsp;world</p>
+                        </div>
+                        <div class="main-benefits-item">
+                          <svg role="img" width="64" height="64" class="gradient-icon-big">
+                            <use xlink:href="#decentralized-development"></use>
+                          </svg>
+                          <h3>Decentralized Development</h3>
+                          <p>Games development will be&nbsp;promoted by&nbsp;gamers</p>
+                        </div>
+                        <div class="main-benefits-item">
+                          <svg role="img" width="64" height="64" class="gradient-icon-big">
+                            <use xlink:href="#valuable-assets"></use>
+                          </svg>
+                          <h3>Valuable Assets</h3>
+                          <p>Simple and&nbsp;trusted markets for&nbsp;assets trading</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-
-                </div>
-                <div class="tab-pane fade" id="benefits-esports" role="tabpanel" aria-labelledby="benefits-esports-tab">
-
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <h3 class="benefit">
-                        TRUSTED PAYMENTS
-                      </h3>
-                      <p>
-                        Guaranteed payments to esports teams and players
-                      </p>
-                    </div>
-                    <div class="col-sm-4">
-                      <h3 class="benefit">
-                        IMMUTABLE RNG
-                      </h3>
-                      <p>
-                        Fair and transparent execution of game logic, esports tournaments and gaming RNG
-                      </p>
-                    </div>
-                  </div>
-
                 </div>
               </div>
-            </div>
-          </section>
 
-          <section id="product">
+            </section>
 
-            <div id="scene" class="product-scene">
-              <div class="layer" data-depth="0.0">
-                <div class="twinkle">
-                  <div class="stars"></div>
-                  <div class="twinkling"></div>
-                </div>
-              </div>
-              <div class="layer" data-depth="0.08">
-                <div class="background"></div>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="row product-explainer">
-                <div class="col-sm-4">
-                  <h2>WE HOOK YOU ONTO<br />BLOCKCHAIN LIGHTSPEED.</h2>
+            <section class="intro" data-section="vision">
+              <div class="container">
+                <header class="section-header">
+                  <h2>
+                    SCALABLE BLOCKCHAIN GAMING
+                    <em>FAIR AND TRANSPARENT</em>
+                  </h2>
                   <p>
-                    Blockchain solutions by PARSEC Labs. Parsec brings trust, transparency, scalability and extensibility to gaming and entertainment industry. Our product is a bridge, which connects gaming and blockchain worlds. It consists of sidechains, Parsec Coin and an API.
+                    Our mission is to bring fairness and transparency to to the gaming and entertainment industry. We enable on-chain scalability for game execution to open up and unite virtual worlds.
                   </p>
-                </div>
-              </div>
-              <div class="row product-features">
-                <div class="col-sm-4">
-                  <h3 class="with-icon icon-coin">Parsec Coin (PSC)</h3>
-                  <p>
-                    An easy to integrate API that enables players to securely interact with the chain and developers to create autonomous worlds encoded in smart contracts and 100% available without downtime.
-                  </p>
-                </div>
-                <div class="col-sm-4 offset-sm-3">
-                  <h3 class="with-icon icon-api">Parsec API</h3>
-                  <p>
-                    An easy to integrate API that enables players to securely interact with the chain and developers to create autonomous worlds encoded in smart contracts and 100% available without downtime.
-                  </p>
-                </div>
-              </div>
-            </div>
+                </header>
 
-          </section>
+                <div class="benefits">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="benefits-dev-tab" data-toggle="tab" href="#benefits-dev" role="tab" aria-controls="benefits-dev" aria-selected="true">
+                        <svg role="img" width="46" height="46" class="gradient-icon-big">
+                          <use xlink:href="#for-developers"></use>
+                        </svg>
+                        For Developers
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="benefits-gamers-tab" data-toggle="tab" href="#benefits-gamers" role="tab" aria-controls="benefits-gamers" aria-selected="false">
+                        <svg role="img" width="46" height="46" class="gradient-icon-big">
+                          <use xlink:href="#for-gamers"></use>
+                        </svg>
+                        For Gamers
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="benefits-esports-tab" data-toggle="tab" href="#benefits-esports" role="tab" aria-controls="benefits-esports" aria-selected="false">
+                        <svg role="img" width="46" height="46" class="gradient-icon-big">
+                          <use xlink:href="#for-esports"></use>
+                        </svg>
+                        For esports
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
 
-          <section id="showcase">
-
-            <div class="scene" id="planet-scene">
-
-            </div>
-
-            <div class="section-content-wrapper">
-              <div class="section-content">
-                <div class="section-content-inner container">
-                  <div class="row text-center">
-                    <div class="col-sm-6 offset-sm-3">
-                      <div class="planet-acebustes">
-                        <img class="icon-ab" src="img/icons/acebusters.png" />
-                        <h2>Poker on the blockchain</h2>
+                    <div class="tab-pane fade show active" id="benefits-dev" role="tabpanel" aria-labelledby="benefits-dev-tab">
+                      <div class="benefit">
+                        <h3>
+                          EASY BLOCKCHAIN<br /> INTEGRATION
+                        </h3>
                         <p>
-                          We have experience and know how to get job done. By developing scaling technology like multi-party state channels, we have proven that we can solve fundamental problems of on-chain applications. <b>Acebusters</b>, Our decentralized poker platform on the Ethereum blockchain is a standing prove for this.
+                          Easy integration to blockchain by using Parsec API will save your time and resources
+                        </p>
+                      </div>
+                      <div class="benefit">
+                        <h3>
+                          COLLECT FUNDS VIA<br /> TOKEN SALES
+                        </h3>
+                        <p>
+                          Finance game development with token sale - first real step to build and grow your community
+                        </p>
+                      </div>
+                      <div class="benefit">
+                        <h3>
+                          STRONG IN-GAME<br /> ECONOMY
+                        </h3>
+                        <p>
+                          Real ownership of virtual items and currencies creates strong ingame economy.
                         </p>
                       </div>
                     </div>
+
+                    <div class="tab-pane fade" id="benefits-gamers" role="tabpanel" aria-labelledby="benefits-gamers-tab">
+                      <div class="benefit">
+                        <h3>
+                          REAL<br /> OWNERSHIP
+                        </h3>
+                        <p>
+                          Guaranteed ownership of virtual items and currencies gives you respect from the other players and wealth.
+                        </p>
+                      </div>
+                      <div class="benefit">
+                        <h3>
+                          EASILY BUY,<br /> SELL AND TRANSFER
+                        </h3>
+                        <p>
+                          More value for your virtual assets, easy to buy & sell.
+                        </p>
+                      </div>
+                      <div class="benefit">
+                        <h3>
+                          TRANSPARENCY<br /> FOR ALL
+                        </h3>
+                        <p>
+                          Safe, fair and transparent game experience due to immutable blockchain technology
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="benefits-esports" role="tabpanel" aria-labelledby="benefits-esports-tab">
+                      <div class="benefit">
+                        <h3>
+                          TRUSTED PAYMENTS
+                        </h3>
+                        <p>
+                          Guaranteed payments to esports teams and players
+                        </p>
+                      </div>
+                      <div class="benefit">
+                        <h3>
+                          IMMUTABLE RNG
+                        </h3>
+                        <p>
+                          Fair and transparent execution of game logic, esports tournaments and gaming RNG
+                        </p>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
-            </div>
 
-          </section>
+            </section>
 
-          <section id="team">
+            <div class="bg-stars-nebula">
+              <div class="twinkle">
+                <div class="stars"></div>
+                <div class="twinkling"></div>
+              </div>
 
-            <div class="section-content-wrapper">
-              <div class="section-content">
-                <div class="section-content-inner container">
-                  <!-- <div class="row text-center">
-                    <h2>The Team</h2>
-                  </div> -->
-                  <div class="row text-center team-row">
-                    <div class="col-sm-3">
-                      <img class="team-image" src="img/team/johann.png" />
-                      <h3>Johann Barbie</h3>
+              <section class="product" data-section="product">
+                <div class="container">
+                  <header class="section-header">
+                    <h2>WE HOOK YOU ONTO<br />BLOCKCHAIN LIGHTSPEED</h2>
+                    <p>
+                      Introducing Blockchain solutions by PARSEC Labs. Parsec brings trust, transparency, scalability and extensibility to gaming and entertainment industry. Our product is a bridge, which connects gaming and blockchain worlds. It consists of&nbsp;sidechains, Parsec&nbsp;Coin and an&nbsp;API.
+                    </p>
+                  </header>
+
+                  <div class="product-features">
+                    <div class="product-feature">
+                      <svg role="img" width="90" height="90" class="gradient-icon-big">
+                        <use xlink:href="#parsec-coin"></use>
+                      </svg>
+                      <h3>Parsec Coin (PSC)</h3>
                       <p>
-                        Smart Contract Engineer
+                        An easy to integrate API that enables players to securely interact with the chain and developers to create autonomous worlds encoded in smart contracts and 100% available without downtime.
                       </p>
                     </div>
-                    <div class="col-sm-3">
-                      <img class="team-image" src="img/team/alex.png" />
-                      <h3>Alex Lunyov</h3>
+                    <div class="product-feature">
+                      <svg role="img" width="93" height="76" class="gradient-icon-big">
+                        <use xlink:href="#parsec-api"></use>
+                      </svg>
+                      <h3>Parsec API</h3>
                       <p>
-                        Platform Engineer
-                      </p>
-                    </div>
-                    <div class="col-sm-3">
-                      <img class="team-image" src="img/team/calvin.png" />
-                      <h3>Calvin Hoenes</h3>
-                      <p>
-                        Experience Engineer
-                      </p>
-                    </div>
-                    <div class="col-sm-3">
-                      <img class="team-image" src="img/team/victor.png" />
-                      <h3>Victor Mateleshka</h3>
-                      <p>
-                        Engineer
-                      </p>
-                    </div>
-                    <div class="col-sm-3">
-                      <img class="team-image" src="img/team/mayank.png" />
-                      <h3>Mayank Kumar</h3>
-                      <p>
-                        Smart Contract Engineer
-                      </p>
-                    </div>
-                    <div class="col-sm-3">
-                      <img class="team-image" src="img/team/kosta.png" />
-                      <h3>Konstantin Korenkov</h3>
-                      <p>
-                        Backend Developer
-                      </p>
-                    </div>
-                    <div class="col-sm-3">
-                      <img class="team-image" src="img/team/michael.png" />
-                      <h3>Michael Kroener</h3>
-                      <p>
-                        Analyst
-                      </p>
-                    </div>
-                    <div class="col-sm-3">
-                      <img class="team-image" src="img/team/ross.png" />
-                      <h3>Ross Grubi</h3>
-                      <p>
-                        Engineer, Community
+                        An easy to integrate API that enables players to securely interact with the chain and developers to create autonomous worlds encoded in smart contracts and 100% available without downtime.
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
+
+              <section class="showcase"  data-section="showcase">
+                <div class="container">
+                  <header class="section-header">
+                    <svg role="img" width="96" height="113" class="gradient-icon-big icon-ab">
+                      <use xlink:href="#acebusters"></use>
+                    </svg>
+                    <h2>Poker on the blockchain</h2>
+                    <p>
+                      We have experience and know how to get job done. By developing scaling technology like multi-party state channels, we have proven that we can solve fundamental problems of on-chain applications. Acebusters — our decentralized poker platform on the Ethereum blockchain is a standing prove for this.
+                    </p>
+                  </header>
+                  <a href="https://acebusters.com" class="button" target="_blank">
+                    <span><em>visit</em> acebusters.com</span>
+                  </a>
+                </div>
+              </section>
             </div>
 
-          </section>
+            <section class="team" data-section="team">
+              <header class="section-header">
+                <h2>Meet the team</h2>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br />sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                </p> -->
+              </header>
 
-          <section id="roadmap">
-            <div class="container">
-                <div class="section-title section-team-title">
-                  <h2>
-                    Our Roadmap<br />
-                  </h2>
-
-                </div>
-                <div class="row">
-                  <div id="cd-timeline" class="cd-container">
-                    <div class="cd-timeline-block">
-                      <div class="cd-timeline-img cd-picture">
-                      </div>
-
-                      <div class="cd-timeline-content">
-                        <span>Q4 2016</span>
-                        <h2>Inception</h2>
-                        <p>Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.</p>
-                      </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-
-                    <div class="cd-timeline-block">
-                      <div class="cd-timeline-img cd-movie">
-                      </div> <!-- cd-timeline-img -->
-
-                      <div class="cd-timeline-content">
-                        <span>Q2 2017</span>
-                        <h2>Launch of Acebusters DApp</h2>
-                        <p>The launch of the Acebusters Dapp (Decentralized Application) on testnet. 10,000 hands have been played.</p>
-                      </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-
-                    <div class="cd-timeline-block">
-                      <div class="cd-timeline-img cd-picture">
-                      </div> <!-- cd-timeline-img -->
-
-                      <div class="cd-timeline-content">
-                        <span>Q3 2017</span>
-                        <h2>Acebusters on Ethereum Mainnet</h2>
-                        <p>World first real time Acebusters game dapp was launched of ethereum mainnet. We published a yellowpaper for multi-party state channel.</p>
-                      </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-
-                    <div class="cd-timeline-block">
-                      <div class="cd-timeline-img cd-location">
-                      </div> <!-- cd-timeline-img -->
-
-                      <div class="cd-timeline-content">
-                        <span>Q4 2017</span>
-                        <h2>Blockchains' issues with scalability</h2>
-                        <p>Load of Ethereum main-net increased. The team pivoted to providing a scalable solution. That's how Parsec Labs was born.</p>
-                      </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-
-                    <div class="cd-timeline-block">
-                      <div class="cd-timeline-img cd-location">
-                      </div>
-
-                      <div class="cd-timeline-content">
-                        <span>Q1 2018</span>
-                        <h2>Parsecs' arrival on earth</h2>
-                        <p>Completion of the Parsec whitepaper. Application for ETH Scaling Grant to build scalable solution based on Plasma whitepaper. First advisors and private investors join the team.
-</p>
-                      </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-
-                    <div class="cd-timeline-block">
-                      <div class="cd-timeline-img cd-movie">
-                      </div> <!-- cd-timeline-img -->
-
-                      <div class="cd-timeline-content">
-                        <span>Q2 2018</span>
-                        <h2>Let's scale</h2>
-                        <p>Launch of fully scalable Parsec testnet. Parsec tokens issued. </p>
-                      </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-
-                    <div class="cd-timeline-block">
-                      <div class="cd-timeline-img cd-movie">
-                      </div> <!-- cd-timeline-img -->
-
-                      <div class="cd-timeline-content">
-                        <span>Q3 2018</span>
-                        <h2>Production Network</h2>
-                        <p>Launch of fully scalable Parsec production network.</p>
-                      </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-
-                    <div class="cd-timeline-block">
-                      <div class="cd-timeline-img cd-movie">
-                      </div> <!-- cd-timeline-img -->
-
-                      <div class="cd-timeline-content">
-                        <span>Q4 2018</span>
-                        <h2>API Launch</h2>
-                        <p>Build an API's and Parsec developers community. First project starts using our technologies.</p>
-                      </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-
-                  </div> <!-- cd-timeline -->
-                </div>
-            </div>
-            <!-- /.container -->
-          </section>
-
-          <section id="rocket">
-            <div class="scene" id="rocket-scene">
-              <div class="layer" data-depth="0.08">
-                <div class="mountains m3">
-                </div>
-              </div>
-              <div class="layer" data-depth="0.22">
-                <div class="mountains m2">
-                </div>
-              </div>
-
-              <div class="layer" data-depth="0.38">
-                <div class="rocket m0">
-                </div>
-              </div>
-
-
-              <div class="layer" data-depth="0.55">
-                <div class="mountains m1">
-                </div>
-              </div>
-
-            </div>
-            <div class="container">
-              <DIV class="row">
-                <div class="col-sm-12">
-                  <h2>Stay in touch</h2>
-                </div>
-              </DIV>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="subscribe">
-                    <form action="https://parseclabs.us17.list-manage.com/subscribe/post-json?u=82ffc63ae0813261fdc1f75d7&amp;id=4d6f207452&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-                      <div id="mc_embed_signup_scroll">
-                        <div class="alert">
-
+              <div class="section-content-wrapper">
+                <div class="section-content">
+                  <div class="section-content-inner container">
+                    <!-- <div class="row text-center">
+                      <h2>The Team</h2>
+                    </div> -->
+                    <div class="row text-center team-row">
+                      <div class="col-sm-3">
+                        <img class="team-image" src="img/team/johann.png" />
+                        <div>
+                          <h3>Johann Barbie</h3>
+                          <p>
+                            Smart Contract Engineer
+                          </p>
                         </div>
-                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your email address" required>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c294e87f0fdc5cf7c4767283_fcf132e60f" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Keep me updated" name="subscribe" id="mc-embedded-subscribe" class="submit button"></div>
                       </div>
-                    </form>
-                    <!-- <form id="subscribe" action="https://formspree.io/calvinhoenes@gmail.com"
-                          method="POST">
-                        <input class="email" type="email" name="_replyto">
-                        <input class="submit" type="submit" value="Subscribe">
-                        <span class="discont">sign up now for early bird discounts.</span>
-                    </form> -->
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="row text-center" style="margin: 24px 0 48px 0;">
-                    <div class="col-3 offset-3" style="color:#fff;">
-                      <a href="https://t.me/parseclabs">
-                        <i class="fab fa-4x fa-telegram"></i>
-                      </a>
-                    </div>
-                    <div class="col-3" style="color:#fff;">
-                      <a href="https://twitter.com/Parsec_Labs">
-                        <i class="fab fa-4x fa-twitter"></i>
-                      </a>
+                      <div class="col-sm-3">
+                        <img class="team-image" src="img/team/alex.png" />
+                        <div>
+                          <h3>Alex Lunyov</h3>
+                          <p>
+                            Platform Engineer
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <img class="team-image" src="img/team/calvin.png" />
+                        <div>
+                          <h3>Calvin Hoenes</h3>
+                          <p>
+                            Experience Engineer
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <img class="team-image" src="img/team/victor.png" />
+                        <div>
+                          <h3>Victor Meteleshko</h3>
+                          <p>
+                            Engineer
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <img class="team-image" src="img/team/mayank.png" />
+                        <div>
+                          <h3>Mayank Kumar</h3>
+                          <p>
+                            Smart Contract Engineer
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <img class="team-image" src="img/team/kosta.png" />
+                        <div>
+                          <h3>Kosta Korenkov</h3>
+                          <p>
+                            Backend Developer
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <img class="team-image" src="img/team/michael.png" />
+                        <div>
+                          <h3>Michael Kroener</h3>
+                          <p>
+                            Analyst
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <img class="team-image" src="img/team/sergey.png" />
+                        <div>
+                          <h3>Sergey Stryukov</h3>
+                          <p>
+                            Engineer, UX
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+            </section>
+
+            <div class="bg-milky-way">
+              <section class="roadmap" data-section="roadmap">
+                <div class="container">
+                  <header class="section-header">
+                    <h2>Our Roadmap</h2>
+                    <!-- <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br />sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                    </p> -->
+                  </header>
+                  <div class="row">
+                    <div class="cd-container">
+                      <div class="cd-timeline-block cd-timeline-block--done">
+                        <div class="cd-timeline-img cd-picture">
+                        </div>
+
+                        <div class="cd-timeline-content">
+                          <span class="cd-timeline-content-year">2016</span>
+                          <span class="cd-timeline-content-q">Q4</span>
+                          <h2><span>Inception</span></h2>
+                          <p>Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.</p>
+                        </div> <!-- cd-timeline-content -->
+                      </div> <!-- cd-timeline-block -->
+
+                      <div class="cd-timeline-block cd-timeline-block--done">
+                        <div class="cd-timeline-img cd-movie">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                          <span class="cd-timeline-content-year">2017</span>
+                          <span class="cd-timeline-content-q">Q2</span>
+                          <h2><span>Launch of Acebusters DApp</span></h2>
+                          <p>The launch of the Acebusters Dapp (Decentralized Application) on testnet. 10,000 hands have been played.</p>
+                        </div> <!-- cd-timeline-content -->
+                      </div> <!-- cd-timeline-block -->
+
+                      <div class="cd-timeline-block cd-timeline-block--done">
+                        <div class="cd-timeline-img cd-picture">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                          <span class="cd-timeline-content-q">Q3</span>
+                          <h2><span>Acebusters on Ethereum Mainnet</span></h2>
+                          <p>World first real time Acebusters game dapp was launched of ethereum mainnet. We published a yellowpaper for multi-party state channel.</p>
+                        </div> <!-- cd-timeline-content -->
+                      </div> <!-- cd-timeline-block -->
+
+                      <div class="cd-timeline-block cd-timeline-block--done">
+                        <div class="cd-timeline-img cd-location">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                          <span class="cd-timeline-content-q">Q4</span>
+                          <h2><span>Blockchains' issues with scalability</span></h2>
+                          <p>Load of Ethereum main-net increased. The team pivoted to providing a scalable solution. That's how Parsec Labs was born.</p>
+                        </div> <!-- cd-timeline-content -->
+                      </div> <!-- cd-timeline-block -->
+
+                      <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-location">
+                        </div>
+
+                        <div class="cd-timeline-content">
+                          <span class="cd-timeline-content-year">2018</span>
+                          <span class="cd-timeline-content-q">Q1</span>
+                          <h2><span>Parsecs' arrival on earth</span></h2>
+                          <p>Completion of the Parsec whitepaper. Application for ETH Scaling Grant to build scalable solution based on Plasma whitepaper. First advisors and private investors join the team.</p>
+                        </div> <!-- cd-timeline-content -->
+                      </div> <!-- cd-timeline-block -->
+
+                      <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                          <span class="cd-timeline-content-q">Q2</span>
+                          <h2><span>Let's scale</span></h2>
+                          <p>Launch of fully scalable Parsec testnet. Parsec tokens issued. </p>
+                        </div> <!-- cd-timeline-content -->
+                      </div> <!-- cd-timeline-block -->
+
+                      <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                          <span class="cd-timeline-content-q">Q3</span>
+                          <h2><span>Production Network</span></h2>
+                          <p>Launch of fully scalable Parsec production network.</p>
+                        </div> <!-- cd-timeline-content -->
+                      </div> <!-- cd-timeline-block -->
+
+                      <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                          <span class="cd-timeline-content-q">Q4</span>
+                          <h2><span>API Launch</span></h2>
+                          <p>Build an API's and Parsec developers community. First project starts using our technologies.</p>
+                        </div> <!-- cd-timeline-content -->
+                      </div> <!-- cd-timeline-block -->
+
+                    </div> <!-- cd-timeline -->
+                  </div>
+                </div>
+                <!-- /.container -->
+              </section>
+
+              <section class="footer">
+                <div class="container">
+                  <header class="section-header">
+                    <h2>Stay in touch</h2>
+                    <!-- <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br />sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                    </p> -->
+                  </header>
+                  <div class="content">
+                    <div class="subscribe">
+                      <form action="https://parseclabs.us17.list-manage.com/subscribe/post-json?u=82ffc63ae0813261fdc1f75d7&amp;id=4d6f207452&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                          <div class="alert"></div>
+
+                          <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email address" required />
+
+                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c294e87f0fdc5cf7c4767283_fcf132e60f" tabindex="-1" value=""></div>
+                          <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button button--rect">
+                            <span>Keep me updated</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div>
+                      <div class="footer-links">
+                        <a href="https://t.me/parseclabs" target="_blank">
+                          <svg role="img" width="29" height="25">
+                            <use xlink:href="#social-telegram"></use>
+                          </svg>
+                        </a>
+
+                        <a href="https://twitter.com/Parsec_Labs" target="_blank">
+                          <svg role="img" width="27" height="22">
+                            <use xlink:href="#social-twitter"></use>
+                          </svg>
+                        </a>
+
+                        <a href="https://www.facebook.com/parsecIabs/" target="_blank">
+                          <svg role="img" width="24" height="26">
+                            <use xlink:href="#social-facebook"></use>
+                          </svg>
+                        </a>
+                      </div>
+
+                      <div class="footer-copyright">
+                        © 2018 Parseclabs. All Rights Reserved.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
-
-          </section>
-
+          </div>
 
         </div>
 
 
         <!-- END PARSEC -->
 
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r78/three.min.js"></script>
-        <!-- <script src="./lib/three.js"></script> -->
+        <script src="js/vendor/modernizr-3.5.0.min.js" async></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
-
-        <script src="js/warp.js"></script>
-
-        <script src="./js/vendor/procedural/util.js"></script>
-    		<script src="./js/vendor/procedural/spheremap.js"></script>
-    		<script src="./js/vendor/procedural/planet.js"></script>
-    		<script src="./js/vendor/procedural/starbox.js"></script>
-    		<script src="./js/vendor/procedural/material.js"></script>
-
-    		<script src="./js/vendor/procedural/procedural.js"></script>
-
-        <script src="js/vendor/parallax.min.js"></script>
-
         <script src="js/vendor/in-view.min.js"></script>
-
         <script src="js/main.js"></script>
-
-        <script>
-          var productScene = document.getElementById('scene');
-          var parallax = new Parallax(productScene, {
-            selector: '.layer'
-          });
-
-          var rocketScene = document.getElementById('rocket-scene');
-          var rocketParallax = new Parallax(rocketScene, {
-            selector: '.layer'
-          });
-
-        </script>
-
-        <script type="text/javascript">
-          SS.main.main();
-        </script>
-
-
+        <script src="js/sprite.svg.js" async></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113020429-1"></script>

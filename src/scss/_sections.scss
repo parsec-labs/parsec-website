@@ -1,0 +1,121 @@
+//main : main.scss
+
+$grid: 18px;
+
+.icon{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+}
+
+.with-icon{
+  position: relative;
+  padding-left: 64px;
+  margin-bottom: $gridSize*4+px;
+  &::before{
+    position: absolute;
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    left: 0;
+    top:-10px;
+    width: 48px;
+    height: 48px;
+  }
+  &.icon-coin{
+    &::before{
+        background-image: url(../img/icons/coin@2x.png);
+    }
+  }
+  &.icon-api{
+    &::before{
+        background-image: url(../img/icons/api@2x.png);
+    }
+  }
+}
+
+.icon-ecosystem{
+  background-image: url(../img/icons/unified-ecosystem.svg);
+}
+
+.icon-assets{
+  background-image: url(../img/icons/valuable-assets.svg);
+}
+
+.icon-decentralized{
+  background-image: url(../img/icons/decentralized-development.svg);
+}
+
+.icon-ab{
+  width: 96px;
+  display: block;
+  margin: 20px auto;
+}
+
+#app{
+  // margin-bottom: 300px;
+}
+
+section{
+  width: 100%;
+  position: relative;
+
+  .scene{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .section-content-wrapper{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .section-content{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+section .scene{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+p {
+  // text-align: justify;
+  display: block;
+  margin: 0 auto;
+  display: block;
+}
+
+@import "buttons";
+@import "inputs";
+@import "section-header";
+@import "backgrounds";
+
+@import "top-header";
+@import "header";
+@import "main-benefits";
+@import "intro";
+@import "benefits";
+@import "product";
+@import "showcase";
+@import "team";
+@import "roadmap";
+@import "footer";

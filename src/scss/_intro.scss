@@ -1,0 +1,12 @@
+.intro {
+  padding: 100px 0 0;
+  text-align: center;
+
+  .section-header {
+    margin-bottom: 70px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 150px 0 0;
+  }
+}

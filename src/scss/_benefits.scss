@@ -1,0 +1,254 @@
+@keyframes flicker {
+  0% {opacity: 0}
+  30% {opacity: 0.8}
+  40% {opacity: 0.1}
+  65% {opacity: 0.9}
+  78% {opacity: 0.0}
+  100% {opacity: 1.0}
+}
+
+.benefits {
+  margin-bottom: 0;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 2;
+
+  .nav-link.active, .nav-link{
+    background-color: transparent;
+    border: none;
+  }
+
+  .nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-tabs{
+    border: none;
+  }
+
+  .nav-item{
+    padding: 0 32px;
+  }
+
+  .nav-link{
+    font-size: 38px;
+    font-weight: 900;
+
+    padding: 0 0 10px;
+
+    text-transform: uppercase;
+
+    svg {
+      margin-top: -10px;
+      margin-right: 5px;
+    }
+
+    &::after{
+      content: '';
+      width: 100%;
+      height: 3px;
+      left: 0;
+      background-color: $cc_blue;
+      background-image: linear-gradient(to right, #00adff, #00f2fe);
+      position: absolute;
+      bottom: 0;
+      opacity: 0;
+    }
+
+    &.active::after{
+      opacity: 1;
+    }
+
+    color: #fff;
+
+    &.active, &:hover{
+      color: $cc_blue;
+      background-color: transparent;
+      cursor: pointer;
+
+      background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .nav-item {
+      padding: 8px 15px 0;
+    }
+
+    .nav-link {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0;
+    .nav-item {
+      padding: 8px 5px 0;
+    }
+
+    .nav-link {
+      font-size: 18px;
+
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  .nav-link:not(.active):hover{
+    position: relative;
+
+    &:after{
+      opacity: 0;
+      animation: flicker 0.3s linear 1 forwards;
+    }
+  }
+
+  .nav-link.active{
+    position: relative;
+  }
+
+  .tab-content {
+    border: 2px solid rgba(#fff, 0.24);
+    border-radius: 15px;
+
+    [class*='col-'] {
+      padding: $gridSize*4+px;
+      padding-left: $gridSize*4+48+px;
+    }
+
+    & > .tab-pane {
+      display: none;
+    }
+
+    & > .tab-pane.active {
+      display: flex;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+
+  .tab-pane {
+    align-items: baseline;
+    padding: 40px 0;
+  }
+
+  .benefit {
+    position: relative;
+
+    flex: 1;
+    padding: 0 50px;
+
+    h3 {
+      font-size: 28px;
+      font-weight: 900;
+
+      margin-bottom: 40px;
+      height: 64px; // two lines
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      line-height: 32px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 18px;
+
+      line-height: 26px;
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 83px;
+
+      height: 2px;
+
+      content: '';
+
+      background-color: rgba(#fff, 0.24);
+    }
+
+    &:first-child::before {
+      left: 50px;
+    }
+
+    &:last-child::before {
+      right: 50px;
+    }
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      top: 72px;
+
+      width: 22px;
+      height: 22px;
+      margin-left: -11px;
+
+      content: '';
+
+      background-image: url(../img/icons/checkmark.svg);
+    }
+
+    @media screen and (max-width: 1200px) {
+      h3 {
+        font-size: 22px;
+
+        height: 56px;
+        margin-bottom: 50px;
+
+        line-height: 28px;
+      }
+
+      p {
+        font-size: 16px;
+
+        line-height: 22px;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      padding: 0 15px;
+
+      &:first-child::before {
+        left: 15px;
+      }
+
+      &:last-child::before {
+        right: 15px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      text-align: left !important;
+
+      h3 {
+        text-align: left !important;
+        margin-bottom: 0;
+        height: auto;
+        display: block;
+      }
+
+      &::before, &::after {
+        display: none;
+      }
+
+      & + .benefit {
+        margin-top: 20px;
+      }
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
