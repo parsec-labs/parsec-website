@@ -27,7 +27,7 @@ const files = {
   presaleJs: [
     'src/js/presale/main.js',
   ],
-  css: 'src/scss/*.scss',
+  css: 'src/scss/**/*.scss',
   svg: 'src/svg/*.svg',
   html: '**/*.html',
 };
