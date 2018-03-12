@@ -9,4 +9,9 @@
   border: 2px solid rgba(#FFF, 0.35);
   border-radius: 15px;
   background: none;
+
+  &--round {
+    border-radius: 35px;
+    border-color: rgba(#8ae0ff, 0.35);
+  }
 }

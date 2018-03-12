@@ -19,10 +19,60 @@
     <link rel="stylesheet" href="../css/presale.css">
   </head>
   <body>
-    <div id="svg-sprite" style="width: 0; height: 0;position:absolute;"></div>
+    <div id="svg-sprite" style="width: 0; height: 0;position:absolute; display: none;"></div>
 
-    <div id="app">
+    <div id="app" class="presale-page">
+      <header class="header">
+        <svg role="img" width="267" height="68" class="top-header-logo">
+          <use xlink:href="#parseclabs"></use>
+        </svg>
+        <p class="header__info">
+          For more info please visit <a href="../">parseclabs.org</a>
+        </p>
+      </header>
 
+      <content class="content">
+        <div class="intro">
+          <p>You are <strong>1 of 100 chosen</strong>. Proceed with your <br />promo code to see a private rocket launch!</p>
+        </div>
+
+        <form class="promo-form">
+          <div class="promo-form__fields">
+            <input type="text" class="input input--round" placeholder="Promo code" required />
+            <input type="email" class="input input--round" placeholder="Your email" required />
+            <button class="button" type="submit"><span>Submit</span></button>
+          </div>
+          <div class="promo-form__rocket">
+            <div class="rocket"></div>
+          </div>
+        </form>
+      </content>
+
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="https://t.me/parseclabs" target="_blank">
+            <svg role="img" width="29" height="25">
+              <use xlink:href="#social-telegram"></use>
+            </svg>
+          </a><!--
+            Remove whitespace
+          --><a href="https://twitter.com/Parsec_Labs" target="_blank">
+            <svg role="img" width="27" height="22">
+              <use xlink:href="#social-twitter"></use>
+            </svg>
+          </a><!--
+            Remove whitespace
+          --><a href="https://www.facebook.com/parsecIabs/" target="_blank">
+            <svg role="img" width="24" height="26">
+              <use xlink:href="#social-facebook"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer-copyright">
+          © 2018 Parseclabs. All Rights Reserved.
+        </div>
+      </footer>
     </div>
 
     <script src="../js/presale.js" async></script>

@@ -6,7 +6,7 @@
   position: relative;
 
   display: inline-block;
-
+  flex-shrink: 0;
   height: 65px;
   margin: 0 30px;
   padding: 0;
@@ -34,9 +34,9 @@
   span::after {
     position: absolute;
     top: -2px;
+    bottom: -0;
 
     width: 32px;
-    height: 65px;
 
     content: '';
 

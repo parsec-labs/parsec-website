@@ -29,7 +29,7 @@ const files = {
   ],
   css: 'src/scss/*.scss',
   svg: 'src/svg/*.svg',
-  html: 'index.html',
+  html: '**/*.html',
 };
 
 const makeJsTask = (input, output) => (

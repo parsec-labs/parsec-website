@@ -10,3 +10,130 @@ body, html {
   color: #fff;
   background-color: #000;
 }
+
+@import "inputs";
+@import "buttons";
+
+@mixin gradientText() {
+  color: #00ccff;
+}
+
+.presale-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    font-size: 26px;
+
+    text-transform: uppercase;
+
+    a {
+      font-weight: 900;
+
+      text-decoration: none;
+
+      @include gradientText();
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.intro {
+  font-size: 38px;
+
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 44px;
+
+  margin-bottom: 50px;
+
+  strong {
+    font-weight: 900;
+
+    @include gradientText();
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.promo-form {
+  display: flex;
+  align-items: center;
+
+  background-color: rgba(#0e283b, 0.75);
+  box-shadow: 0 0 0 15px rgba(#0e283b, 0.75);
+  border: 1px solid rgba(#00adff, 0.4);
+  border-radius: 60px;
+
+  &__fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 80px;
+
+    .input {
+      text-align: center;
+    }
+
+    & > * + * {
+      margin-top: 15px;
+    }
+  }
+
+  &__rocket {
+    padding: 0 35px 0 0;
+  }
+}
+
+.rocket {
+  width: 310px;
+  height: 310px;
+
+  border-radius: 50%;
+  background-color: #008092;
+}
+
+.footer {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.footer-links {
+  a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  svg {
+    fill: #FFF;
+  }
+}
+
+.footer-copyright {
+  font-size: 16px;
+
+  margin-top: 10px;
+
+  color: rgba(#FFF, 0.35);
+}
