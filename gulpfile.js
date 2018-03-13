@@ -25,6 +25,7 @@ const files = {
     'src/js/main.js',
   ],
   presaleJs: [
+    'src/js/presale/rocket.js',
     'src/js/presale/main.js',
   ],
   css: 'src/scss/**/*.scss',

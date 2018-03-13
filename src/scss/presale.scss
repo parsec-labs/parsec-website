@@ -13,7 +13,8 @@ body, html {
 
 @import "inputs";
 @import "buttons";
-@import "presale/solaris";
+// @import "presale/solaris";
+@import "presale/rocket";
 
 @mixin gradientText() {
   color: #00ccff;
