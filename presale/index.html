@@ -37,12 +37,30 @@
         </div>
 
         <form class="promo-form">
-          <div class="promo-form__fields">
-            <input type="text" class="input input--round" placeholder="Promo code" required />
-            <input type="email" class="input input--round" placeholder="Your email" required />
-            <button class="button" type="submit"><span>Submit</span></button>
-            <button id="success" type="button">Success</button>
-            <button id="fail" type="button">Fail</button>
+          <div class="promo-form__content" data-mode="form">
+            <div class="promo-form__fields">
+              <input type="text" class="input input--round" placeholder="Promo code" required />
+              <input type="email" class="input input--round" placeholder="Your email" required />
+              <button class="button" type="submit"><span>Submit</span></button>
+            </div>
+            <div class="promo-form__timer">
+              <h2>Presale launch starts in:</h2>
+              <div class="timer" data-until="1521504000">
+                <span class="timer__part">
+                  &nbsp;<span>days</span>
+                </span>
+                <span class="timer__part">
+                  &nbsp;<span>hours</span>
+                </span>
+                <span class="timer__part">
+                  &nbsp;<span>minutes</span>
+                </span>
+                <span class="timer__part">
+                  &nbsp;<span>seconds</span>
+                </span>
+              </div>
+              We will inform you by e-mail
+            </div>
           </div>
           <div class="promo-form__rocket">
             <div class="rocket">
@@ -53,8 +71,8 @@
               </div>
               <div class="rocket-status rocket-status--fail">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                  <line class="path line" fill="none" stroke="#df0032" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
-                  <line class="path line" fill="none" stroke="#df0032" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
+                  <line class="path line" fill="none" stroke="#ff0030" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
+                  <line class="path line" fill="none" stroke="#ff0030" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
                 </svg>
               </div>
               <div class="rocket-scene">
@@ -191,6 +209,8 @@
             </div>
           </div>
         </form>
+        <button id="success" type="button">Success</button>
+        <button id="fail" type="button">Fail</button>
       </content>
 
       <footer class="footer">

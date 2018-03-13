@@ -13,6 +13,7 @@ body, html {
 
 @import "inputs";
 @import "buttons";
+@import "timer";
 // @import "presale/solaris";
 @import "presale/rocket";
 
@@ -101,12 +102,27 @@ body, html {
   box-shadow: 0 0 0 15px rgba(#0e283b, 0.75);
   border: 1px solid rgba(#00adff, 0.4);
   border-radius: 60px;
+  margin: 0 15px;
+
+  &__content {
+    font-size: 16px;
+
+    flex: 1;
+    padding: 60px 80px;
+
+    text-align: center;
+
+    h2 {
+      font-size: 32px;
+      font-weight: normal;
+
+      margin: 0 0 20px;
+    }
+  }
 
   &__fields {
-    flex: 1;
-    display: flex;
+    display: none;
     flex-direction: column;
-    padding: 60px 80px;
 
     .input {
       text-align: center;
@@ -117,8 +133,20 @@ body, html {
     }
   }
 
+  &__timer {
+    display: none;
+  }
+
   &__rocket {
     padding: 0 35px 0 0;
+  }
+
+  &__content[data-mode="form"] &__fields {
+    display: flex;
+  }
+
+  &__content[data-mode="timer"] &__timer {
+    display: block;
   }
 }
 

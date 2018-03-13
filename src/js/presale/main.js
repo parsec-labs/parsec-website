@@ -1,6 +1,7 @@
 (() => {
   document.getElementById('success').addEventListener('click', () => {
-    // document.querySelector('.rocket-status--success').classList.add('st-active');
+    document.querySelector('.promo-form__content').dataset.mode = 'timer';
+    document.querySelector('.intro p').innerHTML = `<strong>thank you!</strong><br /> some really motivational text goes here`;
     window.launchRocket();
   });
 
@@ -12,4 +13,6 @@
       document.querySelector('.rocket-status--fail').classList.add('st-active');
     }
   });
+
+  Array.from(document.querySelectorAll('.timer')).forEach(window.initTimer);
 })();

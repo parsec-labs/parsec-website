@@ -17,7 +17,7 @@
       .add(TweenMax.to(cx('rocket'), 1, { className: "-=st-shake" }))
       .add(TweenMax.to(cx('rocket'), 1, { y: -300, delay:-1 }))
       .add(TweenMax.to(cx('takeoff'), 1, { y: -300, delay:-1 }))
-      .add(TweenMax.to(cx('smoke'), 3, { scale: 1, y: -20, delay: -1 }))
+      .add(TweenMax.to(cx('smoke'), 3, { scale: 1, y: -20, delay: -0.8 }))
       .add(TweenMax.to('.rocket-status--success', 3, { className: "+=st-active", delay: -2.2 }))
       .add(TweenMax.to(cx('rocket'), 1, { y: -10, rotate: 40, delay: -3 }))
       .add(TweenMax.to(cx('takeoff'), 0.2, { opacity: 0, delay: -3 }))
