@@ -262,10 +262,10 @@ $asteroids-belt-orb : 300px; $asteroids-belt-pl: 210px;
 }
 
 @keyframes orb{
-  from {
-    transform:rotate(0deg)
-  }
-  to{
-    transform:rotate(-360deg)
-  }
+  // from {
+  //   transform: matrix3d(1,-0.02,0.00,0,0.02,1,0.00,0,0,0,1,0,0,0,0,1);
+  // }
+  // to{
+  //   transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+  // }
 }

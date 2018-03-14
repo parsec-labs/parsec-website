@@ -39,8 +39,12 @@
         <form class="promo-form">
           <div class="promo-form__content" data-mode="form">
             <div class="promo-form__fields">
-              <input type="text" class="input input--round" placeholder="Promo code" required />
-              <input type="email" class="input input--round" placeholder="Your email" required />
+              <div class="row">
+                  <input type="text" class="input input--round" placeholder="Promo code" required name="promoCode" />
+              </div>
+              <div class="row">
+                  <input type="email" class="input input--round" placeholder="Your email" required name="email" />
+              </div>
               <button class="button" type="submit"><span>Submit</span></button>
             </div>
             <div class="promo-form__timer">
@@ -209,8 +213,6 @@
             </div>
           </div>
         </form>
-        <button id="success" type="button">Success</button>
-        <button id="fail" type="button">Fail</button>
       </content>
 
       <footer class="footer">
@@ -256,9 +258,9 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" async></script>
-    <script src="../js/presale.js" async></script>
-    <script src="../js/sprite.svg.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" defer></script>
+    <script src="../js/presale.js" defer></script>
+    <script src="../js/sprite.svg.js" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113020429-1"></script>

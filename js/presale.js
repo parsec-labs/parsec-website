@@ -41,20 +41,104 @@
 })();
 'use strict';
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 (function () {
-  document.getElementById('success').addEventListener('click', function () {
-    document.querySelector('.promo-form__content').dataset.mode = 'timer';
-    document.querySelector('.intro p').innerHTML = '<strong>thank you!</strong><br /> some really motivational text goes here';
-    window.launchRocket();
+  var RequestError = function (_Error) {
+    _inherits(RequestError, _Error);
+
+    function RequestError(response) {
+      _classCallCheck(this, RequestError);
+
+      var _this = _possibleConstructorReturn(this, (RequestError.__proto__ || Object.getPrototypeOf(RequestError)).call(this, response.statusText));
+
+      _this.status = response.status;
+      _this.response = response;
+      return _this;
+    }
+
+    return RequestError;
+  }(Error);
+
+  var requestApi = function requestApi(apiUrl) {
+    return function (method, path, params) {
+      var headers = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+
+      var options = {
+        method: method,
+        headers: Object.assign({
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        }, headers),
+        body: params && JSON.stringify(params)
+      };
+
+      return fetch(apiUrl + '/' + path, options).then(function (response) {
+        if (response.status >= 200 && response.status < 300) {
+          return response.json();
+        }
+
+        if (response.status < 500) {
+          return Promise.reject(new RequestError(response));
+        }
+
+        return Promise.reject('Server error');
+      }).then(function (json) {
+        if (json.status && json.status === 'error') {
+          throw json;
+        }
+        return json;
+      });
+    };
+  };
+
+  window.requestApi = requestApi('https://sarrsmlpsg.execute-api.eu-west-1.amazonaws.com/v0');
+})();
+'use strict';
+
+(function () {
+  var promoForm = document.querySelector('.promo-form');
+  var submitButton = promoForm.querySelector('.button[type=submit]');
+  promoForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (promoForm.querySelector('.row[data-error]')) {
+      return;
+    }
+
+    var formData = new FormData(e.target);
+
+    submitButton.setAttribute('disabled', true);
+    window.requestApi('post', 'submit', {
+      email: formData.get('email'),
+      promoCode: formData.get('promoCode')
+    }).then(function () {
+      document.querySelector('.promo-form__content').dataset.mode = 'timer';
+      document.querySelector('.intro p').innerHTML = '<strong>Thank you!</strong><br /> Some really motivational text goes here';
+      window.launchRocket();
+    }, function (_ref) {
+      var errors = _ref.errors;
+
+      Object.keys(errors).forEach(function (key) {
+        var input = promoForm.querySelector('[name="' + key + '"]');
+        if (input && input.parentNode) {
+          input.parentNode.dataset.error = errors[key];
+        }
+      });
+      document.querySelector('.rocket-status--fail').classList.add('st-active');
+    }).then(function () {
+      submitButton.removeAttribute('disabled');
+    });
   });
 
-  document.getElementById('fail').addEventListener('click', function () {
-    var fail = document.querySelector('.rocket-status--fail');
-    if (fail.classList.contains('st-active')) {
-      document.querySelector('.rocket-status--fail').classList.remove('st-active');
-    } else {
-      document.querySelector('.rocket-status--fail').classList.add('st-active');
-    }
+  promoForm.addEventListener('change', function () {
+    document.querySelector('.rocket-status--fail').classList.remove('st-active');
+    Array.from(promoForm.querySelectorAll('.row')).forEach(function (row) {
+      delete row.dataset.error;
+    });
   });
 
   Array.from(document.querySelectorAll('.timer')).forEach(window.initTimer);

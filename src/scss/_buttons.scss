@@ -11,6 +11,7 @@
   margin: 0 30px;
   padding: 0;
 
+  outline: none;
   cursor: pointer;
   text-transform: uppercase;
   line-height: 65px;
@@ -62,8 +63,8 @@
     position: absolute;
     top: -2px;
     bottom: -2px;
-    left: -32px;
-    right: -32px;
+    left: -34px;
+    right: -34px;
 
     content: '';
     opacity: 0;
@@ -72,6 +73,10 @@
     background-image: linear-gradient(to right, #00adff, #00f2fe);
 
     transition: opacity 0.2s;
+  }
+
+  &:disabled {
+    opacity: 0.4;
   }
 
   &:hover {

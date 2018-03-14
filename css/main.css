@@ -185,6 +185,7 @@ p {
   height: 65px;
   margin: 0 30px;
   padding: 0;
+  outline: none;
   cursor: pointer;
   text-transform: uppercase;
   line-height: 65px;
@@ -223,13 +224,15 @@ p {
     position: absolute;
     top: -2px;
     bottom: -2px;
-    left: -32px;
-    right: -32px;
+    left: -34px;
+    right: -34px;
     content: '';
     opacity: 0;
     border-radius: 32px;
     background-image: linear-gradient(to right, #00adff, #00f2fe);
     transition: opacity 0.2s; }
+  .button:disabled {
+    opacity: 0.4; }
   .button:hover {
     color: #0d1d3f;
     text-decoration: none;
@@ -306,7 +309,8 @@ p {
   color: #FFF !important;
   border: 2px solid rgba(255, 255, 255, 0.35);
   border-radius: 15px;
-  background: none; }
+  background: none;
+  outline: none; }
   .input--round {
     border-radius: 35px;
     border-color: rgba(138, 224, 255, 0.35); }

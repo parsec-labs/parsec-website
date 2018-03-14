@@ -14,7 +14,7 @@ body, html {
 @import "inputs";
 @import "buttons";
 @import "timer";
-// @import "presale/solaris";
+@import "presale/solaris";
 @import "presale/rocket";
 
 @mixin gradientText() {
@@ -121,6 +121,7 @@ body, html {
   }
 
   &__fields {
+    position: relative;
     display: none;
     flex-direction: column;
 
@@ -128,8 +129,32 @@ body, html {
       text-align: center;
     }
 
-    & > * + * {
-      margin-top: 15px;
+    .row {
+      margin-bottom: 15px;
+    }
+
+    .row[data-error] {
+      &::before {
+        font-size: 20px;
+
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+
+        text-align: center;
+        content: attr(data-error);
+
+        color: #ff0030;
+      }
+
+      & ~ &::before {
+        display: none;
+      }
+
+      .input {
+        border-color: #ff0030;
+      }
     }
   }
 
