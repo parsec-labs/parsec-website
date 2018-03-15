@@ -17,6 +17,9 @@ body, html {
 
 @mixin gradientText() {
   color: #00ccff;
+  background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .presale-page {
@@ -108,6 +111,7 @@ body, html {
     font-weight: 900;
 
     @include gradientText();
+    white-space: nowrap;
   }
 
   p {
