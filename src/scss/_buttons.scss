@@ -6,11 +6,12 @@
   position: relative;
 
   display: inline-block;
-
+  flex-shrink: 0;
   height: 65px;
   margin: 0 30px;
   padding: 0;
 
+  outline: none;
   cursor: pointer;
   text-transform: uppercase;
   line-height: 65px;
@@ -34,9 +35,9 @@
   span::after {
     position: absolute;
     top: -2px;
+    bottom: -0;
 
     width: 32px;
-    height: 65px;
 
     content: '';
 
@@ -62,8 +63,8 @@
     position: absolute;
     top: -2px;
     bottom: -2px;
-    left: -32px;
-    right: -32px;
+    left: -34px;
+    right: -34px;
 
     content: '';
     opacity: 0;
@@ -72,6 +73,11 @@
     background-image: linear-gradient(to right, #00adff, #00f2fe);
 
     transition: opacity 0.2s;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
   }
 
   &:hover {
@@ -114,10 +120,14 @@
 
     margin: 0 23px;
 
+    span {
+      height: 44px;
+    }
+
     span::before,
     span::after {
       width: 23px;
-      height: 46px;
+      height: 42px;
     }
 
     &::before {

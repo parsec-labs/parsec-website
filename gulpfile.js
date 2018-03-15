@@ -24,13 +24,19 @@ const files = {
     'src/js/cosmos.js',
     'src/js/main.js',
   ],
-  css: 'src/scss/*.scss',
+  presaleJs: [
+    'src/js/presale/rocket.js',
+    'src/js/timer.js',
+    'src/js/presale/requestApi.js',
+    'src/js/presale/main.js',
+  ],
+  css: 'src/scss/**/*.scss',
   svg: 'src/svg/*.svg',
-  html: 'index.html',
+  html: '**/*.html',
 };
 
-gulp.task('js', () => (
-  gulp.src(files.js)
+const makeJsTask = (input, output) => (
+  gulp.src(input)
       .pipe(plumber())
       .pipe(babel({
         presets: [['env', {
@@ -39,11 +45,14 @@ gulp.task('js', () => (
           },
         }]],
       }))
-      .pipe(concat('main.js'))
+      .pipe(concat(output))
       .pipe(watching ? noop() : uglify())
       .pipe(gulp.dest('js'))
       .pipe(livereload())
-));
+);
+
+gulp.task('js', () => makeJsTask(files.js, 'main.js'));
+gulp.task('js:presale', () => makeJsTask(files.presaleJs, 'presale.js'));
 
 gulp.task('css', () => (
   gulp.src(files.css)
@@ -84,7 +93,7 @@ gulp.task('html', () => (
       .pipe(livereload())
 ));
 
-gulp.task('dev', ['css', 'js', 'svg'], () => {
+gulp.task('dev', ['css', 'js', 'js:presale', 'svg'], () => {
   watching = true;
   livereload.listen();
 
@@ -97,6 +106,10 @@ gulp.task('dev', ['css', 'js', 'svg'], () => {
     batch((events, done) => gulp.start('js', done))
   );
   watch(
+    files.presaleJs,
+    batch((events, done) => gulp.start('js:presale', done))
+  );
+  watch(
     files.svg,
     batch((events, done) => gulp.start('svg', done))
   );
@@ -106,4 +119,4 @@ gulp.task('dev', ['css', 'js', 'svg'], () => {
   );
 });
 
-gulp.task('default', ['css', 'js', 'svg']);
+gulp.task('default', ['css', 'js', 'js:presale', 'svg']);

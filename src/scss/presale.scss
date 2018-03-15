@@ -1,0 +1,271 @@
+@import "base";
+@import "typography";
+
+body, html {
+  padding: 0;
+  margin: 0;
+
+  color: #fff;
+  background-color: #000;
+}
+
+@import "inputs";
+@import "buttons";
+@import "timer";
+@import "presale/solaris";
+@import "presale/rocket";
+
+@mixin gradientText() {
+  color: #00ccff;
+  background: -webkit-linear-gradient(360deg, #00adff, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.presale-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  opacity: 0.82;
+
+  background-image: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  &__logo {
+    color: #ffffff;
+  }
+
+  &__info {
+    font-size: 26px;
+
+    text-transform: uppercase;
+
+    a {
+      font-weight: 900;
+
+      text-decoration: none;
+
+      @include gradientText();
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+
+    text-align: center;
+    padding-top: 20px;
+
+    &__info {
+      display: none;
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.intro {
+  font-size: 38px;
+
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 44px;
+
+  margin-bottom: 50px;
+
+  strong {
+    font-weight: 900;
+
+    @include gradientText();
+    white-space: nowrap;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+
+    line-height: 40px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.promo-form {
+  display: flex;
+  align-items: center;
+
+  background-color: rgba(#0e283b, 0.75);
+  box-shadow: 0 0 0 15px rgba(#0e283b, 0.75);
+  border: 1px solid rgba(#00adff, 0.4);
+  border-radius: 60px;
+  margin: 0 15px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    border-radius: 30px;
+    margin: 0;
+  }
+
+  &__content {
+    font-size: 16px;
+
+    flex: 1;
+    padding: 60px 80px;
+
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: normal;
+
+      margin: 0 0 20px;
+
+      line-height: 1;
+    }
+  }
+
+  &__fields {
+    position: relative;
+    display: none;
+    flex-direction: column;
+
+    .input {
+      text-align: center;
+    }
+
+    .row {
+      margin-bottom: 15px;
+    }
+
+    .row[data-error] {
+      &::before {
+        font-size: 20px;
+
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+
+        text-align: center;
+        content: attr(data-error);
+
+        color: #ff0030;
+      }
+
+      & ~ &::before {
+        display: none;
+      }
+
+      .input {
+        border-color: #ff0030;
+      }
+    }
+  }
+
+  &__timer {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      .timer__part:last-child {
+        display: none;
+      }
+    }
+  }
+
+  &__rocket {
+    padding: 0 35px 0 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 30px 0 0;
+
+      .rocket {
+        margin: -50px auto;
+        transform: scale(0.6666);
+      }
+    }
+  }
+
+  &__content[data-mode="form"] &__fields {
+    display: flex;
+  }
+
+  &__content[data-mode="timer"] &__timer {
+    display: block;
+  }
+}
+
+.rocket {
+  width: 310px;
+  height: 310px;
+
+  border-radius: 50%;
+  background-color: #008092;
+}
+
+.footer {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.footer-links {
+  a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  svg {
+    fill: #FFF;
+  }
+}
+
+.footer-copyright {
+  font-size: 16px;
+
+  margin-top: 10px;
+
+  color: rgba(#FFF, 0.35);
+}
