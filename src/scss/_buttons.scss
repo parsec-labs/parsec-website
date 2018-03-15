@@ -120,10 +120,14 @@
 
     margin: 0 23px;
 
+    span {
+      height: 44px;
+    }
+
     span::before,
     span::after {
       width: 23px;
-      height: 46px;
+      height: 42px;
     }
 
     &::before {
