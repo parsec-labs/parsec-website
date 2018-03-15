@@ -7,24 +7,27 @@
     mask: '0000-0000-0000',
   });
 
+  let sending = false;
   promoForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    if (promoForm.querySelector('.row[data-error]')) {
+    if (sending || promoForm.querySelector('.row[data-error]')) {
       return;
     }
 
     const formData = new FormData(e.target);
 
     submitButton.setAttribute('disabled', true);
+    sending = true;
     window.requestApi('post', 'submit', {
       email: formData.get('email'),
       promoCode: formData.get('promoCode'),
     }).then(
       () => {
-        document.querySelector('.promo-form__content').dataset.mode = 'timer';
-        document.querySelector('.intro p').innerHTML = `<strong>Thank you!</strong><br /> Some really motivational text goes here`;
+        setTimeout(() => {
+          document.querySelector('.promo-form__content').dataset.mode = 'timer';
+          document.querySelector('.intro p').innerHTML = `<strong>Thank you!</strong><br /> Some really motivational text goes here`;
+        }, 5200);
         window.launchRocket();
-        submitButton.removeAttribute('disabled');
       },
       ({ errors }) => {
         Object.keys(errors).forEach((key) => {
@@ -34,6 +37,7 @@
           }
         })
         document.querySelector('.rocket-status--fail').classList.add('st-active');
+        sending = false;
       }
     );
   });
