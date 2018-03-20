@@ -62,6 +62,7 @@ $grid: 18px;
 section{
   width: 100%;
   position: relative;
+  overflow: hidden;
 
   .scene{
     position: absolute;

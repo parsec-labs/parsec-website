@@ -1,4 +1,5 @@
 .button {
+  appearance: none;
   font-family: inherit;
   font-size: 28px;
   font-weight: 900;
@@ -33,6 +34,7 @@
 
   span::before,
   span::after {
+    box-sizing: border-box;
     position: absolute;
     top: -2px;
     bottom: -0;
@@ -127,7 +129,7 @@
     span::before,
     span::after {
       width: 23px;
-      height: 42px;
+      height: 46px;
     }
 
     &::before {
