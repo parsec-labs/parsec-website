@@ -84,7 +84,7 @@
             <section class="blogpost">
               <div class="container">
                 {% for post in page.collection %}
-                <li><a href="{{ post.path }}">{{ post.title }}</a></li>
+                <li><a href="/blog/{{ post.path }}">{{ post.title }}</a></li>
                 {% endfor %}
               </div>
             </section>
