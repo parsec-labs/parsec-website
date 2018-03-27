@@ -24,6 +24,7 @@ body,html{
 $gridSize: 8;
 
 @import "sections";
+@import "blog";
 
 .gradient-icon {
   fill: url(#icons-gradient-small);

@@ -1,0 +1,19 @@
+.blogpost {
+  padding: 180px 0 130px;
+  background-color: white;
+  color: black;
+
+  @media screen and (max-width: 768px) {
+  }
+}
+
+html.blog {
+  .top-header {
+    background-color: black;
+    padding: 30px 40px 30px;
+  }
+
+  .top-header-menu a {
+    color: white;
+  }
+}

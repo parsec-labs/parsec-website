@@ -15,6 +15,7 @@ const uglify = require('gulp-uglify');
 const globalDefs = require('./gulp-global-svg-defs-plugin');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const minisite = require('gulp-minisite');
 
 let watching = false;
 
@@ -33,6 +34,7 @@ const files = {
   css: 'src/scss/**/*.scss',
   svg: 'src/svg/*.svg',
   html: '**/*.html',
+  blog: 'src/blog/**/*'
 };
 
 const makeJsTask = (input, output) => (
@@ -93,7 +95,28 @@ gulp.task('html', () => (
       .pipe(livereload())
 ));
 
-gulp.task('dev', ['css', 'js', 'js:presale', 'svg'], () => {
+gulp.task('minisite', function() {
+  return gulp.src('src/blog/content/**/*')
+    .pipe(minisite({
+      templateEngine: function(tmplName, tmplData) {
+        var marked   = require('marked');
+        var nunjucks = require('nunjucks');
+
+        var env = new nunjucks.Environment(
+          new nunjucks.FileSystemLoader('src/blog/template'),
+          { noCache: true }
+        );
+        env.addFilter('markdown', function(str) {
+          if (!str) return str;
+          return new nunjucks.runtime.SafeString(marked(str));
+        });
+        return env.render(tmplName, tmplData);
+      }
+    }))
+    .pipe(gulp.dest('blog'));
+});
+
+gulp.task('dev', ['css', 'js', 'js:presale', 'svg', 'minisite'], () => {
   watching = true;
   livereload.listen();
 
@@ -117,6 +140,10 @@ gulp.task('dev', ['css', 'js', 'js:presale', 'svg'], () => {
     files.html,
     batch((events, done) => gulp.start('html', done))
   );
+  watch(
+    files.blog,
+    batch((events, done) => gulp.start('minisite', done))
+  );
 });
 
-gulp.task('default', ['css', 'js', 'js:presale', 'svg']);
+gulp.task('default', ['css', 'js', 'js:presale', 'svg', 'minisite']);

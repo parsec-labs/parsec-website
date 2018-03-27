@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js blog" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Blog | ParsecLabs</title>
+        <meta name="description" content="Blockchanging the Gaming World">
+        <meta name="keywords" content="parsec, blockchain, gaming, esports, PSC, games, entertainment">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="http://www.calvinhoenes.com/parsec/img/parsec-preview.jpg" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <div id="svg-sprite" style="width: 0; height: 0;position:absolute;"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 0; height: 0;position:absolute;">
+          <defs>
+            <linearGradient id="icons-gradient-small" gradientUnits="userSpaceOnUse" x1="8.175" y1="15" x2="21.825" y2="15" gradientTransform="matrix(1 0 0 -1 0 30)">
+                <stop offset="0" stop-color="#4facfe"/>
+                <stop offset="1" stop-color="#00f2fe"/>
+            </linearGradient>
+            <linearGradient id="icons-gradient-big" gradientUnits="userSpaceOnUse" x1=".49" y1="41.925" x2="83.5" y2="41.925" gradientTransform="matrix(1 0 0 -1 0 84)">
+                <stop offset="0" stop-color="#4facfe"/>
+                <stop offset="1" stop-color="#00f2fe"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- BEGIN PARSEC -->
+
+        <div id="app">
+          <header class="top-header">
+            <a data-target="home">
+              <svg role="img" width="267" height="68" class="top-header-logo">
+                <use xlink:href="#parseclabs"></use>
+              </svg>
+            </a>
+
+            <div class="top-header-menu">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li class="top-header-socials">
+                  <a href="https://t.me/parseclabs" target="_blank">
+                    <svg role="img" width="29" height="25" class="gradient-icon">
+                      <use xlink:href="#social-telegram"></use>
+                    </svg>
+                  </a>
+
+                  <a href="https://twitter.com/Parsec_Labs" target="_blank">
+                    <svg role="img" width="27" height="22" class="gradient-icon">
+                      <use xlink:href="#social-twitter"></use>
+                    </svg>
+                  </a>
+
+                  <a href="https://www.facebook.com/parsecIabs/" target="_blank">
+                    <svg role="img" width="24" height="26" class="gradient-icon">
+                      <use xlink:href="#social-facebook"></use>
+                    </svg>
+                  </a>
+
+                  <a href="https://github.com/parsec-labs" target="_blank">
+                    <svg role="img" width="26" height="26" class="gradient-icon">
+                      <use xlink:href="#social-github"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </header>
+
+          <div class="sections">
+            <section class="blogpost">
+              <div class="container">
+                {% for post in page.collection %}
+                <li><a href="{{ post.path }}">{{ post.title }}</a></li>
+                {% endfor %}
+              </div>
+            </section>
+          </div>
+
+        </div>
+
+
+        <!-- END PARSEC -->
+
+        <script src="../js/vendor/modernizr-3.5.0.min.js" async></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="../js/vendor/bootstrap.min.js"></script>
+        <script src="../js/vendor/in-view.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/sprite.svg.js" async></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113020429-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-113020429-1');
+        </script>
+    </body>
+</html>
