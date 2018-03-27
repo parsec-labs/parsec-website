@@ -2,8 +2,24 @@
   padding: 180px 0 130px;
   background-color: white;
   color: black;
+  min-height: 100vh;
 
   @media screen and (max-width: 768px) {
+  }
+
+  .blog-index {
+    list-style: none;
+
+    li {
+      display: block;
+      font-size: 20px;
+      line-height: 1.1;
+      margin-bottom: 30px;
+
+      .date {
+        font-size: 16px;
+      }
+    }
   }
 }
 

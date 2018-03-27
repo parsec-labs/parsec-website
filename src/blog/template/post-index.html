@@ -83,9 +83,14 @@
           <div class="sections">
             <section class="blogpost">
               <div class="container">
-                {% for post in page.collection %}
-                <li><a href="/blog{{ post.path }}">{{ post.title }}</a></li>
-                {% endfor %}
+                <ul class="blog-index">
+                  {% for post in page.collection %}
+                  <li>
+                    <div class="date">{{ post.date | formatdate }}</div>
+                    <a href="/blog{{ post.path }}">{{ post.title }}</a>                    
+                  </li>
+                  {% endfor %}
+                </ul>
               </div>
             </section>
           </div>

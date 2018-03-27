@@ -99,16 +99,23 @@ gulp.task('minisite', function() {
   return gulp.src('src/blog/content/**/*')
     .pipe(minisite({
       templateEngine: function(tmplName, tmplData) {
-        var marked   = require('marked');
-        var nunjucks = require('nunjucks');
+        const marked   = require('marked');
+        const nunjucks = require('nunjucks');
+        const tinytime = require('tinytime');
 
-        var env = new nunjucks.Environment(
+        const env = new nunjucks.Environment(
           new nunjucks.FileSystemLoader('src/blog/template'),
           { noCache: true }
         );
         env.addFilter('markdown', function(str) {
           if (!str) return str;
           return new nunjucks.runtime.SafeString(marked(str));
+        });
+
+        const dateFormat = tinytime('{MM} {DD}, {YYYY}')
+
+        env.addFilter('formatdate', function(date) {
+          return dateFormat.render(date);
         });
         return env.render(tmplName, tmplData);
       }
