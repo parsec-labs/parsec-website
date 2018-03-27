@@ -17,7 +17,7 @@ env:
 
 build:
   ci:
-    - yarn
+    - npm install
     - ./node_modules/.bin/gulp
     - aws configure set preview.cloudfront true
     - if [ "$BRANCH" == "blog" ]; then aws s3 sync . s3://test.parseclabs.org/ --size-only --exclude "shippable.yml" --exclude ".git/*" --exclude "src/**/*" --delete --acl public-read; fi
