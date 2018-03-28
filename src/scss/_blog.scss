@@ -1,5 +1,5 @@
 .blogpost {
-  padding: 180px 0 130px;
+  padding: 140px 0 130px;
   background-color: white;
   color: black;
   min-height: 100vh;
@@ -26,6 +26,11 @@
 html.blog {
   .top-header {
     background-color: black;
-    padding: 30px 40px 30px;
+    padding: 15px 40px 15px;
+
+    .top-header-logo {
+      width: 130px;
+      height: 33px;
+    }
   }
 }
