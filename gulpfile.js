@@ -21,9 +21,10 @@ let watching = false;
 
 const files = {
   js: [
+    'node_modules/ilyabirman-likely/release/likely.js',
     'src/js/plugins.js',
     'src/js/cosmos.js',
-    'src/js/main.js',
+    'src/js/main.js'
   ],
   presaleJs: [
     'src/js/presale/rocket.js',
@@ -31,7 +32,10 @@ const files = {
     'src/js/presale/requestApi.js',
     'src/js/presale/main.js',
   ],
-  css: 'src/scss/**/*.scss',
+  css: [
+    'src/scss/**/*.scss',
+    'node_modules/ilyabirman-likely/release/likely.css'
+  ],
   svg: 'src/svg/*.svg',
   html: '**/*.html',
   blog: 'src/blog/**/*'
@@ -113,7 +117,7 @@ gulp.task('minisite', function() {
           if (!str) return str;
           return new nunjucks.runtime.SafeString(marked(str));
         });
-        
+
         env.addFilter('formatdate', function(date) {
           return dateFormat.render(date);
         });

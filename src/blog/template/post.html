@@ -16,6 +16,7 @@
         <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="../../css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/likely.css">
         <link rel="stylesheet" href="../../css/normalize.css">
         <link rel="stylesheet" href="../../css/main.css">
     </head>
@@ -88,8 +89,13 @@
                   <div class="date">{{ page.date | formatdate }}</div>
                 </header>
                 <p>{{ page.body | markdown }}</p>
+                <div class="likely">
+                  <div class="twitter">Tweet</div>
+                  <div class="facebook">Share</div>
+                  <div class="telegram">Send</div>
+                </div>
               </div>
-            </section>          
+            </section>
           </div>
 
         </div>
