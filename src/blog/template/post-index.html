@@ -84,10 +84,10 @@
             <section class="blogpost">
               <div class="container">
                 <ul class="blog-index">
-                  {% for post in page.collection %}
+                  {% for post in (page.collection | latestFirst) %}
                   <li>
                     <div class="date">{{ post.date | formatdate }}</div>
-                    <a href="/blog{{ post.path }}">{{ post.title }}</a>                    
+                    <a href="/blog{{ post.path }}">{{ post.title }}</a>
                   </li>
                   {% endfor %}
                 </ul>

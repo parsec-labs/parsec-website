@@ -102,21 +102,26 @@ gulp.task('minisite', function() {
         const marked   = require('marked');
         const nunjucks = require('nunjucks');
         const tinytime = require('tinytime');
+        const dateFormat = tinytime('{MM} {DD}, {YYYY}')
 
         const env = new nunjucks.Environment(
           new nunjucks.FileSystemLoader('src/blog/template'),
           { noCache: true }
         );
+
         env.addFilter('markdown', function(str) {
           if (!str) return str;
           return new nunjucks.runtime.SafeString(marked(str));
         });
-
-        const dateFormat = tinytime('{MM} {DD}, {YYYY}')
-
+        
         env.addFilter('formatdate', function(date) {
           return dateFormat.render(date);
         });
+
+        env.addFilter('latestFirst', function(collection) {
+          return collection.sort(function(a, b) { return b.date - a.date; });
+        });
+
         return env.render(tmplName, tmplData);
       }
     }))
