@@ -83,10 +83,13 @@
           <div class="sections">
             <section class="blogpost">
               <div class="container">
-                <h2>{{ page.title }}</h2>
+                <header class="section-header">
+                  <h2>{{ page.title }}</h2>
+                  <div class="date">{{ page.date | formatdate }}</div>
+                </header>
                 <p>{{ page.body | markdown }}</p>
               </div>
-            </section>
+            </section>          
           </div>
 
         </div>

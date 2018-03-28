@@ -1088,6 +1088,9 @@ p {
       margin-bottom: 30px; }
       .blogpost .blog-index li .date {
         font-size: 16px; }
+  .blogpost .section-header {
+    text-align: left;
+    margin-bottom: 1.5rem; }
 
 html.blog .top-header {
   background-color: black;
