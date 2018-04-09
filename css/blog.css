@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -132,6 +133,82 @@ body, html {
   .blog-index__item:hover .blog-index__date {
     opacity: 0.75;
     transition: none; }
+
+.blog-post__cover {
+  position: relative;
+  padding: 55px 0 225px;
+  margin-bottom: -175px;
+  background-size: cover;
+  color: #ffffff; }
+  .blog-post__cover:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5); }
+  .blog-post__cover .container {
+    position: relative;
+    z-index: 2; }
+
+.blog-post__date {
+  font-size: 20px;
+  opacity: 0.5; }
+
+.blog-post__header {
+  padding: 0 50px; }
+  .blog-post__header h1 {
+    width: 80%;
+    font-size: 38px;
+    margin: 0;
+    text-transform: none;
+    line-height: 48px; }
+
+.blog-post__content {
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 70px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.24); }
+  .blog-post__content p {
+    margin: 0 0 30px; }
+    .blog-post__content p:last-child {
+      margin-bottom: 0; }
+  .blog-post__content a {
+    text-decoration: underline;
+    color: #007aff; }
+  .blog-post__content h2, .blog-post__content h3 {
+    font-weight: 900;
+    text-transform: none; }
+  .blog-post__content h2 {
+    font-size: 38px; }
+  .blog-post__content h3 {
+    font-size: 24px;
+    line-height: 30px; }
+  .blog-post__content ul {
+    list-style: none; }
+  .blog-post__content li {
+    position: relative; }
+  .blog-post__content li + li {
+    margin-top: 30px; }
+  .blog-post__content li::before {
+    position: absolute;
+    left: -20px;
+    content: "•";
+    color: #007aff; }
+
+.blog-post__section {
+  padding: 50px; }
+
+.blog-post__section + .blog-post__section {
+  border-top: 2px solid #eee; }
+
+.blog-post .likely {
+  display: block; }
 
 .gradient-icon {
   fill: url(#icons-gradient-small); }
