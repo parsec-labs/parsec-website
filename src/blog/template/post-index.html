@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
         <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/blog.css">
     </head>
     <body>
         <div id="svg-sprite" style="width: 0; height: 0;position:absolute;"></div>
@@ -81,17 +81,18 @@
           </header>
 
           <div class="sections">
-            <section class="blogpost">
-              <div class="container">
-                <ul class="blog-index">
-                  {% for post in (page.collection | latestFirst) %}
-                  <li>
-                    <div class="date">{{ post.date | formatdate }}</div>
-                    <a href="/blog{{ post.path }}">{{ post.title }}</a>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </div>
+            <h1 class="blog-index-title">
+              Blog
+            </h1>
+            <section class="blog">
+              <ul class="blog-index">
+                {% for post in (page.collection | latestFirst) %}
+                <li class="blog-index__item">
+                  <h2><a href="/blog{{ post.path }}">{{ post.title }}</a></h2>
+                  <span class="blog-index__date">{{ post.date | formatdate }}</span>
+                </li>
+                {% endfor %}
+              </ul>
             </section>
           </div>
 
@@ -100,11 +101,6 @@
 
         <!-- END PARSEC -->
 
-        <script src="../js/vendor/modernizr-3.5.0.min.js" async></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="../js/vendor/bootstrap.min.js"></script>
-        <script src="../js/vendor/in-view.min.js"></script>
-        <script src="../js/main.js"></script>
         <script src="../js/sprite.svg.js" async></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
