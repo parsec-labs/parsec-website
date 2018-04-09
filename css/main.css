@@ -485,7 +485,8 @@ p {
         width: 130px;
         height: 33px; } }
   .top-header a {
-    transition: color 0.2s; }
+    transition: color 0.2s;
+    color: #ffffff; }
     .top-header a:hover {
       transition: none; }
 
@@ -1026,7 +1027,8 @@ p {
 
 .feedback-link {
   display: inline-block;
-  padding: 0 15px; }
+  padding: 0 15px;
+  color: #00b8ff; }
 
 .footer {
   min-height: 100vh;
@@ -1073,31 +1075,6 @@ p {
 .footer-copyright {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.35); }
-
-.blog {
-  padding: 140px 0 130px;
-  background-color: white;
-  color: black;
-  min-height: 100vh; }
-  .blog .blog-index {
-    list-style: none; }
-    .blog .blog-index li {
-      display: block;
-      font-size: 20px;
-      line-height: 1.1;
-      margin-bottom: 30px; }
-      .blog .blog-index li .date {
-        font-size: 16px; }
-  .blog .section-header {
-    text-align: left;
-    margin-bottom: 1.5rem; }
-
-html.blog .top-header {
-  background-color: black;
-  padding: 15px 40px 15px; }
-  html.blog .top-header .top-header-logo {
-    width: 130px;
-    height: 33px; }
 
 .gradient-icon {
   fill: url(#icons-gradient-small); }

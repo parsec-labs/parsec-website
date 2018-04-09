@@ -41,7 +41,7 @@
 
         <div id="app">
           <header class="top-header">
-            <a data-target="home">
+            <a href="/">
               <svg role="img" width="267" height="68" class="top-header-logo">
                 <use xlink:href="#parseclabs"></use>
               </svg>
@@ -85,17 +85,76 @@
               Blog
             </h1>
             <section class="blog">
-              <ul class="blog-index">
+              <div class="blog-index">
                 {% for post in (page.collection | latestFirst) %}
-                <li class="blog-index__item">
-                  <h2><a href="/blog{{ post.path }}">{{ post.title }}</a></h2>
-                  <span class="blog-index__date">{{ post.date | formatdate }}</span>
-                </li>
+                <a href="/blog{{ post.path }}">
+                  <div class="blog-index__item" style="background-image: url(/img/blog/{{ post.image }})">
+                    <div class="blog-index__item-c">
+                      <h2>{{ post.title }}</h2>
+                      <span class="blog-index__date">{{ post.date | formatdate }}</span>
+                    </div>
+                  </div>
+                </a>
                 {% endfor %}
-              </ul>
+              </div>
             </section>
           </div>
 
+          <section class="footer">
+            <div class="container">
+              <div class="content">
+                <div class="subscribe">
+                  <form action="https://parseclabs.us17.list-manage.com/subscribe/post-json?u=82ffc63ae0813261fdc1f75d7&amp;id=4d6f207452&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                      <div class="alert"></div>
+
+                      <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email address" required />
+
+                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c294e87f0fdc5cf7c4767283_fcf132e60f" tabindex="-1" value=""></div>
+                      <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button button--rect">
+                        <span>Keep me updated</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div>
+                  <div class="footer-links">
+                    <a href="https://t.me/parseclabs" target="_blank">
+                      <svg role="img" width="29" height="25">
+                        <use xlink:href="#social-telegram"></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://twitter.com/Parsec_Labs" target="_blank">
+                      <svg role="img" width="27" height="22">
+                        <use xlink:href="#social-twitter"></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/parsecIabs/" target="_blank">
+                      <svg role="img" width="24" height="26">
+                        <use xlink:href="#social-facebook"></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://github.com/parsec-labs" target="_blank">
+                      <svg role="img" width="26" height="26">
+                        <use xlink:href="#social-github"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="feedback-area">
+                    <a class="feedback-link" href="mailto:info@parseclabs.org">info@parseclabs.org</a>
+                    <a class="feedback-link" href="https://goo.gl/forms/wXYCFiOkslQ4scNG2" target="_blank">Share your feedback</a>
+                  </div>
+                  <div class="footer-copyright">
+                    © 2018 Parseclabs. All Rights Reserved.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
 
 

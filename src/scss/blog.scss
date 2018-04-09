@@ -8,3 +8,153 @@ body, html {
   color: #000;
   background-color: #FFF;
 }
+
+.blog-index-title {
+  font-size: 60px;
+  font-weight: 800;
+
+  margin: 0;
+  line-height: 1;
+
+  padding: 35px 0;
+
+  text-align: center;
+}
+
+.blog-index {
+  padding: 0;
+
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__item {
+    color: #ffffff;
+    background-size: cover;
+
+    h2 {
+      font-size: 32px;
+      text-transform: none;
+
+      &::after {
+        display: block;
+        width: 50px;
+        height: 3px;
+        margin: 28px auto 30px;
+
+        content: '';
+
+        background-image: linear-gradient( 0deg, rgb(79,172,254) 0%, rgb(0,242,254) 100%);
+      }
+    }
+
+    margin-bottom: 2px;
+  }
+
+  &__item-c {
+    padding: 75px 0 70px;
+
+    background-color: rgba(#000, 0.5);
+    transition: background-color 0.3s;
+  }
+
+  &__item:hover &__item-c {
+    background-color: rgba(#000, 0.35);
+    transition: none;
+  }
+
+  &__date {
+    font-size: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+
+  &__item:hover &__date {
+    opacity: 0.75;
+    transition: none;
+  }
+}
+
+@import "icons";
+@import "top-header";
+@import "footer";
+@import "inputs";
+@import "buttons";
+@import "feedback-area";
+@import "backgrounds";
+
+.top-header {
+  position: static;
+  color: #ffffff;
+  background-color: #000000;
+
+  padding: 15px 40px;
+}
+
+.footer {
+  min-height: 0;
+  height: 350px;
+  padding-top: 40px;
+
+  .container:before {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & > * {
+      width: 48%;
+    }
+  }
+}
+
+/*
+.blog {
+  padding: 140px 0 130px;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+
+  @media screen and (max-width: 768px) {
+  }
+
+  .blog-index {
+    list-style: none;
+
+    li {
+      display: block;
+      font-size: 20px;
+      line-height: 1.1;
+      margin-bottom: 30px;
+
+      .date {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .section-header {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+}
+
+html.blog {
+  .top-header {
+    background-color: black;
+    padding: 15px 40px 15px;
+
+    .top-header-logo {
+      width: 130px;
+      height: 33px;
+    }
+  }
+}
+
+*/
