@@ -13,15 +13,39 @@ body, html {
   font-size: 60px;
   font-weight: 800;
 
-  margin: 0;
-  line-height: 1;
+  position: absolute;
+  top: -12px;
+  left: 50%;
 
+  margin: 0;
   padding: 35px 0;
 
+  line-height: 1;
   text-align: center;
+
+  transform: translateX(-50%);
+
+  color: #ffffff;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 50px;
+
+    top: -18px;
+  }
+
+  @media screen and (max-width: 768px) {
+    transform: none;
+    left: auto;
+    right: 40px;
+  }
+
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
 }
 
 .blog-index {
+  margin-top: 2px;
   padding: 0;
 
   text-align: center;

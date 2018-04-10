@@ -78,12 +78,13 @@
                 </li>
               </ul>
             </div>
-          </header>
 
-          <div class="sections">
             <h1 class="blog-index-title">
               Blog
             </h1>
+          </header>
+
+          <div class="sections">
             <section class="blog">
               <div class="blog-index">
                 {% for post in (page.collection | latestFirst) %}
