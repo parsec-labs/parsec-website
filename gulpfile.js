@@ -99,7 +99,7 @@ gulp.task('html', () => (
       .pipe(livereload())
 ));
 
-gulp.task('minisite', function() {
+gulp.task('blog', () => {
   return gulp.src('src/blog/content/**/*')
     .pipe(minisite({
       templateEngine: function(tmplName, tmplData) {
@@ -129,10 +129,11 @@ gulp.task('minisite', function() {
         return env.render(tmplName, tmplData);
       }
     }))
-    .pipe(gulp.dest('blog'));
+    .pipe(gulp.dest('blog'))
+    .pipe(livereload());
 });
 
-gulp.task('dev', ['css', 'js', 'js:presale', 'svg', 'minisite'], () => {
+gulp.task('dev', ['css', 'js', 'js:presale', 'svg', 'blog'], () => {
   watching = true;
   livereload.listen();
 
@@ -158,8 +159,8 @@ gulp.task('dev', ['css', 'js', 'js:presale', 'svg', 'minisite'], () => {
   );
   watch(
     files.blog,
-    batch((events, done) => gulp.start('minisite', done))
+    batch((events, done) => gulp.start('blog', done))
   );
 });
 
-gulp.task('default', ['css', 'js', 'js:presale', 'svg', 'minisite']);
+gulp.task('default', ['css', 'js', 'js:presale', 'svg', 'blog']);
