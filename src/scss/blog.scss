@@ -156,6 +156,11 @@ body, html {
 
   &__header {
     padding: 0 50px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 20px;
+    }
+
     h1 {
       width: 80%;
       font-size: 38px;
@@ -240,6 +245,10 @@ body, html {
 
   &__section {
     padding: 50px;
+
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+    }
   }
 
   &__section + &__section {
@@ -268,8 +277,8 @@ body, html {
 @import "feedback-area";
 @import "backgrounds";
 .footer {
-  min-height: 0;
-  height: 350px;
+  height: auto;
+  min-height: 350px;
   padding-top: 40px;
 
   .container:before {
@@ -280,5 +289,17 @@ body, html {
     & > * {
       width: 48%;
     }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+
+      & > * {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    background-size: cover;
   }
 }
