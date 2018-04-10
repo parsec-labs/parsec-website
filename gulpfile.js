@@ -23,7 +23,6 @@ let watching = false;
 
 const files = {
   js: [
-    'node_modules/ilyabirman-likely/release/likely.js',
     'src/js/plugins.js',
     'src/js/cosmos.js',
     'src/js/main.js'
@@ -36,7 +35,6 @@ const files = {
   ],
   css: [
     'src/scss/**/*.scss',
-    'node_modules/ilyabirman-likely/release/likely.css'
   ],
   svg: 'src/svg/*.svg',
   html: '**/*.html',
