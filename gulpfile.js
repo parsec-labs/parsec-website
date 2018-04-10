@@ -17,6 +17,8 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const minisite = require('gulp-minisite');
 
+const loadBlogPosts = require('./src/gulp/loadBlogPosts');
+
 let watching = false;
 
 const files = {
@@ -38,7 +40,8 @@ const files = {
   ],
   svg: 'src/svg/*.svg',
   html: '**/*.html',
-  blog: 'src/blog/**/*'
+  blog: 'src/blog/**/*',
+  site: 'src/site/**/*',
 };
 
 const makeJsTask = (input, output) => (
@@ -102,7 +105,7 @@ gulp.task('html', () => (
 gulp.task('blog', () => {
   return gulp.src('src/blog/content/**/*')
     .pipe(minisite({
-      templateEngine: function(tmplName, tmplData) {
+      templateEngine(tmplName, tmplData) {
         const marked   = require('marked');
         const nunjucks = require('nunjucks');
         const tinytime = require('tinytime');
@@ -123,7 +126,7 @@ gulp.task('blog', () => {
         });
 
         env.addFilter('latestFirst', function(collection) {
-          return collection.sort(function(a, b) { return b.date - a.date; });
+          return collection.sort((a, b) => b.date - a.date);
         });
 
         return env.render(tmplName, tmplData);
@@ -133,7 +136,38 @@ gulp.task('blog', () => {
     .pipe(livereload());
 });
 
-gulp.task('dev', ['css', 'js', 'js:presale', 'svg', 'blog'], () => {
+let posts;
+gulp.task('site', async (cb) => {
+  if (!posts) {
+    posts = await loadBlogPosts('src/blog/content');
+  }
+  return gulp.src('src/site/content/**/*')
+    .pipe(minisite({
+      templateEngine(tmplName, tmplData) {
+        const marked   = require('marked');
+        const nunjucks = require('nunjucks');
+        const tinytime = require('tinytime');
+        const dateFormat = tinytime('{MM} {DD}, {YYYY}');
+
+        const env = new nunjucks.Environment(
+          new nunjucks.FileSystemLoader('src/site/template'),
+          { noCache: true }
+        );
+
+        env.addFilter('formatdate', function(date) {
+          return dateFormat.render(date);
+        });
+
+        tmplData.posts = posts.sort((a, b) => b.date - a.date).slice(0, 3);
+
+        return env.render(tmplName, tmplData);
+      }
+    }))
+    .pipe(gulp.dest('.'))
+    .pipe(livereload());
+});
+
+gulp.task('dev', ['css', 'js', 'js:presale', 'svg', 'blog', 'site'], () => {
   watching = true;
   livereload.listen();
 
@@ -161,6 +195,10 @@ gulp.task('dev', ['css', 'js', 'js:presale', 'svg', 'blog'], () => {
     files.blog,
     batch((events, done) => gulp.start('blog', done))
   );
+  watch(
+    files.site,
+    batch((events, done) => gulp.start('site', done))
+  );
 });
 
-gulp.task('default', ['css', 'js', 'js:presale', 'svg', 'blog']);
+gulp.task('default', ['css', 'js', 'js:presale', 'svg', 'blog', 'site']);

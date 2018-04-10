@@ -198,13 +198,10 @@ body, html {
 }
 
 @import "icons";
-@import "top-header";
-@import "footer";
 @import "inputs";
 @import "buttons";
-@import "feedback-area";
-@import "backgrounds";
 
+@import "top-header";
 .top-header {
   position: static;
   color: #ffffff;
@@ -213,6 +210,9 @@ body, html {
   padding: 15px 40px;
 }
 
+@import "footer";
+@import "feedback-area";
+@import "backgrounds";
 .footer {
   min-height: 0;
   height: 350px;
@@ -223,11 +223,6 @@ body, html {
   }
 
   .content {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
     & > * {
       width: 48%;
     }
