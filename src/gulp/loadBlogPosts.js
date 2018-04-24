@@ -14,6 +14,6 @@ module.exports = async function loadBlogPosts(srcPath) {
 
   return contents.map(fm).map(({ attributes }) => attributes).map((attrs, i) => Object.assign(attrs, {
     date: new Date(attrs.date),
-    path: `/${files[i].split('.')[1]}`,
+    path: `/${files[i].split('.')[0]}`,
   }));
 }
