@@ -15,7 +15,7 @@ One big topic at the Ethereum Community Conference in Paris was the aftermath of
 
 The Ethereum Magicians aim to create means for social consensus to be better able to deal with contentious protocol decisions. Read the logs <a href="https://www.reddit.com/r/ethereum/comments/835lob/notes_from_the_first_meeting_of_the_fellowship_of/">here</a>.
 
-Besides governance, Scalability has been on everyone’s lips. @karl_dot_tech and <a href="https://github.com/DavidKnott">David Knott</a> have talked about Minimum Viable Plasma, while Vitalik Buterin has presented Plasma Cash for the first time.
+Besides governance, Scalability has been on everyone’s lips. [@karl_dot_tech](https://twitter.com/karl_dot_tech) and <a href="https://github.com/DavidKnott">David Knott</a> have talked about Minimum Viable Plasma, while Vitalik Buterin has presented Plasma Cash for the first time.
 
 Another interesting phenomenon was the appearance of more and more blockchain game startups. Experimental, the team behind <a href="https://cryptowars.e11.io">CryptoWars</a> organized a meetup and explained limits and challenges developing games with the ethereum blockchain.
 
