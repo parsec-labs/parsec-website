@@ -241,6 +241,10 @@ body, html {
       content: "•";
       color: #007aff;
     }
+
+    img {
+      max-width: 100%;
+    }
   }
 
   &__section {
