@@ -21,17 +21,17 @@ Another interesting phenomenon was the appearance of more and more blockchain ga
 
 <b>Vitalik Buterin presented Plasma Cash in Paris. What do you think about this solution? How often speakers in Paris mentioned the scalability problem?</b>
 
-Plasma Cash is interesting as it addresses some of the limitations that Plasma classic showed. Plasma is a technology that provides an execution venue for transactions and computation that can be much cheaper than the main chain, while being as secure as the main chain. In fact, the security of any Plasma child chain is protected with the mining power of the Ethereum miners. 
+Plasma Cash is interesting as it addresses some of the limitations that Plasma classic showed. Plasma is a technology that provides an execution venue for transactions and computation that can be much cheaper than the main chain, while being as secure as the main chain. In fact, the security of any Plasma child chain is protected with the mining power of the Ethereum miners.
 
 There is one attack vector in the Plasma Classic design which can not be prevented: block data withholding. If this attack is detected, all users need to leave the plasma chain within a specific time, which is of course very inconvenient.
 
-Plasma Cash circumvents the described problem, and users only need to watch the chain for the coins that are in their possession. This brings another advantage - Plasma Cash chains can scale to much more transactions, as users don’t need to verify the full block, but only the transactions that affect them. 
+Plasma Cash circumvents the described problem, and users only need to watch the chain for the coins that are in their possession. This brings another advantage - Plasma Cash chains can scale to much more transactions, as users don’t need to verify the full block, but only the transactions that affect them.
 
 I find Plasma and Plasma Cash exiting because they don’t require a hardfork before they can’t be used. Rather both can be deployed by anyone as smart contracts. Teams and Businesses can start profiting today from higher transaction throughput and cheaper transactions.
 
 <b>Kyiv and BlockchainUA were next. How was the conference? Was you a one of the speakers and pitched there your vision of Plasma? Where we can find the slides?</b>
 
-Yes, I have been to Kyiv few times before. The conference was good: 3 stages (main, product, technology) and many interesting speakers and projects. You can find my slides <a href="https://drive.google.com/file/d/1zWoHB86UAzuYcagOoqr60aJZoB7jj5jp/view">here</a>. 
+Yes, I have been to Kyiv few times before. The conference was good: 3 stages (main, product, technology) and many interesting speakers and projects. You can find my slides <a href="https://drive.google.com/file/d/1zWoHB86UAzuYcagOoqr60aJZoB7jj5jp/view">here</a>.
 
 <img src="blogPost12.png">
 
