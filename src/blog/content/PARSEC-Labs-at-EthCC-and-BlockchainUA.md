@@ -1,6 +1,6 @@
 ---
 template: post.html
-title:    "Event Recap: PARSEC Labs at EhCC 2018 and BlockchainUA"
+title:    "PARSEC Labs at EthCC and BlockchainUA"
 date:     2018-04-24 00:23:00
 image:    blog01-banner.png
 ---
