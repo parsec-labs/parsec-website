@@ -11,13 +11,13 @@ Hey, guys! As some of you already know, we are a very friendly international ope
 
 Any person can give a shot and join our team, but there are some qualities, which can increase your chances to fit well in our team. These qualities are following:
 
-Strong software development background 
-Experience working with open-source projects
-Familiarity with UNIX environments 
-Proficiency in one of the following languages: JavaScript, Solidity
-Familiarity with basic cryptography
-Familiarity with P2P networks 
-Strong knowledge of Ethereum-like blockchains
+- Strong software development background 
+- Experience working with open-source projects
+- Familiarity with UNIX environments 
+- Proficiency in one of the following languages: JavaScript, Solidity
+- Familiarity with basic cryptography
+- Familiarity with P2P networks 
+- Strong knowledge of Ethereum-like blockchains
 
 If you have any questions regarding the possible roles - we will be happy to help you here:
 
