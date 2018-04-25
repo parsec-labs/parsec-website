@@ -1,1 +1,9 @@
 node_modules
+/blog/
+css/blog.css
+css/main.css
+css/presale.css
+js/main.js
+js/presale.js
+js/sprite.svg.js
+/index.html

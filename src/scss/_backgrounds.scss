@@ -65,15 +65,19 @@
   .container::before {
     position: absolute;
     bottom: 0;
-    right: 25%;
+    left: 50%;
 
-    width: 278px;
+    width: 210px;
     height: 712px;
-    margin-right: -140px;
+    margin-left: -105px;
+    pointer-events: none;
 
     content: '';
 
     background-image: url(../img/backgrounds/rocket.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
 
     @media screen and (max-width: 768px) {
       display: none;

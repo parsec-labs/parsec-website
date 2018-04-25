@@ -40,6 +40,8 @@
   a {
     transition: color 0.2s;
 
+    color: #ffffff;
+
     &:hover {
       transition: none;
     }
@@ -62,6 +64,7 @@
   a {
     padding: 5px 15px;
     display: inline-block;
+    color: white;
 
     cursor: pointer;
 

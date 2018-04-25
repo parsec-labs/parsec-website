@@ -7,7 +7,7 @@
         <meta name="description" content="Blockchanging the Gaming World">
         <meta name="keywords" content="parsec, blockchain, gaming, esports, PSC, games, entertainment">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:image" content="http://www.calvinhoenes.com/parsec/img/parsec-preview.jpg" />
+        <meta property="og:image" content="/img/og.jpg" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div id="svg-sprite" style="width: 0; height: 0;position:absolute;"></div>
+        <div id="svg-sprite" style="width: 0; height: 0;position:absolute;overflow:hidden"></div>
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 0; height: 0;position:absolute;">
           <defs>
             <linearGradient id="icons-gradient-small" gradientUnits="userSpaceOnUse" x1="8.175" y1="15" x2="21.825" y2="15" gradientTransform="matrix(1 0 0 -1 0 30)">
@@ -55,6 +55,7 @@
                 <li><a data-target="showcase">Showcase</a></li>
                 <li><a data-target="team">Team</a></li>
                 <li><a data-target="roadmap">Roadmap</a></li>
+                <li><a href="/blog">Blog</a></li>
                 <li class="top-header-socials">
                   <a href="https://t.me/parseclabs" target="_blank">
                     <svg role="img" width="29" height="25" class="gradient-icon">
@@ -541,62 +542,77 @@
               </section>
 
               <section class="footer">
+                <header class="section-header">
+                  <h2>Stay in touch</h2>
+                </header>
+
                 <div class="container">
-                  <header class="section-header">
-                    <h2>Stay in touch</h2>
-                    <!-- <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br />sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
-                    </p> -->
-                  </header>
                   <div class="content">
-                    <div class="subscribe">
-                      <form action="https://parseclabs.us17.list-manage.com/subscribe/post-json?u=82ffc63ae0813261fdc1f75d7&amp;id=4d6f207452&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                          <div class="alert"></div>
-
-                          <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email address" required />
-
-                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c294e87f0fdc5cf7c4767283_fcf132e60f" tabindex="-1" value=""></div>
-                          <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button button--rect">
-                            <span>Keep me updated</span>
-                          </button>
-                        </div>
-                      </form>
-                    </div>
                     <div>
-                      <div class="footer-links">
-                        <a href="https://t.me/parseclabs" target="_blank">
-                          <svg role="img" width="29" height="25">
-                            <use xlink:href="#social-telegram"></use>
-                          </svg>
-                        </a>
+                      <div class="subscribe">
+                        <form action="https://parseclabs.us17.list-manage.com/subscribe/post-json?u=82ffc63ae0813261fdc1f75d7&amp;id=4d6f207452&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                          <div id="mc_embed_signup_scroll">
+                            <div class="alert"></div>
 
-                        <a href="https://twitter.com/Parsec_Labs" target="_blank">
-                          <svg role="img" width="27" height="22">
-                            <use xlink:href="#social-twitter"></use>
-                          </svg>
-                        </a>
+                            <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email address" required />
 
-                        <a href="https://www.facebook.com/parsecIabs/" target="_blank">
-                          <svg role="img" width="24" height="26">
-                            <use xlink:href="#social-facebook"></use>
-                          </svg>
-                        </a>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c294e87f0fdc5cf7c4767283_fcf132e60f" tabindex="-1" value=""></div>
+                            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button button--rect">
+                              <span>Keep me updated</span>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      <div>
+                        <div class="footer-links">
+                          <a href="https://t.me/parseclabs" target="_blank">
+                            <svg role="img" width="29" height="25">
+                              <use xlink:href="#social-telegram"></use>
+                            </svg>
+                          </a>
 
-                        <a href="https://github.com/parsec-labs" target="_blank">
-                          <svg role="img" width="26" height="26">
-                            <use xlink:href="#social-github"></use>
-                          </svg>
-                        </a>
+                          <a href="https://twitter.com/Parsec_Labs" target="_blank">
+                            <svg role="img" width="27" height="22">
+                              <use xlink:href="#social-twitter"></use>
+                            </svg>
+                          </a>
+
+                          <a href="https://www.facebook.com/parsecIabs/" target="_blank">
+                            <svg role="img" width="24" height="26">
+                              <use xlink:href="#social-facebook"></use>
+                            </svg>
+                          </a>
+
+                          <a href="https://github.com/parsec-labs" target="_blank">
+                            <svg role="img" width="26" height="26">
+                              <use xlink:href="#social-github"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="feedback-area">
+                          <a class="feedback-link" href="mailto:info@parseclabs.org">info@parseclabs.org</a>
+                          <a class="feedback-link" href="https://goo.gl/forms/wXYCFiOkslQ4scNG2" target="_blank">Share your feedback</a>
+                        </div>
+                        <div class="footer-copyright">
+                          © 2018 PARSEC Labs. All Rights Reserved.
+                        </div>
                       </div>
-                      <div class="feedback-area">
-                        <a class="feedback-link" href="mailto:info@parseclabs.org">info@parseclabs.org</a>
-                        <a class="feedback-link" href="https://goo.gl/forms/wXYCFiOkslQ4scNG2" target="_blank">Share your feedback</a>
-                      </div>
-                      <div class="footer-copyright">
-                        © 2018 PARSEC Labs. All Rights Reserved.
-                      </div>
+                    </div>
+
+                    <div class="latest-posts">
+                      <header>
+                        <h3>Latest news</h3>
+                        <a href="/blog">Visit blog</a>
+                      </header>
+                      <ul class="latest-posts__list">
+                        {% for post in (posts) %}
+                        <li class="latest-posts__item">
+                          <h4><a href="/blog{{ post.path }}">{{ post.title }}</a></h4>
+                          <span>{{ post.date | formatdate }}</span>
+                        </li>
+                        {% endfor %}
+                      </ul>
                     </div>
                   </div>
                 </div>

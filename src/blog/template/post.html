@@ -1,0 +1,191 @@
+<!doctype html>
+<html class="no-js blog" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{{ page.title }} | ParsecLabs</title>
+        <meta name="description" content="Blockchanging the Gaming World">
+        <meta name="keywords" content="parsec, blockchain, gaming, esports, PSC, games, entertainment">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="/img/blog/{{ page.image }}" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="../../css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/likely.css">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/blog.css">
+    </head>
+    <body>
+        <div id="svg-sprite" style="width: 0; height: 0;position:absolute;overflow:hidden"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 0; height: 0;position:absolute;">
+          <defs>
+            <linearGradient id="icons-gradient-small" gradientUnits="userSpaceOnUse" x1="8.175" y1="15" x2="21.825" y2="15" gradientTransform="matrix(1 0 0 -1 0 30)">
+                <stop offset="0" stop-color="#4facfe"/>
+                <stop offset="1" stop-color="#00f2fe"/>
+            </linearGradient>
+            <linearGradient id="icons-gradient-big" gradientUnits="userSpaceOnUse" x1=".49" y1="41.925" x2="83.5" y2="41.925" gradientTransform="matrix(1 0 0 -1 0 84)">
+                <stop offset="0" stop-color="#4facfe"/>
+                <stop offset="1" stop-color="#00f2fe"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- BEGIN PARSEC -->
+
+        <div id="app">
+          <header class="top-header">
+            <a href="/blog">
+              <svg role="img" width="267" height="68" class="top-header-logo">
+                <use xlink:href="#parseclabs"></use>
+              </svg>
+            </a>
+
+            <div class="top-header-menu">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li class="top-header-socials">
+                  <a href="https://t.me/parseclabs" target="_blank">
+                    <svg role="img" width="29" height="25" class="gradient-icon">
+                      <use xlink:href="#social-telegram"></use>
+                    </svg>
+                  </a>
+
+                  <a href="https://twitter.com/Parsec_Labs" target="_blank">
+                    <svg role="img" width="27" height="22" class="gradient-icon">
+                      <use xlink:href="#social-twitter"></use>
+                    </svg>
+                  </a>
+
+                  <a href="https://www.facebook.com/parsecIabs/" target="_blank">
+                    <svg role="img" width="24" height="26" class="gradient-icon">
+                      <use xlink:href="#social-facebook"></use>
+                    </svg>
+                  </a>
+
+                  <a href="https://github.com/parsec-labs" target="_blank">
+                    <svg role="img" width="26" height="26" class="gradient-icon">
+                      <use xlink:href="#social-github"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </header>
+
+          <div class="sections">
+            <section class="blog-post">
+              <div class="blog-post__cover" style="background-image: url(/img/blog/{{ page.image }})">
+                <div class="container">
+                  <header class="blog-post__header">
+                    <h1>{{ page.title }}</h1>
+                    <span class="blog-post__date">
+                      <svg role="img" width="26" height="26">
+                        <use xlink:href="#date"></use>
+                      </svg>
+                      {{ page.date | formatdate }}
+                    </span>
+                  </header>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="blog-post__content">
+                  <div class="blog-post__section">
+                    {{ page.body | markdown }}
+                  </div>
+                  <div class="blog-post__section">
+                    <div class="likely likely-big">
+                      <div class="twitter">Tweet</div>
+                      <div class="facebook">Share</div>
+                      <div class="telegram">Send</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+          </div>
+
+          <section class="footer">
+            <div class="container">
+              <div class="content">
+                <div class="subscribe">
+                  <form action="https://parseclabs.us17.list-manage.com/subscribe/post-json?u=82ffc63ae0813261fdc1f75d7&amp;id=4d6f207452&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                      <div class="alert"></div>
+
+                      <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email address" required />
+
+                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c294e87f0fdc5cf7c4767283_fcf132e60f" tabindex="-1" value=""></div>
+                      <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button button--rect">
+                        <span>Keep me updated</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div>
+                  <div class="footer-links">
+                    <a href="https://t.me/parseclabs" target="_blank">
+                      <svg role="img" width="29" height="25">
+                        <use xlink:href="#social-telegram"></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://twitter.com/Parsec_Labs" target="_blank">
+                      <svg role="img" width="27" height="22">
+                        <use xlink:href="#social-twitter"></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/parsecIabs/" target="_blank">
+                      <svg role="img" width="24" height="26">
+                        <use xlink:href="#social-facebook"></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://github.com/parsec-labs" target="_blank">
+                      <svg role="img" width="26" height="26">
+                        <use xlink:href="#social-github"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="feedback-area">
+                    <a class="feedback-link" href="mailto:info@parseclabs.org">info@parseclabs.org</a>
+                    <a class="feedback-link" href="https://goo.gl/forms/wXYCFiOkslQ4scNG2" target="_blank">Share your feedback</a>
+                  </div>
+                  <div class="footer-copyright">
+                    © 2018 Parseclabs. All Rights Reserved.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- END PARSEC -->
+
+        <script src="../../js/likely.js"></script>
+        <script src="../../js/sprite.svg.js" async></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113020429-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-113020429-1');
+        </script>
+    </body>
+</html>

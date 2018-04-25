@@ -24,11 +24,4 @@ body,html{
 $gridSize: 8;
 
 @import "sections";
-
-.gradient-icon {
-  fill: url(#icons-gradient-small);
-}
-
-.gradient-icon-big {
-  fill: url(#icons-gradient-big);
-}
+@import "icons";
