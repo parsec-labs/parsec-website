@@ -2,8 +2,10 @@
 template: post.html
 title:    "PARSEC Labs at EthCC and BlockchainUA"
 date:     2018-04-24 00:23:00
-image:    blog01-banner.png
+image:    blog01-bg.png
 ---
+
+<img src="/img/blog/blog01-banner.png">
 
 Aloha, our community! Welcome to our very first blog post, which is devoted to two amazing blockchain events: <b>EthCC 2018</b> (Paris, France) and <b>BlockchainUA </b> (Kyiv, Ukraine). Our team has visited both events and it was a very interesting and valuable experience for us: we spoke a lot about PARSEC Labs and Plasma, shared our vision, mission and goals and met many smart and outstanding people! Our Development Lead Link Johann will tell you more!
 
