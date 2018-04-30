@@ -7,7 +7,7 @@ image:    blog03-bg.png
 
 <img src="/img/blog/blog03-banner.png">
 
-Hello, my name is Victor, I’m Communication Circle lead link and also I have a role of QA in Dapp Development circle. I wanted to share with you my story. Hope you will find this blog post useful. Everything started about a year ago, when I was invited to join an open team of great people who were developing poker platform on the blockchain called <a href="https://dapp.acebusters.com/lobby">Acebusters</a>. I immediately accepted the proposal and dived into exciting blockchain world. I was a professional poker player in the past and this project sounded like a solution to all my concerns because of which, I stopped playing poker and switched to IT. Few key moments, which supported my decision, were:
+Hello, my name is Victor, I’m Communications Circle lead link and also I have a role of QA in the Dapp Development circle. I wanted to share with you my story. Hope you will find this blog post useful. Everything started about a year ago, when I was invited to join an open team of great people who were developing poker platform on the blockchain called <a href="https://dapp.acebusters.com/lobby">Acebusters</a>. I immediately accepted the proposal and dived into exciting blockchain world. I was a professional poker player in the past and this project sounded like a solution to all my concerns because of which, I stopped playing poker and switched to IT. Few key moments, which supported my decision, were:
 
 - Acebusters has the lowest rake on the market - 1%, just enough to be able to support execution of all transactions on the blockchain;
 
@@ -42,7 +42,7 @@ However, three pages had actually some blockchain integration behind them.
  
 <b>Step 2. Concentrate on blockchain related test cases.</b>
 
-Generate Secret Page was the page where user was creating a random entropy for his account based on which we were creating a new blockchain wallet with his own restore phrase. This was my first interaction with a blockchain and what we really need to test here is that every time for every new user we are actually creating a new wallet on the blockchain. This can be verified by checking a unique wallet id on <a href=”https://etherscan.io/”>EtherScan</a>.
+Generate Secret Page was the page where user was creating a random entropy for his account based on which we were creating a new blockchain wallet with his own restore phrase. This was my first interaction with a blockchain and what we really need to test here is that every time for every new user we are actually creating a new wallet on the blockchain. This can be verified by checking a unique wallet id on <a href="https://etherscan.io/">EtherScan</a>.
 
 Then we need to check if the wallet was saved into our database and basically that is all we need to verify here.
 
@@ -56,7 +56,7 @@ In addition, users have a possibility to exchange ETH to our own cryptocurrency 
 
 - verify amount of gas prediction for transaction - this is very important verification as big gas limit can brake successful submit of transactions and could cause additional not required expansions for our customers;
 
-- verify amount of gas price prediction - same as gas limit prediction, very important to predict correct price, cause if price will be too low, users transaction will stuck (at those times Metamask haven't implemented possibility to resubmit transactions with a higher price), if price will be too high - user will pay more money than is needed for transaction mining. To recheck average prices for gas I used <a href=”https://ethgasstation.info/”>Gas Station</a>;
+- verify amount of gas price prediction - same as gas limit prediction, very important to predict correct price, cause if price will be too low, users transaction will stuck (at those times Metamask haven't implemented possibility to resubmit transactions with a higher price), if price will be too high - user will pay more money than is needed for transaction mining. To recheck average prices for gas I used <a href="https://ethgasstation.info/">Gas Station</a>;
 
 - verify that after transaction was mined successfully correct amount of crypto currency was added to customers wallet - it was important for this feature to work without any need for customer to refresh the page.
 
@@ -74,6 +74,6 @@ It was especially funny to test our new releases on production, as we do not had
 
 Alongside with playing poker on our platform I needed to play poker on some big poker rooms like PokerStars, Full Tilt Poker etc. to be able to compare different experiences. This way we can understand what makes this poker rooms so popular between players and which features we are missing. I was actually responsible for adding new feature requests for our developers and that was awesome experience to build your own dream poker platform.
 
-Currently Acebusters in a stand alone decentralized application which is managed by <a href=”https://www.parseclabs.org/”>PARSEC Labs team</a>. Currently PARSEC Labs is developing scalable solution for Ethereum Blockchain which will allow us to run our own super fast, secure and cheap sidechain which will can be used by any kind of a real time game.
+Currently Acebusters in a stand alone decentralized application which is managed by <a href="https://www.parseclabs.org/">PARSEC Labs team</a>. Currently PARSEC Labs is developing scalable solution for Ethereum Blockchain which will allow us to run our own super fast, secure and cheap sidechain which will can be used by any kind of a real time game.
 
 In case you will have any additional questions don’t hesitate to drop me a <a href="mailto:victor@parseclabs.org">message</a>.
