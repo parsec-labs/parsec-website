@@ -40,8 +40,8 @@ Adjust filename, `title`, `date`, `image` and text.
 - `title` - article name. Shown on the article list page and on the article page.
 - `date` - article publishing date. Shown on the article list page and on the article page.
 Articles on the article list page are sorted by this date (latest first).
-- `image` - name of the image file to be used for social network previews (`og:image`).
-The file should be placed in `img/blog/`.
+- `image` - cover image. The file should be placed in `img/blog/`.
+- `share_image` - (optional) name of the image file to be used for social network previews (`og:image`). If not set `image` will be used.
 - text - text of the article in [Markdown format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 Commit the file to github. Our CI server will do the rest and your article will be available

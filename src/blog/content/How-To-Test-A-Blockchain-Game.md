@@ -3,6 +3,7 @@ template: post.html
 title:    "How to Test a Blockchain Game"
 date:     2018-04-30 00:23:00
 image:    blog03-bg.png
+share_image:    blog03-banner.png
 ---
 
 <img src="/img/blog/blog03-banner.png">
@@ -18,9 +19,9 @@ Hello, my name is Victor, I’m Communications Circle lead link and also I have 
 <img src="/img/blog/blog03-01.png">
 
 Becoming a part of this great project was also a big challenge for me, as I was not very familiar with a blockchain technology before. On the first look, everything was like in all other usual development companies. There is a web application with reasonably good UI, which needs to be tested manually and needs to be covered by some simple automated tests.
- 
+
 First steps were common as for any other kind of similar web projects:
- 
+
 <b>Step 1. Create test cases.</b>
 
 We were not using any test case management systems, so I just used standard google sheets. Overall, there were eight different pages:
@@ -33,13 +34,13 @@ We were not using any test case management systems, so I just used standard goog
 - Lobby Page;
 - Dashboard Page;
 - Table Page.
- 
-I prepared near 500 test cases in total and most of them were regular verifications of user experience flow. After every release I was executing all manual test cases and preparing sort of release helt metrics table as shown on the screenshot: 
+
+I prepared near 500 test cases in total and most of them were regular verifications of user experience flow. After every release I was executing all manual test cases and preparing sort of release helt metrics table as shown on the screenshot:
 
 <img src="/img/blog/blog03-02.png">
 
 However, three pages had actually some blockchain integration behind them.
- 
+
 <b>Step 2. Concentrate on blockchain related test cases.</b>
 
 Generate Secret Page was the page where user was creating a random entropy for his account based on which we were creating a new blockchain wallet with his own restore phrase. This was my first interaction with a blockchain and what we really need to test here is that every time for every new user we are actually creating a new wallet on the blockchain. This can be verified by checking a unique wallet id on <a href="https://etherscan.io/">EtherScan</a>.
@@ -63,7 +64,7 @@ In addition, users have a possibility to exchange ETH to our own cryptocurrency 
 <img src="/img/blog/blog03-04.png">
 
 Table Page - this is the page were actually customers are playing poker, so this page is the most important page in the whole application. It was needed to verify that transactions are submitted correctly to Ethereum blockchain when player joins and lefts the table. In addition, every in-game move like bet/raise/all should be performed ideally, as if there will be any issue with this - customer will lose his money and will never return back to our site.
- 
+
 <b>Step 3. Play Poker</b>
 
 It was obvious to have all test cases written down for this functionality, but to perform all these test cases only once was just literally not enough. Therefore, if all test cases were verified with simple game logic, only then the fun was beginning. Imagine that your job is just to play poker as much as you can, trying any different types of flows for the game (Sounds like a dream job).
