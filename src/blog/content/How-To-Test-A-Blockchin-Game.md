@@ -42,7 +42,7 @@ However, three pages had actually some blockchain integration behind them.
  
 <b>Step 2. Concentrate on blockchain related test cases.</b>
 
-Generate Secret Page was the page were user was creating a random entropy for his account based on which we were creating a new blockchain wallet with his own restore phrase. This was my first interaction with a blockchain and what we really need to test here is that every time for every new user we are actually creating a new wallet on the blockchain. This can be verified by checking a unique wallet id on <a href=”https://etherscan.io/”>EtherScan</a>.
+Generate Secret Page was the page were user was creating a random entropy for his account based on which we were creating a new blockchain wallet with his own restore phrase. This was my first interaction with a blockchain and what we really need to test here is that every time for every new user we are actually creating a new wallet on the blockchain. This can be verified by checking a unique wallet id on <a href="https://etherscan.io/">EtherScan</a>.
 
 Then we need to check if the wallet was saved into our database and basically that is all we need to verify here.
 
@@ -55,7 +55,7 @@ In addition, users have a possibility to exchange ETH to our own cryptocurrency 
 
 - verify amount of gas prediction for transaction - this is very important verification as big gas limit can brake successful submit of transactions and could cause additional not required expansions for our customers;
 
-- verify amount of gas price prediction - same as gas limit prediction, very important to predict correct price, cause if price will be too low, users transaction will stuck (at those times Metamask haven't implemented possibility to resubmit transactions with a higher price), if price will be too high - user will pay more money than is needed for transaction mining. To recheck average prices for gas I used <a href=”https://ethgasstation.info/”>Gas Station</a>;
+- verify amount of gas price prediction - same as gas limit prediction, very important to predict correct price, cause if price will be too low, users transaction will stuck (at those times Metamask haven't implemented possibility to resubmit transactions with a higher price), if price will be too high - user will pay more money than is needed for transaction mining. To recheck average prices for gas I used <a href="https://ethgasstation.info/">Gas Station</a>;
 
 - verify that after transaction was mined successfully correct amount of crypto currency was added to customers wallet - it was important for this feature to work without any need for customer to refresh the page.
 
