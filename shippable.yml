@@ -30,10 +30,11 @@ integrations:
     - integrationName: slack_chainfish
       type: slack
       recipients:
-        - "#10_communications"
+        - "#11_landing_pages"
       branches:
         only:
           - master
-      on_success: change
+          - blog
+      on_success: always
       on_failure: always
       on_start: never
