@@ -2,10 +2,10 @@
 template: post.html
 title:    "Join PARSEC Labs"
 date:     2018-04-25 00:23:00
-image:    blog02-banner.png
+image:    blog02-bg.png
 ---
 
-<img src="/img/blog/blockchaindeveloper.png">
+<img src="/img/blog/blog02-banner.png">
 
 Hey, guys! As some of you already know, we are a very friendly international open community. We’re using <a href="https://www.holacracy.org/how-it-works/">Holacracy</a> as our self-management practice and <a href="https://www.heytaco.chat/how">HeyTaco</a> as a internal reward system. 
 
