@@ -12,3 +12,6 @@ Hello, community! We hope you’re feeling good because we’re feeling awesome 
 This announcement really means a lot to our team - we believe that dedication and hard work always pays off. Thanks for your belief!
 
 <img src="/img/blog/blog04-01.png">
+
+Regards,
+Ross, Community Manager
