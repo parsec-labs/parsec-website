@@ -1,7 +1,7 @@
 ---
 template: post.html
 title:    "PARSEC Labs - Ethereum Foundation Grant Recipient!"
-date:     2018-05-03 00:23:00
+date:     2018-05-04 00:23:00
 image:    blog04-bg.png
 ---
 
