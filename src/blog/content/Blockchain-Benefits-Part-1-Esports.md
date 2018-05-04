@@ -58,7 +58,7 @@ Blockchain is certainly a technology of future, and the sooner you get to know i
 
 Taking interest in blockchain industry, esports fans discover wide possibilities for self-education and learn topical technology which is set to change the world in the foreseeable future. 
 
-<b>Follow PARSEC and all our news</b>
+<b>Follow PARSEC and all our news:</b>
 
 - Telegram: https://t.me/parseclabs
 - Facebook: https://www.facebook.com/parsecIabs/
