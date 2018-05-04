@@ -28,7 +28,7 @@ Tokenizing offers exciting possibilities for team owners to grow and further dev
 - access to the unique club content (videos, photos, articles, reviews, analytics);
 - unique avatars, fonts and rights during stream broadcast;
 - possibility to buy unique merchandise for tokens (named T-shirts etc.);
-- participation in decision making regarding club personnel matters and a possibility to even run the club (for the biggest token owners);
+- participation in decision making regarding the players and rosters matters and a chance to participate in running the club (for the biggest token owners);
 
 <b>II. Fair and secured esports with smart contracts</b>
 
