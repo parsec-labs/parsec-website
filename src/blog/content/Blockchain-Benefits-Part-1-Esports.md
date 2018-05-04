@@ -1,6 +1,6 @@
 ---
 template: post.html
-title:    "PARSEC Labs - Ethereum Foundation Grant Recipient!"
+title:    "Blockchain Benefits. Part 1: Esports"
 date:     2018-05-03 00:23:00
 image:    blog05-bg.png
 ---
