@@ -7,7 +7,7 @@ image:    blog05-bg.png
 
 <img src="/img/blog/blog05-banner.png">
 
-Hello everybody. It’s Ross - a Communications Lead Link. We are starting a series of articles devoted to gaming and esports industries. We’ll be looking into what advantages the blockchain technology might provide us with and cover the solutions from <a hre="https://www.parseclabs.org/">PARSEC Labs</a> to these relating industries. The series of articles will be divided into two parts - we’ll start off by talking about esports, which is increasingly gaining traction nowadays and then attend to in every way much more major industry.
+Hello everybody. It’s Ross - a Communications Lead Link. We are starting a series of articles devoted to gaming and esports industries. We’ll be looking into what advantages the blockchain technology might provide us with and cover the solutions from <a href="https://www.parseclabs.org/">PARSEC Labs</a> to these relating industries. The series of articles will be divided into two parts - we’ll start off by talking about esports, which is increasingly gaining traction nowadays and then attend to in every way much more major industry.
 
 <b>I. Tokenizing esports clubs </b>
 
