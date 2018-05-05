@@ -1,13 +1,13 @@
 ---
 template: post.html
-title:    "Receipient of the Ethereum Foundation Scaling Grant!"
+title:    "Recipient of the Ethereum Foundation Scaling Grant!"
 date:     2018-05-05 08:00:00
 image:    blog04-bg.png
 ---
 
 <img src="/img/blog/blog04-banner.png">
 
-Hello, community! We’re happy to share with you that we have been selected as one of the receipients of the <b>Ethereum Foundation Grant</b>! Our team was chosen in the caterogy Scaling for the <a href="https://blog.ethereum.org/2018/05/02/announcing-may-2018-cohort-ef-grants/">May 2018 batch</a>. This really means a lot to us! Let us explain in detail why: 
+Hello, community! We’re happy to share with you that we have been selected as one of the recipients of the <b>Ethereum Foundation Grant</b>! Our team was chosen in the category Scaling for the <a href="https://blog.ethereum.org/2018/05/02/announcing-may-2018-cohort-ef-grants/">May 2018 batch</a>. This really means a lot to us! Let us explain in detail why: 
 
 <b>Why do we exist? What is our mission?</b>
 
@@ -24,7 +24,7 @@ The foundation is focused on growing the real economy built on the Ethereum plat
 
 <b>How does the grant align with all mentioned above?</b>
 
-The grant will help us to focus on research without any distractions. Our first deliverable will be an implementation of the Truebit verification game allowing to verify state transitions of sidechains. We think this will give the Ethereum #BUIDL community an new tool to create more powerful plasma chains and hence scale the real economy of the ecosystem. In doing so, we find our mission and goals closely aligned with this vision of the Ethereum Foundation.
+The grant will help us to focus on research without any distractions. Our first deliverable will be an implementation of the Truebit verification game allowing to verify state transitions of sidechains. We think this will give the Ethereum developer community a new tool to create more powerful plasma chains and hence scale the real economy of the ecosystem. In doing so, we find our mission and goals closely aligned with this vision of the Ethereum Foundation.
 
 <img src="/img/blog/blog04-01.png">
 
