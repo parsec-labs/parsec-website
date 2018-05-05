@@ -7,11 +7,11 @@ image:    blog05-bg.png
 
 <img src="/img/blog/blog05-banner.png">
 
-Hello everybody. It’s Ross - a Communications Lead Link. We are starting a series of articles devoted to gaming and esports industries. We’ll be looking into what advantages the blockchain technology might provide us with and cover the solutions from <a href="https://www.parseclabs.org/">PARSEC Labs</a> to these relating industries. The series of articles will be divided into two parts - we’ll start off by talking about esports, which is increasingly gaining traction nowadays and then attend to in every way much more major industry.
+Hello everybody. It’s Ross - the Parasec Labs Community Link. We are starting a series of articles devoted to gaming and esports industries. We’ll be looking into what advantages the blockchain technology might provide us with and cover the solutions from <a href="https://www.parseclabs.org/">PARSEC Labs</a> to these relating industries. The series of articles will be divided into two parts - we’ll start off by talking about esports, which is increasingly gaining traction nowadays and then we will switch to more major industry.
 
 <b>I. Tokenizing esports clubs </b>
 
-If you keep up with how esports is developing, you’re well aware of its rapid growth and of how significant are the investments being poured in it. The number of big tournaments is growing year by year, prize pools, salaries as well as players’ and management’s transfer fees are zooming up swiftly. Leading world-famous esports clubs have to be on the continuous lookout for new investment and turn to big venture funds, in return allowing them to take the cut from their companies.
+If you keep up with how esports is developing, you’re well aware of its rapid growth and of how significant the investments being poured into it are. The number of big tournaments is growing year by year, prize pools, salaries as well as players’ and management’s transfer fees are zooming up swiftly. Leading world-famous esports clubs have to be on the continuous lookout for new investment and turn to big venture funds, in return allowing them to take the cut from their companies.
 
 <img src="/img/blog/blog05-01.png">
 
