@@ -11,7 +11,7 @@ Hello, community! We’re happy to share with you that we have been selected as 
 
 <b>Why do we exist? What is our mission?</b>
 
-The mission of <a href="https://parseclabs.org"></a> is to bring fairness and transparency to the gaming and entertainment industry. We enable on-chain scalability for game execution to open up and unite virtual worlds. 
+The mission of <a href="https://parseclabs.org">PARSEC labs</a> is to bring fairness and transparency to the gaming and entertainment industry. We enable on-chain scalability for game execution to open up and unite virtual worlds. 
 
 <b>What did we receive the grant for?</b>
 
