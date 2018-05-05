@@ -1,6 +1,6 @@
 ---
 template: post.html
-title:    "PARSEC Labs - Ethereum Foundation Grant recipient!"
+title:    "Receipient of the Ethereum Foundation Scaling Grant!"
 date:     2018-05-05 08:00:00
 image:    blog04-bg.png
 ---
@@ -11,7 +11,7 @@ Hello, community! We’re happy to share with you that we have been selected as 
 
 <b>Why do we exist? What is our mission?</b>
 
-Our mission of <a href="https://parseclabs.org"></a> is to bring fairness and transparency to the gaming and entertainment industry. We enable on-chain scalability for game execution to open up and unite virtual worlds. 
+The mission of <a href="https://parseclabs.org"></a> is to bring fairness and transparency to the gaming and entertainment industry. We enable on-chain scalability for game execution to open up and unite virtual worlds. 
 
 <b>What did we receive the grant for?</b>
 
@@ -28,7 +28,7 @@ The grant will help us to focus on research without any distractions. Our first 
 
 <img src="/img/blog/blog04-01.png">
 
-Thank you for your trust. Let's BUIDL together!
+Thank you for your trust and let's BUIDL together!
 
 <b>Follow PARSEC and all our news:</b>
 
