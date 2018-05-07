@@ -2,16 +2,16 @@
 template: post.html
 title:    "Recipient of the Ethereum Foundation Scaling Grant!"
 date:     2018-05-05 08:00:00
-image:    blog04-bg.png
+image:    blog04-bg.jpg
 ---
 
-<img src="/img/blog/blog04-banner.png">
+<img src="/img/blog/blog04-banner.jpg">
 
-Hello, community! We’re happy to share with you that we have been selected as one of the recipients of the <b>Ethereum Foundation Grant</b>! Our team was chosen in the category Scaling for the <a href="https://blog.ethereum.org/2018/05/02/announcing-may-2018-cohort-ef-grants/">May 2018 batch</a>. This really means a lot to us! Let us explain in detail why: 
+Hello, community! We’re happy to share with you that we have been selected as one of the recipients of the <b>Ethereum Foundation Grant</b>! Our team was chosen in the category Scaling for the <a href="https://blog.ethereum.org/2018/05/02/announcing-may-2018-cohort-ef-grants/">May 2018 batch</a>. This really means a lot to us! Let us explain in detail why:
 
 <b>Why do we exist? What is our mission?</b>
 
-The mission of <a href="https://parseclabs.org">PARSEC labs</a> is to bring fairness and transparency to the gaming and entertainment industry. We enable on-chain scalability for game execution to open up and unite virtual worlds. 
+The mission of <a href="https://parseclabs.org">PARSEC labs</a> is to bring fairness and transparency to the gaming and entertainment industry. We enable on-chain scalability for game execution to open up and unite virtual worlds.
 
 <b>What did we receive the grant for?</b>
 
@@ -26,7 +26,7 @@ The foundation is focused on growing the real economy built on the Ethereum plat
 
 The grant will help us to focus on research without any distractions. Our first deliverable will be an implementation of the Truebit verification game allowing to verify state transitions of sidechains. We think this will give the Ethereum developer community a new tool to create more powerful plasma chains and hence scale the real economy of the ecosystem. In doing so, we find our mission and goals closely aligned with this vision of the Ethereum Foundation.
 
-<img src="/img/blog/blog04-01.png">
+<img src="/img/blog/blog04-01.jpg">
 
 Thank you for your trust and let's BUIDL together!
 
