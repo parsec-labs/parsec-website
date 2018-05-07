@@ -8,6 +8,13 @@
         <meta name="keywords" content="parsec, blockchain, gaming, esports, PSC, games, entertainment">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:image" content="/img/blog/{{ page.share_image | default(page.image) }}" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@Parsec_Labs" />
+        <meta name="twitter:title" content="{{ page.title }}" />
+        {% if page.description %}
+        <meta name="twitter:description" content="{{ page.description }}" />
+        {% endif %}
+        <meta name="twitter:image:src" content="/img/blog/{{ page.share_image | default(page.image) }}" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -42,7 +49,7 @@
 
         <div id="app">
           <header class="top-header">
-            <a href="/">
+            <a href="/blog">
               <svg role="img" width="267" height="68" class="top-header-logo">
                 <use xlink:href="#parseclabs"></use>
               </svg>
