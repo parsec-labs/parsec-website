@@ -2,10 +2,11 @@
 template: post.html
 title:    "PARSEC Labs at EthCC and BlockchainUA"
 date:     2018-04-24 00:23:00
-image:    blog01-bg.jpg
+image:    blog01-bg.png
+description: PARSEC Labs team has visited EthCC 2018 (Paris, France) and BlockchainUA (Kyiv, Ukraine). Our Development Lead Link Johann will tell you more.
 ---
 
-<img src="/img/blog/blog01-banner.jpg">
+<img src="/img/blog/blog01-banner.png">
 
 Aloha, our community! Welcome to our very first blog post, which is devoted to two amazing blockchain events: <b>EthCC 2018</b> (Paris, France) and <b>BlockchainUA </b> (Kyiv, Ukraine). Our team has visited both events and it was a very interesting and valuable experience for us: we spoke a lot about PARSEC Labs and Plasma, shared our vision, mission and goals and met many smart and outstanding people! Our Development Lead Link Johann will tell you more!
 
@@ -13,7 +14,7 @@ Aloha, our community! Welcome to our very first blog post, which is devoted to t
 
 One big topic at the Ethereum Community Conference in Paris was the aftermath of the Parity fund freeze that was caused by a faulty multi-sig wallet implementation. While controversy has been ongoing about ways to reactive the lost funds, at the conference a group of developers has created a new organization: the Ethereum Magicians.
 
-<img src="/img/blog/blogPost11.jpg">
+<img src="/img/blog/blogPost11.png">
 
 The Ethereum Magicians aim to create means for social consensus to be better able to deal with contentious protocol decisions. Read the logs <a href="https://www.reddit.com/r/ethereum/comments/835lob/notes_from_the_first_meeting_of_the_fellowship_of/">here</a>.
 
@@ -35,13 +36,13 @@ I find Plasma and Plasma Cash exiting because they don’t require a hardfork be
 
 Yes, I have been to Kyiv few times before. The conference was good: 3 stages (main, product, technology) and many interesting speakers and projects. You can find my slides <a href="https://drive.google.com/file/d/1zWoHB86UAzuYcagOoqr60aJZoB7jj5jp/view">here</a>.
 
-<img src="/img/blog/blogPost12.jpg">
+<img src="/img/blog/blogPost12.png">
 
 <b>Which events will be next for PARSEC Labs team? </b>
 
 Last week I visited <a href="http://dappdev.org/conference/">DApp DEV Conference 2018 in Kyiv</a>. I was giving a hands on scalability workshop to show developers how to build more scalable applications. After Kyiv we’ll travel to <a href="https://edcon.io/">EDCON Toronto</a> - this will be a big event for the Ethereum community. Come and hang out with Jonathan and me.
 
-<img src="/img/blog/blogPost13.jpg">
+<img src="/img/blog/blogPost13.png">
 
 <b>People are asking us about the possibility to join PARSEC Labs. Сan you shed some light on specific positions/roles that are needed?</b>
 

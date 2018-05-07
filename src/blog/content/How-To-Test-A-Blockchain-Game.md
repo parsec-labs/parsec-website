@@ -3,6 +3,7 @@ template: post.html
 title:    "How to Test a Blockchain Game"
 date:     2018-04-30 00:23:00
 image:    blog03-bg.jpg
+description: Hello, my name is Victor, I’m the lead link of the Communication Circle and also hold a role as QA engineer in Dapp Development circle. I wanted to share my story with you.
 ---
 
 <img src="/img/blog/blog03-banner.jpg">
