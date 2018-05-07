@@ -22,12 +22,6 @@
     }
   }
 
-  @media screen and (max-width: 1000px) {
-  }
-
-  @media screen and (max-width: 768px) {
-  }
-
   @media screen and (max-width: 400px) {
     padding-left: 15px;
     padding-right: 15px;
@@ -70,7 +64,7 @@
 
     cursor: pointer;
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: $menu_mobile_width) {
       display: block;
     }
   }
@@ -108,7 +102,7 @@
     font-size: 16px;
   }
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: $menu_mobile_width) {
     ul {
       position: absolute;
       top: 100%;
