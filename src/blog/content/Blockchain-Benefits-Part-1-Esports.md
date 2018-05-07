@@ -2,7 +2,9 @@
 template: post.html
 title:    "Blockchain Benefits. Part 1: Esports"
 date:     2018-05-03 00:23:00
-image:    blog05-bg.png
+image:    blog05-bg.jpg
+author:   kosta
+description: First in a series of articles devoted to gaming and esports industries. We’ll be looking into what advantages the blockchain technology might provide us with and cover the solutions from PARSEC Labs to these relating industries.
 ---
 
 <img src="/img/blog/blog05-banner.png">
