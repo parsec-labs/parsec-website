@@ -3,6 +3,7 @@ template: post.html
 title:    "Recipient of the Ethereum Foundation Scaling Grant!"
 date:     2018-05-05 08:00:00
 image:    blog04-bg.jpg
+author:   johba
 description: We’re happy to share with you that we have been selected as one of the recipients of the <b>Ethereum Foundation Grant. This really means a lot to us! Let us explain in detail why.
 ---
 
