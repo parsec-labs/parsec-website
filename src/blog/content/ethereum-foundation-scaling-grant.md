@@ -2,11 +2,11 @@
 template: post.html
 title:    "Recipient of the Ethereum Foundation Scaling Grant!"
 date:     2018-05-05 08:00:00
-image:    blog04-bg.jpg
+image:    Fireworks.jpg
 description: We’re happy to share with you that we have been selected as one of the recipients of the <b>Ethereum Foundation Grant. This really means a lot to us! Let us explain in detail why.
 ---
 
-<img src="/img/blog/blog04-banner.jpg">
+<img src="/img/blog/EthereumFoundationAndParsecLabs.jpg" alt="EthereumFoundationAndParsecLabs">
 
 Hello, community! We’re happy to share with you that we have been selected as one of the recipients of the <b>Ethereum Foundation Grant</b>! Our team was chosen in the category Scaling for the <a href="https://blog.ethereum.org/2018/05/02/announcing-may-2018-cohort-ef-grants/">May 2018 batch</a>. This really means a lot to us! Let us explain in detail why:
 
@@ -27,12 +27,18 @@ The foundation is focused on growing the real economy built on the Ethereum plat
 
 The grant will help us to focus on research without any distractions. Our first deliverable will be an implementation of the Truebit verification game allowing to verify state transitions of sidechains. We think this will give the Ethereum developer community a new tool to create more powerful plasma chains and hence scale the real economy of the ecosystem. In doing so, we find our mission and goals closely aligned with this vision of the Ethereum Foundation.
 
-<img src="/img/blog/blog04-01.jpg">
+<img src="/img/blog/EthereumGrantRecepients.jpg" alt="EthereumGrantRecepients">
 
 Thank you for your trust and let's BUIDL together!
 
 <b>Follow PARSEC and all our news:</b>
 
+- PARSEC Labs website: https://www.parseclabs.org/
 - Telegram: https://t.me/parseclabs
 - Facebook: https://www.facebook.com/parsecIabs/
 - Twitter: https://twitter.com/Parsec_Labs
+
+Checkout our other blog posts:
+<a href="https://parseclabs.org/blog/Blockchain-Benefits-Part-1-Esports/">Blockchain Benefits. Part 1: Esports</a>
+<a href="https://parseclabs.org/blog/How-To-Test-A-Blockchain-Game/">How to Test a Blockchain Game</a>
+<a href="https://parseclabs.org/blog/PARSEC-Labs-at-EthCC-and-BlockchainUA/">PARSEC Labs at EthCC and BlockchainUA</a>
