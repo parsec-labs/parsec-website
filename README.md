@@ -2,15 +2,17 @@
 
 ## Init
 
-`yarn`
+`yarn && yarn global add gulp`
 
 ## Build
 
 `gulp`
 
-## Dev
+## Running locally
 
-`gulp dev`
+1. `gulp dev`
+2. Start some http server (for [http-server](https://www.npmjs.com/package/http-server) package — `http-server -c-1`)
+3. Open it in the browser (`http://localhost:8080` is default for `http-server`)
 
 You can use [livereload extendsion](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
 
