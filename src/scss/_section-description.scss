@@ -1,0 +1,33 @@
+.section-description {
+  text-align: center;
+
+  p {
+    font-size: 24px;
+
+    max-width: 65%;
+    margin: 0 auto;
+
+    line-height: 32px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    p {
+      font-size: 18px;
+
+      line-height: 24px;
+      max-width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 15px;
+
+      line-height: 22px;
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+  }
+}
