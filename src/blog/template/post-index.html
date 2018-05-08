@@ -111,6 +111,11 @@
                         </svg>
                         {{ post.date | formatdate }}
                       </span>
+                      {% if post.authorName %}
+                      <span class="blog-index__author">
+                        by {{ post.authorName }}
+                      </span>
+                      {% endif %}
                     </div>
                   </div>
                 </a>

@@ -10,6 +10,9 @@
         <meta property="og:image" content="https://parseclabs.org/img/blog/{{ page.share_image | default(page.image) }}" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@Parsec_Labs" />
+        {% if page.author %}
+        <meta name="twitter:creator" content="{{ page.author.twitter }}" />
+        {% endif %}
         <meta name="twitter:title" content="{{ page.title }}" />
         {% if page.description %}
         <meta name="twitter:description" content="{{ page.description }}" />
@@ -108,6 +111,15 @@
                       </svg>
                       {{ page.date | formatdate }}
                     </span>
+                    {% if page.authorLink %}
+                    <span class="blog-post__author">
+                      by {{ page.authorLink | safe }}
+                    </span>
+                    {% elseif page.authorName %}
+                    <span class="blog-index__author">
+                      by {{ page.authorName }}
+                    </span>
+                    {% endif %}
                   </header>
                 </div>
               </div>

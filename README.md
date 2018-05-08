@@ -31,6 +31,10 @@ title:    "Article title goes here"
 date:     2018-03-28 00:00:00
 image:    image-to-be-used-for-cover.png
 share_image: image-to-be-used-for-social-networks.png
+author:
+  name: Ross
+  twitter: "@Rosss"
+  link: https://github.com/rosss/
 description: Hey! I am the short summary of the article and will be shown in twitter preview.
 ---
 
@@ -46,6 +50,10 @@ Adjust filename, `title`, `date`, `image` and text.
 Articles on the article list page are sorted by this date (latest first).
 - `image` - cover image. The file should be placed in `img/blog/`.
 - `share_image` - (optional) name of the image file to be used for social network previews (`og:image`). If not set `image` will be used.
+- `author` - (optional) either an author name or an object with author details:
+  - `name` — name
+  - `twitter` — (optional) twitter handle. Will be used in link and in twitter:card
+  - `link` — (optional) arbitrary link. If both `link` and `twitter` specified, `twitter` will be used.
 - `description` - short summary of the post to be used in previews and snippets (e.g. twitter)
 - text - text of the article in [Markdown format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
