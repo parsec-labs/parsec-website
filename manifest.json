@@ -1,5 +1,6 @@
 {
-    "name": "",
+    "name": "PARSEC Labs",
+    "short_name": "ParsecLabs",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
