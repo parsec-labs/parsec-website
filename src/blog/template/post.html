@@ -216,5 +216,17 @@
 
           gtag('config', 'UA-113020429-1');
         </script>
+
+        <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "BlogPosting",
+          "headline": "{{ page.description }}",
+          "image": [
+            "https://parseclabs.org/img/blog/{{ page.share_image | default(page.image) }}",
+           ]
+        }
+        </script>
+
     </body>
 </html>
