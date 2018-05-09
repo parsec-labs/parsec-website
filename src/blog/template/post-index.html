@@ -102,7 +102,7 @@
             <section class="blog">
               <div class="blog-index">
                 {% for post in (page.collection | latestFirst) %}
-                <a href="/blog{{ post.path }}">
+                <a href="/blog{{ post.path }}/">
                   <div class="blog-index__item" style="background-image: url(/img/blog/{{ post.image }})">
                     <div class="blog-index__item-c">
                       <h2>{{ post.title }}</h2>
