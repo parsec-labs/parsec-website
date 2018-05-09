@@ -18,6 +18,7 @@ const cssnano = require('cssnano');
 const minisite = require('gulp-minisite');
 const critical = require('critical');
 const glob = require('glob');
+const puppeteer = require('puppeteer');
 const runSequence = require('run-sequence');
 
 const loadBlogPosts = require('./src/gulp/loadBlogPosts');
@@ -111,6 +112,7 @@ gulp.task('html', () => (
       .pipe(livereload())
 ));
 
+process.setMaxListeners(0);
 const extractCriticalCSS = file => (
   critical.generate({
     inline: true,
@@ -118,7 +120,17 @@ const extractCriticalCSS = file => (
     src: file,
     dest: file,
     width: 1300,
-    height: 700
+    height: 700,
+    penthouse: {
+      puppeteer: {
+        getBrowser() {
+          return puppeteer.launch({
+            ignoreHTTPSErrors: true,
+            args: ['--disable-setuid-sandbox', '--no-sandbox', '--disable-dev-shm-usage'],
+          });
+        }
+      },
+    },
   })
 );
 
