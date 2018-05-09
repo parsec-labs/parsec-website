@@ -622,7 +622,7 @@
                       <ul class="latest-posts__list">
                         {% for post in (posts) %}
                         <li class="latest-posts__item">
-                          <h4><a href="/blog{{ post.path }}">{{ post.title }}</a></h4>
+                          <h4><a href="/blog{{ post.path }}/">{{ post.title }}</a></h4>
                           <span>{{ post.date | formatdate }}</span>
                         </li>
                         {% endfor %}
