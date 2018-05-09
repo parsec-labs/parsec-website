@@ -184,8 +184,8 @@ gulp.task('critical:site', (cb) => {
       dest: 'index.html',
       width: 1300,
       height: 700
-    }).then(() => cb());
-  }, 300);
+    }).then(() => setTimeout(cb, 100));
+  }, 100);
 })
 
 gulp.task('site', (cb) => {
