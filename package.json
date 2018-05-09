@@ -12,6 +12,7 @@
     "critical": "^1.3.0",
     "cssnano": "^3.10.0",
     "front-matter": "^2.3.0",
+    "glob": "^7.1.2",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-batch": "^1.0.5",

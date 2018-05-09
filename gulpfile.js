@@ -17,6 +17,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const minisite = require('gulp-minisite');
 const critical = require('critical');
+const glob = require('glob');
 const runSequence = require('run-sequence');
 
 const loadBlogPosts = require('./src/gulp/loadBlogPosts');
@@ -67,7 +68,7 @@ const makeJsTask = (input, output) => (
       .pipe(livereload())
 );
 
-gulp.task('js', () => makeJsTask(files.js, 'main.js'));
+gulp.task('js:site', () => makeJsTask(files.js, 'main.js'));
 gulp.task('js:presale', () => makeJsTask(files.presaleJs, 'presale.js'));
 gulp.task('js:blog', () => makeJsTask(files.blogJs, 'blog.js'));
 
@@ -110,6 +111,17 @@ gulp.task('html', () => (
       .pipe(livereload())
 ));
 
+const extractCriticalCSS = file => (
+  critical.generate({
+    inline: true,
+    base: './',
+    src: file,
+    dest: file,
+    width: 1300,
+    height: 700
+  })
+);
+
 gulp.task('generate:blog', () => {
   return gulp.src('src/blog/content/**/*')
     .pipe(minisite({
@@ -142,6 +154,19 @@ gulp.task('generate:blog', () => {
     }))
     .pipe(gulp.dest('blog'))
     .pipe(livereload());
+});
+
+gulp.task('critical:blog', (cb) => {
+  setTimeout(() => {
+    glob('blog/**/*.html', (err, matches) => {
+      Promise.all(matches.map(extractCriticalCSS))
+        .then(() => setTimeout(cb, 100));
+    });
+  }, 100);
+});
+
+gulp.task('blog', (cb) => {
+  runSequence(['css', 'js:blog', 'generate:blog'], 'critical:blog', cb);
 });
 
 let posts;
@@ -177,22 +202,15 @@ gulp.task('generate:site', async (cb) => {
 
 gulp.task('critical:site', (cb) => {
   setTimeout(() => {
-    critical.generate({
-      inline: true,
-      base: './',
-      src: 'index.html',
-      dest: 'index.html',
-      width: 1300,
-      height: 700
-    }).then(() => setTimeout(cb, 100));
+    extractCriticalCSS('index.html').then(() => setTimeout(cb, 100));
   }, 100);
-})
-
-gulp.task('site', (cb) => {
-  runSequence('generate:site', 'critical:site', cb);
 });
 
-gulp.task('dev', ['css', 'js', 'js:presale', 'js:blog', 'svg', 'generate:blog', 'generate:site'], () => {
+gulp.task('site', (cb) => {
+  runSequence(['css', 'generate:site', 'js:site', 'js:presale'], 'critical:site', cb);
+});
+
+gulp.task('dev', ['css', 'js:site', 'js:presale', 'js:blog', 'svg', 'generate:blog', 'generate:site'], () => {
   watching = true;
   livereload.listen();
 
@@ -202,7 +220,7 @@ gulp.task('dev', ['css', 'js', 'js:presale', 'js:blog', 'svg', 'generate:blog', 
   );
   watch(
     files.js,
-    batch((events, done) => gulp.start('js', done))
+    batch((events, done) => gulp.start('js:site', done))
   );
   watch(
     files.presaleJs,
@@ -230,4 +248,4 @@ gulp.task('dev', ['css', 'js', 'js:presale', 'js:blog', 'svg', 'generate:blog', 
   );
 });
 
-gulp.task('default', ['css', 'js', 'js:presale', 'js:blog', 'svg', 'generate:blog', 'site']);
+gulp.task('default', ['svg', 'blog', 'site']);
