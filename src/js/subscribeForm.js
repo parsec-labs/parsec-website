@@ -1,52 +1,59 @@
-(function($){
+(function(){
+  function buildRequestUrl(form) {
+    const action = form.getAttribute('action');
+    const formData = new FormData(form);
+    const url = Array.from(formData.entries()).reduce(
+      (memo, [key, value]) => (
+        `${memo}&${key}=${encodeURIComponent(value)}`
+      ),
+      action
+    );
+    return `${url}&_=${Date.now()}`;
+  }
 
-  $(document).ready(function(e){
-    const inview = window.inView('section')
-      .on('enter', el => $(el).addClass('in-view'))
-      .on('exit', el => $(el).removeClass('in-view'));
-    window.inView.offset(250);
+  function register2(form) {
+    const alertEl = form.querySelector('.alert');
+    const emailEl = form.querySelector('.email');
+    const submitEl = form.querySelector('.submit');
 
-    function register($form) {
-      $.ajax({
-        type: "GET",
-        url: $form.attr('action'),
-        data: $form.serialize(),
-        cache: false,
-        dataType: 'jsonp',
-        contentType: "application/json; charset=utf-8",
-        beforeSend: function() {
-          $form.find('.alert').html('Subscribing...').show();
-          $form.find('.email').hide();
-          $form.find('.submit').hide();
-          $form.find('.discount').hide();
-        },
-        error: function(err) {
-          $form.find('.alert').html('Ops, there was an error.').show();
-          $form.find('.email').show();
-          $form.find('.submit').show();
-          $form.find('.discont').show();
-        },
-        success: function(data) {
-          if (data.result != "success") {
-            $form.find('.alert').html(data.msg).show();
-            $form.find('.email').show();
-            $form.find('.submit').show();
-            $form.find('.discont').show();
-          } else {
-            $form.find('.alert').html('Thank you!').show();
-          }
+    // jsonp
+    const callbackName = `antiJQuery_${Date.now()}`;
+    const url = `${buildRequestUrl(form)}&c=${callbackName}`;
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+    document.head.appendChild(script);
+
+    alertEl.innerText = 'Subscribing...';
+    emailEl.setAttribute('disabled', true);
+    submitEl.setAttribute('disabled', true);
+
+    // callback for jsonp
+    window[callbackName] = (result) => {
+      try {
+        if (result.result !== 'success') {
+          alertEl.innerHTML = result.msg;
+          emailEl.removeAttribute('disabled');
+          submitEl.removeAttribute('disabled');
+          emailEl.style.display = 'block';
+          submitEl.style.display = 'block';
+        } else {
+          alertEl.innerHTML = 'Thank you!';
         }
-      });
-    }
+      } catch (err) {
+        alertEl.innerHTML = 'Ops, there was an error.';
+        emailEl.removeAttribute('disabled');
+        submitEl.removeAttribute('disabled');
+      }
 
-    // waits for form to appear rather than appending straight to the form. Also helps if you have more than one type of form that you want to use this action on.
-    $(document).on('submit', '#mc-embedded-subscribe-form', function(event) {
-      //define argument as the current form especially if you have more than one
-      const $form = $(event.currentTarget);
-      // stop open of new tab
-      event.preventDefault();
-      // submit form via ajax
-      register($form);
-    });
+      // cleaning up
+      document.head.removeChild(script);
+      window[callbackName] = undefined;
+    }
+  }
+
+  document.getElementById('mc-embedded-subscribe-form').addEventListener('submit', e => {
+    e.preventDefault();
+    register2(e.target);
   });
-})(jQuery)
+})();

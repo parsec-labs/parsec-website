@@ -2,6 +2,7 @@
 
 @font-face {
   font-family: 'Rogan';
+  font-display: swap;
   src: url('../fonts/rogan-extrabold.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
@@ -9,13 +10,14 @@
 
 @font-face {
   font-family: 'Rogan';
+  font-display: swap;
   src: url('../fonts/rogan-regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 body,html{
-  font-family: 'Rogan', serif;
+  font-family: 'Rogan', sans-serif;
   font-size: 92%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
