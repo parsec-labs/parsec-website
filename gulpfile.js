@@ -16,6 +16,8 @@ const globalDefs = require('./gulp-global-svg-defs-plugin');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const minisite = require('gulp-minisite');
+const critical = require('critical');
+const runSequence = require('run-sequence');
 
 const loadBlogPosts = require('./src/gulp/loadBlogPosts');
 
@@ -108,7 +110,7 @@ gulp.task('html', () => (
       .pipe(livereload())
 ));
 
-gulp.task('blog', () => {
+gulp.task('generate:blog', () => {
   return gulp.src('src/blog/content/**/*')
     .pipe(minisite({
       templateEngine(tmplName, tmplData) {
@@ -143,7 +145,7 @@ gulp.task('blog', () => {
 });
 
 let posts;
-gulp.task('site', async (cb) => {
+gulp.task('generate:site', async (cb) => {
   if (!posts) {
     posts = await loadBlogPosts('src/blog/content');
   }
@@ -173,7 +175,24 @@ gulp.task('site', async (cb) => {
     .pipe(livereload());
 });
 
-gulp.task('dev', ['css', 'js', 'js:presale', 'js:blog', 'svg', 'blog', 'site'], () => {
+gulp.task('critical:site', (cb) => {
+  setTimeout(() => {
+    critical.generate({
+      inline: true,
+      base: './',
+      src: 'index.html',
+      dest: 'index.html',
+      width: 1300,
+      height: 700
+    }).then(() => cb());
+  }, 300);
+})
+
+gulp.task('site', (cb) => {
+  runSequence('generate:site', 'critical:site', cb);
+});
+
+gulp.task('dev', ['css', 'js', 'js:presale', 'js:blog', 'svg', 'generate:blog', 'generate:site'], () => {
   watching = true;
   livereload.listen();
 
@@ -203,12 +222,12 @@ gulp.task('dev', ['css', 'js', 'js:presale', 'js:blog', 'svg', 'blog', 'site'], 
   );
   watch(
     files.blog,
-    batch((events, done) => gulp.start('blog', done))
+    batch((events, done) => gulp.start('generate:blog', done))
   );
   watch(
     files.site,
-    batch((events, done) => gulp.start('site', done))
+    batch((events, done) => gulp.start('generate:site', done))
   );
 });
 
-gulp.task('default', ['css', 'js', 'js:presale', 'js:blog', 'svg', 'blog', 'site']);
+gulp.task('default', ['css', 'js', 'js:presale', 'js:blog', 'svg', 'generate:blog', 'site']);
