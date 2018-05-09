@@ -1,15 +1,23 @@
 .bg-milky-way {
   background-position: 0 100%;
   background-size: cover;
-  background-image: url(../img/backgrounds/milky-way.jpg);
+  background-image: url(../img/backgrounds/milky-way.webp);
   background-repeat: no-repeat;
+
+  .no-webp & {
+    background-image: url(../img/backgrounds/milky-way.jpg);
+  }
 }
 
 .intro {
-  background-image: url(../img/backgrounds/eye-nebula.jpg);
+  background-image: url(../img/backgrounds/eye-nebula.webp);
   background-position: 50% 8vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
+
+  .no-webp & {
+    background-image: url(../img/backgrounds/eye-nebula.jpg);
+  }
 
   @media screen and (max-width: 768px) {
     background-position: 50% 20%;
@@ -45,14 +53,22 @@
 .team {
   background-size: 100% auto;
   background-position: 0 0;
-  background-image: url(../img/backgrounds/earth.jpg);
+  background-image: url(../img/backgrounds/earth.webp);
   background-repeat: no-repeat;
+
+  .no-webp & {
+    background-image: url(../img/backgrounds/earth.jpg);
+  }
 }
 
 .showcase {
   background-position: 50% 150px;
-  background-image: url(../img/backgrounds/planet.png);
+  background-image: url(../img/backgrounds/planet.webp);
   background-repeat: no-repeat;
+
+  .no-webp-alpha & {
+    background-image: url(../img/backgrounds/planet.png);
+  }
 }
 
 .footer {
@@ -60,7 +76,11 @@
   background-size: 100% auto;
   background-position: 0 100%;
   background-repeat: no-repeat;
-  background-image: url(../img/backgrounds/ground.jpg);
+  background-image: url(../img/backgrounds/ground.webp);
+
+  .no-webp & {
+    background-image: url(../img/backgrounds/ground.jpg);
+  }
 
   .container::before {
     position: absolute;
@@ -74,10 +94,14 @@
 
     content: '';
 
-    background-image: url(../img/backgrounds/rocket.png);
+    background-image: url(../img/backgrounds/rocket.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 100%;
+
+    .no-webp-alpha & {
+      background-image: url(../img/backgrounds/rocket.png);
+    }
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -114,6 +138,10 @@
 
     content: '';
 
+    background-image: url(../img/backgrounds/cloud-nebula.webp);
+  }
+
+  .no-webp-alpha &::before {
     background-image: url(../img/backgrounds/cloud-nebula.png);
   }
 
