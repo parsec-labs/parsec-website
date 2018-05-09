@@ -18,7 +18,7 @@ const cssnano = require('cssnano');
 const minisite = require('gulp-minisite');
 const critical = require('critical');
 const glob = require('glob');
-const puppeteer = require('puppeteer');
+const nunjucks = require('nunjucks');
 const runSequence = require('run-sequence');
 
 const loadBlogPosts = require('./src/gulp/loadBlogPosts');
@@ -121,16 +121,6 @@ const extractCriticalCSS = file => (
     dest: file,
     width: 1300,
     height: 700,
-    penthouse: {
-      puppeteer: {
-        getBrowser() {
-          return puppeteer.launch({
-            ignoreHTTPSErrors: true,
-            args: ['--disable-setuid-sandbox', '--no-sandbox', '--disable-dev-shm-usage'],
-          });
-        }
-      },
-    },
   })
 );
 
@@ -139,7 +129,6 @@ gulp.task('generate:blog', () => {
     .pipe(minisite({
       templateEngine(tmplName, tmplData) {
         const marked   = require('marked');
-        const nunjucks = require('nunjucks');
         const tinytime = require('tinytime');
         const dateFormat = tinytime('{MM} {DD}, {YYYY}')
 
@@ -215,7 +204,6 @@ gulp.task('generate:site', async (cb) => {
     .pipe(minisite({
       templateEngine(tmplName, tmplData) {
         const marked   = require('marked');
-        const nunjucks = require('nunjucks');
         const tinytime = require('tinytime');
         const dateFormat = tinytime('{MM} {DD}, {YYYY}');
 
