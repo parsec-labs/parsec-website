@@ -149,6 +149,31 @@ gulp.task('generate:blog', () => {
           return collection.sort((a, b) => b.date - a.date);
         });
 
+
+        const authorLink = function(pageData) {
+          if (typeof pageData.author === 'string') return '';
+          const name = authorName(pageData);
+          if (!name) return '';
+          const link = pageData.author.twitter
+            ? `https://twitter.com/${pageData.author.twitter}`
+            : pageData.author.link;
+          if (!link) return '';
+
+          return `<a href=\"${link}\">${name}</a>`;
+        };
+
+        const authorName = function(pageData) {
+          if (!pageData.author) return '';
+          return typeof pageData.author === 'string'
+            ? pageData.author
+            : pageData.author.name;
+        };
+
+        if (tmplData.page.template == 'post.html') {
+          tmplData.page.authorName = authorName(tmplData.page);
+          tmplData.page.authorLink = authorLink(tmplData.page);
+        }
+
         return env.render(tmplName, tmplData);
       }
     }))

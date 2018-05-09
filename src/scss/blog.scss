@@ -101,7 +101,16 @@ body, html {
     }
   }
 
-  &__item:hover &__date {
+  &__author {
+    font-size: 20px;
+    opacity: 0.5;
+
+    display: block;
+    align-items: center;
+  }
+
+  &__item:hover &__date,
+  &__item:hover &__author, {
     opacity: 0.75;
     transition: none;
   }
@@ -149,6 +158,17 @@ body, html {
       margin-top: -3px;
       margin-right: 10px;
     }
+  }
+
+  &__author {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+
+    a {
+      color: #ffffff;
+    }
+
   }
 
   &__header {

@@ -3,6 +3,7 @@ template: post.html
 title:    "Join PARSEC Labs"
 date:     2018-04-25 00:23:00
 image:    ParsecLabsHires.jpg
+author:   Ross
 description: We are a friendly international open community using <a href="https://www.holacracy.org/how-it-works/">Holacracy</a> as our self-management practice and <a href="https://www.heytaco.chat/how">HeyTaco</a> as a internal reward system. Read if you want to join our team.
 ---
 
