@@ -8,7 +8,11 @@
     background-image: url(../img/backgrounds/milky-way.jpg);
   }
 }
-
+.partners {
+  background-size: contain;
+  background-image: url(../img/backgrounds/partners-bg.png);
+  background-repeat: no-repeat;
+}
 .intro {
   background-image: url(../img/backgrounds/eye-nebula.webp);
   background-position: 50% 8vh;
