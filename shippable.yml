@@ -6,7 +6,7 @@ node_js:
 branches:
   only:
     - master
-    - blog
+    - partners
 
 env:
   global:
@@ -20,7 +20,7 @@ build:
     - npm install
     - ./node_modules/.bin/gulp
     - aws configure set preview.cloudfront true
-    - if [ "$BRANCH" == "blog" ] || [ "$IS_PULL_REQUEST" == "true" ]; then aws s3 sync . s3://test.parseclabs.org/ --exclude "shippable.yml" --exclude ".git/*" --exclude "src/*" --exclude "node_modules/*" --delete --acl public-read; fi
+    - if [ "$BRANCH" == "partners" ] || [ "$IS_PULL_REQUEST" == "true" ]; then aws s3 sync . s3://test.parseclabs.org/ --exclude "shippable.yml" --exclude ".git/*" --exclude "src/*" --exclude "node_modules/*" --delete --acl public-read; fi
     - if [ "$BRANCH" == "master" ] && [ "$IS_PULL_REQUEST" == "false" ]; then aws s3 sync . $PRODUCTION_BUCKET --exclude "shippable.yml" --exclude ".git/*" --exclude "src/*" --exclude "node_modules/*" --delete --acl public-read; aws s3 cp . s3://parseclabs.org/ --recursive --exclude "**/*" --include "*.woff2" --include="*.webp" --include "*.png" --exclude ".git/*" --exclude "src/*" --exclude "node_modules/*" --acl public-read --cache-control "public, max-age=31536000"; fi
     - if [ "$BRANCH" == "master" ] && [ "$IS_PULL_REQUEST" == "false" ]; then aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'; fi
 
@@ -34,7 +34,7 @@ integrations:
       branches:
         only:
           - master
-          - blog
+          - partners
       on_success: always
       on_failure: always
       on_start: never
