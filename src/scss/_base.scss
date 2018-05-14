@@ -75,3 +75,13 @@ textarea {
 h1, h2{
   text-transform: uppercase;
 }
+.desktop{
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
+}
+.mobile{
+  @media screen and (min-width: 769px) {
+    display: none !important;
+  }
+}
