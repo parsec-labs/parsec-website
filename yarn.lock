@@ -1414,7 +1414,7 @@ create-error-class@^3.0.1:
 
 "critical@github:sunify/critical#penthouse-bump":
   version "1.3.0"
-  resolved "https://codeload.github.com/sunify/critical/tar.gz/ea98da411a2f69833788f2469824fd3714bf4475"
+  resolved "https://codeload.github.com/sunify/critical/tar.gz/a2f0e70c1939e92a488d3012bb0840be3b63e43a"
   dependencies:
     bluebird "^3.5.1"
     chalk "^2.3.0"
