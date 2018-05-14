@@ -1,0 +1,102 @@
+.partners {
+  height: 447px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: stretch;
+  }
+
+  &-logo {
+    position: relative;
+
+    min-width: 300px;
+    text-align: center;
+
+    img {
+      width: 300px;
+    }
+
+    @media screen and (max-width: 768px) {
+      min-width: 150px;
+      img {
+        width: 150px;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  .section-header {
+    margin-bottom: 50px;
+  }
+
+  /* Tooltip container */
+  .partners-tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+
+    & > .partners-tooltiptext {
+      visibility: hidden;
+      width: 100%;
+      background-color: rgba(14, 122, 169, 0.6);
+      transform: translate(0, -100%);
+      color: #fff;
+      text-align: left;
+      padding: 5px 10px;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+
+      /* Position the tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+
+      .partners-tooltiptext-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & > h3 {
+          margin: 0;
+        }
+      }
+
+      .partners-tooltiptext-link {
+        margin-left: auto;
+        color: #FFF !important;
+      }
+
+      .partners-tooltiptext-description {
+
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgba(14, 122, 169, 0.6) transparent transparent transparent;
+      }
+    }
+
+    &:hover {
+      & > .partners-tooltiptext {
+        visibility: visible;
+      }
+    }
+  }
+}
