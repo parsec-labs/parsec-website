@@ -1,17 +1,24 @@
 .bg-milky-way {
   background-position: 0 100%;
   background-size: cover;
-  background-image: url(../img/backgrounds/milky-way.webp);
+  background-image: url(../img/backgrounds/roadmap-bg.jpg);
   background-repeat: no-repeat;
 
   .no-webp & {
     background-image: url(../img/backgrounds/milky-way.jpg);
   }
 }
+.bg-dust{
+  background-position: 0 100%;
+  background-size: cover;
+  background-image: url(../img/backgrounds/dust.png);
+  background-repeat: no-repeat;
+}
 .partners {
   background-size: contain;
   background-image: url(../img/backgrounds/partners-bg.png);
   background-repeat: no-repeat;
+  background-position: center;
 }
 .intro {
   background-image: url(../img/backgrounds/eye-nebula.webp);
@@ -77,38 +84,51 @@
 
 .footer {
   height: 712px;
-  background-size: 100% auto;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-image: url(../img/backgrounds/ground.webp);
+  //background-size: 100% auto;
+  //background-position: 0 100%;
+  //background-repeat: no-repeat;
+  //background-image: url(../img/backgrounds/ground.webp);
+  //
+  //.no-webp & {
+  //  background-image: url(../img/backgrounds/ground.jpg);
+  //}
 
-  .no-webp & {
-    background-image: url(../img/backgrounds/ground.jpg);
+  .ground{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    bottom: 0;
+    -webkit-mask-image: -webkit-gradient(linear,left center, left top , from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   }
 
-  .container::before {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+  .container{
+    opacity: 0.9999;
 
-    width: 210px;
-    height: 712px;
-    margin-left: -105px;
-    pointer-events: none;
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
 
-    content: '';
+      width: 210px;
+      height: 712px;
+      margin-left: -105px;
+      pointer-events: none;
 
-    background-image: url(../img/backgrounds/rocket.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
+      content: '';
 
-    .no-webp-alpha & {
-      background-image: url(../img/backgrounds/rocket.png);
-    }
+      background-image: url(../img/backgrounds/rocket.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
 
-    @media screen and (max-width: 768px) {
-      display: none;
+      .no-webp-alpha & {
+        background-image: url(../img/backgrounds/rocket.png);
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
