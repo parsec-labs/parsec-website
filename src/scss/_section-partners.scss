@@ -1,9 +1,14 @@
 .partners {
-  height: 447px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 100px 0 100px;
+  overflow: initial;
+
+  @media screen and (max-width: 768px) {
+    padding: 100px 0 100px;
+  }
 
   &-logos {
     display: flex;
@@ -49,7 +54,7 @@
     & > .partners-tooltiptext {
       visibility: hidden;
       width: 100%;
-      background-color: rgba(14, 122, 169, 0.6);
+      background-color: rgba(14, 122, 169, 0.8);
       transform: translate(0, -100%);
       color: #fff;
       text-align: left;
@@ -89,7 +94,7 @@
         margin-left: -5px;
         border-width: 5px;
         border-style: solid;
-        border-color: rgba(14, 122, 169, 0.6) transparent transparent transparent;
+        border-color: rgba(14, 122, 169, 0.8) transparent transparent transparent;
       }
     }
 
