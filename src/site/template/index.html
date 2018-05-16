@@ -55,7 +55,7 @@
 
         <div id="app">
           <header class="top-header">
-            <a data-target="home">
+            <a data-target="home" href="/">
               <svg role="img" width="267" height="68" class="top-header-logo">
                 <use xlink:href="#parseclabs"></use>
               </svg>
@@ -375,70 +375,70 @@
                       <h2>The Team</h2>
                     </div> -->
                     <div class="row text-center team-row">
-                      <div class="col-sm-3">
+                      <div class="team-member col-md-3 col-sm-4 col-xs-6">
                         <img class="team-image" src="img/team/johann.png" alt="Johann Barbie" title="Johann Barbie"/>
                         <div>
-                          <h3>Johann Barbie</h3>
+                          <h3 class="team-member-name">Johann Barbie</h3>
                           <p>
                             Smart Contract Engineer
                           </p>
                         </div>
                       </div>
-                      <div class="col-sm-3">
+                      <div class="team-member col-md-3 col-sm-4 col-xs-6">
                         <img class="team-image" src="img/team/alex.png" alt="Alex Lunyov" title="Alex Lunyov" />
                         <div>
-                          <h3>Alex Lunyov</h3>
+                          <h3 class="team-member-name">Alex Lunyov</h3>
                           <p>
                             Platform Engineer
                           </p>
                         </div>
                       </div>
-                      <div class="col-sm-3">
+                      <div class="team-member col-md-3 col-sm-4 col-xs-6">
                         <img class="team-image" src="img/team/calvin.png" alt="Calvin Hoenes" title="Calvin Hoenes" />
                         <div>
-                          <h3>Calvin Hoenes</h3>
+                          <h3 class="team-member-name">Calvin Hoenes</h3>
                           <p>
                             Experience Engineer
                           </p>
                         </div>
                       </div>
-                      <div class="col-sm-3">
+                      <div class="team-member col-md-3 col-sm-4 col-xs-6">
                         <img class="team-image" src="img/team/victor.png" alt="Victor Meteleshko" title="Victor Meteleshko" />
                         <div>
-                          <h3>Victor Meteleshko</h3>
+                          <h3 class="team-member-name">Victor Meteleshko</h3>
                           <p>
                             Engineer
                           </p>
                         </div>
                       </div>
-                      <div class="col-sm-3">
+                      <div class="team-member col-md-3 col-sm-4 col-xs-6">
                         <img class="team-image" src="img/team/sergey.png" alt="Sergey Stryukov" title="Sergey Stryukov"/>
                         <div>
-                          <h3>Sergey Stryukov</h3>
+                          <h3 class="team-member-name">Sergey Stryukov</h3>
                           <p>
                             Engineer, UX
                           </p>
                         </div>
                       </div>
-                      <div class="col-sm-3">
+                      <div class="team-member col-md-3 col-sm-4 col-xs-6">
                         <img class="team-image" src="img/team/kosta.png" alt="Kosta Korenkov" title="Kosta Korenkov"/>
                         <div>
-                          <h3>Kosta Korenkov</h3>
+                          <h3 class="team-member-name">Kosta Korenkov</h3>
                           <p>
                             Backend Developer
                           </p>
                         </div>
                       </div>
-                      <div class="col-sm-3">
+                      <div class="team-member col-md-3 col-sm-4 col-xs-6">
                         <img class="team-image" src="img/team/michael.png" alt="Michael Kroener" title="Michael Kroener"/>
                         <div>
-                          <h3>Michael Kroener</h3>
+                          <h3 class="team-member-name">Michael Kroener</h3>
                           <p>
                             Analyst
                           </p>
                         </div>
                       </div>
-                      <div class="col-sm-3">
+                      <div class="team-member col-md-3 col-sm-4 col-xs-6">
 
                       </div>
                     </div>
@@ -566,7 +566,7 @@
                         <div class="partners-tooltiptext desktop">
                           <div class="partners-tooltiptext-header">
                             <h3>Reftoken</h3>
-                            <a href="https://reftoken.io/" target="_blank" class="partners-tooltiptext-link">Visit web-site</a>
+                            <a href="https://reftoken.io/" target="_blank" class="partners-tooltiptext-link">Visit website</a>
                           </div>
                           <p class="partners-tooltiptext-description">RefToken is a distributed, trustless affiliate marketing platform that will connect Dapps with the affiliates that can make them mainstream. Some of the worlds greatest minds are building the apps of the future based on blockchains, RefToken is here to connect those developers, with the brands and marketers that can make their projects go mainstream.</p>
                         </div>
@@ -579,7 +579,7 @@
                         <div class="partners-tooltiptext desktop">
                           <div class="partners-tooltiptext-header">
                             <h3>BigchainDB</h3>
-                            <a href="https://www.bigchaindb.com/" target="_blank" class="partners-tooltiptext-link">Visit web-site</a>
+                            <a href="https://www.bigchaindb.com/" target="_blank" class="partners-tooltiptext-link">Visit website</a>
                           </div>
                           <p class="partners-tooltiptext-description">BigchainDB is a blockchain database offering decentralization, immutability and native assets. BigchainDB allows for the deployment of large-scale applications in a variety of use cases and industries from intellectual property and identity to supply chain, IoT and artificial intelligence. BigchainDB provides unique solutions for developers, start-ups and enterprises to successfully build their concepts, platforms and applications as big as they can dream.</p>
                         </div>
@@ -653,7 +653,7 @@
                     <div class="latest-posts">
                       <header>
                         <h3>Latest news</h3>
-                        <a href="/blog/">Visit blog</a>
+                        <a href="/blog/" class="visit-blog">Visit blog</a>
                       </header>
                       <ul class="latest-posts__list">
                         {% for post in (posts) %}
