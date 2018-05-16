@@ -53,12 +53,12 @@
 
     & > .partners-tooltiptext {
       visibility: hidden;
-      width: 100%;
-      background-color: rgba(14, 122, 169, 0.8);
-      transform: translate(-15%, -100%);
+      width: 140%;
+      background-color: rgba(0, 64, 93, 0.95);
+      transform: translate(-75px, -100%);
       color: #fff;
       text-align: left;
-      padding: 5px 10px;
+      padding: 24px 26px;
       border-radius: 6px;
       display: flex;
       flex-direction: column;
@@ -71,19 +71,27 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-bottom: 13px;
 
         & > h3 {
           margin: 0;
+          font-size: 28px;
+          line-height: 28px;
         }
       }
 
       .partners-tooltiptext-link {
         margin-left: auto;
-        color: #FFF !important;
+        color: #43b6fe !important;
+        font-size: 18px;
+
+        &:hover{
+          color: #ffffff !important;
+        }
       }
 
       .partners-tooltiptext-description {
-
+        font-size: 16px;
       }
 
       &::after {
@@ -91,10 +99,10 @@
         position: absolute;
         top: 100%;
         left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
+        margin-left: -10px;
+        border-width: 10px;
         border-style: solid;
-        border-color: rgba(14, 122, 169, 0.8) transparent transparent transparent;
+        border-color: rgba(0, 64, 93, 0.95) transparent transparent transparent;
       }
     }
 
