@@ -53,9 +53,9 @@
 
     & > .partners-tooltiptext {
       visibility: hidden;
-      width: 140%;
+      width: 500px;
       background-color: rgba(0, 64, 93, 0.95);
-      transform: translate(-75px, -100%);
+      transform: translate(-100px, -100%);
       color: #fff;
       text-align: left;
       padding: 24px 26px;
@@ -76,6 +76,7 @@
         & > h3 {
           margin: 0;
           font-size: 28px;
+          font-weight: bold;
           line-height: 28px;
         }
       }

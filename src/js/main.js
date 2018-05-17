@@ -9,19 +9,22 @@
   });
 
   const topHeader = document.querySelector('.top-header');
-  window.addEventListener('scroll', () => {
-    const topOffset = 0 - Math.min(20, window.scrollY);
-    topHeader.style.top = `${topOffset}px`;
+  const onScrolled = () => {
+      const topOffset = 0 - Math.min(20, window.scrollY);
+      topHeader.style.top = `${topOffset}px`;
 
-    const scrolled = topHeader.classList.contains('st-scrolled');
-    if (window.scrollY >= 20) {
-      if (!scrolled) {
-        topHeader.classList.add('st-scrolled');
+      const scrolled = topHeader.classList.contains('st-scrolled');
+      if (window.scrollY >= 20) {
+          if (!scrolled) {
+              topHeader.classList.add('st-scrolled');
+          }
+      } else if (scrolled) {
+          topHeader.classList.remove('st-scrolled');
       }
-    } else if (scrolled) {
-      topHeader.classList.remove('st-scrolled');
-    }
-  });
+  }
+  window.addEventListener('scroll', onScrolled);
+
+  onScrolled();
 
   const easeOutCubic = t => (--t) * t * t + 1;
   let scrollInterval;
