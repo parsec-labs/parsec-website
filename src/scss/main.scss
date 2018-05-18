@@ -1,9 +1,12 @@
 $menu_mobile_width: 850px;
 
+@import "./bootstrap/bootstrap-reboot.min";
+@import "./bootstrap/bootstrap-grid.min";
+@import "./bootstrap/bootstrap.min";
+
 @import "mixins-base";
 @import "base";
 
-@import "../bootstrap.min";
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -23,6 +26,7 @@ body, html{
   background-color: #000;
   color: #fff;
   background-size: 100% 100%;
+  overflow-x: hidden;
 }
 
 $gridSize: 8;

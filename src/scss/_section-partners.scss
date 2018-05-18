@@ -1,0 +1,133 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 0;
+  overflow: initial;
+
+  &::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.64) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.64) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.64) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+
+  .container{
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 100px 0;
+  }
+
+  &-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: stretch;
+  }
+
+  &-logo {
+    position: relative;
+
+    min-width: 300px;
+    text-align: center;
+
+    img {
+      width: 300px;
+    }
+
+    @media screen and (max-width: 768px) {
+      min-width: 150px;
+      img {
+        width: 150px;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  .section-header {
+    margin-bottom: 50px;
+  }
+
+  /* Tooltip container */
+  .partners-tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+
+    & > .partners-tooltiptext {
+      visibility: hidden;
+      width: 500px;
+      background-color: rgba(0, 64, 93, 0.95);
+      transform: translate(-100px, -100%);
+      color: #fff;
+      text-align: left;
+      padding: 24px 26px;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+
+      /* Position the tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+
+      .partners-tooltiptext-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 13px;
+
+        & > h3 {
+          margin: 0;
+          font-size: 28px;
+          font-weight: bold;
+          line-height: 28px;
+        }
+      }
+
+      .partners-tooltiptext-link {
+        margin-left: auto;
+        color: #43b6fe !important;
+        font-size: 18px;
+
+        &:hover{
+          color: #ffffff !important;
+        }
+      }
+
+      .partners-tooltiptext-description {
+        font-size: 16px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgba(0, 64, 93, 0.95) transparent transparent transparent;
+      }
+    }
+
+    &:hover {
+      & > .partners-tooltiptext {
+        visibility: visible;
+      }
+    }
+  }
+}
