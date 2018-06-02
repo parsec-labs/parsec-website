@@ -2,11 +2,11 @@
 template: post.html
 title:    "Our Taconomy Model"
 date:     2018-05-31 00:23:00
-image:    ParsecTaco.jpg
+image:    SoMuchTacos.jpg
 description: PARSEC Labs internal economy model using HeyTaco chat bot
 ---
 
-<img src="/img/blog/SoMuchTacos.jpg" alt="SoMuchTacos">
+<img src="/img/blog/ParsecTaco.jpg" alt="SoMuchTacos">
 
 Hey, community, its Ross once again! My new blog post is devoted to so called <b>“taconomy”</b> - a specific reward model which we are using here at <b>PARSEC Labs</b>. As some of you already know, we are an open community that are using <a href="https://www.holacracy.org/">holacracy</a> as self-management practice for organizations. Ok, so now you know that we have holacracy, what’s next? 
 
@@ -18,6 +18,7 @@ We believe <a href="https://slack.com/">Slack</a> is a great collaboration hub a
 - communications
 - announcements
 - pos_mining
+
 and there are few others, for example - “random” channel for memes and interesting discussions :)
 
 <h2>HeyTaco!</h2>
