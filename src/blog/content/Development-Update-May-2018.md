@@ -32,8 +32,8 @@ Where <b>α</b> is <i>active supply</i>, <b>β</b> is <i>block reward</i>, and <
 On top of that we have started to collaborate with <a href="https://matic.network/">matic.network</a> and <a href="https://decentraland.org/">decentraland.org</a> to implement EVM fraud proof verification on our nodes. You can check out a first design document <a href="https://docs.google.com/document/d/1UsC3RbGNQuOla8EPwPDjXnsRKrpJt3IlUQTKnlrjHTg">here</a>. Stay tuned for bounties and code that will come out of this collaboration.
 
 And finally, <b>Alex Core</b> made a gas oracle! Alex proposed two variants of gas oracle. 
-1. Store gasprice amount in block struct. With function getAverageGasPrice() calculated and returned average gasprice of 20 last blocks. 
-2. Store gas price in variable and modify with every block submission. avgGasPrice = avgGasPrice - avgGasPrice/15 + tx.gasprice/15.
+- Store gasprice amount in block struct. With function getAverageGasPrice() calculated and returned average gasprice of 20 last blocks. 
+- Store gas price in variable and modify with every block submission. avgGasPrice = avgGasPrice - avgGasPrice/15 + tx.gasprice/15.
 In first approach tx with getting average gas price costs approx 28864. Every block submission costs 21500 gas more. Second - getter is simple reading storage, and every block submission costs aprox 6500 (21500 at first block).You can find more about it <a href="https://github.com/parsec-labs/parsec-contracts/pull/18">here</a>. By the way it was our <a href="https://github.com/parsec-labs/PIPs/wiki/Bounty_015">Bounty_15</a>. 
 
 That was everything we had for May 2018! If you are interested in our project and/or want to join our team - reach us in PARSEC Labs socials:
