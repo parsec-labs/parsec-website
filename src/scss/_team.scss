@@ -14,14 +14,26 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .team-row p {
-    font-size: 18px;
+  .team-row {
+    p {
+      font-size: 18px;
+    }
+
+    .team-member{
+      @media screen and (max-width: 576px) {
+        display: flex;
+
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+      }
+    }
   }
 
   .team-image {
-    width: 128px;
+    width: 150px;
     display: block;
     margin: 0 auto;
+    
   }
 
   .team-row {
@@ -63,8 +75,8 @@
     }
 
     .team-image {
-      margin: 0;
-      width: 100px;
+      margin: 0 30px 0 0;
+      width: 120px;
     }
   }
 }
