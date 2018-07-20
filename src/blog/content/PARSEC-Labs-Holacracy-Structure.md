@@ -104,12 +104,12 @@ Holacracy specifies processes for aligning teams around operational needs and re
 Because circles are self-driven and there are no managers who allocate defined tasks, every circle has its own purpose. As a result, when team members are fulfilling their roles, they must always volunteer themselves to only work on the tasks which are aligned to each circle’s purpose.
 
 Tactical meetings are the driving force behind the operational processes of circles and they are usually held on a weekly basis. These meetings have five phases:
-1. The check-in phase – During the check-in phase, every participant shares and describes their thoughts on their current situation.
-2. Metrics review – The metrics review process involves going over the important circle metrics to track any changes that have taken place since the last meeting. A project is a task that is shared by more than one person. 
-3. Project review – This is where we usually open our Kanban board and check the status of each task. Updates on a task should be short and precise.
-4. Tensions round – During the tensions round, every participant has an opportunity to describe any concerns they have. These concerns become a part of the next meeting’s agenda.
-5. Agenda round – During the agenda round we collectively go through the tensions collected in the previous round and we try to resolve them.
-6. Closing round - here participants leave feedback about the meeting so that the process can be improved in the future.
+- The check-in phase – During the check-in phase, every participant shares and describes their thoughts on their current situation.
+- Metrics review – The metrics review process involves going over the important circle metrics to track any changes that have taken place since the last meeting. A project is a task that is shared by more than one person. 
+- Project review – This is where we usually open our Kanban board and check the status of each task. Updates on a task should be short and precise.
+- Tensions round – During the tensions round, every participant has an opportunity to describe any concerns they have. These concerns become a part of the next meeting’s agenda.
+- Agenda round – During the agenda round we collectively go through the tensions collected in the previous round and we try to resolve them.
+- Closing round - here participants leave feedback about the meeting so that the process can be improved in the future.
 
 After every meeting the secretary is responsible for posting the meeting notes. Here is an example of one of our <a href="https://github.com/orgs/parsec-labs/teams/parsec-general-circle/discussions/12">meeting notes</a>.
 
