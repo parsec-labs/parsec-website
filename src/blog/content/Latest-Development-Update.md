@@ -1,6 +1,6 @@
 ---
 template: post.html
-title:    "Latest Development Update - PARSEC Labs launched Plasma chain"
+title:    "Latest Development Update - PARSEC Labs Launched Plasma Chain"
 date:     2018-07-25 00:23:00
 image:    RocketLaunch.jpg
 author:
@@ -17,15 +17,15 @@ New blog post about our latest development results has arrived! As some of you r
 
 <h2>Our Plasma Chain</h2>
 
-<img src="/img/blog/ProjectAlice.png" alt="ProjectAlice">
-
 We are glad to share with you that we launched PARSEC Plasma chain. We have built a nice user friendly UI which communicates with our backend and Nodes so that everyone can test our chain, check it out here - <a href="http://alice.parseclabs.org/">Project Alice</a>.
+
+<img src="/img/blog/ProjectAlice.png" alt="ProjectAlice">
 
 <h2>Montenegro Workshop</h2>
 
-<img src="/img/blog/JohannKostaAlex.jpg" alt="JohannKostaAlex">
+In the middle of June three our developers met together in the Montenegro to do a workshop and to hang out a bit. It was very productive meetup as it’s very important for distributed team to met each other in real life. below is a short summary of what was done there.
 
-In the middle of June three our developers met together in the Montenegro to do a workshop and to hang out a bit. It was very productive meetup as it’s very important for distributed team to met each other in real life. Here is a short summary of what was done there:
+<img src="/img/blog/JohannKostaAlex.jpg" alt="JohannKostaAlex">
 
 <h3>Our Blockchain Node</h3>
 
@@ -43,7 +43,7 @@ Couple of problems which were solved:
 
 - Should we use <a href="https://en.wikipedia.org/wiki/Unspent_transaction_output">UTXO (Unspent transaction output)</a> merging and UTXO consolidation? Should we automatically add it before each transaction? - We decided to add new transaction type in parsec-library that can merge all unspent outputs into one (prevents huge transactions with very big amount of inputs);
 
-- Should we add colors to UTXOs? - Probably the biggest change during the workshop. We added support of multiple tokens into our contract, library and node. So our customers will be able to deposit, transfer and exit not only <a href="https://etherscan.io/token/0x9caa3424cb91900ef7ac41a7b04a246304c02d3a">PSC</a>, but other ERC-20 tokens as well.
+- Should we add colors to UTXOs? - Probably the biggest change during the workshop. We added support of multiple tokens into our contract, library and node. So our customers will be able to deposit, transfer and exit not only <a href="https://etherscan.io/token/0x9caa3424cb91900ef7ac41a7b04a246304c02d3a">PSC</a>, but other <a href="https://theethereum.wiki/w/index.php/ERC20_Token_Standard">ERC-20 tokens</a> as well.
 
 <h3>Computation Without Proof</h3>
 
@@ -51,7 +51,7 @@ One of the workshops parts was around computation without proof, you can find re
 
 - Added Transaction Type - Added support of computation request/response transactions into the node;
 
-- <a href="https://github.com/ethereumjs/ethereumjs-vm">JS-EVM</a> - We just tried to run some compiled solidity code during computation request transaction and luckully - it works. For now it is a proof of concept. Here is an unfinished <a href="https://github.com/parsec-labs/parsec-node/pull/21">Pull Request</a> for computation without proof. We will continue with that after testing validators updates.
+- <a href="https://github.com/ethereumjs/ethereumjs-vm">JS-EVM</a> - We just tried to run some compiled solidity code during computation request transaction and luckily - it works. For now it is a proof of concept. Here is an unfinished <a href="https://github.com/parsec-labs/parsec-node/pull/21">Pull Request</a> for computation without proof. We will continue with that after testing validators updates.
 
 <h3>Plasma Development</h3>
 
@@ -74,13 +74,15 @@ In the meantime we have delivered bunch of bounties which move us forward to fin
 
 <b><a href="https://github.com/troggy">Kosta</a></b> created JSON RPC server that is compatible with the Ethereum specification. You can find full bounty description <a href="https://github.com/parsec-labs/parsec-node/issues/10">here</a>. 
 
+<h3>Bounty 010 - Project Alice</h3>
+
+<b><a href="https://github.com/maxkudla">Max</a></b> created Basic demo app using Ethereum testnet. Also he connect it to Ethereum testnet in the backend and added few hardcoded accounts that are preloaded with testnet Ether. Just a reminder that Project Alice was already switched to our PARSEC testnet. Design for Project Alice was created by <a href="https://github.com/a5kold">Sergey</a>. You can find full bounty description <a href="https://github.com/parsec-labs/PIPs/wiki/Bounty_011">here</a>. 
+
 <h3>Bounty 011 - Project Alice - Parsec Testnet</h3>
 
 <b><a href="https://github.com/sunify">Alex</a></b> switched over <a href="http://alice.parseclabs.org/">Project Alice</a> from Ethereum Testnet to Parsec Testnet. He used <a href="https://github.com/parsec-labs/parsec-node/issues/10">JSON RPC Server</a> implementation with Web3. You can find full bounty description <a href="https://github.com/parsec-labs/PIPs/wiki/Bounty_011">here</a>. 
 
-<h3>Bounty 010 - Project Alice</h3>
-
-<b><a href="https://github.com/maxkudla">Max</a></b> created Basic demo app using Ethereum testnet. Also he connect it to Ethereum testnet in the backend and added few hardcoded accounts that are preloaded with testnet Ether. Just a reminder that Project Alice was already switched to our PARSEC testnet. Design for Project Alice was created by <a href="https://github.com/a5kold">Sergey</a>. You can find full bounty description <a href="https://github.com/parsec-labs/PIPs/wiki/Bounty_011">here</a>. 
+Feel free to join our <a href="https://join.slack.com/t/acebusters/shared_invite/enQtNDA2NDE4MjE0NzQzLTVhYzIzOTcyMThjNWEzNjlhMzlkMjU4ZGZlZjg3OTAwNDQ1OWJjMWI2ZTU5ZWQ3OGRmNTQ0M2IyN2VlYTg0ZWY">Slack</a> and start working on our open <a href="https://github.com/parsec-labs/PIPs/wiki/Bounties">Bounties</a>. We are an open community which means that anyone can try do deliver a bounty and if you will pass a validation - just send you wallet address to receive an ETH.
 
 <h2>Parsec Faucet</h2>
 
@@ -88,7 +90,7 @@ In the meantime we have delivered bunch of bounties which move us forward to fin
 
 <h2>Stacking UI</h2>
 
-<b><a href="https://github.com/sunify">Alex</a></b> built <a href="http://stake-dev.parseclabs.org/">stacking UI</a> which can be used in the future to buy a validators slot, <a href="ttp://stake-dev.parseclabs.org/deposit">make a deposit</a> to a chain and also claim some free PSC from the faucet service. For now it is just a nice tool that simplifies node development and testing. In the future will help our validators.
+<b><a href="https://github.com/sunify">Alex</a></b> built <a href="http://stake-dev.parseclabs.org/">stacking UI</a> which can be used in the future to buy a validators slot, <a href="http://stake-dev.parseclabs.org/deposit">make a deposit</a> to a chain and also claim some free PSC from the faucet service. For now it is just a nice tool that simplifies node development and testing. In the future will help our validators.
 
 That is it for the updates! If you are interested in our project or want to join our team - reach us in PARSEC Labs socials:
 - PARSEC Labs website: https://www.parseclabs.org/
