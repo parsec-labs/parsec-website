@@ -33,17 +33,17 @@ We are very happy to announce that our Node is up and running. In Montenegro cou
 
 - Binary release - We have published our node to <a href="https://www.npmjs.com/package/parsec-node">npm registry</a>. Anyone can install and run it on the local machine;
 
-- Documentation - This part is usually the most important one as it simplifies developers life a lot. Currently we added <a href="https://parseclabs.readthedocs.io/en/latest/">Documentation</a> for our JSON RPC interface and for the node;
+- Documentation - This part is usually the most important one as it simplifies developers life a lot. Currently we added <a href="https://parseclabs.readthedocs.io/en/latest/">Documentation</a> for our <a href="https://en.wikipedia.org/wiki/JSON-RPC">JSON RPC</a> interface and for the node;
 
-- Remove Coinbase Transaction - We have cleaned up the parsec-lib a bit, in particular we have removed this old old transaction type;
+- Remove Coinbase Transaction - We have cleaned up the parsec-lib a bit, in particular we have removed this old transaction type;
 
-- Activation - Finished auction mechanism. Future validator should send <b>activation</b> transaction to become a validator in <a>activationEpoch</a>;
+- Activation - Finished auction mechanism. Future validator should send <b>activation</b> transaction to become a validator in <b>activationEpoch</b>;
 
 Couple of problems which were solved:
 
-- Should we use <a href="https://en.wikipedia.org/wiki/Unspent_transaction_output">UTXO (Unspent transaction output)</a> merging and UTXO consolidation? Should we automatically add before each transaction? - Added new transaction type in parsec-lib that can merge all unspent outputs into one (prevents huge transactions with very big amount of inputs);
+- Should we use <a href="https://en.wikipedia.org/wiki/Unspent_transaction_output">UTXO (Unspent transaction output)</a> merging and UTXO consolidation? Should we automatically add it before each transaction? - We decided to add new transaction type in parsec-library that can merge all unspent outputs into one (prevents huge transactions with very big amount of inputs);
 
-- Should we add colors to UTXOs? - Probably the biggest change during the workshop. We have added support of multiple tokens into our contract, library and node. So our customers will be able can deposit, transfer and exit not only PSC, but other ERC20 tokens as well.
+- Should we add colors to UTXOs? - Probably the biggest change during the workshop. We added support of multiple tokens into our contract, library and node. So our customers will be able to deposit, transfer and exit not only <a href="https://etherscan.io/token/0x9caa3424cb91900ef7ac41a7b04a246304c02d3a">PSC</a>, but other ERC-20 tokens as well.
 
 <h3>Computation Without Proof</h3>
 
@@ -64,7 +64,7 @@ Last but not least topic of the workshop was Plasma development. We have made a 
 
 <img src="/img/blog/SpaceBounty.jpg" alt="SpaceBounty">
 
-In the meantime we have delivered bunch of bounties which move us forward to finish milestones from the Grant Requirements (add link here to blog post).
+In the meantime we have delivered bunch of bounties which move us forward to finish milestones from the <a href="https://parseclabs.org/blog/ethereum-foundation-scaling-grant/">Ethereum Foundation Grant</a>.
 
 <h3>Bounty 005 - Plasma Consensus Rules</h3>
 
@@ -84,14 +84,13 @@ In the meantime we have delivered bunch of bounties which move us forward to fin
 
 <h2>Parsec Faucet</h2>
 
-<b><a href="https://github.com/johannbarbie">Johann</a></b> built <a href="https://github.com/parsec-labs/parsec-faucet">faucet</a> service for our chain. It allows to receive PSC tokens for testing purposes. Alex added a smooth minimalistic design to it, check it <a href="http://stake-dev.parseclabs.org/faucet">here</a>. Stay tuned to be able to receive some free PSC tokens in the future.
+<b><a href="https://github.com/johannbarbie">Johann</a></b> built <a href="https://github.com/parsec-labs/parsec-faucet">faucet</a> service for our chain. It allows to receive PSC tokens for testing purposes. <b><a href="https://github.com/sunify">Alex</a></b> added a smooth minimalistic design to it, check it <a href="http://stake-dev.parseclabs.org/faucet">here</a>. Stay tuned to be able to receive some free PSC tokens in the future.
 
 <h2>Stacking UI</h2>
 
-<b><a href="https://github.com/sunify">Alex</a></b> built <a href="http://stake-dev.parseclabs.org/">stacking UI</a> which can be used in the future to buy a validators slot, <a href="ttp://stake-dev.parseclabs.org/deposit">make a deposit</a> to a chain and also claim some free PSC from the faucet service. For now it is just a nice tool that simplifies node development and testing. In the future will help our validators
-https://github.com/parsec-labs/parsec-bridge-ui
+<b><a href="https://github.com/sunify">Alex</a></b> built <a href="http://stake-dev.parseclabs.org/">stacking UI</a> which can be used in the future to buy a validators slot, <a href="ttp://stake-dev.parseclabs.org/deposit">make a deposit</a> to a chain and also claim some free PSC from the faucet service. For now it is just a nice tool that simplifies node development and testing. In the future will help our validators.
 
-That is it for the updates! If you are interested in our project and/or want to join our team - reach us in PARSEC Labs socials:
+That is it for the updates! If you are interested in our project or want to join our team - reach us in PARSEC Labs socials:
 - PARSEC Labs website: https://www.parseclabs.org/
 - Telegram: https://t.me/parseclabs
 - Facebook: https://www.facebook.com/parsecIabs/
