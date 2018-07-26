@@ -1,6 +1,6 @@
 ---
 template: post.html
-title:    "Latest Development Update"
+title:    "Latest Development Update - PARSEC Labs launched Plasma chain"
 date:     2018-07-25 00:23:00
 image:    RocketLaunch.jpg
 author:
