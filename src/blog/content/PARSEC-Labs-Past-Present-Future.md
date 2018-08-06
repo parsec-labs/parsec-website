@@ -16,7 +16,7 @@ Last week we gave a live presentation about PARSEC Labs, its mission, roadmap, a
 
 We know how informative and important these presentation and Q&A sessions are, so we will do our best to hold similar live sessions regularly. Stay tuned, subscribe to our YouTube channel and follow announcements on our social media. Also, if you happened to miss any live stream, don’t worry; we have a full video recap for you!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5fhqjmS7_ac" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p align="center"><iframe width="900" height="506" src="https://www.youtube.com/embed/5fhqjmS7_ac" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
 
 Timings:
 
