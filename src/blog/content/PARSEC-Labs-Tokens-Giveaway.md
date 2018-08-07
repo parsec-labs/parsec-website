@@ -48,8 +48,8 @@ Official results will be announced by 15th of September in our socials.
 
 If you are interested in our project or want to join our team, feel free to reach out to PARSEC Labs through social media: 
 
-Website: https://www.parseclabs.org/ 
-Telegram: https://t.me/parseclabs 
-Twitter: https://twitter.com/Parsec_Labs 
-YouTube: https://www.youtube.com/channel/UCupH1-afY2xMIpLoTnBJvtA 
-Facebook: https://www.facebook.com/parsecIabs/
+- Website: https://www.parseclabs.org/ 
+- Telegram: https://t.me/parseclabs 
+- Twitter: https://twitter.com/Parsec_Labs 
+- YouTube: https://www.youtube.com/channel/UCupH1-afY2xMIpLoTnBJvtA 
+- Facebook: https://www.facebook.com/parsecIabs/
