@@ -17,13 +17,13 @@ There will be two similar challenges for both Facebook and Twitter socials. Rule
 <b>For Twitter:</b>
 
 - Follow PARSEC Labs in Twitter - https://twitter.com/Parsec_Labs
-- RT giveaway tweet
+- RT giveaway tweet - https://twitter.com/parsec_labs/status/1027077071594553344?s=21
 - Follow PARSEC Labs in Telegram - https://t.me/parseclabs
 
 <b>For Facebook:</b>
 
 - Follow PARSEC Labs in Facebook - https://www.facebook.com/parsecIabs
-- Share Facebook giveaway post
+- Share Facebook giveaway post - https://www.facebook.com/148451045841505/posts/218719665481309/
 - Follow PARSEC Labs in Telegram - https://t.me/parseclabs
 
 <b>Here is the prize structure for each challenge:</b>
