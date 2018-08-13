@@ -53,3 +53,5 @@ If you are interested in our project or want to join our team, feel free to reac
 - Twitter: https://twitter.com/Parsec_Labs 
 - YouTube: https://www.youtube.com/channel/UCupH1-afY2xMIpLoTnBJvtA 
 - Facebook: https://www.facebook.com/parsecIabs/
+
+<div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-Ax7Dab36692b756C-26.gif' border='0' alt='conter12'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=Ax7Dab36692b756C'></script></div>
