@@ -1,8 +1,8 @@
 ---
 template: post.html
 title:    "Plasma Fraud Proof Challenge Workshop with with Cryptokitties rewards"
-date:     2018-08-15 00:00:00
-image:    https://imgur.com/a/sb7D7Rc
+date:     2018-08-15 10:50:00
+image:    https://imgur.com/a/DE7KsHn
 share_image: https://imgur.com/a/sb7D7Rc
 author:
   name: @oz1127
