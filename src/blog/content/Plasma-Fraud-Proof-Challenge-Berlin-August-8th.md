@@ -2,7 +2,7 @@
 template: post.html
 title:    "Plasma Fraud Proof Challenge Workshop with Cryptokitties rewards"
 date:     2018-08-15 10:50:00
-image:    
+image:    Berlin.jpg
 author:
   name: "@oz1127"
   twitter: "@horizonaut"
@@ -10,7 +10,7 @@ author:
 description: PARSEC Labs' Plasma Fraud Proof Challenge Workshop with Cryptokitties rewards
 ---
 
-<img src="/img/blog/Prizes.jpg" alt="Prizes">
+<img src="/img/blog/PlasmaConcept.jpg" alt="PlasmaConcept">
 
 Hello, community!
 
