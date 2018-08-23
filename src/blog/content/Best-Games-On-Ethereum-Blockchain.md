@@ -2,17 +2,18 @@
 template: post.html
 title:    "Best games on Ethereum blockchain: Our TOP 10"
 date:     2018-08-23 00:23:00
-image:    LedgerInSpace.jpg
+image:    BlockchainGames.jpg
 description: Small overview of Ethereum blockchin based games
 ---
 
-<img src="/img/blog/Prizes.jpg" alt="Prizes">
+<img src="/img/blog/Top10BlockchainGames.jpg" alt="Top10BlockchainGames">
 
 Aloha, our beloved PARSEC Labs community!
 
 Please welcome our newest blog post, which is fully devoted to blockchain games on Ethereum! Everybody love games, right? 
 
 We have done a small research and want to introduce you our TOP 10 list of the best games on the Ethereum blockchain! When you will finish reading, please tell us which blockchain games are you currently playing. Our Telegram channel is a perfect place for such stories!
+
 
 <h2>1. Cryptokitties</h2>
 
@@ -22,8 +23,9 @@ CryptoKitties is one of the world’s first games to be built on blockchain tech
 
 <img src="/img/blog/CryptoKitties.jpg" alt="CryptoKitties">
 
-Website: https://www.cryptokitties.co/
+Website: https://www.cryptokitties.co/ <br />
 Twitter: https://twitter.com/cryptokitties
+
 
 <h2>2. Etheremon</h2>
 
@@ -31,8 +33,9 @@ Etheremon is the first game opening an era of Game 3.0. It creates a world of Mo
 
 <img src="/img/blog/Etheremon.jpg" alt="Etheremon">
 
-Website: https://www.etheremon.com/
+Website: https://www.etheremon.com/ <br />
 Twitter: https://twitter.com/myetheremon
+
 
 <h2>3. CryptoPunks</h2>
 
@@ -40,8 +43,9 @@ The CryptoPunks are 24x24 pixel art images, generated algorithmically. Most are 
 
 <img src="/img/blog/CryptoPunks.jpg" alt="CryptoPunks">
 
-Website: https://www.larvalabs.com/cryptopunks
+Website: https://www.larvalabs.com/cryptopunks <br />
 Twitter: https://twitter.com/larvalabs
+
 
 <h2>4. Ether Online</h2>
 
@@ -49,8 +53,9 @@ Ether Online is one of the world's first MMORPG based on the blockchain technolo
 
 <img src="/img/blog/EtherOnline.jpg" alt="EtherOnline">
 
-Website: https://ether.online/
+Website: https://ether.online/ <br />
 Twitter: https://twitter.com/EtherOnline
+
 
 <h2>5. MLB Crypto Baseball</h2>
 
@@ -58,8 +63,9 @@ MLB Crypto Baseball is a blockchain-based sports game that anyone can play using
 
 <img src="/img/blog/MLBCryptoBaseball.jpg" alt="MLBCryptoBaseball">
 
-Website: https://www.mlbcryptobaseball.com/
+Website: https://www.mlbcryptobaseball.com/ <br />
 Twitter: https://twitter.com/mlbcrypto
+
 
 <h2>6. Ether Bots</h2>
 
@@ -67,8 +73,9 @@ Decentralised Robot Wars game on the Ethereum blockchain. Etherbots are robots w
 
 <img src="/img/blog/EtherBots.jpg" alt="EtherBots">
 
-Website: https://etherbots.io/
+Website: https://etherbots.io/ <br />
 Twitter: https://twitter.com/EtherBots
+
 
 <h2>7. Crypto Celebrities</h2>
 
@@ -76,8 +83,9 @@ Crypto Celebrities is part game, part investing, and part charity. You can buy a
 
 <img src="/img/blog/CryptoCelebrities.jpg" alt="CryptoCelebrities">
 
-Website: https://cryptocelebrities.co
+Website: https://cryptocelebrities.co <br />
 Twitter: https://twitter.com/cryptocelebs
+
 
 <h2>8. ETH TOWN</h2>
 
@@ -85,8 +93,9 @@ In ETH.TOWN you are a real estate investor working with the Crypto Tower. Buy lo
 
 <img src="/img/blog/ETHTown.jpg" alt="ETHTown">
 
-Website: https://eth.town/
+Website: https://eth.town/ <br />
 Twitter: https://twitter.com/eth_town
+
 
 <h2>9. Ether Rockets</h2>
 
@@ -94,8 +103,9 @@ EtherRockets is the first decentralized game, allowing you to collect digital ro
 
 <img src="/img/blog/EtherRockets.jpg" alt="EtherRockets">
 
-Website: https://etherrockets.com/
+Website: https://etherrockets.com/ <br />
 Twitter: https://twitter.com/etherrockets
+
 
 <h2>10. Etheroll</h2>
 
@@ -103,8 +113,9 @@ Etheroll is an Ethereum smart-contract and Dapp which provides a provably-fair d
 
 <img src="/img/blog/Etheroll.jpg" alt="Etheroll">
 
-Website: https://etheroll.com
+Website: https://etheroll.com <br />
 Twitter: https://twitter.com/etheroll
+
 
 <h2>BONUS: Acebusters</h2>
 
@@ -112,7 +123,7 @@ Acebusters is worlds first real-time decentralized application based on Ethereum
 
 <img src="/img/blog/Acebusters.jpg" alt="Acebusters">
 
-Website: https://dapp.acebusters.com/lobby
+Website: https://dapp.acebusters.com/lobby <br />
 Telegram: https://t.me/acebusters
 
 If you are interested in our project or want to join our team, feel free to reach out to PARSEC Labs through social media: 
