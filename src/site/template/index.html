@@ -24,8 +24,9 @@
         <link rel="manifest" href="/manifest.json">
         <link rel="canonical" href="https://parseclabs.org" />
         <meta name="theme-color" content="#ffffff">
+      <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
 
-        <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/main.css">
 
         <script>
           /*! modernizr 3.6.0 (Custom Build) | MIT *
@@ -55,7 +56,7 @@
 
         <div id="app">
           <header class="top-header">
-            <a data-target="home">
+            <a href="/" data-target="home">
               <svg role="img" width="267" height="68" class="top-header-logo">
                 <use xlink:href="#parseclabs"></use>
               </svg>
@@ -63,6 +64,7 @@
 
             <div class="top-header-menu">
               <button>
+
                 <svg role="img" width="29" height="24">
                   <use xlink:href="#menu"></use>
                 </svg>
@@ -72,9 +74,9 @@
                 <li><a data-target="vision">Mission</a></li>
                 <li><a data-target="product">Product</a></li>
                 <li><a data-target="showcase">Showcase</a></li>
-                <li><a data-target="team">Team</a></li>
                 <li><a data-target="roadmap">Roadmap</a></li>
                 <li><a data-target="partners">Partners</a></li>
+                <li><a data-target="team">Team</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li class="top-header-socials">
                   <a href="https://t.me/parseclabs" target="_blank" rel="noopener">
@@ -111,9 +113,15 @@
               <div class="section-content-wrapper">
                 <div class="upper-header">
                   <div class="section-content">
-                    <div class="section-content-inner">
-                      <h1>Blockchanging<br /> the&nbsp;gaming world</h1>
+                    <div class="section-content-inner container">
+                      <h1>Scalable blockchain<br /> for&nbsp;gaming & entertainment</h1>
+                      <p class="section-content-p">We enable on-chain scalability with the public PARSEC Chain.<br>Bases on Plasma and PoS. Secured by Ethereum network.</p>
                       <div class="upper-header-buttons">
+                        <a href="https://twitter.com/Parsec_Labs" class="button" target="blank">
+                          <span>
+                            Try It Now
+                          </span>
+                        </a>
                         <a href="https://parseclabs.org/files/plasma-computation.pdf" class="button">
                           <span>
                             Whitepaper
@@ -124,15 +132,7 @@
                             <svg role="img" width="29" height="25" class="gradient-icon button-icon">
                               <use xlink:href="#social-telegram"></use>
                             </svg>
-                            Telegram
-                          </span>
-                        </a>
-                        <a href="https://twitter.com/Parsec_Labs" class="button" target="blank">
-                          <span>
-                            <svg role="img" width="27" height="22" class="gradient-icon button-icon">
-                              <use xlink:href="#social-twitter"></use>
-                            </svg>
-                            Twitter
+                            join Us
                           </span>
                         </a>
                       </div>
@@ -141,28 +141,28 @@
                 </div>
                 <div class="lower-header">
                   <div class="section-content">
-                    <div class="section-content-inner container">
+                    <div class="section-content-inner container cont cont1">
                       <div class="main-benefits">
                         <div class="main-benefits-item">
                           <svg role="img" width="64" height="64" class="gradient-icon-big">
                             <use xlink:href="#unified-ecosystem"></use>
                           </svg>
                           <h3>Unified Ecosystem</h3>
-                          <p>Become a&nbsp;part of&nbsp;the&nbsp;biggest gaming&nbsp;world</p>
+                          <p>Build and scale your games and dapps useing PARSEC Labs blockchain solutions</p>
                         </div>
                         <div class="main-benefits-item">
                           <svg role="img" width="64" height="64" class="gradient-icon-big">
-                            <use xlink:href="#decentralized-development"></use>
+                            <use xlink:href="#scaling"></use>
                           </svg>
-                          <h3>Decentralized Development</h3>
-                          <p>Games development will be&nbsp;promoted by&nbsp;gamers</p>
+                          <h3>Scaling Ethereum</h3>
+                          <p>Run instance, cheap and secured transactions on PARSEC Chain</p>
                         </div>
                         <div class="main-benefits-item">
                           <svg role="img" width="64" height="64" class="gradient-icon-big">
-                            <use xlink:href="#valuable-assets"></use>
+                            <use xlink:href="#safe-box"></use>
                           </svg>
-                          <h3>Valuable Assets</h3>
-                          <p>Simple and&nbsp;trusted markets for&nbsp;assets&nbsp;trading</p>
+                          <h3>Proof of stake validation</h3>
+                          <p>Become a validator for our Plasma chain and use your stake to recieve the rewards</p>
                         </div>
                       </div>
                     </div>
@@ -174,128 +174,14 @@
 
             <section class="intro" data-section="vision">
               <div class="container">
-                <header class="section-header">
+                <header class="section-header mission">
                   <h2>
-                    SCALABLE BLOCKCHAIN GAMING
-                    <em>FAIR AND TRANSPARENT</em>
+                    Our Mission
                   </h2>
-                  <p>
-                    Our mission is to&nbsp;bring fairness and&nbsp;transparency to&nbsp;the gaming and&nbsp;entertainment industry. We enable on-chain scalability for game execution to open up and unite virtual worlds.
-                  </p>
+                  <p>PARSEC Labs - is an open community and  also a distributed team that isusing <a href="#">holacracy</a> as self-management practice and<a href="#"> taconomy</a> as a specifyc reward model.</p>
+                  <br>
+                  <p>Our missionis to bring fairness and transparency to the gaming and entertainment industry. We enable on-chain scalability for game execution to open and unite virtual worlds.</p>
                 </header>
-
-                <div class="benefits">
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="benefits-dev-tab" data-toggle="tab" href="#benefits-dev" role="tab" aria-controls="benefits-dev" aria-selected="true">
-                        <svg role="img" width="46" height="46" class="gradient-icon-big">
-                          <use xlink:href="#for-developers"></use>
-                        </svg>
-                        For Developers
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="benefits-gamers-tab" data-toggle="tab" href="#benefits-gamers" role="tab" aria-controls="benefits-gamers" aria-selected="false">
-                        <svg role="img" width="46" height="46" class="gradient-icon-big">
-                          <use xlink:href="#for-gamers"></use>
-                        </svg>
-                        For Gamers
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="benefits-esports-tab" data-toggle="tab" href="#benefits-esports" role="tab" aria-controls="benefits-esports" aria-selected="false">
-                        <svg role="img" width="46" height="46" class="gradient-icon-big">
-                          <use xlink:href="#for-esports"></use>
-                        </svg>
-                        For esports
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">
-
-                    <div class="tab-pane fade show active" id="benefits-dev" role="tabpanel" aria-labelledby="benefits-dev-tab">
-                      <div class="benefit">
-                        <h3>
-                          EASY BLOCKCHAIN<br /> INTEGRATION
-                        </h3>
-                        <p>
-                          Easy integration to blockchain by using PARSEC API will save your time and resources
-                        </p>
-                      </div>
-                      <div class="benefit">
-                        <h3>
-                          COLLECT FUNDS VIA<br /> TOKEN SALES
-                        </h3>
-                        <p>
-                          Finance game development with token sale - first real step to build and grow your community
-                        </p>
-                      </div>
-                      <div class="benefit">
-                        <h3>
-                          STRONG IN-GAME<br /> ECONOMY
-                        </h3>
-                        <p>
-                          Real ownership of virtual items and currencies creates strong ingame economy.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="benefits-gamers" role="tabpanel" aria-labelledby="benefits-gamers-tab">
-                      <div class="benefit">
-                        <h3>
-                          REAL<br /> OWNERSHIP
-                        </h3>
-                        <p>
-                          Guaranteed ownership of virtual items and currencies gives you respect from the other players and wealth.
-                        </p>
-                      </div>
-                      <div class="benefit">
-                        <h3>
-                          EASILY BUY,<br /> SELL AND TRANSFER
-                        </h3>
-                        <p>
-                          More value for your virtual assets, easy to buy & sell.
-                        </p>
-                      </div>
-                      <div class="benefit">
-                        <h3>
-                          TRANSPARENCY<br /> FOR ALL
-                        </h3>
-                        <p>
-                          Safe, fair and transparent game experience due to&nbsp;immutable blockchain technology
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="benefits-esports" role="tabpanel" aria-labelledby="benefits-esports-tab">
-                      <div class="benefit">
-                        <h3>
-                          TRUSTED PAYMENTS
-                        </h3>
-                        <p>
-                          Guaranteed payments to&nbsp;esports teams and&nbsp;players
-                        </p>
-                      </div>
-                      <div class="benefit">
-                        <h3>
-                          Immutable rules
-                        </h3>
-                        <p>
-                          Fair and transparent execution of&nbsp;game logic, esports tournaments and&nbsp;gaming&nbsp;RNG
-                        </p>
-                      </div>
-                      <div class="benefit">
-                        <h3>
-                          Full auditability
-                        </h3>
-                        <p>
-                          Ability for public to&nbsp;very execution and challenge results by running a&nbsp;validator node (master&nbsp;node)
-                        </p>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
               </div>
 
             </section>
@@ -309,153 +195,95 @@
               <section class="product" data-section="product">
                 <div class="container">
                   <header class="section-header">
-                    <h2>WE HOOK YOU ONTO<br />BLOCKCHAIN LIGHTSPEED</h2>
+                    <h2>Parsec Chain</h2>
+                    <p class="parser-chain">Based on Plasma and Proof of Stake. Secured by Ethereum</p>
+
                   </header>
-                  <div class="section-description">
-                    <p>
-                      Introducing Blockchain solutions by&nbsp;PARSEC&nbsp;Labs. PARSEC brings trust, transparency, scalability and extensibility to gaming and entertainment industry. Our product is a bridge, which connects gaming and blockchain worlds. It consists of&nbsp;sidechains, PARSEC&nbsp;Coin and an&nbsp;API.
-                    </p>
+                  <div class="section-description parser-chain">
+                    <p >PARSEC Chain (also known as PARSEC Plasma Chain) - is fast and secure Blockchain primarily created for gaming and entertainment industries, but can be used in other industries and markets as well. Our chain is based on Plasma framework, Proof of Stake (PoS) consensus algorithm and is secured by Ethereum network.</p>
+                    <p >PARSEC Chain has three main goals. The first goal is to connect gaming and entertainment worlds with the world of blockchain. Basically, we see our Plasma Chain as a bridge. The second goal is to enable on-chain scalability for existing and upcoming games and dapps - we want to help good projects to scale without any problems. And the third goal is to give developers and users a blockchain where they can run fast, cheap and secure transactions. </p>
                   </div>
-                  <div class="product-features">
-                    <div class="product-feature">
-                      <svg role="img" width="90" height="90" class="gradient-icon-big">
-                        <use xlink:href="#parsec-coin"></use>
-                      </svg>
-                      <h3>PARSEC Coin (PSC)</h3>
-                      <p>
-                        The cryptocurrency that operates on&nbsp;PARSEC Labs platform. PARSEC Coin pays for the transactions on PARSEC sidechain, rewards miners for mining and keeping the sidechain running and operates the exchange: creates a default order-book for each coin.
-                      </p>
+                  <div class="section-header images">
+                    <h3>Plasma achitecture</h3>
+                    <img draggable="false" src="/img/elements/plasma-architecture.svg" alt="">
+                  </div>
+                  <div class="section-header plasma-chain-scheme images">
+                    <h3>How Plasma Works</h3>
+
+                    <div class="plasma-chain-sc images">
+                      <div class="img2">
+                       <img draggable="false" src="/img/elements/how-plasma-works1.svg" alt="">
+                      </div>
+                      <div class="img3">
+                        <img draggable="false" src="/img/elements/how-plasma-works2.svg" alt="">
+                      </div>
                     </div>
-                    <div class="product-feature">
-                      <svg role="img" width="93" height="76" class="gradient-icon-big">
-                        <use xlink:href="#parsec-api"></use>
-                      </svg>
-                      <h3>PARSEC API</h3>
-                      <p>
-                        An open source application programming interface which can be easily integrated into your game products and&nbsp;allows you to execute all benefits of our blockchain technologies. As a result, your product will enable players to&nbsp;securely interact with the chain and developers to create autonomous worlds encoded in smart contracts.
-                      </p>
-                    </div>
+                  </div>
+                  <div class="section-description parser-chain">
+                    <p >PARSEC Chain has its own token, PSC (stands for PARSEC). PSC is used for staking and it also pays the transaction fees on the Plasma chain and reward validators for validating (proposing new blocks). More info about PSC you can find in our FAQ section.</p>
+                  </div>
+                  <div class="validator">
+                  <a href="https://www.acebusters.com" class="button" target="_blank" rel="noopener">
+                    <span>become  a validator</span>
+                  </a>
                   </div>
                 </div>
               </section>
 
               <section class="showcase"  data-section="showcase">
-                <div class="container">
+                <div class="container cont cont1">
                   <header class="section-header">
-                    <svg role="img" width="96" height="113" class="gradient-icon-big icon-ab">
-                      <use xlink:href="#acebusters"></use>
-                    </svg>
-                    <h2>
-                      Showcase:<br />
-                      Poker on the blockchain
-                    </h2>
-                    <p>
-                      We have experience and know how to get job done. By developing scaling technology like multi-party state channels, we have proven that we can solve fundamental problems of on-chain applications. Acebusters — our decentralized poker platform on the Ethereum blockchain is a standing prove for this.
-                    </p>
-                  </header>
-                  <a href="https://www.acebusters.com" class="button" target="_blank" rel="noopener">
-                    <span><em>visit</em> acebusters.com</span>
-                  </a>
-                </div>
-              </section>
-            </div>
+                    <div>
+                      <h2>
+                        Showcase
+                      </h2>
+                    </div>
 
-            <section class="team" data-section="team">
-              <header class="section-header">
-                <h2>Meet the team</h2>
-                <!-- <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br />sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
-                </p> -->
-              </header>
+                    <div class="showcases">
+                      <div>
+                        <svg role="img" width="96" height="113" class="gradient-icon-big icon-ab">
+                          <use xlink:href="#alice"></use>
+                        </svg>
+                        <h2>
+                          Project Alice
+                        </h2>
+                        <p>
+                          It's small showcase of PARSEC Chain capabilities. It's main purpose is to show you how transactions are working is our Plasma chain. Multiple tokens support available.
+                        </p>
+                        <a href="https://www.acebusters.com" class="button" target="_blank" rel="noopener">
+                          <span><em>visit</em> project Alice</span>
+                        </a>
+                      </div>
 
-              <div class="section-content-wrapper">
-                <div class="section-content bg-dust">
-                  <div class="section-content-inner container">
-                    <!-- <div class="row text-center">
-                      <h2>The Team</h2>
-                    </div> -->
-                    <div class="row text-center team-row">
-                      <div class="col-sm-3">
-                        <img class="team-image" src="img/team/johann.png" alt="Johann Barbie" title="Johann Barbie"/>
-                        <div>
-                          <h3>Johann Barbie</h3>
-                          <p>
-                            Smart Contract Engineer
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-sm-3">
-                        <img class="team-image" src="img/team/alex.png" alt="Alex Lunyov" title="Alex Lunyov" />
-                        <div>
-                          <h3>Alex Lunyov</h3>
-                          <p>
-                            Platform Engineer
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-sm-3">
-                        <img class="team-image" src="img/team/calvin.png" alt="Calvin Hoenes" title="Calvin Hoenes" />
-                        <div>
-                          <h3>Calvin Hoenes</h3>
-                          <p>
-                            Experience Engineer
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-sm-3">
-                        <img class="team-image" src="img/team/victor.png" alt="Victor Meteleshko" title="Victor Meteleshko" />
-                        <div>
-                          <h3>Victor Meteleshko</h3>
-                          <p>
-                            Engineer
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-sm-3">
-                        <img class="team-image" src="img/team/sergey.png" alt="Sergey Stryukov" title="Sergey Stryukov"/>
-                        <div>
-                          <h3>Sergey Stryukov</h3>
-                          <p>
-                            Engineer, UX
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-sm-3">
-                        <img class="team-image" src="img/team/kosta.png" alt="Kosta Korenkov" title="Kosta Korenkov"/>
-                        <div>
-                          <h3>Kosta Korenkov</h3>
-                          <p>
-                            Backend Developer
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-sm-3">
-                        <img class="team-image" src="img/team/michael.png" alt="Michael Kroener" title="Michael Kroener"/>
-                        <div>
-                          <h3>Michael Kroener</h3>
-                          <p>
-                            Analyst
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-sm-3">
+                      <div>
+                        <svg role="img" width="96" height="113" class="gradient-icon-big icon-ab">
+                          <use xlink:href="#acebusters"></use>
+                        </svg>
+                        <h2>
+                          Acebusters
+                        </h2>
+                        <p>
+                          The first decentralized poker platform live on the Ethereum blockchain and also a world's first real-time decentralized application.
+                          <br class="br">
+                          <br class="br">
 
+                        </p>
+                        <a href="https://www.acebusters.com" class="button" target="_blank" rel="noopener">
+                          <span><em>visit</em> acebusters</span>
+                        </a>
                       </div>
                     </div>
-                  </div>
+                  </header>
                 </div>
-              </div>
 
-            </section>
+              </section>
+            </div>
 
             <div class="bg-milky-way">
               <section class="roadmap" data-section="roadmap">
                 <div class="container">
                   <header class="section-header">
                     <h2>Our Roadmap</h2>
-                    <!-- <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br />sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
-                    </p> -->
                   </header>
                   <div class="row">
                     <div class="cd-container">
@@ -578,19 +406,6 @@
                       <div class="partners-logo partners-tooltip">
                         <div class="partners-tooltiptext desktop">
                           <div class="partners-tooltiptext-header">
-                            <h3>HeyTaco!</h3>
-                            <a href="https://www.heytaco.chat/" target="_blank" class="partners-tooltiptext-link">Visit web-site</a>
-                          </div>
-                          <p class="partners-tooltiptext-description">HeyTaco! sparks conversations and builds stronger relationships with its fun and unique kindness currency...tacos!</p>
-                        </div>
-                        <a href="https://www.heytaco.chat/" target="_blank">
-                          <img src="img/logos/heytaco.svg" alt="HeyTaco!"/>
-                        </a>
-                      </div>
-
-                      <div class="partners-logo partners-tooltip">
-                        <div class="partners-tooltiptext desktop">
-                          <div class="partners-tooltiptext-header">
                             <h3>Holacracy</h3>
                             <a href="https://www.holacracy.org/" target="_blank" class="partners-tooltiptext-link">Visit web-site</a>
                           </div>
@@ -601,12 +416,90 @@
                         </a>
                       </div>
 
+                      <div class="partners-logo partners-tooltip">
+                        <div class="partners-tooltiptext desktop">
+                          <div class="partners-tooltiptext-header">
+                            <h3>HeyTaco!</h3>
+                            <a href="https://www.heytaco.chat/" target="_blank" class="partners-tooltiptext-link">Visit web-site</a>
+                          </div>
+                          <p class="partners-tooltiptext-description">HeyTaco! sparks conversations and builds stronger relationships with its fun and unique kindness currency...tacos!</p>
+                        </div>
+                        <a href="https://www.heytaco.chat/" target="_blank">
+                          <img src="img/logos/heytaco.svg" alt="HeyTaco!"/>
+                        </a>
+                      </div>
+
                     </div>
                   </div>
                 </div>
               </section>
+
+              <section class="team" data-section="team">
+                <header class="section-header">
+                  <h2>Meet the team</h2>
+                </header>
+
+                <div class="section-content-wrapper">
+                  <div class="section-content bg-dust">
+                    <div class="section-content-inner container">
+                      <!-- <div class="row text-center">
+                        <h2>The Team</h2>
+                      </div> -->
+                      <div class="row text-center team-row">
+                        <div class="col-sm-3 ">
+                          <img class="team-image" src="img/team/johann.png" alt="Johann Barbie" title="Johann Barbie"/>
+                          <div>
+                            <h3>Johann Barbie</h3>
+                            <p>
+                              Smart Contract Engineer
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                          <img class="team-image" src="img/team/alex.png" alt="Alex Lunyov" title="Alex Lunyov" />
+                          <div>
+                            <h3>Alex Lunyov</h3>
+                            <p>
+                              Platform Engineer
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                          <img class="team-image" src="img/team/victor.png" alt="Victor Meteleshko" title="Victor Meteleshko" />
+                          <div>
+                            <h3>Victor Meteleshko</h3>
+                            <p>
+                              Engineer
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                          <img class="team-image" src="img/team/kosta.png" alt="Kosta Korenkov" title="Kosta Korenkov"/>
+                          <div>
+                            <h3>Konstantin Korenkov</h3>
+                            <p>
+                              Backend Developer
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                          <img class="team-image" src="img/team/sergey.png" alt="Sergey Stryukov" title="Sergey Stryukov"/>
+                          <div>
+                            <h3>Sergey Stryukov</h3>
+                            <p>
+                              Engineer, UI/UX
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </section>
+
               <section class="footer">
-                <img class="ground" src="img/backgrounds/ground.webp" />
+                <img class="ground" src="img/backgrounds/ground.png" />
                 <header class="section-header">
                   <h2>Stay in touch</h2>
                 </header>
@@ -685,6 +578,7 @@
           </div>
 
         </div>
+
 
 
         <!-- END PARSEC -->
