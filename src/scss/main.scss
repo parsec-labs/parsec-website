@@ -34,6 +34,7 @@ $gridSize: 8;
 
 .section-content-p {
   font-size: 20px;
+  line-height: 30px;
   padding-bottom: 20px;
 }
 .header{
@@ -169,6 +170,10 @@ $gridSize: 8;
   a {
     text-decoration: none;
   }
+  a:hover{
+    border-bottom: 2px solid white;
+    color: #007bff;
+  }
   @media screen and (max-width: 1000px) {
     h2 {
       font-size: 40px;
@@ -203,7 +208,8 @@ $gridSize: 8;
   margin-bottom: 70px;
 
   p {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 30px;
     max-width: 100%;
     margin: 20px;
     line-height: 32px;
@@ -298,22 +304,38 @@ $gridSize: 8;
   align-items: center;
 }
 .showcases {
+  padding-top: 75px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
   align-items: last-baseline;
+
 }
 
 .section-header .showcases p {
+  font-size: 20px;
   max-width: 600px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 
-@media (max-width: 1001px) {
+.section-header .showcases h2 {
+  font-size: 50px;
+}
+@media (min-width: 1061px) {
   .br {
     display: none;
+  }
+}
+@media (max-width: 1060px) {
+  .br {
+    display: block;
+  }
+}
+@media (max-width: 1001px) {
+  .br {
+    display: block;
   }
 }
 @media (max-width: 965px) {
@@ -321,7 +343,7 @@ $gridSize: 8;
     display: block;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 658px) {
   .showcases {
     display: flex;
     flex-direction: column;
@@ -435,7 +457,7 @@ $gridSize: 8;
   .showcase::before {
     background-image: linear-gradient(rgba(0, 0, 0, 0), transparent 0%, transparent 0%, rgba(0, 0, 0, 0)) !important; }
 }
-@media  (max-width: 576px) {
+@media  (max-width: 658px) {
   .showcase {
     background-image: url(../img/backgrounds/Poker_min_2.png);
   }
@@ -543,7 +565,9 @@ $gridSize: 8;
       position: absolute;
       z-index: 1;
       font-size: 16px;
+      line-height: 1.25em;
       .partners-tooltiptext-header {
+        padding: 10px 0;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -595,7 +619,7 @@ $gridSize: 8;
 }
 .images h3{
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 42px;
   font-weight: bold;
   padding-bottom: 25px;
 }
@@ -681,5 +705,5 @@ $gridSize: 8;
   top: -15px !important;
 }
 .team .team-image {
-  width: 200px !important;
+  width: 180px !important;
 }
