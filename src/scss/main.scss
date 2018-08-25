@@ -32,11 +32,7 @@ $gridSize: 8;
 @import "icons";
 
 
-.section-content-p {
-  font-size: 22px;
-  padding-bottom: 30px;
-  line-height: 32px;
-}
+
 .header{
     .upper-header {
     position: relative;
@@ -136,6 +132,12 @@ $gridSize: 8;
       padding-bottom: 20px;
     }
   }
+}
+
+.section-content-p {
+  font-size: 22px;
+  padding-bottom: 30px;
+  line-height: 32px;
 }
 
 @media only screen and (min-width:769px)  and (max-width: 992px) {
@@ -457,11 +459,11 @@ $gridSize: 8;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 0;
+  height: 0;
   content: '';
-  background-image: linear-gradient(rgb(0, 0, 0), transparent 20%, transparent 50%, rgb(0, 0, 0)); }
-
+  //background-image: linear-gradient(rgb(0, 0, 0), transparent 20%, transparent 50%, rgb(0, 0, 0));
+}
 @media  (max-width: 1140px) {
   .showcase {
     background-image: url(../img/backgrounds/Poker_min1.png);
@@ -469,7 +471,10 @@ $gridSize: 8;
     background-position: center;
   }
   .showcase::before {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), transparent 0%, transparent 0%, rgba(0, 0, 0, 0)) !important; }
+    width: 0;
+    height: 0;
+    //background-image: linear-gradient(rgba(0, 0, 0, 0), transparent 0%, transparent 0%, rgba(0, 0, 0, 0)) !important;
+  }
 }
 @media  (max-width: 658px) {
   .showcase {
