@@ -136,8 +136,8 @@ $gridSize: 8;
 
 .section-content-p {
   font-size: 22px;
-  padding-bottom: 30px;
-  line-height: 32px;
+  padding-bottom: 40px;
+  line-height: 34px;
 }
 
 @media only screen and (min-width:769px)  and (max-width: 992px) {
@@ -221,7 +221,8 @@ $gridSize: 8;
 // Section Description
 .section-description.parser-chain {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 45px;
+  margin-top: 30px;
 
   p {
     font-size: 20px;
@@ -390,12 +391,12 @@ $gridSize: 8;
   vertical-align: center;
 }
 .intro {
-  background-image: url(../img/backgrounds/Mission.png);
+  background-image: url(../img/backgrounds/Mission.jpg);
   background-position: bottom;
   background-size: inherit;
   background-repeat: no-repeat; }
 .no-webp .intro {
-  background-image: url(../img/backgrounds/Mission.png); }
+  background-image: url(../img/backgrounds/Mission.jpg); }
 @media screen and (min-width: 1920px) {
   .intro {
     background-size: cover;
@@ -405,7 +406,7 @@ $gridSize: 8;
     background-position: 50% 20%; } }
 @media screen and (max-width: 1001px) {
   .intro {
-    background-image: url(../img/backgrounds/Mission_min.png);
+    background-image: url(../img/backgrounds/Mission_min.jpg);
     background-position: 50% 20%; } }
 @media screen and (max-width: 1150px) {
   .intro {
@@ -496,7 +497,7 @@ $gridSize: 8;
   //background-size: 100% auto;
   //background-position: 0 100px;
   background-size: cover;
-  background-position: right;
+  background-position: 50%;
   background-image: url(../img/backgrounds/earth.png);
   background-repeat: no-repeat;
 
@@ -633,7 +634,7 @@ $gridSize: 8;
 .product .images img{
   max-width: 100%;
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   padding-right: 20px;
 }
 .images h3{
