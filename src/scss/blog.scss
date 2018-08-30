@@ -228,6 +228,13 @@ body, html {
       }
     }
 
+    h1 + p,
+    h2 + p,
+    h3 + p,
+    h4 + p {
+      margin-top: 0;
+    }
+
     a {
       text-decoration: underline;
       color: #007aff;
@@ -236,6 +243,12 @@ body, html {
     h2, h3 {
       font-weight: 900;
       text-transform: none;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h4 {
+      margin-top: 1.5rem;
     }
 
     h2 {
@@ -253,6 +266,7 @@ body, html {
     ul {
       list-style: none;
       margin-bottom: 30px;
+      margin-top: 20px;
     }
 
     li {
