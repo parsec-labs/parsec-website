@@ -1,6 +1,6 @@
 ---
 template: post.html
-title:    "Latest-Conferences-Overview"
+title:    "Latest Conferences Overview"
 date:     2018-08-29 00:23:00
 image:    Conferece.jpg
 author:
