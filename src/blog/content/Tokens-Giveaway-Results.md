@@ -1,7 +1,7 @@
 ---
 template: post.html
 title:    "Tokens Giveaway Results"
-date:     2018-08-07 00:23:00
+date:     2018-09-04 00:23:00
 image:    LedgerInSpace.jpg
 description: PARSEC Labs announcing results of first official tokens giveaway
 ---
@@ -18,59 +18,59 @@ After that we used <a href="https://www.random.org/">random.org</a> site functio
 
 Here are official results of Twitter challenge:
 
-1 - Wenda Öman
-2 - Aseem Okafor
-3 - Teppo Grünspan
-4 - Terentius Adler
-5 - Marina Krämer
-6 - Gerfrid Paulis
-7 - Alayna Maurer
-8 - Lyuba Winter
-9 - Xystos Acone
-10 - Kallistrate Flipsen
-11 - Athena Michael
-12 - Gustaw Rodrigues
-13 - Maud Quickley
-14 - Hazael Abbatangelo
-15 - Elrond Sauvageon
-16 - Athanasia Romero
-17 - Guda MacCailín
-18 - Amor Falco
-19 - Marni Travieso
-20 - Ade Knutsen
-21 - Darja Lupei
-22 - Mireia Eichel
-23 - Hamish Danniel
-24 - Posy Beck
-25 - Jyoti Chmela
+1 - Wenda Öman<br/>
+2 - Aseem Okafor<br/>
+3 - Teppo Grünspan<br/>
+4 - Terentius Adler<br/>
+5 - Marina Krämer<br/>
+6 - Gerfrid Paulis<br/>
+7 - Alayna Maurer<br/>
+8 - Lyuba Winter<br/>
+9 - Xystos Acone<br/>
+10 - Kallistrate Flipsen<br/>
+11 - Athena Michael<br/>
+12 - Gustaw Rodrigues<br/>
+13 - Maud Quickley<br/>
+14 - Hazael Abbatangelo<br/>
+15 - Elrond Sauvageon<br/>
+16 - Athanasia Romero<br/>
+17 - Guda MacCailín<br/>
+18 - Amor Falco<br/>
+19 - Marni Travieso<br/>
+20 - Ade Knutsen<br/>
+21 - Darja Lupei<br/>
+22 - Mireia Eichel<br/>
+23 - Hamish Danniel<br/>
+24 - Posy Beck<br/>
+25 - Jyoti Chmela<br/>
 
 Here are official results of Facebook challenge:
 
-1 - Klaes Ma
-2 - Simona Gaunite
-3 - Niko Rosenberg
-4 - Kristaps Bakis
-5 - Anatol Babić
-6 - Matthew Egger
-7 - Embla Melvin
-8 - Chokri Ghanmi
-9 - Sandra McFarland
-10 - Nolene Mertens
-11 - Asan Asan
-12 - Cornelio Hillam
-13 - Tychon Singh
-14 - Aayush Gupta
-15 - Ingrid Dolan
-16 - Ji-Hu Griffin
-17 - Shakti Rocha
-18 - Imireanu Sorinel
-19 - Edoardo Albert
-20 - Constância Lindholm
-21 - Vaishnavi Desroches
-22 - Joachim Vollan
-23 - Alaric Rousseau
-24 - Sanaa Chaudhary
-25 - Horst Llywelyn
+1 - Klaes Ma<br/>
+2 - Simona Gaunite<br/>
+3 - Niko Rosenberg<br/>
+4 - Kristaps Bakis<br/>
+5 - Anatol Babić<br/>
+6 - Matthew Egger<br/>
+7 - Embla Melvin<br/>
+8 - Chokri Ghanmi<br/>
+9 - Sandra McFarland<br/>
+10 - Nolene Mertens<br/>
+11 - Asan Asan<br/>
+12 - Cornelio Hillam<br/>
+13 - Tychon Singh<br/>
+14 - Aayush Gupta<br/>
+15 - Ingrid Dolan<br/>
+16 - Ji-Hu Griffin<br/>
+17 - Shakti Rocha<br/>
+18 - Imireanu Sorinel<br/>
+19 - Edoardo Albert<br/>
+20 - Constância Lindholm<br/>
+21 - Vaishnavi Desroches<br/>
+22 - Joachim Vollan<br/>
+23 - Alaric Rousseau<br/>
+24 - Sanaa Chaudhary<br/>
+25 - Horst Llywelyn<br/>
 
 Congratulations to all our winners!!
 
