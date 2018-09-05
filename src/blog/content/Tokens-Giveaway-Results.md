@@ -2,11 +2,11 @@
 template: post.html
 title:    "Tokens Giveaway Results"
 date:     2018-09-04 00:23:00
-image:    LedgerInSpace.jpg
+image:    WinnerAstronaut.jpg
 description: PARSEC Labs announcing results of first official tokens giveaway
 ---
 
-<img src="/img/blog/Prizes.jpg" alt="Prizes">
+<img src="/img/blog/WinnersAnnouncement.jpg" alt="WinnersAnnouncement">
 
 Hello, community!
 
@@ -20,7 +20,7 @@ Here are official results of Twitter challenge:
 
 1 - Wenda Öman<br/>
 2 - Aseem Okafor<br/>
-3 - Teppo Grünspan<br/>
+3 - Kashish Gupta<br/>
 4 - Terentius Adler<br/>
 5 - Marina Krämer<br/>
 6 - Gerfrid Paulis<br/>
