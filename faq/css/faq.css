@@ -183,7 +183,7 @@ label {
 
 button {
   border-radius: 0;
-  word-break: break-all;
+/*   word-break: break-all; */
 }
 
 button:focus {
