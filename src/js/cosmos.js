@@ -65,6 +65,8 @@
       }
 
       this.ctx.globalAlpha = this.alpha;
+      this.ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+      // this.ctx.fillRect(x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
       this.ctx.drawImage(this.gradientCanvas, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
       this.timePassed += this.speed;
     }
@@ -90,7 +92,12 @@
     ctx.arc(half, half, half, 0, Math.PI * 2);
     ctx.fill();
 
-    return canvas;
+    /* start: until google will fix chrome v69 perf */
+    const img = new Image();
+    img.src = canvas.toDataURL();
+    /* end: until google will fix chrome v69 perf */
+
+    return img;
   }
 
   function initCosmos(canvas, getSize) {
