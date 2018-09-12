@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -15,765 +16,881 @@
   <link rel="manifest" href="../manifest.json">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/faq.css">
 
 
 </head>
+
 <body>
-<div id="svg-sprite" style="width: 0; height: 0;position:absolute; display: none;"></div>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 0; height: 0;position:absolute;">
-  <defs>
-    <linearGradient id="icons-gradient-small" gradientUnits="userSpaceOnUse" x1="8.175" y1="15" x2="21.825" y2="15" gradientTransform="matrix(1 0 0 -1 0 30)">
-      <stop offset="0" stop-color="#4facfe"/>
-      <stop offset="1" stop-color="#00f2fe"/>
-    </linearGradient>
-    <linearGradient id="icons-gradient-big" gradientUnits="userSpaceOnUse" x1=".49" y1="41.925" x2="83.5" y2="41.925" gradientTransform="matrix(1 0 0 -1 0 84)">
-      <stop offset="0" stop-color="#4facfe"/>
-      <stop offset="1" stop-color="#00f2fe"/>
-    </linearGradient>
-  </defs>
-</svg>
-<div id="app">
-  <header class="top-header">
-    <a href="https://parseclabs.org/" data-target="home">
-      <svg role="img" width="267" height="68" class="top-header-logo">
-        <use xlink:href="#parseclabs"></use>
-      </svg>
-    </a>
-
-    <div class="top-header-menu">
-      <button>
-        <svg role="img" width="29" height="24">
-          <use xlink:href="#menu"></use>
+  <div id="svg-sprite" style="width: 0; height: 0;position:absolute; display: none;"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 0; height: 0;position:absolute;">
+    <defs>
+      <linearGradient id="icons-gradient-small" gradientUnits="userSpaceOnUse" x1="8.175" y1="15" x2="21.825" y2="15"
+        gradientTransform="matrix(1 0 0 -1 0 30)">
+        <stop offset="0" stop-color="#4facfe" />
+        <stop offset="1" stop-color="#00f2fe" />
+      </linearGradient>
+      <linearGradient id="icons-gradient-big" gradientUnits="userSpaceOnUse" x1=".49" y1="41.925" x2="83.5" y2="41.925"
+        gradientTransform="matrix(1 0 0 -1 0 84)">
+        <stop offset="0" stop-color="#4facfe" />
+        <stop offset="1" stop-color="#00f2fe" />
+      </linearGradient>
+    </defs>
+  </svg>
+  <div id="app">
+    <header class="top-header">
+      <a href="https://parseclabs.org/" data-target="home">
+        <svg role="img" width="267" height="68" class="top-header-logo">
+          <use xlink:href="#parseclabs"></use>
         </svg>
-      </button>
-      <ul>
-        <li><a class="active" href="https://parseclabs.org/" data-target="home">Home</a></li>
-        <li><a href="#" data-target="home">FAQ</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li class="top-header-socials">
-          <a href="https://t.me/parseclabs" target="_blank" rel="noopener">
-            <svg role="img" width="29" height="25" class="gradient-icon">
-              <use xlink:href="#social-telegram"></use>
-            </svg>
-          </a>
+      </a>
 
-          <a href="https://twitter.com/Parsec_Labs" target="_blank" rel="noopener">
-            <svg role="img" width="27" height="22" class="gradient-icon">
-              <use xlink:href="#social-twitter"></use>
-            </svg>
-          </a>
+      <div class="top-header-menu">
+        <button>
+          <svg role="img" width="29" height="24">
+            <use xlink:href="#menu"></use>
+          </svg>
+        </button>
+        <ul>
+          <li><a class="active" href="https://parseclabs.org/" data-target="home">Home</a></li>
+          <li><a href="#" data-target="home">FAQ</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li class="top-header-socials">
+            <a href="https://t.me/parseclabs" target="_blank" rel="noopener">
+              <svg role="img" width="29" height="25" class="gradient-icon">
+                <use xlink:href="#social-telegram"></use>
+              </svg>
+            </a>
 
-          <a href="https://www.facebook.com/parsecIabs/" target="_blank" rel="noopener">
-            <svg role="img" width="24" height="26" class="gradient-icon">
-              <use xlink:href="#social-facebook"></use>
-            </svg>
-          </a>
+            <a href="https://twitter.com/Parsec_Labs" target="_blank" rel="noopener">
+              <svg role="img" width="27" height="22" class="gradient-icon">
+                <use xlink:href="#social-twitter"></use>
+              </svg>
+            </a>
 
-          <a href="https://github.com/parsec-labs" target="_blank" rel="noopener">
-            <svg role="img" width="26" height="26" class="gradient-icon">
-              <use xlink:href="#social-github"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </header>
+            <a href="https://www.facebook.com/parsecIabs/" target="_blank" rel="noopener">
+              <svg role="img" width="24" height="26" class="gradient-icon">
+                <use xlink:href="#social-facebook"></use>
+              </svg>
+            </a>
 
-  <div class="sections">
-    <section class="intro" data-section="vision">
-      <div class="container">
-        <header class="section-header">
-          <h2>
-            FREQUENCY ASKED QUESTIONS
-          </h2>
-          <p>
-            Can't find your question? Send an email to <a href="mailto:info@parseclabs.org" class="mail">info@parseclabs.org</a>
-          </p>
-        </header>
-
-        <div class="benefits">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="benefits-dev-tab" data-toggle="tab" href="#benefits-dev" role="tab" aria-controls="benefits-dev" aria-selected="true">
-
-                About<br>Parsec Labs
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="benefits-gamers-tab" data-toggle="tab" href="#benefits-gamers" role="tab" aria-controls="benefits-gamers" aria-selected="false">
-
-                Our Token Model<br>& PSC
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="benefits-esports-tab" data-toggle="tab" href="#benefits-esports" role="tab" aria-controls="benefits-esports" aria-selected="false">
-
-                PARSEC chain<br>
-                & PoS Validation
-              </a>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-
-            <div class="tab-pane fade show active" id="benefits-dev" role="tabpanel" aria-labelledby="benefits-dev-tab">
-              <div class="accordion" id="accordionExample">
-
-                <div class="carda">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-
-                        <span class="number">1. </span>What is PARSEC Labs?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="collapseOne" class="collapse multi-collapse" aria-labelledby="headingOne" >
-                    <div class="card-body">
-                      <a href="www.parseclabs.org">PARSEC Labs</a> - is an open community and also a distributed team of blockchain enthusiasts. We are using
-                      <a href="https://parseclabs.org/blog/Our-Taconomy-Model/">taconomy</a> as a specific reward model and
-                      <a href="https://www.holacracy.org/">holacracy</a> as a self-management practice for our organization.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carda">
-                  <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <span class="number">2. </span>What are you working on?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse multi-collapse" aria-labelledby="headingTwo" >
-                    <div class="card-body">
-                      We’re building scalable blockchain for gaming and entertainment. PARSEC chain is based on Plasma and Proof of Stake (PoS), it’s fast and transparent. In May 2018 we have been selected as one of the recipients of the <a href="https://parseclabs.org/blog/ethereum-foundation-scaling-grant/">Ethereum Foundation Grant</a> in the category “Scaling”.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carda">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <span class="number">3. </span>What are your mission and goals?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse multi-collapse" aria-labelledby="headingThree" >
-                    <div class="card-body">
-                      Our mission is to bring fairness and transparency to to the gaming and entertainment industry. We enable on-chain scalability for game execution to open up and unite virtual worlds.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="heading4">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-
-                        <span class="number">4. </span>Why you are focusing on gaming and entertainment?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="collapse4" class="collapse multi-collapse" aria-labelledby="heading4" >
-                    <div class="card-body">
-                      We just love it! Gaming, esports and entertainment industries are constantly growing and we believe they will significantly benefit from fast, secure and scalable blockchain solutions.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="heading5">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                        <span class="number">5. </span>Which product(s) do you have?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="collapse5" class="collapse multi-collapse" aria-labelledby="heading5" >
-                    <div class="card-body">
-                      We have a scalable blockchain, which is based on <a href="https://plasma.io/">Plasma</a> framework and proof of stake
-                      <a href="https://en.wikipedia.org/wiki/Proof-of-stake">(PoS) consensus algorithm</a>. It’s called PARSEC chain (also known as PARSEC Plasma Chain). We have a small showcase of its capabilities called “Project Alice”:
-                      <a href="http://alice.parseclabs.org/">http://alice.parseclabs.org/</a>.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="heading6">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                        <span class="number">6. </span>Did you run an ICO for the PARSEC Labs?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="collapse6" class="collapse multi-collapse" aria-labelledby="heading6" >
-                    <div class="card-body">
-                      No, we didn’t. PARSEC Labs is a self-funded team since the beginning.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="heading7">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
-                        <span class="number">7. </span> What is Holacracy?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="collapse7" class="collapse multi-collapse" aria-labelledby="heading7" >
-                    <div class="card-body">
-                      <a href="https://www.holacracy.org/">Holacracy</a> is a a self-management practice, which we are using for our distributed team. You can read more about it here:
-                      <a href="https://parseclabs.org/blog/PARSEC-Labs-Holacracy-Structure/">https://parseclabs.org/blog/PARSEC-Labs-Holacracy-Structure/</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="heading8">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                        <span class="number">8. </span>What is Taconomy?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="collapse8" class="collapse multi-collapse" aria-labelledby="heading8" >
-                    <div class="card-body">
-                      Taconomy is a specific reward model which we are using here at PARSEC Labs. One of our blogs is devoted to our taconomy, read more about it here:
-                      <a href="https://parseclabs.org/blog/Our-Taconomy-Model/">https://parseclabs.org/blog/Our-Taconomy-Model/</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="heading9">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                        <span class="number">9. </span>What is Project Alice?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="collapse9" class="collapse multi-collapse" aria-labelledby="heading9" >
-                    <div class="card-body">
-                      It’s a special page ( <a href="http://alice.parseclabs.org/">alice.parseclabs.org</a> ) which works as a small showcase of PARSEC chain capabilities. It’s main purpose is to show you how transactions are working in our chain. You have there three users (Alice, Charlie and Bob) and you can send any transaction from one user to another. If you need tx hash and all tx history - it's also available. Also, it supports multiple tokens!
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="heading10">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
-                        <span class="number">10. </span>What is Acebusters?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="collapse10" class="collapse multi-collapse" aria-labelledby="heading10" >
-                    <div class="card-body">
-                      Acebusters (<a href="https://www.acebusters.com/">www.acebusters.com</a>) - is the world’s first real-time dapp and a decentralized online poker platform on the Ethereum blockchain. Acebusters is a good showcase of our development capabilities. Do you like to play online poker? Try it!
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="heading11">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
-                        <span class="number">11. </span>Where I can find any news or announcements about your project?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="collapse11" class="collapse multi-collapse" aria-labelledby="heading11" >
-                    <div class="card-body">
-                      In our socials and <a href="https://parseclabs.org/blog/">blogs section</a>. We have <a
-                            href="https://t.me/parseclabs">Telegram</a>, <a href="https://twitter.com/Parsec_Labs">Twitter</a> and <a href="https://www.facebook.com/parsecIabs/">Facebook</a>. Follow us : )
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="heading12">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                        <span class="number">12. </span>How I can join your team?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="collapse12" class="collapse multi-collapse" aria-labelledby="heading12" >
-                    <div class="card-body">
-                      We are interested in motivated people with good skills and same vision like we have. You can find more details about how to join here:
-                      <a href="https://parseclabs.org/blog/Join-PARSEC-Labs/">https://parseclabs.org/blog/Join-PARSEC-Labs</a>.
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-
-            <div class="tab-pane fade" id="benefits-gamers" role="tabpanel" aria-labelledby="benefits-gamers-tab">
-              <div class="accordion1" id="accordionExample2">
-
-                <div class="carda">
-                  <div class="card-header" id="h1">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#c1" aria-expanded="true" aria-controls="c1">
-                        <span class="number">1. </span>What is PSC?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="c1" class="collapse multi-collapse" aria-labelledby="h1" >
-                    <div class="card-body">
-                      PSC stands for PARSEC Token. PSC pays for the transactions on PARSEC chain, rewards validators for validating and keeping the chain running and operates the exchange: creates a default order-book for each token.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carda">
-                  <div class="card-header" id="h2">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#c2" aria-expanded="false" aria-controls="c2">
-                        <span class="number">2. </span>Why do you need your own token?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="c2" class="collapse multi-collapse" aria-labelledby="h2" >
-                    <div class="card-body">
-                      Let's put a quote here: <br><br>
-                      <i>“While fidelity bonds ensure accuracy towards the chain, we need to create further incentives around data availability and discourage halting. By only allowing staking using a token specific to the Plasma chain, one is able to ensure that there is incentive to continue operating, as the value of the token is derived from the net present discounted value of all future returns from staking. Consequently, network failures reduce the value of the tokens being held and individual actors have heavy incentive to act in the best interest towards the network' s continued operation.”</i> -
-                      <a href="https://plasma.io/plasma.pdf">plasma.io whitepaper</a>  by Vitalik and Joseph (page 37).
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carda">
-                  <div class="card-header" id="h3">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#c3" aria-expanded="false" aria-controls="c3">
-                        <span class="number">3. </span>Is PSC an ERC20 token?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="c3" class="collapse multi-collapse" aria-labelledby="h3" >
-                    <div class="card-body">
-                      Yes. PSC is an ERC20 token.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="h4">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#c4" aria-expanded="true" aria-controls="c4">
-                        <span class="number">4. </span>What is the supply limit of PSC tokens?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="c4" class="collapse multi-collapse" aria-labelledby="h4" >
-                    <div class="card-body">
-                      There is no such thing as supply limit for our chain. PARSEC chain has infinite issuance model. You can find all the details
-                      <a href="https://docs.google.com/presentation/d/13-I4QqIX4B8adAnaY65Ik_H24uouVi2YTP9ZQrCAcVs/edit#slide=id.g3b336113ed_0_222">here</a>.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="h5">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#c5" aria-expanded="false" aria-controls="c5">
-                        <span class="number">5. </span>Are PSC already listed on exchanges?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="c5" class="collapse multi-collapse" aria-labelledby="h5" >
-                    <div class="card-body">
-                      Not yet, but we hope it will be listed Tin the future. We would like to see PSC listed on major centralized and decentralized exchanges. The complete list of the exchanges will be available on our website.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="h6">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#c6" aria-expanded="false" aria-controls="c6">
-                        <span class="number">6. </span>How can I get your tokens?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="c6" class="collapse multi-collapse" aria-labelledby="h6" >
-                    <div class="card-body">
-                      <p>There are few ways:
-                      <ol>
-                        <li>Become a validator of PARSEC Plasma Chain</li>
-                        <li>Take part in our airdrop campaign and participate in different challenges</li>
-                        <li>Become our private investor (if there will be token sale campaign)</li>
-                        <li>Buy PSC tokens on the exchanges (later)</li>
-                      </ol></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="h7">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#c7" aria-expanded="true" aria-controls="c7">
-                        <span class="number">7. </span>How can I display my PSC?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="c7" class="collapse multi-collapse" aria-labelledby="h7" >
-                    <div class="card-body">
-                      The amount of your tokens will be displayed in your node or wallet (for example, <a href="https://metamask.io/">MetaMask</a>). Also you are always able to check your PSC balance on the websites like
-                      <a href="https://etherscan.io/">https://etherscan.io</a>.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="tab-pane fade" id="benefits-esports" role="tabpanel" aria-labelledby="benefits-esports-tab">
-              <div class="accordion2" id="accordionExample3">
-
-                <div class="carda">
-                  <div class="card-header" id="a1">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b1" aria-expanded="true" aria-controls="b1">
-                        <span class="number">1. </span>What is Plasma?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="b1" class="collapse multi-collapse" aria-labelledby="a1" >
-                    <div class="card-body">
-                      Plasma is a proposed framework for incentivized and enforced execution of smart contracts which is scalable to a significant amount of state updates per second (potentially billions) enabling the blockchain to be able to represent a significant amount of decentralized financial applications worldwide. You can read more about it here: <a href="https://plasma.io/">https://plasma.io/</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carda">
-                  <div class="card-header" id="a2">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b2" aria-expanded="false" aria-controls="b2">
-                        <span class="number">2. </span>How plasma will help to solve scalability problem?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="b2" class="collapse multi-collapse" aria-labelledby="a2" >
-                    <div class="card-body">
-                      Plasma will get rid of unnecessary data in the root chain. It will handle smart contracts much like its foundation, but will only broadcast completed transactions to the public Ethereum chain. This saves an enormous amount of processing power and memory for the chain’s participants, making it more inexpensive to interact with the system’s other participants. It will also speed up transactions enough to let decentralized apps run without worrying about backlog.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carda">
-                  <div class="card-header" id="a3">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b3" aria-expanded="false" aria-controls="b3">
-                        <span class="number">3. </span>What is the main benefits of your chain?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="b3" class="collapse multi-collapse" aria-labelledby="a3" >
-                    <div class="card-body">
-                      PARSEC chain is fast, secure and scalable. It’s based on Plasma and Proof of stake (PoS) and allows users to make many fast and cheap transactions.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="a4">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b4" aria-expanded="true" aria-controls="b4">
-                        <span class="number">4. </span>What is Proof of Stake (PoS)?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="b4" class="collapse multi-collapse" aria-labelledby="a4" >
-                    <div class="card-body">
-                      Proof of stake (PoS) is a type of algorithm by which a cryptocurrency blockchain network aims to achieve distributed consensus.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="a5">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b5" aria-expanded="false" aria-controls="b5">
-                        <span class="number">5. </span>What is the biggest difference between PoS and PoW?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="b5" class="collapse multi-collapse" aria-labelledby="a5" >
-                    <div class="card-body">
-                      Proof of work (PoW) requires proof that work of some kind occurred. In the case of Ethereum miners are required to do this work before any of their blocks is accepted by others.
-                      Proof of stake (PoS) requires users that have a high stake at the currency (i.e. hold a lot of tokens) to determine the next block.
-                      The main difference could be summarized in that PoW requires burning an external resource (mining hardware) while PoS does not. PoS can be considered to be the most environmentally friendly and cost-effective consensus method, but has a number of drawbacks that pioneers such as the Ethereum development team and our team are attempting to solve.
-
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="a6">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b6" aria-expanded="false" aria-controls="b6">
-                        <span class="number">6. </span>What are stake, staking and epoch?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-                  <div id="b6" class="collapse multi-collapse" aria-labelledby="a6" >
-                    <div class="card-body">
-                      Stake - an amount of PSC token locked in the PARSEC contract for a specific slot. The stake is used as a collateral to vouch for the correctness of submitted block.
-                      Staking - is the "mining" of PoS (proof of stake). It simply stands for holding a token in your wallet for a fixed period, then earning interest on it. The reward that one earns from staking varies depending on the length of the time that they hold it. The longer the stake duration, the higher the returns.
-                      Epoch - is a period of x blocks on the PARSEC chain. After each epoch slots can change ownership and the tax rate is increased or decreased. Per epoch each slot will become a slot leader at least once.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="a7">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b7" aria-expanded="true" aria-controls="b7">
-                        <span class="number">7. </span>Who is validator?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="b7" class="collapse multi-collapse" aria-labelledby="a7" >
-                    <div class="card-body">
-                      Validator - is an individual or organization operating nodes and having stakes.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="a8">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b8" aria-expanded="true" aria-controls="b8">
-                        <span class="number">8. </span>When will PARSEC chain launch?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="b8" class="collapse multi-collapse" aria-labelledby="a8" >
-                    <div class="card-body">
-                      According to our roadmap, we are planning to launch our chain on 1.1.2019.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="a9">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b9" aria-expanded="true" aria-controls="b9">
-                        <span class="number">9. </span>What is the maximum number of validators in PARSEC chain?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="b9" class="collapse multi-collapse" aria-labelledby="a9" >
-                    <div class="card-body">
-                      We are planning to start with 32 validator slots and later increase the number to 100 validator slots.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="a10">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b10" aria-expanded="true" aria-controls="b10">
-                        <span class="number">10. </span>What about the node?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="b10" class="collapse multi-collapse" aria-labelledby="a10" >
-                    <div class="card-body">
-                      Yes, we have our own node, you can find all the details here: <a
-                            href="https://validator.parseclabs.org/">https://validator.parseclabs.org/</a> (soon)
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="a11">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b11" aria-expanded="true" aria-controls="b11">
-                        <span class="number">11. </span>How to begin validating?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="b11" class="collapse multi-collapse" aria-labelledby="a11" >
-                    <div class="card-body">
-                      If you want to become our validator, your steps are following:
-                      <ol>
-                        <li>Download the node software: <a href="https://validator.parseclabs.org/">https://validator.parseclabs.org/</a></li>
-                        <li>Install and start the node. During the first start the signer-key is created. Note the signer-address.</li>
-                        <li>Wait for the node to completely sync the chain.</li>
-                        <li>Fund the signer-address with enough Ether to pay for block submission transactions.</li>
-                        <li> Pick a slot for use by the validator. Prepare enough funds on a secure wallet (cold storage or multi-sig). Deposit funds from the secure wallet to the validator slot, passing in the signer-address.</li>
-                        <li>The node software will notice the deposit and start proposing blocks within 2 to 3 epochs.</li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="a12">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b12" aria-expanded="true" aria-controls="b12">
-                        <span class="number">12. </span>What is your organization model?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="b12" class="collapse multi-collapse" aria-labelledby="a12" >
-                    <div class="card-body">
-                      You can find our organization model <a href="https://docs.google.com/presentation/d/13-I4QqIX4B8adAnaY65Ik_H24uouVi2YTP9ZQrCAcVs/edit#slide=id.g3d321dc7a7_10_0">here</a>. If you will have some questions regarding the model - feel free to ask us in Telegram or Twitter.
-                    </div>
-                  </div>
-                </div>
-                <div class="carda">
-                  <div class="card-header" id="a13">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#b13" aria-expanded="true" aria-controls="b13">
-                        <span class="number">13. </span>Are there any risks for validators?
-                      </button>
-                      <div class="more"></div>
-                    </h5>
-                  </div>
-
-                  <div id="b13" class="collapse multi-collapse" aria-labelledby="a13" >
-                    <div class="card-body">
-                      It's obvious that every action which can earn profit to its executor have some risks behind it, otherwise this action delivers zero profit. We have captured these risks, which can affect profits of validators:
-                      <ul>
-                        <li>Slashing Risk - Submission of invalid blocks / submission of two blocks with the same height.</li>
-                        <li>Coordination Risk - Increase of base tax due to low proposal rate of Validators (Collective penalty). </li>
-                        <li>Market Risk - Low PSC market valuation / rising Ether gas prices consume validators’ profits. </li>
-                        <li>Centralization Risk - Effect of team reputation affecting the network value. </li>
-                        <li>Regulatory Risk - Various laws affecting validators and/or users of network.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            <a href="https://github.com/parsec-labs" target="_blank" rel="noopener">
+              <svg role="img" width="26" height="26" class="gradient-icon">
+                <use xlink:href="#social-github"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-    </section>
-    <section class="footer">
-      <img class="ground" src="../img/backgrounds/ground.png" />
-      <header class="section-header">
-        <h2>Stay in touch</h2>
-      </header>
-      <div class="container">
-        <div class="content">
-          <div>
-            <div class="subscribe">
-              <form action="https://parseclabs.us17.list-manage.com/subscribe/post-json?u=82ffc63ae0813261fdc1f75d7&amp;id=4d6f207452" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-                <div id="mc_embed_signup_scroll">
-                  <div class="alert"></div>
+    </header>
 
-                  <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email address" required />
+    <div class="sections">
+      <section class="intro" data-section="vision">
+        <div class="container">
+          <header class="section-header">
+            <h2>
+              FREQUENCY ASKED QUESTIONS
+            </h2>
+            <p>
+              Can't find your question? Send an email to <a href="mailto:info@parseclabs.org" class="mail">info@parseclabs.org</a>
+            </p>
+          </header>
 
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c294e87f0fdc5cf7c4767283_fcf132e60f" tabindex="-1" value=""></div>
-                  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button button--rect submit">
-                    <span>Keep me updated</span>
-                  </button>
-                </div>
-              </form>
-            </div>
-            <div>
-              <div class="footer-links">
-                <a href="https://t.me/parseclabs" target="_blank" rel="noopener">
-                  <svg role="img" width="29" height="25">
-                    <use xlink:href="#social-telegram"></use>
-                  </svg>
+          <div class="benefits">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="benefits-dev-tab" data-toggle="tab" href="#benefits-dev" role="tab"
+                  aria-controls="benefits-dev" aria-selected="true">
+
+                  About<br>Parsec Labs
                 </a>
-
-                <a href="https://twitter.com/Parsec_Labs" target="_blank" rel="noopener">
-                  <svg role="img" width="27" height="22">
-                    <use xlink:href="#social-twitter"></use>
-                  </svg>
-                </a>
-
-                <a href="https://www.facebook.com/parsecIabs/" target="_blank" rel="noopener">
-                  <svg role="img" width="24" height="26">
-                    <use xlink:href="#social-facebook"></use>
-                  </svg>
-                </a>
-
-                <a href="https://github.com/parsec-labs" target="_blank" rel="noopener">
-                  <svg role="img" width="26" height="26">
-                    <use xlink:href="#social-github"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="feedback-area">
-                <a class="feedback-link" href="mailto:info@parseclabs.org">info@parseclabs.org</a>
-                <a class="feedback-link" href="https://goo.gl/forms/wXYCFiOkslQ4scNG2" target="_blank" rel="noopener">Share your feedback</a>
-              </div>
-              <div class="footer-copyright">
-                © 2018 PARSEC Labs. All Rights Reserved.
-              </div>
-            </div>
-          </div>
-
-          <div class="latest-posts">
-            <header>
-              <h3>Latest posts</h3>
-              <a href="/blog/">Visit blog</a>
-            </header>
-            <ul class="latest-posts__list">
-              {% for post in (posts) %}
-              <li class="latest-posts__item">
-                <h4><a href="/blog{{ post.path }}/">{{ post.title }}</a></h4>
-                <span>{{ post.date | formatdate }}</span>
               </li>
-              {% endfor %}
+              <li class="nav-item">
+                <a class="nav-link" id="benefits-gamers-tab" data-toggle="tab" href="#benefits-gamers" role="tab"
+                  aria-controls="benefits-gamers" aria-selected="false">
+
+                  Our Token Model<br>& PSC
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="benefits-esports-tab" data-toggle="tab" href="#benefits-esports" role="tab"
+                  aria-controls="benefits-esports" aria-selected="false">
+
+                  PARSEC chain<br>
+                  & PoS Validation
+                </a>
+              </li>
             </ul>
+            <div class="tab-content" id="myTabContent">
+
+              <div class="tab-pane fade show active" id="benefits-dev" role="tabpanel" aria-labelledby="benefits-dev-tab">
+                <div class="accordion" id="accordionExample">
+
+                  <div class="carda">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+
+                          <span class="number">1. </span>What is PARSEC Labs?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse multi-collapse" aria-labelledby="headingOne">
+                      <div class="card-body">
+                        <a href="www.parseclabs.org">PARSEC Labs</a> - is an open community and also a distributed team
+                        of blockchain enthusiasts. We are using
+                        <a href="https://parseclabs.org/blog/Our-Taconomy-Model/">taconomy</a> as a specific reward
+                        model and
+                        <a href="https://www.holacracy.org/">holacracy</a> as a self-management practice for our
+                        organization.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carda">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                          aria-expanded="false" aria-controls="collapseTwo">
+                          <span class="number">2. </span>What are you working on?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse multi-collapse" aria-labelledby="headingTwo">
+                      <div class="card-body">
+                        We’re building scalable blockchain for gaming and entertainment. PARSEC chain is based on
+                        Plasma and Proof of Stake (PoS), it’s fast and transparent. In May 2018 we have been selected
+                        as one of the recipients of the <a href="https://parseclabs.org/blog/ethereum-foundation-scaling-grant/">Ethereum
+                          Foundation Grant</a> in the category “Scaling”.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carda">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                          aria-expanded="false" aria-controls="collapseThree">
+                          <span class="number">3. </span>What are your mission and goals?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse multi-collapse" aria-labelledby="headingThree">
+                      <div class="card-body">
+                        Our mission is to bring fairness and transparency to to the gaming and entertainment industry.
+                        We enable on-chain scalability for game execution to open up and unite virtual worlds.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="heading4">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4"
+                          aria-expanded="true" aria-controls="collapse4">
+
+                          <span class="number">4. </span>Why you are focusing on gaming and entertainment?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="collapse4" class="collapse multi-collapse" aria-labelledby="heading4">
+                      <div class="card-body">
+                        We just love it! Gaming, esports and entertainment industries are constantly growing and we
+                        believe they will significantly benefit from fast, secure and scalable blockchain solutions.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="heading5">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5"
+                          aria-expanded="false" aria-controls="collapse5">
+                          <span class="number">5. </span>Which product(s) do you have?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="collapse5" class="collapse multi-collapse" aria-labelledby="heading5">
+                      <div class="card-body">
+                        We have a scalable blockchain, which is based on <a href="https://plasma.io/">Plasma</a>
+                        framework and proof of stake
+                        <a href="https://en.wikipedia.org/wiki/Proof-of-stake">(PoS) consensus algorithm</a>. It’s
+                        called PARSEC chain (also known as PARSEC Plasma Chain). We have a small showcase of its
+                        capabilities called “Project Alice”:
+                        <a href="http://alice.parseclabs.org/">http://alice.parseclabs.org/</a>.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="heading6">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6"
+                          aria-expanded="false" aria-controls="collapse6">
+                          <span class="number">6. </span>Did you run an ICO for the PARSEC Labs?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="collapse6" class="collapse multi-collapse" aria-labelledby="heading6">
+                      <div class="card-body">
+                        No, we didn’t. PARSEC Labs is a self-funded team since the beginning.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="heading7">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7"
+                          aria-expanded="true" aria-controls="collapse7">
+                          <span class="number">7. </span> What is Holacracy?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="collapse7" class="collapse multi-collapse" aria-labelledby="heading7">
+                      <div class="card-body">
+                        <a href="https://www.holacracy.org/">Holacracy</a> is a a self-management practice, which we
+                        are using for our distributed team. You can read more about it here:
+                        <a href="https://parseclabs.org/blog/PARSEC-Labs-Holacracy-Structure/">https://parseclabs.org/blog/PARSEC-Labs-Holacracy-Structure/</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="heading8">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8"
+                          aria-expanded="false" aria-controls="collapse8">
+                          <span class="number">8. </span>What is Taconomy?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="collapse8" class="collapse multi-collapse" aria-labelledby="heading8">
+                      <div class="card-body">
+                        Taconomy is a specific reward model which we are using here at PARSEC Labs. One of our blogs is
+                        devoted to our taconomy, read more about it here:
+                        <a href="https://parseclabs.org/blog/Our-Taconomy-Model/">https://parseclabs.org/blog/Our-Taconomy-Model/</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="heading9">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9"
+                          aria-expanded="false" aria-controls="collapse9">
+                          <span class="number">9. </span>What is Project Alice?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="collapse9" class="collapse multi-collapse" aria-labelledby="heading9">
+                      <div class="card-body">
+                        It’s a special page ( <a href="http://alice.parseclabs.org/">alice.parseclabs.org</a> ) which
+                        works as a small showcase of PARSEC chain capabilities. It’s main purpose is to show you how
+                        transactions are working in our chain. You have there three users (Alice, Charlie and Bob) and
+                        you can send any transaction from one user to another. If you need tx hash and all tx history -
+                        it's also available. Also, it supports multiple tokens!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="heading10">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse10"
+                          aria-expanded="true" aria-controls="collapse10">
+                          <span class="number">10. </span>What is Acebusters?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="collapse10" class="collapse multi-collapse" aria-labelledby="heading10">
+                      <div class="card-body">
+                        Acebusters (<a href="https://www.acebusters.com/">www.acebusters.com</a>) - is the world’s
+                        first real-time dapp and a decentralized online poker platform on the Ethereum blockchain.
+                        Acebusters is a good showcase of our development capabilities. Do you like to play online
+                        poker? Try it!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="heading11">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11"
+                          aria-expanded="true" aria-controls="collapse11">
+                          <span class="number">11. </span>Where I can find any news or announcements about your
+                          project?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="collapse11" class="collapse multi-collapse" aria-labelledby="heading11">
+                      <div class="card-body">
+                        In our socials and <a href="https://parseclabs.org/blog/">blogs section</a>. We have <a href="https://t.me/parseclabs">Telegram</a>,
+                        <a href="https://twitter.com/Parsec_Labs">Twitter</a> and <a href="https://www.facebook.com/parsecIabs/">Facebook</a>.
+                        Follow us : )
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="heading12">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12"
+                          aria-expanded="false" aria-controls="collapse12">
+                          <span class="number">12. </span>How I can join your team?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="collapse12" class="collapse multi-collapse" aria-labelledby="heading12">
+                      <div class="card-body">
+                        We are interested in motivated people with good skills and same vision like we have. You can
+                        find more details about how to join here:
+                        <a href="https://parseclabs.org/blog/Join-PARSEC-Labs/">https://parseclabs.org/blog/Join-PARSEC-Labs</a>.
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="benefits-gamers" role="tabpanel" aria-labelledby="benefits-gamers-tab">
+                <div class="accordion1" id="accordionExample2">
+
+                  <div class="carda">
+                    <div class="card-header" id="h1">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#c1" aria-expanded="true"
+                          aria-controls="c1">
+                          <span class="number">1. </span>What is PSC?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="c1" class="collapse multi-collapse" aria-labelledby="h1">
+                      <div class="card-body">
+                        PSC stands for PARSEC Token. PSC pays for the transactions on PARSEC chain, rewards validators
+                        for validating and keeping the chain running and operates the exchange: creates a default
+                        order-book for each token.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carda">
+                    <div class="card-header" id="h2">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#c2" aria-expanded="false"
+                          aria-controls="c2">
+                          <span class="number">2. </span>Why do you need your own token?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="c2" class="collapse multi-collapse" aria-labelledby="h2">
+                      <div class="card-body">
+                        Let's put a quote here: <br><br>
+                        <i>“While fidelity bonds ensure accuracy towards the chain, we need to create further
+                          incentives around data availability and discourage halting. By only allowing staking using a
+                          token specific to the Plasma chain, one is able to ensure that there is incentive to continue
+                          operating, as the value of the token is derived from the net present discounted value of all
+                          future returns from staking. Consequently, network failures reduce the value of the tokens
+                          being held and individual actors have heavy incentive to act in the best interest towards the
+                          network' s continued operation.”</i> -
+                        <a href="https://plasma.io/plasma.pdf">plasma.io whitepaper</a> by Vitalik and Joseph (page
+                        37).
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carda">
+                    <div class="card-header" id="h3">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#c3" aria-expanded="false"
+                          aria-controls="c3">
+                          <span class="number">3. </span>Is PSC an ERC20 token?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="c3" class="collapse multi-collapse" aria-labelledby="h3">
+                      <div class="card-body">
+                        Yes. PSC is an ERC20 token.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="h4">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#c4" aria-expanded="true"
+                          aria-controls="c4">
+                          <span class="number">4. </span>What is the supply limit of PSC tokens?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="c4" class="collapse multi-collapse" aria-labelledby="h4">
+                      <div class="card-body">
+                        There is no such thing as supply limit for our chain. PARSEC chain has infinite issuance model.
+                        You can find all the details
+                        <a href="https://docs.google.com/presentation/d/13-I4QqIX4B8adAnaY65Ik_H24uouVi2YTP9ZQrCAcVs/edit#slide=id.g3b336113ed_0_222">here</a>.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="h5">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#c5" aria-expanded="false"
+                          aria-controls="c5">
+                          <span class="number">5. </span>Are PSC already listed on exchanges?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="c5" class="collapse multi-collapse" aria-labelledby="h5">
+                      <div class="card-body">
+                        Not yet, but we hope it will be listed Tin the future. We would like to see PSC listed on major
+                        centralized and decentralized exchanges. The complete list of the exchanges will be available
+                        on our website.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="h6">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#c6" aria-expanded="false"
+                          aria-controls="c6">
+                          <span class="number">6. </span>How can I get your tokens?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="c6" class="collapse multi-collapse" aria-labelledby="h6">
+                      <div class="card-body">
+                        <p>There are few ways:
+                          <ol>
+                            <li>Become a validator of PARSEC Plasma Chain</li>
+                            <li>Take part in our airdrop campaign and participate in different challenges</li>
+                            <li>Become our private investor (if there will be token sale campaign)</li>
+                            <li>Buy PSC tokens on the exchanges (later)</li>
+                          </ol>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="h7">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#c7" aria-expanded="true"
+                          aria-controls="c7">
+                          <span class="number">7. </span>How can I display my PSC?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="c7" class="collapse multi-collapse" aria-labelledby="h7">
+                      <div class="card-body">
+                        The amount of your tokens will be displayed in your node or wallet (for example, <a href="https://metamask.io/">MetaMask</a>).
+                        Also you are always able to check your PSC balance on the websites like
+                        <a href="https://etherscan.io/">https://etherscan.io</a>.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="benefits-esports" role="tabpanel" aria-labelledby="benefits-esports-tab">
+                <div class="accordion2" id="accordionExample3">
+
+                  <div class="carda">
+                    <div class="card-header" id="a1">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b1" aria-expanded="true"
+                          aria-controls="b1">
+                          <span class="number">1. </span>What is Plasma?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="b1" class="collapse multi-collapse" aria-labelledby="a1">
+                      <div class="card-body">
+                        Plasma is a proposed framework for incentivized and enforced execution of smart contracts which
+                        is scalable to a significant amount of state updates per second (potentially billions) enabling
+                        the blockchain to be able to represent a significant amount of decentralized financial
+                        applications worldwide. You can read more about it here: <a href="https://plasma.io/">https://plasma.io/</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carda">
+                    <div class="card-header" id="a2">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b2" aria-expanded="false"
+                          aria-controls="b2">
+                          <span class="number">2. </span>How plasma will help to solve scalability problem?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="b2" class="collapse multi-collapse" aria-labelledby="a2">
+                      <div class="card-body">
+                        Plasma will get rid of unnecessary data in the root chain. It will handle smart contracts much
+                        like its foundation, but will only broadcast completed transactions to the public Ethereum
+                        chain. This saves an enormous amount of processing power and memory for the chain’s
+                        participants, making it more inexpensive to interact with the system’s other participants. It
+                        will also speed up transactions enough to let decentralized apps run without worrying about
+                        backlog.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carda">
+                    <div class="card-header" id="a3">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b3" aria-expanded="false"
+                          aria-controls="b3">
+                          <span class="number">3. </span>What is the main benefits of your chain?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="b3" class="collapse multi-collapse" aria-labelledby="a3">
+                      <div class="card-body">
+                        PARSEC chain is fast, secure and scalable. It’s based on Plasma and Proof of stake (PoS) and
+                        allows users to make many fast and cheap transactions.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="a4">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b4" aria-expanded="true"
+                          aria-controls="b4">
+                          <span class="number">4. </span>What is Proof of Stake (PoS)?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="b4" class="collapse multi-collapse" aria-labelledby="a4">
+                      <div class="card-body">
+                        Proof of stake (PoS) is a type of algorithm by which a cryptocurrency blockchain network aims
+                        to achieve distributed consensus.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="a5">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b5" aria-expanded="false"
+                          aria-controls="b5">
+                          <span class="number">5. </span>What is the biggest difference between PoS and PoW?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="b5" class="collapse multi-collapse" aria-labelledby="a5">
+                      <div class="card-body">
+                        Proof of work (PoW) requires proof that work of some kind occurred. In the case of Ethereum
+                        miners are required to do this work before any of their blocks is accepted by others.
+                        Proof of stake (PoS) requires users that have a high stake at the currency (i.e. hold a lot of
+                        tokens) to determine the next block.
+                        The main difference could be summarized in that PoW requires burning an external resource
+                        (mining hardware) while PoS does not. PoS can be considered to be the most environmentally
+                        friendly and cost-effective consensus method, but has a number of drawbacks that pioneers such
+                        as the Ethereum development team and our team are attempting to solve.
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="a6">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b6" aria-expanded="false"
+                          aria-controls="b6">
+                          <span class="number">6. </span>What are stake, staking and epoch?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+                    <div id="b6" class="collapse multi-collapse" aria-labelledby="a6">
+                      <div class="card-body">
+                        Stake - an amount of PSC token locked in the PARSEC contract for a specific slot. The stake is
+                        used as a collateral to vouch for the correctness of submitted block.
+                        Staking - is the "mining" of PoS (proof of stake). It simply stands for holding a token in your
+                        wallet for a fixed period, then earning interest on it. The reward that one earns from staking
+                        varies depending on the length of the time that they hold it. The longer the stake duration,
+                        the higher the returns.
+                        Epoch - is a period of x blocks on the PARSEC chain. After each epoch slots can change
+                        ownership and the tax rate is increased or decreased. Per epoch each slot will become a slot
+                        leader at least once.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="a7">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b7" aria-expanded="true"
+                          aria-controls="b7">
+                          <span class="number">7. </span>Who is validator?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="b7" class="collapse multi-collapse" aria-labelledby="a7">
+                      <div class="card-body">
+                        Validator - is an individual or organization operating nodes and having stakes.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="a8">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b8" aria-expanded="true"
+                          aria-controls="b8">
+                          <span class="number">8. </span>When will PARSEC chain launch?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="b8" class="collapse multi-collapse" aria-labelledby="a8">
+                      <div class="card-body">
+                        According to our roadmap, we are planning to launch our chain on 1.1.2019.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="a9">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b9" aria-expanded="true"
+                          aria-controls="b9">
+                          <span class="number">9. </span>What is the maximum number of validators in PARSEC chain?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="b9" class="collapse multi-collapse" aria-labelledby="a9">
+                      <div class="card-body">
+                        We are planning to start with 32 validator slots and later increase the number to 100 validator
+                        slots.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="a10">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b10" aria-expanded="true"
+                          aria-controls="b10">
+                          <span class="number">10. </span>What about the node?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="b10" class="collapse multi-collapse" aria-labelledby="a10">
+                      <div class="card-body">
+                        Yes, we have our own node, you can find all the details here: <a href="https://validator.parseclabs.org/">https://validator.parseclabs.org/</a>
+                        (soon)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="a11">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b11" aria-expanded="true"
+                          aria-controls="b11">
+                          <span class="number">11. </span>How to begin validating?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="b11" class="collapse multi-collapse" aria-labelledby="a11">
+                      <div class="card-body">
+                        If you want to become our validator, your steps are following:
+                        <ol>
+                          <li>Download the node software: <a href="https://validator.parseclabs.org/">https://validator.parseclabs.org/</a></li>
+                          <li>Install and start the node. During the first start the signer-key is created. Note the
+                            signer-address.</li>
+                          <li>Wait for the node to completely sync the chain.</li>
+                          <li>Fund the signer-address with enough Ether to pay for block submission transactions.</li>
+                          <li> Pick a slot for use by the validator. Prepare enough funds on a secure wallet (cold
+                            storage or multi-sig). Deposit funds from the secure wallet to the validator slot, passing
+                            in the signer-address.</li>
+                          <li>The node software will notice the deposit and start proposing blocks within 2 to 3
+                            epochs.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="a12">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b12" aria-expanded="true"
+                          aria-controls="b12">
+                          <span class="number">12. </span>What is your organization model?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="b12" class="collapse multi-collapse" aria-labelledby="a12">
+                      <div class="card-body">
+                        You can find our organization model <a href="https://docs.google.com/presentation/d/13-I4QqIX4B8adAnaY65Ik_H24uouVi2YTP9ZQrCAcVs/edit#slide=id.g3d321dc7a7_10_0">here</a>.
+                        If you will have some questions regarding the model - feel free to ask us in Telegram or
+                        Twitter.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carda">
+                    <div class="card-header" id="a13">
+                      <h5 class="mb-0">
+                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#b13" aria-expanded="true"
+                          aria-controls="b13">
+                          <span class="number">13. </span>Are there any risks for validators?
+                        </div>
+                        <div class="more"></div>
+                      </h5>
+                    </div>
+
+                    <div id="b13" class="collapse multi-collapse" aria-labelledby="a13">
+                      <div class="card-body">
+                        It's obvious that every action which can earn profit to its executor have some risks behind it,
+                        otherwise this action delivers zero profit. We have captured these risks, which can affect
+                        profits of validators:
+                        <ul>
+                          <li>Slashing Risk - Submission of invalid blocks / submission of two blocks with the same
+                            height.</li>
+                          <li>Coordination Risk - Increase of base tax due to low proposal rate of Validators
+                            (Collective penalty). </li>
+                          <li>Market Risk - Low PSC market valuation / rising Ether gas prices consume validators’
+                            profits. </li>
+                          <li>Centralization Risk - Effect of team reputation affecting the network value. </li>
+                          <li>Regulatory Risk - Various laws affecting validators and/or users of network.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="footer">
+        <img class="ground" src="../img/backgrounds/ground.png" />
+        <header class="section-header">
+          <h2>Stay in touch</h2>
+        </header>
+        <div class="container">
+          <div class="content">
+            <div>
+              <div class="subscribe">
+                <form action="https://parseclabs.us17.list-manage.com/subscribe/post-json?u=82ffc63ae0813261fdc1f75d7&amp;id=4d6f207452"
+                  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                  novalidate>
+                  <div id="mc_embed_signup_scroll">
+                    <div class="alert"></div>
+
+                    <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email address"
+                      required />
+
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c294e87f0fdc5cf7c4767283_fcf132e60f"
+                        tabindex="-1" value=""></div>
+                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button button--rect submit">
+                      <span>Keep me updated</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div>
+                <div class="footer-links">
+                  <a href="https://t.me/parseclabs" target="_blank" rel="noopener">
+                    <svg role="img" width="29" height="25">
+                      <use xlink:href="#social-telegram"></use>
+                    </svg>
+                  </a>
+
+                  <a href="https://twitter.com/Parsec_Labs" target="_blank" rel="noopener">
+                    <svg role="img" width="27" height="22">
+                      <use xlink:href="#social-twitter"></use>
+                    </svg>
+                  </a>
+
+                  <a href="https://www.facebook.com/parsecIabs/" target="_blank" rel="noopener">
+                    <svg role="img" width="24" height="26">
+                      <use xlink:href="#social-facebook"></use>
+                    </svg>
+                  </a>
+
+                  <a href="https://github.com/parsec-labs" target="_blank" rel="noopener">
+                    <svg role="img" width="26" height="26">
+                      <use xlink:href="#social-github"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="feedback-area">
+                  <a class="feedback-link" href="mailto:info@parseclabs.org">info@parseclabs.org</a>
+                  <a class="feedback-link" href="https://goo.gl/forms/wXYCFiOkslQ4scNG2" target="_blank" rel="noopener">Share
+                    your feedback</a>
+                </div>
+                <div class="footer-copyright">
+                  © 2018 PARSEC Labs. All Rights Reserved.
+                </div>
+              </div>
+            </div>
+
+            <div class="latest-posts">
+              <header>
+                <h3>Latest posts</h3>
+                <a href="/blog/">Visit blog</a>
+              </header>
+              <ul class="latest-posts__list">
+                {% for post in (posts) %}
+                <li class="latest-posts__item">
+                  <h4><a href="/blog{{ post.path }}/">{{ post.title }}</a></h4>
+                  <span>{{ post.date | formatdate }}</span>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
   </div>
 
-</div>
 
+  <!-- END PARSEC -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
-<!-- END PARSEC -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-<script src="js/faq.js"></script>
-<script src="js/sprite.svg.js" defer></script>
-<script type="application/ld+json">
+  <script src="js/faq.js"></script>
+  <script src="js/sprite.svg.js" defer></script>
+  <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Organization",
@@ -789,4 +906,5 @@
   }
 </script>
 </body>
+
 </html>
