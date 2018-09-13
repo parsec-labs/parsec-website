@@ -866,22 +866,12 @@
                 <a href="/blog/">Visit blog</a>
               </header>
               <ul class="latest-posts__list">
-                
+                {% for post in (posts) %}
                 <li class="latest-posts__item">
-                  <h4><a href="/blog/Tokens-Giveaway-Results/">Tokens Giveaway Results</a></h4>
-                  <span>Sep 4, 2018</span>
+                  <h4><a href="/blog{{ post.path }}/">{{ post.title }}</a></h4>
+                  <span>{{ post.date | formatdate }}</span>
                 </li>
-                
-                <li class="latest-posts__item">
-                  <h4><a href="/blog/Best-Games-On-Ethereum-Blockchain/">Best games on Ethereum blockchain: Our TOP 10</a></h4>
-                  <span>Aug 23, 2018</span>
-                </li>
-                
-                <li class="latest-posts__item">
-                  <h4><a href="/blog/Plasma-Fraud-Proof-Challenge-Berlin-August-8th/">Plasma Fraud Proof Challenge Workshop with Cryptokitties rewards</a></h4>
-                  <span>Aug 15, 2018</span>
-                </li>
-                
+                {% endfor %}
               </ul>
             </div>
           </div>

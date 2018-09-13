@@ -138,7 +138,7 @@ p{display:block;margin:0 auto;display:block}
   .button span::before,.button span::after{width:23px;height:46px}
   .button::before{left:-23px;right:-23px}
 }
-.button--rect{font-size:24px;width:calc(100% - 30px);height:60px;margin:0 15px;line-height:60px}
+.button--rect{font-size:26px;width:calc(100% - 30px);height:60px;margin:0 15px;line-height:60px}
 .button--rect span{height:100%}
 .button--rect span::before,.button--rect span::after{width:15px;height:60px}
 .button--rect::before{left:-15px;right:-15px;border-radius:15px}
@@ -394,7 +394,7 @@ p{display:block;margin:0 auto;display:block}
 .latest-posts a{color:#00b8ff}
 .latest-posts a:hover{color:#fff;text-decoration:none}
 .latest-posts__list{padding:0;list-style:none;line-height:28px}
-.latest-posts__list h4{font-size:20px;margin:0}
+.latest-posts__list h4{font-size:20px;margin:0;font-weight: bold}
 .latest-posts__list span{font-size:16px;opacity:.5}
 .latest-posts__item{margin-top:13px}
 .latest-posts a{font-size:20px;padding-right:5px}
