@@ -44,6 +44,9 @@ const files = {
     'src/js/presale/requestApi.js',
     'src/js/presale/main.js',
   ],
+  faqJs: [
+    'src/js/faq/faq.js'
+  ],
   css: [
     'src/scss/**/*.scss',
   ],
@@ -71,6 +74,7 @@ const makeJsTask = (input, output) => (
 
 gulp.task('js:site', () => makeJsTask(files.js, 'main.js'));
 gulp.task('js:presale', () => makeJsTask(files.presaleJs, 'presale.js'));
+gulp.task('js:faq', () => makeJsTask(files.faqJs, 'faq.js'));
 gulp.task('js:blog', () => makeJsTask(files.blogJs, 'blog.js'));
 
 gulp.task('css', () => (
@@ -235,7 +239,7 @@ gulp.task('site', (cb) => {
   runSequence(['css', 'generate:site', 'js:site', 'js:presale'], 'critical:site', cb);
 });
 
-gulp.task('dev', ['css', 'js:site', 'js:presale', 'js:blog', 'svg', 'generate:blog', 'generate:site'], () => {
+gulp.task('dev', ['css', 'js:site', 'js:presale', 'js:faq', 'js:blog', 'svg', 'generate:blog', 'generate:site'], () => {
   watching = true;
   livereload.listen();
 
@@ -250,6 +254,10 @@ gulp.task('dev', ['css', 'js:site', 'js:presale', 'js:blog', 'svg', 'generate:bl
   watch(
     files.presaleJs,
     batch((events, done) => gulp.start('js:presale', done))
+  );
+  watch(
+    files.faqJs,
+    batch((events, done) => gulp.start('js:faq', done))
   );
   watch(
     files.blogJs,

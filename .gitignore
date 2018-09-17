@@ -3,9 +3,12 @@ node_modules
 css/blog.css
 css/main.css
 css/presale.css
+css/faq.css
 js/main.js
 js/presale.js
+js/faq.js
 js/sprite.svg.js
 /index.html
 
 .idea
+/faq/
