@@ -54,6 +54,7 @@ const files = {
   html: '*/*.html',
   blog: 'src/blog/**/*',
   site: 'src/site/**/*',
+  faq: 'src/faq/**/*',
 };
 
 const makeJsTask = (input, output) => (
@@ -199,6 +200,45 @@ gulp.task('blog', (cb) => {
   runSequence(['css', 'js:blog', 'generate:blog'], 'critical:blog', cb);
 });
 
+gulp.task('generate:faq', async (cb) => {
+  return gulp.src('src/faq/content/**/*')
+    .pipe(minisite({
+      templateEngine(tmplName, tmplData) {
+        const marked   = require('marked');
+        const tinytime = require('tinytime');
+        const dateFormat = tinytime('{MM} {DD}, {YYYY}');
+
+        const env = new nunjucks.Environment(
+          new nunjucks.FileSystemLoader('src/faq/template'),
+          { noCache: true }
+        );
+
+        env.addFilter('formatdate', function(date) {
+          return dateFormat.render(date);
+        });
+
+        tmplData.posts = posts.sort((a, b) => b.date - a.date).slice(0, 3);
+
+        return env.render(tmplName, tmplData);
+      }
+    }))
+    .pipe(gulp.dest('.'))
+    .pipe(livereload());
+});
+
+gulp.task('critical:faq', (cb) => {
+  setTimeout(() => {
+    glob('faq/**/*.html', (err, matches) => {
+      Promise.all(matches.map(extractCriticalCSS))
+        .then(() => setTimeout(cb, 100));
+    });
+  }, 100);
+});
+
+gulp.task('faq', (cb) => {
+  runSequence(['css', 'js:faq','generate:faq'], 'critical:faq', cb);
+})
+
 let posts;
 gulp.task('generate:site', async (cb) => {
   if (!posts) {
@@ -239,7 +279,7 @@ gulp.task('site', (cb) => {
   runSequence(['css', 'generate:site', 'js:site', 'js:presale'], 'critical:site', cb);
 });
 
-gulp.task('dev', ['css', 'js:site', 'js:presale', 'js:faq', 'js:blog', 'svg', 'generate:blog', 'generate:site'], () => {
+gulp.task('dev', ['css', 'js:site', 'js:presale', 'js:faq', 'js:blog', 'svg', 'generate:blog', 'generate:faq', 'generate:site'], () => {
   watching = true;
   livereload.listen();
 
@@ -276,9 +316,14 @@ gulp.task('dev', ['css', 'js:site', 'js:presale', 'js:faq', 'js:blog', 'svg', 'g
     batch((events, done) => gulp.start('generate:blog', done))
   );
   watch(
+    files.blog,
+    batch((events, done) => gulp.start('generate:faq', done))
+  );
+ 
+  watch(
     files.site,
     batch((events, done) => gulp.start('generate:site', done))
   );
 });
 
-gulp.task('default', ['svg', 'blog', 'site']);
+gulp.task('default', ['svg', 'blog', 'site', 'faq']);
