@@ -316,7 +316,7 @@ gulp.task('dev', ['css', 'js:site', 'js:presale', 'js:faq', 'js:blog', 'svg', 'g
     batch((events, done) => gulp.start('generate:blog', done))
   );
   watch(
-    files.blog,
+    files.faq,
     batch((events, done) => gulp.start('generate:faq', done))
   );
  
