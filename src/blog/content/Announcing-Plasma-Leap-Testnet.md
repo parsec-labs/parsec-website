@@ -7,7 +7,7 @@ author:
   name: "@johba"
   twitter: "@johba"
   link: https://github.com/johannbarbie/
-description: Announcement of Plasma Leap design and release of Testnet with demo Dapps.
+description: Announcement of Plasma Leap Design and release of Testnet with Demo Dapps.
 ---
 
 Hey Peeps!
