@@ -68,12 +68,4 @@ Write a state-machine in any language (e.g. Golang, Python, etc), and plug it in
 
 We hope that you will find these topics interesting for you and this will motivate you to join us in some upcoming events. If you are planning to visit some interesting conference - let us now at our socials, we might join you there.
 
-If you are interested in our project or want to join our team, feel free to reach out to PARSEC Labs through social media: 
-
-- Website: https://www.parseclabs.org/ 
-- Telegram: https://t.me/parseclabs 
-- Twitter: https://twitter.com/Parsec_Labs 
-- YouTube: https://www.youtube.com/channel/UCupH1-afY2xMIpLoTnBJvtA 
-- Facebook: https://www.facebook.com/parsecIabs/
-
-<div align=center style="display: none"><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-Ax7Dab36692b756C-26.gif' border='0' alt='conter12'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=Ax7Dab36692b756C'></script></div>
+If you are interested and/or want to contribute, join us on slack: http://join.parseclabs.org

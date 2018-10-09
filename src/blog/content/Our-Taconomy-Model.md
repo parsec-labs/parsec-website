@@ -67,8 +67,4 @@ By the way, few months ago we also had a special bonus rewards in our HeyTaco!, 
 - To get tacos on a regular basis, you must not only work efficiently but also communicate with a remote team and share your results. So if you are a good professional that somehow hate communication - you might have some difficulties with taconomy. But this depends on your team, obviously.
 - Taconomy as well as holacracy can be hard for beginners and people from the traditional teams to get used to. But after few explanation calls everything will be clear! We promise!
 
-If you are interested in our project, share our values and can empower our team - join PARSEC Labs! Just reach to us in our socials:
-- PARSEC Labs website: https://www.parseclabs.org/
-- Telegram: https://t.me/parseclabs
-- Facebook: https://www.facebook.com/parsecIabs/
-- Twitter: https://twitter.com/Parsec_Labs
+If you are interested and/or want to contribute, join us on slack: http://join.parseclabs.org

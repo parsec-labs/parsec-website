@@ -38,9 +38,4 @@ If you missed our June-July development update blog post check it out <a href="h
 
 Also, we have recently released the first Alpha version of our Plasma node. In addition, we have built a prototype application, which communicates with the Plasma node so that everyone can test our chain. Check it out here - <a href="http://alice.parseclabs.org/">Project Alice</a>.
 
-If you are interested in our project or want to join our team, feel free to reach out to PARSEC Labs through social media: 
-- Website: https://www.parseclabs.org/
-- Telegram: https://t.me/parseclabs
-- Twitter: https://twitter.com/Parsec_Labs
-- YouTube: https://www.youtube.com/channel/UCupH1-afY2xMIpLoTnBJvtA
-- Facebook: https://www.facebook.com/parsecIabs/
+If you are interested and/or want to contribute, join us on slack: http://join.parseclabs.org

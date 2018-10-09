@@ -40,12 +40,4 @@ We have gained new insights, new connections and overall it was certainly a cons
 
 PARSEC Labs is excited to continue the series of physical and remote workshops to reach the talented members of its community globally!
 
-If you are interested in our project or want to join our team, feel free to reach out to PARSEC Labs through social media: 
-
-- Website: https://www.parseclabs.org/ 
-- Telegram: https://t.me/parseclabs 
-- Twitter: https://twitter.com/Parsec_Labs 
-- YouTube: https://www.youtube.com/channel/UCupH1-afY2xMIpLoTnBJvtA 
-- Facebook: https://www.facebook.com/parsecIabs/
-
-<div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-Ax7Dab36692b756C-26.gif' border='0' alt='conter12'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=Ax7Dab36692b756C'></script></div>
+If you are interested and/or want to contribute, join us on slack: http://join.parseclabs.org

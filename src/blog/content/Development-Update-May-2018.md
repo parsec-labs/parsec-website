@@ -42,8 +42,4 @@ And finally, <b><a href="https://github.com/Koroqe">Alex Core</a></b> made a gas
 
 In first approach the transaction to query average gas price costs approximately 28864 gas.  Every block submission costs 21500 gas more.  In the second approach the getter is simply reading the storage, and every block submission costs approximately 6500 gas (21500 at first block).  You can find more about it <a href="https://github.com/parsec-labs/parsec-contracts/pull/18">here</a>. This feature was developed in the scope of <a href="https://github.com/parsec-labs/PIPs/wiki/Bounty_015">Bounty_15</a>.
 
-These are all the updates for May 2018! If you are interested in our project and/or want to join our team - reach us in PARSEC Labs socials:
-- PARSEC Labs website: https://www.parseclabs.org/
-- Telegram: https://t.me/parseclabs
-- Facebook: https://www.facebook.com/parsecIabs/
-- Twitter: https://twitter.com/Parsec_Labs
+These are all the updates for May 2018! If you are interested in our project and/or want to contribute, join us! on slack: http://join.parseclabs.org

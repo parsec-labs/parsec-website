@@ -54,14 +54,4 @@ We operate using <a href="https://www.holacracy.org/how-it-works/">holacracy</a>
 
 You’re welcome!
 
-<b>Follow PARSEC and all our news:</b>
-
-- PARSEC Labs website: https://www.parseclabs.org/
-- Telegram: https://t.me/parseclabs
-- Facebook: https://www.facebook.com/parsecIabs/
-- Twitter: https://twitter.com/Parsec_Labs
-
-Checkout our other blog posts:
-<a href="https://parseclabs.org/blog/Blockchain-Benefits-Part-1-Esports/">Blockchain Benefits. Part 1: Esports</a>
-<a href="https://parseclabs.org/blog/How-To-Test-A-Blockchain-Game/">How to Test a Blockchain Game</a>
-<a href="https://parseclabs.org/blog/ethereum-foundation-scaling-grant/">Recipient of the Ethereum Foundation Scaling Grant!</a>
+If you are interested and/or want to contribute, join us on slack: http://join.parseclabs.org

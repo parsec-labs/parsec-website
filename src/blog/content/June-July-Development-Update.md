@@ -106,8 +106,4 @@ Feel free to join our <a href="https://join.slack.com/t/acebusters/shared_invite
 
 <b><a href="https://github.com/sunify">Alex</a></b> built <a href="http://stake-dev.parseclabs.org/">stacking UI</a> which you will be able to use in the future to buy a validators slot, <a href="http://stake-dev.parseclabs.org/deposit">make a deposit</a> to a chain and also to claim some free PSC from the faucet service. For now it is just a nice extra tool that simplifies node development and testing. In the future it will be used to help our validators.
 
-That is it for our updates! If you are interested in our project or want to join our team, feel free to reach out to PARSEC Labs through social media:
-- PARSEC Labs website: https://www.parseclabs.org/
-- Telegram: https://t.me/parseclabs
-- Facebook: https://www.facebook.com/parsecIabs/
-- Twitter: https://twitter.com/Parsec_Labs
+That is it for our updates! If you are interested and/or want to contribute, join us on slack: http://join.parseclabs.org

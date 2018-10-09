@@ -29,16 +29,4 @@ The grant will help us to focus on research without any distractions. Our first 
 
 <img src="/img/blog/EthereumGrantRecepients.jpg" alt="EthereumGrantRecepients">
 
-Thank you for your trust and let's BUIDL together!
-
-<b>Follow PARSEC and all our news:</b>
-
-- PARSEC Labs website: https://www.parseclabs.org/
-- Telegram: https://t.me/parseclabs
-- Facebook: https://www.facebook.com/parsecIabs/
-- Twitter: https://twitter.com/Parsec_Labs
-
-Checkout our other blog posts:
-<a href="https://parseclabs.org/blog/Blockchain-Benefits-Part-1-Esports/">Blockchain Benefits. Part 1: Esports</a>
-<a href="https://parseclabs.org/blog/How-To-Test-A-Blockchain-Game/">How to Test a Blockchain Game</a>
-<a href="https://parseclabs.org/blog/PARSEC-Labs-at-EthCC-and-BlockchainUA/">PARSEC Labs at EthCC and BlockchainUA</a>
+Thank you for your trust and let's BUIDL together! If you are interested and/or want to contribute, join us on slack: http://join.parseclabs.org
