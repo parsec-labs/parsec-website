@@ -19,6 +19,7 @@ The change in self-governance has made us aware that we have a responsibility to
 This commitment to openness and sovereignty is why we are adopting a new name and setting out the values that we stand for: [Leap DAO](http://leapdao.org) - A decentralized adaptive organization delivering scalability as a global public utility.
 
 Website: [leapdao.org](http://leapdao.org)
+
 Twitter: [@leapdao](https://twitter.com/leapdao)
 
 
