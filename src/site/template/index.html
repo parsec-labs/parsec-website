@@ -1,336 +1,145 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Parsec Labs: delivering scalability as global public utility.</title>
-        <meta name="description" content="Parsec is a decentralized adaptive organization delivering scalability as global public utility.">
-        <meta name="keywords" content="blockchain, ethereum, plasma, dapps, scaling">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="Parsec Labs: delivering scalability as global public utility" />
-        <meta property="og:description" content="Parsec is a decentralized adaptive organization delivering scalability as global public utility." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://parseclabs.org/" />
-        <meta property="og:image" content="https://parseclabs.org/img/og.jpg" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@Parsec_Labs" />
-        <meta name="twitter:title" content="delivering scalability as global public utility." />
-        <meta name="twitter:description" content="Parsec is a decentralized adaptive organization delivering scalability as global public utility." />
-        <meta name="twitter:image" content="https://parseclabs.org/img/og.jpg" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="canonical" href="https://parseclabs.org" />
-        <meta name="theme-color" content="#ffffff">
-      <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Parsec Labs: delivering scalability as global public utility.</title>
+  <meta name="description" content="Parsec is a decentralized adaptive organization delivering scalability as global public utility.">
+  <meta name="keywords" content="blockchain, ethereum, plasma, dapps, scaling">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Parsec Labs: delivering scalability as global public utility" />
+  <meta property="og:description" content="Parsec is a decentralized adaptive organization delivering scalability as global public utility." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://parseclabs.org/" />
+  <meta property="og:image" content="https://parseclabs.org/img/og.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@Parsec_Labs" />
+  <meta name="twitter:title" content="delivering scalability as global public utility." />
+  <meta name="twitter:description" content="Parsec is a decentralized adaptive organization delivering scalability as global public utility." />
+  <meta name="twitter:image" content="https://parseclabs.org/img/og.jpg" />
 
-      <link rel="stylesheet" href="css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="canonical" href="https://parseclabs.org" />
+  <meta name="theme-color" content="#ffffff">
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
 
-        <script>
-          /*! modernizr 3.6.0 (Custom Build) | MIT *
-          * https://modernizr.com/download/?-webp-webpalpha-setclasses !*/
-          !function(A,e,n){function a(A,e){return typeof A===e}function o(){var A,e,n,o,t,i,r;for(var f in l)if(l.hasOwnProperty(f)){if(A=[],e=l[f],e.name&&(A.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(n=0;n<e.options.aliases.length;n++)A.push(e.options.aliases[n].toLowerCase());for(o=a(e.fn,"function")?e.fn():e.fn,t=0;t<A.length;t++)i=A[t],r=i.split("."),1===r.length?Modernizr[r[0]]=o:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=o),s.push((o?"":"no-")+r.join("-"))}}function t(A){var e=u.className,n=Modernizr._config.classPrefix||"";if(c&&(e=e.baseVal),Modernizr._config.enableJSClass){var a=new RegExp("(^|\\s)"+n+"no-js(\\s|$)");e=e.replace(a,"$1"+n+"js$2")}Modernizr._config.enableClasses&&(e+=" "+n+A.join(" "+n),c?u.className.baseVal=e:u.className=e)}function i(A,e){if("object"==typeof A)for(var n in A)f(A,n)&&i(n,A[n]);else{A=A.toLowerCase();var a=A.split("."),o=Modernizr[a[0]];if(2==a.length&&(o=o[a[1]]),"undefined"!=typeof o)return Modernizr;e="function"==typeof e?e():e,1==a.length?Modernizr[a[0]]=e:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=e),t([(e&&0!=e?"":"no-")+a.join("-")]),Modernizr._trigger(A,e)}return Modernizr}var s=[],l=[],r={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(A,e){var n=this;setTimeout(function(){e(n[A])},0)},addTest:function(A,e,n){l.push({name:A,fn:e,options:n})},addAsyncTest:function(A){l.push({name:null,fn:A})}},Modernizr=function(){};Modernizr.prototype=r,Modernizr=new Modernizr;var f,u=e.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var A={}.hasOwnProperty;f=a(A,"undefined")||a(A.call,"undefined")?function(A,e){return e in A&&a(A.constructor.prototype[e],"undefined")}:function(e,n){return A.call(e,n)}}(),r._l={},r.on=function(A,e){this._l[A]||(this._l[A]=[]),this._l[A].push(e),Modernizr.hasOwnProperty(A)&&setTimeout(function(){Modernizr._trigger(A,Modernizr[A])},0)},r._trigger=function(A,e){if(this._l[A]){var n=this._l[A];setTimeout(function(){var A,a;for(A=0;A<n.length;A++)(a=n[A])(e)},0),delete this._l[A]}},Modernizr._q.push(function(){r.addTest=i}),Modernizr.addAsyncTest(function(){var A=new Image;A.onerror=function(){i("webpalpha",!1,{aliases:["webp-alpha"]})},A.onload=function(){i("webpalpha",1==A.width,{aliases:["webp-alpha"]})},A.src="data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA=="}),Modernizr.addAsyncTest(function(){function A(A,e,n){function a(e){var a=e&&"load"===e.type?1==o.width:!1,t="webp"===A;i(A,t&&a?new Boolean(a):a),n&&n(e)}var o=new Image;o.onerror=a,o.onload=a,o.src=e}var e=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],n=e.shift();A(n.name,n.uri,function(n){if(n&&"load"===n.type)for(var a=0;a<e.length;a++)A(e[a].name,e[a].uri)})}),o(),t(s),delete r.addTest,delete r.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();A.Modernizr=Modernizr}(window,document);
-        </script>
-    </head>
-    <body>
-        <div id="svg-sprite" style="width: 0; height: 0;position:absolute;overflow:hidden"></div>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 0; height: 0;position:absolute;">
-          <defs>
-            <linearGradient id="icons-gradient-small" gradientUnits="userSpaceOnUse" x1="8.175" y1="15" x2="21.825" y2="15" gradientTransform="matrix(1 0 0 -1 0 30)">
-                <stop offset="0" stop-color="#4facfe"/>
-                <stop offset="1" stop-color="#00f2fe"/>
-            </linearGradient>
-            <linearGradient id="icons-gradient-big" gradientUnits="userSpaceOnUse" x1=".49" y1="41.925" x2="83.5" y2="41.925" gradientTransform="matrix(1 0 0 -1 0 84)">
-                <stop offset="0" stop-color="#4facfe"/>
-                <stop offset="1" stop-color="#00f2fe"/>
-            </linearGradient>
-          </defs>
-        </svg>
-        <!--[if lte IE 9]>
+  <link rel="stylesheet" href="css/main.css">
+
+  <script>
+    /*! modernizr 3.6.0 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-webp-webpalpha-setclasses !*/
+    !function (A, e, n) { function a(A, e) { return typeof A === e } function o() { var A, e, n, o, t, i, r; for (var f in l) if (l.hasOwnProperty(f)) { if (A = [], e = l[f], e.name && (A.push(e.name.toLowerCase()), e.options && e.options.aliases && e.options.aliases.length)) for (n = 0; n < e.options.aliases.length; n++)A.push(e.options.aliases[n].toLowerCase()); for (o = a(e.fn, "function") ? e.fn() : e.fn, t = 0; t < A.length; t++)i = A[t], r = i.split("."), 1 === r.length ? Modernizr[r[0]] = o : (!Modernizr[r[0]] || Modernizr[r[0]] instanceof Boolean || (Modernizr[r[0]] = new Boolean(Modernizr[r[0]])), Modernizr[r[0]][r[1]] = o), s.push((o ? "" : "no-") + r.join("-")) } } function t(A) { var e = u.className, n = Modernizr._config.classPrefix || ""; if (c && (e = e.baseVal), Modernizr._config.enableJSClass) { var a = new RegExp("(^|\\s)" + n + "no-js(\\s|$)"); e = e.replace(a, "$1" + n + "js$2") } Modernizr._config.enableClasses && (e += " " + n + A.join(" " + n), c ? u.className.baseVal = e : u.className = e) } function i(A, e) { if ("object" == typeof A) for (var n in A) f(A, n) && i(n, A[n]); else { A = A.toLowerCase(); var a = A.split("."), o = Modernizr[a[0]]; if (2 == a.length && (o = o[a[1]]), "undefined" != typeof o) return Modernizr; e = "function" == typeof e ? e() : e, 1 == a.length ? Modernizr[a[0]] = e : (!Modernizr[a[0]] || Modernizr[a[0]] instanceof Boolean || (Modernizr[a[0]] = new Boolean(Modernizr[a[0]])), Modernizr[a[0]][a[1]] = e), t([(e && 0 != e ? "" : "no-") + a.join("-")]), Modernizr._trigger(A, e) } return Modernizr } var s = [], l = [], r = { _version: "3.6.0", _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 }, _q: [], on: function (A, e) { var n = this; setTimeout(function () { e(n[A]) }, 0) }, addTest: function (A, e, n) { l.push({ name: A, fn: e, options: n }) }, addAsyncTest: function (A) { l.push({ name: null, fn: A }) } }, Modernizr = function () { }; Modernizr.prototype = r, Modernizr = new Modernizr; var f, u = e.documentElement, c = "svg" === u.nodeName.toLowerCase(); !function () { var A = {}.hasOwnProperty; f = a(A, "undefined") || a(A.call, "undefined") ? function (A, e) { return e in A && a(A.constructor.prototype[e], "undefined") } : function (e, n) { return A.call(e, n) } }(), r._l = {}, r.on = function (A, e) { this._l[A] || (this._l[A] = []), this._l[A].push(e), Modernizr.hasOwnProperty(A) && setTimeout(function () { Modernizr._trigger(A, Modernizr[A]) }, 0) }, r._trigger = function (A, e) { if (this._l[A]) { var n = this._l[A]; setTimeout(function () { var A, a; for (A = 0; A < n.length; A++)(a = n[A])(e) }, 0), delete this._l[A] } }, Modernizr._q.push(function () { r.addTest = i }), Modernizr.addAsyncTest(function () { var A = new Image; A.onerror = function () { i("webpalpha", !1, { aliases: ["webp-alpha"] }) }, A.onload = function () { i("webpalpha", 1 == A.width, { aliases: ["webp-alpha"] }) }, A.src = "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==" }), Modernizr.addAsyncTest(function () { function A(A, e, n) { function a(e) { var a = e && "load" === e.type ? 1 == o.width : !1, t = "webp" === A; i(A, t && a ? new Boolean(a) : a), n && n(e) } var o = new Image; o.onerror = a, o.onload = a, o.src = e } var e = [{ uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=", name: "webp" }, { uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==", name: "webp.alpha" }, { uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA", name: "webp.animation" }, { uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=", name: "webp.lossless" }], n = e.shift(); A(n.name, n.uri, function (n) { if (n && "load" === n.type) for (var a = 0; a < e.length; a++)A(e[a].name, e[a].uri) }) }), o(), t(s), delete r.addTest, delete r.addAsyncTest; for (var p = 0; p < Modernizr._q.length; p++)Modernizr._q[p](); A.Modernizr = Modernizr }(window, document);
+  </script>
+</head>
+
+<body>
+  <div id="svg-sprite" style="width: 0; height: 0;position:absolute;overflow:hidden"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 0; height: 0;position:absolute;">
+    <defs>
+      <linearGradient id="icons-gradient-small" gradientUnits="userSpaceOnUse" x1="8.175" y1="15" x2="21.825" y2="15"
+        gradientTransform="matrix(1 0 0 -1 0 30)">
+        <stop offset="0" stop-color="#4facfe" />
+        <stop offset="1" stop-color="#00f2fe" />
+      </linearGradient>
+      <linearGradient id="icons-gradient-big" gradientUnits="userSpaceOnUse" x1=".49" y1="41.925" x2="83.5" y2="41.925"
+        gradientTransform="matrix(1 0 0 -1 0 84)">
+        <stop offset="0" stop-color="#4facfe" />
+        <stop offset="1" stop-color="#00f2fe" />
+      </linearGradient>
+    </defs>
+  </svg>
+  <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- BEGIN PARSEC -->
+  <!-- BEGIN PARSEC -->
 
-        <div id="app">
-          <header class="top-header">
-            <a href="/" data-target="home">
-              <svg role="img" width="267" height="68" class="top-header-logo">
-                <use xlink:href="#parseclabs"></use>
+  <div id="app">
+    <header class="top-header">
+      <a href="/" data-target="home">
+        <svg role="img" width="267" height="68" class="top-header-logo">
+          <use xlink:href="#parseclabs"></use>
+        </svg>
+      </a>
+
+      <div class="top-header-menu">
+        <button>
+
+          <svg role="img" width="29" height="24">
+            <use xlink:href="#menu"></use>
+          </svg>
+        </button>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li class="top-header-socials">
+            <a href="http://join.parseclabs.org" target="_blank" rel="noopener">
+              <svg role="img" width="25" height="25" class="gradient-icon">
+                <use xlink:href="#social-slack"></use>
               </svg>
             </a>
+            <a href="https://github.com/parsec-labs" target="_blank" rel="noopener">
+              <svg role="img" width="26" height="26" class="gradient-icon">
+                <use xlink:href="#social-github"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-            <div class="top-header-menu">
-              <button>
-
-                <svg role="img" width="29" height="24">
-                  <use xlink:href="#menu"></use>
-                </svg>
-              </button>
-              <ul>
-                <li><a data-target="vision">Mission</a></li>
-                <li><a data-target="partners">Partners</a></li>
-                <li><a href="/blog/">Blog</a></li>
-                <li class="top-header-socials">
-                  <a href="http://join.parseclabs.org" target="_blank" rel="noopener">
-                    <svg role="img" width="25" height="25" class="gradient-icon">
-                      <use xlink:href="#social-slack"></use>
-                    </svg>
-                  </a>
-                  <a href="https://github.com/parsec-labs" target="_blank" rel="noopener">
-                    <svg role="img" width="26" height="26" class="gradient-icon">
-                      <use xlink:href="#social-github"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </header>
-
-          <div class="sections">
-            <section class="header section-centered" data-section="home">
-              <canvas class="header-bg"></canvas>
-              <div class="section-content-wrapper">
-                <div class="flex-header">
-                <div class="upper-header">
-                  <div class="section-content">
-                    <div class="section-content-inner container">
-                      <h1>Scaling Ethereum <br />on Layer-2</h1>
-                      <p class="section-content-p">We enable Decentralized Apps to leap onto Plasma.</p>
-                      <div class="upper-header-buttons ">
-                        <a href="https://alice.parseclabs.org/" class="button active-btn col-md-4" target="blank">
-                          <span>
-                            Try It Now
-                          </span>
-                        </a>
-                        <a href="https://docs.google.com/document/d/1vStTjqvqZGyiI5AVtpwCIMlHFnzC_4bbixsCfs27-M8" class="button col-md-4">
-                          <span>
-                            Whitepaper
-                          </span>
-                        </a>
-                        <a href="http://join.parseclabs.org" class="button" target="blank">
-                          <span>
-                            <svg role="img" width="25" height="25" class="gradient-icon button-icon" style="margin-top: -4px;">
-                              <use xlink:href="#social-slack"></use>
-                            </svg>
-                            join Us
-                          </span>
-                        </a>
-                      </div>
-                    </div>
+    <div class="sections">
+      <section class="header section-centered" data-section="home">
+        <canvas class="header-bg"></canvas>
+        <div class="section-content-wrapper">
+          <div class="flex-header">
+            <div class="upper-header">
+              <div class="section-content">
+                <div class="section-content-inner container">
+                  <h1>We have forked</h1>
+                  <p class="section-content-p"><a href="http://leapdao.org/blog/Parsec-Labs-to-Leap-DAO/">From Parsec Labs to Leap DAO</a></p>
+                  <div class="upper-header-buttons">
+                    <a href="http://leapdao.org/" class="button active-btn col-md-4" target="blank">
+                      <span>
+                        Follow the fork
+                      </span>
+                    </a>
                   </div>
-                </div>
-                <div class="lower-header">
-                  <div class="section-content">
-                    <div class="section-content-inner container cont cont1">
-                      <div class="main-benefits">
-                        <div class="main-benefits-item">
-                          <svg role="img" width="64" height="64" class="gradient-icon-big">
-                            <use xlink:href="#unified-ecosystem"></use>
-                          </svg>
-                          <h3>Ease of Migration</h3>
-                          <p>Build your Dapps for Plasma using known languages and tools.</p>
-                        </div>
-                        <div class="main-benefits-item">
-                          <svg role="img" width="64" height="64" class="gradient-icon-big">
-                            <use xlink:href="#scaling"></use>
-                          </svg>
-                          <h3>Secure Scaling</h3>
-                          <p>Run at x000 tx/s while being secured by full Ethereum PoW.</p>
-                        </div>
-                        <div class="main-benefits-item">
-                          <svg role="img" width="64" height="64" class="gradient-icon-big">
-                            <use xlink:href="#safe-box"></use>
-                          </svg>
-                          <h3>Proof of stake</h3>
-                          <p>Become a validator for Plasma and earn block rewards.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 </div>
               </div>
-
-            </section>
-
-            <section class="intro" data-section="vision">
-              <div class="container">
-                <header class="section-header mission">
-                  <h2>
-                    Our Mission
-                  </h2>
-                  <p>At Parsec Labs we are building a distributed organization using <a class="into-links" href="http://parseclabs.org/blog/PARSEC-Labs-Holacracy-Structure/">holacracy</a> for self-management. We operate as an open community rewarding contribution using <a class="into-links" href="http://parseclabs.org/blog/Our-Taconomy-Model/">taconomy</a> and <a class="into-links" href="https://github.com/parsec-labs/PIPs/wiki/Bounties">bounties</a>.</p>
-                  <br>
-                  <p>We develop Plasma Leap, a scaling technology to deliver Ethereum scalability as global public utility.</p>
-                </header>
-              </div>
-
-            </section>
-
-              <section class="showcase"  data-section="showcase">
-                <div class="container cont cont1">
-                  <header class="section-header">
-                    <div>
-                      <h2>
-                        Showcase
-                      </h2>
-                    </div>
-
-                    <div class="showcases">
-                      <div>
-                        <svg role="img" width="96" height="113" class="gradient-icon-big icon-ab">
-                          <use xlink:href="#alice"></use>
-                        </svg>
-                        <h2>
-                          Project Alice
-                        </h2>
-                        <p>
-                          Small showcase of PARSEC Chain capabilities. It's main purpose is to show you how transactions are working in our Plasma chain. Multiple tokens support available.
-                        </p>
-                        <a href="https://alice.parseclabs.org/" class="button" target="_blank" rel="noopener">
-                          <span><em>visit</em> project Alice</span>
-                        </a>
-                      </div>
-
-                      <div>
-                        <svg role="img" width="96" height="113" class="gradient-icon-big icon-ab">
-                          <use xlink:href="#acebusters"></use>
-                        </svg>
-                        <h2>
-                          Acebusters
-                        </h2>
-                        <p>
-                          The first decentralized poker platform live on the Ethereum blockchain and also a world's first real-time decentralized application.
-                          <br class="br">
-                          <br class="br">
-
-                        </p>
-                        <a href="https://www.acebusters.com" class="button" target="_blank" rel="noopener">
-                          <span><em>visit</em> acebusters</span>
-                        </a>
-                      </div>
-                    </div>
-                  </header>
-                </div>
-
-              </section>
             </div>
 
-              </section>
-              <section class="partners" data-section="partners">
-                <div class="container">
-                  <div class="content">
-                    <header class="section-header">
-                      <h2>Partners</h2>
-                    </header>
-                    <div class="partners-logos">
-                      <div class="partners-logo partners-tooltip">
-                        <div class="partners-tooltiptext desktop">
-                          <div class="partners-tooltiptext-header">
-                            <h3>Reftoken</h3>
-                          </div>
-                          <p class="partners-tooltiptext-description">RefToken is a distributed, trustless affiliate marketing platform that will connect Dapps with the affiliates that can make them mainstream. Some of the worlds greatest minds are building the apps of the future based on blockchains, RefToken is here to connect those developers, with the brands and marketers that can make their projects go mainstream.</p>
-                        </div>
-                        <a href="https://reftoken.io/" target="_blank">
-                          <img src="img/logos/reftoken.svg" alt="Reftoken"/>
-                        </a>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section class="footer">
-                <img class="ground" src="img/backgrounds/ground.png" />
-                <header class="section-header">
-                  <h2>Stay in touch</h2>
-                </header>
-                <div class="container">
-                  <div class="content">
-                    <div>
-                      <div class="subscribe">
-                        <form action="https://parseclabs.us17.list-manage.com/subscribe/post-json?u=82ffc63ae0813261fdc1f75d7&amp;id=4d6f207452" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-                          <div id="mc_embed_signup_scroll">
-                            <div class="alert"></div>
-
-                            <input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="Your email address" required />
-
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c294e87f0fdc5cf7c4767283_fcf132e60f" tabindex="-1" value=""></div>
-                            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button button--rect submit">
-                              <span>Keep me updated</span>
-                            </button>
-                          </div>
-                        </form>
-                      </div>
-                      <div>
-                        <div class="footer-links">
-                          <a href="http://join.parseclabs.org" target="_blank" rel="noopener">
-                            <svg role="img" width="29" height="25">
-                              <use xlink:href="#social-slack"></use>
-                            </svg>
-                          </a>
-
-                          <a href="https://github.com/parsec-labs" target="_blank" rel="noopener">
-                            <svg role="img" width="26" height="26">
-                              <use xlink:href="#social-github"></use>
-                            </svg>
-                          </a>
-                        </div>
-                        <div class="feedback-area">
-                          <a class="feedback-link" href="mailto:info@parseclabs.org">info@parseclabs.org</a>
-                          <a class="feedback-link" href="https://goo.gl/forms/wXYCFiOkslQ4scNG2" target="_blank" rel="noopener">Share your feedback</a>
-                        </div>
-                        <div class="footer-copyright">
-                          © 2018 PARSEC Labs. All Rights Reserved.
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="latest-posts">
-                      <header>
-                        <h3>Latest posts</h3>
-                        <a href="/blog/">Visit blog</a>
-                      </header>
-                      <ul class="latest-posts__list">
-                        {% for post in (posts) %}
-                        <li class="latest-posts__item">
-                          <h4><a href="/blog{{ post.path }}/">{{ post.title }}</a></h4>
-                          <span>{{ post.date | formatdate }}</span>
-                        </li>
-                        {% endfor %}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
           </div>
-
         </div>
 
+      </section>
+    </div>
+  </div>
+  </div>
+
+  </div>
 
 
-        <!-- END PARSEC -->
 
-        <script src="js/main.js" async></script>
-        <script src="js/sprite.svg.js" async></script>
+  <!-- END PARSEC -->
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124786227-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+  <script src="js/main.js" async></script>
+  <script src="js/sprite.svg.js" async></script>
 
-          gtag('config', 'UA-124786227-1');
-        </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124786227-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        <script type="application/ld+json">
+    gtag('config', 'UA-124786227-1');
+  </script>
+
+  <script type="application/ld+json">
         {
           "@context": "http://schema.org",
           "@type": "Organization",
@@ -345,5 +154,6 @@
           ]
         }
         </script>
-    </body>
+</body>
+
 </html>

@@ -52,8 +52,11 @@
     }
   }
 
-  document.getElementById('mc-embedded-subscribe-form').addEventListener('submit', e => {
-    e.preventDefault();
-    register2(e.target);
-  });
+  const subscribeForm = document.getElementById('mc-embedded-subscribe-form');
+  if (subscribeForm) {
+    subscribeForm.addEventListener('submit', e => {
+      e.preventDefault();
+      register2(e.target);
+    });
+  }
 })();

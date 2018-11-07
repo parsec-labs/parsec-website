@@ -27,10 +27,10 @@ let watching = false;
 
 const files = {
   js: [
-    'src/js/plugins.js',
+    // 'src/js/plugins.js',
     'src/js/cosmos.js',
-    'src/js/menu.js',
-    'src/js/subscribeForm.js',
+    // 'src/js/menu.js',
+    // 'src/js/subscribeForm.js',
     'src/js/main.js'
   ],
   blogJs: [

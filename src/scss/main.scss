@@ -1,4 +1,4 @@
-$menu_mobile_width: 600px;
+$menu_mobile_width: 0px;
 
 @import "mixins-base";
 @import "base";
@@ -37,27 +37,6 @@ $gridSize: 8;
     .upper-header {
     position: relative;
     height: auto;
-
-    &::before {
-      position: absolute;
-      top: 100%;
-      left: 15%;
-
-
-      width: 70%;
-      height: 3px;
-
-      content: '';
-
-      background-image: linear-gradient(
-                      to left,
-                      rgba(#00ceff, 0),
-                      rgba(#00ceff, 0.24) 30%,
-                      rgba(#00ceff, 0.24) 50%,
-                      rgba(#00ceff, 0.24) 70%,
-                      rgba(#00ceff, 0)
-      );
-    }
   }
   .upper-header-buttons {
     padding-bottom: 40px;
@@ -667,6 +646,7 @@ $gridSize: 8;
 .button {
   font-size: 26px;
 }
+
 .active-btn {
   font-size: 26px;
   color: #0d1d3f;
@@ -681,7 +661,7 @@ $gridSize: 8;
     display: block;
     height: 63px;
     padding: 0 10px;
-
+    margin: 0 1px;
   }
   span::before {
     right: 100%;
@@ -697,7 +677,6 @@ $gridSize: 8;
     border-color: #00f2fe;
     border-radius: 0 32px 32px 0;
     background-color: #00f2fe ;
-
   }
   &::before {
     background-image: linear-gradient(to right, #00adff, #00f2fe);
@@ -718,6 +697,8 @@ $gridSize: 8;
       background-image: linear-gradient(to right, #00adff, #00f2fe);
       opacity: 1;
       transition: none;
+      left: -31px;
+      right: -31px;
     }
   }
 }

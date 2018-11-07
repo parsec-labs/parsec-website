@@ -14,7 +14,7 @@
     z-index: 2;
     height: 100%;
     position: absolute;
-    background-image: linear-gradient(rgba(#000, 0) 80%, rgba(#000, 1) 100%);
+    // background-image: linear-gradient(rgba(#000, 0) 80%, rgba(#000, 1) 100%);
 
     @media screen and (max-width: 768px) {
       position: relative;
@@ -29,25 +29,15 @@
   .upper-header {
     position: relative;
     height: 60%;
+    a:not(.button) {
+      color: #ffffff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
 
-    &::before {
-      position: absolute;
-      top: 100%;
-      left: 15%;
-
-      width: 70%;
-      height: 3px;
-
-      content: '';
-
-      background-image: linear-gradient(
-        to left,
-        rgba(#00ceff, 0),
-        rgba(#00ceff, 0.24) 30%,
-        rgba(#00ceff, 0.24) 50%,
-        rgba(#00ceff, 0.24) 70%,
-        rgba(#00ceff, 0)
-      );
+      &:hover {
+        color: #22c9fc;
+        border-bottom-color: rgba(#22c9fc, 0.4);
+      }
     }
   }
 
